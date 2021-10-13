@@ -1,0 +1,2880 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+<data noupdate="0">
+<record id="xcountry_district_10101" model="xcountry.district"> 
+  <field name="country_state_id" ref="base.state_SJ" />
+  <field name="country_county_id" ref="FAE_app.xcountry_county_101" />
+  <field name="code">01</field>
+  <field name="name">Carmen</field>
+</record>
+<record id="xcountry_district_10102" model="xcountry.district"> 
+  <field name="country_state_id" ref="base.state_SJ" />
+  <field name="country_county_id" ref="FAE_app.xcountry_county_101" />
+  <field name="code">02</field>
+  <field name="name">Merced</field>
+</record>
+<record id="xcountry_district_10103" model="xcountry.district"> 
+  <field name="country_state_id" ref="base.state_SJ" />
+  <field name="country_county_id" ref="FAE_app.xcountry_county_101" />
+  <field name="code">03</field>
+  <field name="name">Hospital</field>
+</record>
+<record id="xcountry_district_10104" model="xcountry.district"> 
+  <field name="country_state_id" ref="base.state_SJ" />
+  <field name="country_county_id" ref="FAE_app.xcountry_county_101" />
+  <field name="code">04</field>
+  <field name="name">Catedral</field>
+</record>
+<record id="xcountry_district_10105" model="xcountry.district"> 
+  <field name="country_state_id" ref="base.state_SJ" />
+  <field name="country_county_id" ref="FAE_app.xcountry_county_101" />
+  <field name="code">05</field>
+  <field name="name">Zapote</field>
+</record>
+<record id="xcountry_district_10106" model="xcountry.district"> 
+  <field name="country_state_id" ref="base.state_SJ" />
+  <field name="country_county_id" ref="FAE_app.xcountry_county_101" />
+  <field name="code">06</field>
+  <field name="name">San Francisco De Dos Ríos</field>
+</record>
+<record id="xcountry_district_10107" model="xcountry.district"> 
+  <field name="country_state_id" ref="base.state_SJ" />
+  <field name="country_county_id" ref="FAE_app.xcountry_county_101" />
+  <field name="code">07</field>
+  <field name="name">Uruca</field>
+</record>
+<record id="xcountry_district_10108" model="xcountry.district"> 
+  <field name="country_state_id" ref="base.state_SJ" />
+  <field name="country_county_id" ref="FAE_app.xcountry_county_101" />
+  <field name="code">08</field>
+  <field name="name">Mata Redonda</field>
+</record>
+<record id="xcountry_district_10109" model="xcountry.district"> 
+  <field name="country_state_id" ref="base.state_SJ" />
+  <field name="country_county_id" ref="FAE_app.xcountry_county_101" />
+  <field name="code">09</field>
+  <field name="name">Pavas</field>
+</record>
+<record id="xcountry_district_10110" model="xcountry.district"> 
+  <field name="country_state_id" ref="base.state_SJ" />
+  <field name="country_county_id" ref="FAE_app.xcountry_county_101" />
+  <field name="code">10</field>
+  <field name="name">Hatillo</field>
+</record>
+<record id="xcountry_district_10111" model="xcountry.district"> 
+  <field name="country_state_id" ref="base.state_SJ" />
+  <field name="country_county_id" ref="FAE_app.xcountry_county_101" />
+  <field name="code">11</field>
+  <field name="name">San Sebastián</field>
+</record>
+<record id="xcountry_district_10201" model="xcountry.district"> 
+  <field name="country_state_id" ref="base.state_SJ" />
+  <field name="country_county_id" ref="FAE_app.xcountry_county_102" />
+  <field name="code">01</field>
+  <field name="name">Escazú</field>
+</record>
+<record id="xcountry_district_10202" model="xcountry.district"> 
+  <field name="country_state_id" ref="base.state_SJ" />
+  <field name="country_county_id" ref="FAE_app.xcountry_county_102" />
+  <field name="code">02</field>
+  <field name="name">San Antonio</field>
+</record>
+<record id="xcountry_district_10203" model="xcountry.district"> 
+  <field name="country_state_id" ref="base.state_SJ" />
+  <field name="country_county_id" ref="FAE_app.xcountry_county_102" />
+  <field name="code">03</field>
+  <field name="name">San Rafael</field>
+</record>
+<record id="xcountry_district_10301" model="xcountry.district"> 
+  <field name="country_state_id" ref="base.state_SJ" />
+  <field name="country_county_id" ref="FAE_app.xcountry_county_103" />
+  <field name="code">01</field>
+  <field name="name">Desamparados</field>
+</record>
+<record id="xcountry_district_10302" model="xcountry.district"> 
+  <field name="country_state_id" ref="base.state_SJ" />
+  <field name="country_county_id" ref="FAE_app.xcountry_county_103" />
+  <field name="code">02</field>
+  <field name="name">San Miguel</field>
+</record>
+<record id="xcountry_district_10303" model="xcountry.district"> 
+  <field name="country_state_id" ref="base.state_SJ" />
+  <field name="country_county_id" ref="FAE_app.xcountry_county_103" />
+  <field name="code">03</field>
+  <field name="name">San Juan De Dios</field>
+</record>
+<record id="xcountry_district_10304" model="xcountry.district"> 
+  <field name="country_state_id" ref="base.state_SJ" />
+  <field name="country_county_id" ref="FAE_app.xcountry_county_103" />
+  <field name="code">04</field>
+  <field name="name">San Rafael Arriba</field>
+</record>
+<record id="xcountry_district_10305" model="xcountry.district"> 
+  <field name="country_state_id" ref="base.state_SJ" />
+  <field name="country_county_id" ref="FAE_app.xcountry_county_103" />
+  <field name="code">05</field>
+  <field name="name">San Antonio</field>
+</record>
+<record id="xcountry_district_10306" model="xcountry.district"> 
+  <field name="country_state_id" ref="base.state_SJ" />
+  <field name="country_county_id" ref="FAE_app.xcountry_county_103" />
+  <field name="code">06</field>
+  <field name="name">Frailes</field>
+</record>
+<record id="xcountry_district_10307" model="xcountry.district"> 
+  <field name="country_state_id" ref="base.state_SJ" />
+  <field name="country_county_id" ref="FAE_app.xcountry_county_103" />
+  <field name="code">07</field>
+  <field name="name">Patarrá</field>
+</record>
+<record id="xcountry_district_10308" model="xcountry.district"> 
+  <field name="country_state_id" ref="base.state_SJ" />
+  <field name="country_county_id" ref="FAE_app.xcountry_county_103" />
+  <field name="code">08</field>
+  <field name="name">San Cristóbal</field>
+</record>
+<record id="xcountry_district_10309" model="xcountry.district"> 
+  <field name="country_state_id" ref="base.state_SJ" />
+  <field name="country_county_id" ref="FAE_app.xcountry_county_103" />
+  <field name="code">09</field>
+  <field name="name">Rosario</field>
+</record>
+<record id="xcountry_district_10310" model="xcountry.district"> 
+  <field name="country_state_id" ref="base.state_SJ" />
+  <field name="country_county_id" ref="FAE_app.xcountry_county_103" />
+  <field name="code">10</field>
+  <field name="name">Damas</field>
+</record>
+<record id="xcountry_district_10311" model="xcountry.district"> 
+  <field name="country_state_id" ref="base.state_SJ" />
+  <field name="country_county_id" ref="FAE_app.xcountry_county_103" />
+  <field name="code">11</field>
+  <field name="name">San Rafael Abajo</field>
+</record>
+<record id="xcountry_district_10312" model="xcountry.district"> 
+  <field name="country_state_id" ref="base.state_SJ" />
+  <field name="country_county_id" ref="FAE_app.xcountry_county_103" />
+  <field name="code">12</field>
+  <field name="name">Gravilias</field>
+</record>
+<record id="xcountry_district_10313" model="xcountry.district"> 
+  <field name="country_state_id" ref="base.state_SJ" />
+  <field name="country_county_id" ref="FAE_app.xcountry_county_103" />
+  <field name="code">13</field>
+  <field name="name">Los Guido</field>
+</record>
+<record id="xcountry_district_10401" model="xcountry.district"> 
+  <field name="country_state_id" ref="base.state_SJ" />
+  <field name="country_county_id" ref="FAE_app.xcountry_county_104" />
+  <field name="code">01</field>
+  <field name="name">Santiago</field>
+</record>
+<record id="xcountry_district_10402" model="xcountry.district"> 
+  <field name="country_state_id" ref="base.state_SJ" />
+  <field name="country_county_id" ref="FAE_app.xcountry_county_104" />
+  <field name="code">02</field>
+  <field name="name">Mercedes Sur</field>
+</record>
+<record id="xcountry_district_10403" model="xcountry.district"> 
+  <field name="country_state_id" ref="base.state_SJ" />
+  <field name="country_county_id" ref="FAE_app.xcountry_county_104" />
+  <field name="code">03</field>
+  <field name="name">Barbacoas</field>
+</record>
+<record id="xcountry_district_10404" model="xcountry.district"> 
+  <field name="country_state_id" ref="base.state_SJ" />
+  <field name="country_county_id" ref="FAE_app.xcountry_county_104" />
+  <field name="code">04</field>
+  <field name="name">Grifo Alto</field>
+</record>
+<record id="xcountry_district_10405" model="xcountry.district"> 
+  <field name="country_state_id" ref="base.state_SJ" />
+  <field name="country_county_id" ref="FAE_app.xcountry_county_104" />
+  <field name="code">05</field>
+  <field name="name">San Rafael</field>
+</record>
+<record id="xcountry_district_10406" model="xcountry.district"> 
+  <field name="country_state_id" ref="base.state_SJ" />
+  <field name="country_county_id" ref="FAE_app.xcountry_county_104" />
+  <field name="code">06</field>
+  <field name="name">Candelarita</field>
+</record>
+<record id="xcountry_district_10407" model="xcountry.district"> 
+  <field name="country_state_id" ref="base.state_SJ" />
+  <field name="country_county_id" ref="FAE_app.xcountry_county_104" />
+  <field name="code">07</field>
+  <field name="name">Desamparaditos</field>
+</record>
+<record id="xcountry_district_10408" model="xcountry.district"> 
+  <field name="country_state_id" ref="base.state_SJ" />
+  <field name="country_county_id" ref="FAE_app.xcountry_county_104" />
+  <field name="code">08</field>
+  <field name="name">San Antonio</field>
+</record>
+<record id="xcountry_district_10409" model="xcountry.district"> 
+  <field name="country_state_id" ref="base.state_SJ" />
+  <field name="country_county_id" ref="FAE_app.xcountry_county_104" />
+  <field name="code">09</field>
+  <field name="name">Chires</field>
+</record>
+<record id="xcountry_district_10501" model="xcountry.district"> 
+  <field name="country_state_id" ref="base.state_SJ" />
+  <field name="country_county_id" ref="FAE_app.xcountry_county_105" />
+  <field name="code">01</field>
+  <field name="name">San Marcos</field>
+</record>
+<record id="xcountry_district_10502" model="xcountry.district"> 
+  <field name="country_state_id" ref="base.state_SJ" />
+  <field name="country_county_id" ref="FAE_app.xcountry_county_105" />
+  <field name="code">02</field>
+  <field name="name">San Lorenzo</field>
+</record>
+<record id="xcountry_district_10503" model="xcountry.district"> 
+  <field name="country_state_id" ref="base.state_SJ" />
+  <field name="country_county_id" ref="FAE_app.xcountry_county_105" />
+  <field name="code">03</field>
+  <field name="name">San Carlos</field>
+</record>
+<record id="xcountry_district_10601" model="xcountry.district"> 
+  <field name="country_state_id" ref="base.state_SJ" />
+  <field name="country_county_id" ref="FAE_app.xcountry_county_106" />
+  <field name="code">01</field>
+  <field name="name">Aserri</field>
+</record>
+<record id="xcountry_district_10602" model="xcountry.district"> 
+  <field name="country_state_id" ref="base.state_SJ" />
+  <field name="country_county_id" ref="FAE_app.xcountry_county_106" />
+  <field name="code">02</field>
+  <field name="name">Tarbaca</field>
+</record>
+<record id="xcountry_district_10603" model="xcountry.district"> 
+  <field name="country_state_id" ref="base.state_SJ" />
+  <field name="country_county_id" ref="FAE_app.xcountry_county_106" />
+  <field name="code">03</field>
+  <field name="name">Vuelta De Jorco</field>
+</record>
+<record id="xcountry_district_10604" model="xcountry.district"> 
+  <field name="country_state_id" ref="base.state_SJ" />
+  <field name="country_county_id" ref="FAE_app.xcountry_county_106" />
+  <field name="code">04</field>
+  <field name="name">San Gabriel</field>
+</record>
+<record id="xcountry_district_10605" model="xcountry.district"> 
+  <field name="country_state_id" ref="base.state_SJ" />
+  <field name="country_county_id" ref="FAE_app.xcountry_county_106" />
+  <field name="code">05</field>
+  <field name="name">Legua</field>
+</record>
+<record id="xcountry_district_10606" model="xcountry.district"> 
+  <field name="country_state_id" ref="base.state_SJ" />
+  <field name="country_county_id" ref="FAE_app.xcountry_county_106" />
+  <field name="code">06</field>
+  <field name="name">Monterrey</field>
+</record>
+<record id="xcountry_district_10607" model="xcountry.district"> 
+  <field name="country_state_id" ref="base.state_SJ" />
+  <field name="country_county_id" ref="FAE_app.xcountry_county_106" />
+  <field name="code">07</field>
+  <field name="name">Salitrillos</field>
+</record>
+<record id="xcountry_district_10701" model="xcountry.district"> 
+  <field name="country_state_id" ref="base.state_SJ" />
+  <field name="country_county_id" ref="FAE_app.xcountry_county_107" />
+  <field name="code">01</field>
+  <field name="name">Colón</field>
+</record>
+<record id="xcountry_district_10702" model="xcountry.district"> 
+  <field name="country_state_id" ref="base.state_SJ" />
+  <field name="country_county_id" ref="FAE_app.xcountry_county_107" />
+  <field name="code">02</field>
+  <field name="name">Guayabo</field>
+</record>
+<record id="xcountry_district_10703" model="xcountry.district"> 
+  <field name="country_state_id" ref="base.state_SJ" />
+  <field name="country_county_id" ref="FAE_app.xcountry_county_107" />
+  <field name="code">03</field>
+  <field name="name">Tabarcia</field>
+</record>
+<record id="xcountry_district_10704" model="xcountry.district"> 
+  <field name="country_state_id" ref="base.state_SJ" />
+  <field name="country_county_id" ref="FAE_app.xcountry_county_107" />
+  <field name="code">04</field>
+  <field name="name">Piedras Negras</field>
+</record>
+<record id="xcountry_district_10705" model="xcountry.district"> 
+  <field name="country_state_id" ref="base.state_SJ" />
+  <field name="country_county_id" ref="FAE_app.xcountry_county_107" />
+  <field name="code">05</field>
+  <field name="name">Picagres</field>
+</record>
+<record id="xcountry_district_10706" model="xcountry.district"> 
+  <field name="country_state_id" ref="base.state_SJ" />
+  <field name="country_county_id" ref="FAE_app.xcountry_county_107" />
+  <field name="code">06</field>
+  <field name="name">Jaris</field>
+</record>
+<record id="xcountry_district_10707" model="xcountry.district"> 
+  <field name="country_state_id" ref="base.state_SJ" />
+  <field name="country_county_id" ref="FAE_app.xcountry_county_107" />
+  <field name="code">07</field>
+  <field name="name">Quitirrisi</field>
+</record>
+<record id="xcountry_district_10801" model="xcountry.district"> 
+  <field name="country_state_id" ref="base.state_SJ" />
+  <field name="country_county_id" ref="FAE_app.xcountry_county_108" />
+  <field name="code">01</field>
+  <field name="name">Guadalupe</field>
+</record>
+<record id="xcountry_district_10802" model="xcountry.district"> 
+  <field name="country_state_id" ref="base.state_SJ" />
+  <field name="country_county_id" ref="FAE_app.xcountry_county_108" />
+  <field name="code">02</field>
+  <field name="name">San Francisco</field>
+</record>
+<record id="xcountry_district_10803" model="xcountry.district"> 
+  <field name="country_state_id" ref="base.state_SJ" />
+  <field name="country_county_id" ref="FAE_app.xcountry_county_108" />
+  <field name="code">03</field>
+  <field name="name">Calle Blancos</field>
+</record>
+<record id="xcountry_district_10804" model="xcountry.district"> 
+  <field name="country_state_id" ref="base.state_SJ" />
+  <field name="country_county_id" ref="FAE_app.xcountry_county_108" />
+  <field name="code">04</field>
+  <field name="name">Mata De Plátano</field>
+</record>
+<record id="xcountry_district_10805" model="xcountry.district"> 
+  <field name="country_state_id" ref="base.state_SJ" />
+  <field name="country_county_id" ref="FAE_app.xcountry_county_108" />
+  <field name="code">05</field>
+  <field name="name">Ipís</field>
+</record>
+<record id="xcountry_district_10806" model="xcountry.district"> 
+  <field name="country_state_id" ref="base.state_SJ" />
+  <field name="country_county_id" ref="FAE_app.xcountry_county_108" />
+  <field name="code">06</field>
+  <field name="name">Rancho Redondo</field>
+</record>
+<record id="xcountry_district_10807" model="xcountry.district"> 
+  <field name="country_state_id" ref="base.state_SJ" />
+  <field name="country_county_id" ref="FAE_app.xcountry_county_108" />
+  <field name="code">07</field>
+  <field name="name">Purral</field>
+</record>
+<record id="xcountry_district_10901" model="xcountry.district"> 
+  <field name="country_state_id" ref="base.state_SJ" />
+  <field name="country_county_id" ref="FAE_app.xcountry_county_109" />
+  <field name="code">01</field>
+  <field name="name">Santa Ana</field>
+</record>
+<record id="xcountry_district_10902" model="xcountry.district"> 
+  <field name="country_state_id" ref="base.state_SJ" />
+  <field name="country_county_id" ref="FAE_app.xcountry_county_109" />
+  <field name="code">02</field>
+  <field name="name">Salitral</field>
+</record>
+<record id="xcountry_district_10903" model="xcountry.district"> 
+  <field name="country_state_id" ref="base.state_SJ" />
+  <field name="country_county_id" ref="FAE_app.xcountry_county_109" />
+  <field name="code">03</field>
+  <field name="name">Pozos</field>
+</record>
+<record id="xcountry_district_10904" model="xcountry.district"> 
+  <field name="country_state_id" ref="base.state_SJ" />
+  <field name="country_county_id" ref="FAE_app.xcountry_county_109" />
+  <field name="code">04</field>
+  <field name="name">Uruca</field>
+</record>
+<record id="xcountry_district_10905" model="xcountry.district"> 
+  <field name="country_state_id" ref="base.state_SJ" />
+  <field name="country_county_id" ref="FAE_app.xcountry_county_109" />
+  <field name="code">05</field>
+  <field name="name">Piedades</field>
+</record>
+<record id="xcountry_district_10906" model="xcountry.district"> 
+  <field name="country_state_id" ref="base.state_SJ" />
+  <field name="country_county_id" ref="FAE_app.xcountry_county_109" />
+  <field name="code">06</field>
+  <field name="name">Brasil</field>
+</record>
+<record id="xcountry_district_11001" model="xcountry.district"> 
+  <field name="country_state_id" ref="base.state_SJ" />
+  <field name="country_county_id" ref="FAE_app.xcountry_county_110" />
+  <field name="code">01</field>
+  <field name="name">Alajuelita</field>
+</record>
+<record id="xcountry_district_11002" model="xcountry.district"> 
+  <field name="country_state_id" ref="base.state_SJ" />
+  <field name="country_county_id" ref="FAE_app.xcountry_county_110" />
+  <field name="code">02</field>
+  <field name="name">San Josecito</field>
+</record>
+<record id="xcountry_district_11003" model="xcountry.district"> 
+  <field name="country_state_id" ref="base.state_SJ" />
+  <field name="country_county_id" ref="FAE_app.xcountry_county_110" />
+  <field name="code">03</field>
+  <field name="name">San Antonio</field>
+</record>
+<record id="xcountry_district_11004" model="xcountry.district"> 
+  <field name="country_state_id" ref="base.state_SJ" />
+  <field name="country_county_id" ref="FAE_app.xcountry_county_110" />
+  <field name="code">04</field>
+  <field name="name">Concepción</field>
+</record>
+<record id="xcountry_district_11005" model="xcountry.district"> 
+  <field name="country_state_id" ref="base.state_SJ" />
+  <field name="country_county_id" ref="FAE_app.xcountry_county_110" />
+  <field name="code">05</field>
+  <field name="name">San Felipe</field>
+</record>
+<record id="xcountry_district_11101" model="xcountry.district"> 
+  <field name="country_state_id" ref="base.state_SJ" />
+  <field name="country_county_id" ref="FAE_app.xcountry_county_111" />
+  <field name="code">01</field>
+  <field name="name">San Isidro</field>
+</record>
+<record id="xcountry_district_11102" model="xcountry.district"> 
+  <field name="country_state_id" ref="base.state_SJ" />
+  <field name="country_county_id" ref="FAE_app.xcountry_county_111" />
+  <field name="code">02</field>
+  <field name="name">San Rafael</field>
+</record>
+<record id="xcountry_district_11103" model="xcountry.district"> 
+  <field name="country_state_id" ref="base.state_SJ" />
+  <field name="country_county_id" ref="FAE_app.xcountry_county_111" />
+  <field name="code">03</field>
+  <field name="name">Dulce Nombre De Jesús</field>
+</record>
+<record id="xcountry_district_11104" model="xcountry.district"> 
+  <field name="country_state_id" ref="base.state_SJ" />
+  <field name="country_county_id" ref="FAE_app.xcountry_county_111" />
+  <field name="code">04</field>
+  <field name="name">Patalillo</field>
+</record>
+<record id="xcountry_district_11105" model="xcountry.district"> 
+  <field name="country_state_id" ref="base.state_SJ" />
+  <field name="country_county_id" ref="FAE_app.xcountry_county_111" />
+  <field name="code">05</field>
+  <field name="name">Cascajal</field>
+</record>
+<record id="xcountry_district_11201" model="xcountry.district"> 
+  <field name="country_state_id" ref="base.state_SJ" />
+  <field name="country_county_id" ref="FAE_app.xcountry_county_112" />
+  <field name="code">01</field>
+  <field name="name">San Ignacio</field>
+</record>
+<record id="xcountry_district_11202" model="xcountry.district"> 
+  <field name="country_state_id" ref="base.state_SJ" />
+  <field name="country_county_id" ref="FAE_app.xcountry_county_112" />
+  <field name="code">02</field>
+  <field name="name">Guaitil Villa</field>
+</record>
+<record id="xcountry_district_11203" model="xcountry.district"> 
+  <field name="country_state_id" ref="base.state_SJ" />
+  <field name="country_county_id" ref="FAE_app.xcountry_county_112" />
+  <field name="code">03</field>
+  <field name="name">Palmichal</field>
+</record>
+<record id="xcountry_district_11204" model="xcountry.district"> 
+  <field name="country_state_id" ref="base.state_SJ" />
+  <field name="country_county_id" ref="FAE_app.xcountry_county_112" />
+  <field name="code">04</field>
+  <field name="name">Cangrejal</field>
+</record>
+<record id="xcountry_district_11205" model="xcountry.district"> 
+  <field name="country_state_id" ref="base.state_SJ" />
+  <field name="country_county_id" ref="FAE_app.xcountry_county_112" />
+  <field name="code">05</field>
+  <field name="name">Sabanillas</field>
+</record>
+<record id="xcountry_district_11301" model="xcountry.district"> 
+  <field name="country_state_id" ref="base.state_SJ" />
+  <field name="country_county_id" ref="FAE_app.xcountry_county_113" />
+  <field name="code">01</field>
+  <field name="name">San Juan</field>
+</record>
+<record id="xcountry_district_11302" model="xcountry.district"> 
+  <field name="country_state_id" ref="base.state_SJ" />
+  <field name="country_county_id" ref="FAE_app.xcountry_county_113" />
+  <field name="code">02</field>
+  <field name="name">Cinco Esquinas</field>
+</record>
+<record id="xcountry_district_11303" model="xcountry.district"> 
+  <field name="country_state_id" ref="base.state_SJ" />
+  <field name="country_county_id" ref="FAE_app.xcountry_county_113" />
+  <field name="code">03</field>
+  <field name="name">Anselmo Llorente</field>
+</record>
+<record id="xcountry_district_11304" model="xcountry.district"> 
+  <field name="country_state_id" ref="base.state_SJ" />
+  <field name="country_county_id" ref="FAE_app.xcountry_county_113" />
+  <field name="code">04</field>
+  <field name="name">Leon Xiii</field>
+</record>
+<record id="xcountry_district_11305" model="xcountry.district"> 
+  <field name="country_state_id" ref="base.state_SJ" />
+  <field name="country_county_id" ref="FAE_app.xcountry_county_113" />
+  <field name="code">05</field>
+  <field name="name">Colima</field>
+</record>
+<record id="xcountry_district_11401" model="xcountry.district"> 
+  <field name="country_state_id" ref="base.state_SJ" />
+  <field name="country_county_id" ref="FAE_app.xcountry_county_114" />
+  <field name="code">01</field>
+  <field name="name">San Vicente</field>
+</record>
+<record id="xcountry_district_11402" model="xcountry.district"> 
+  <field name="country_state_id" ref="base.state_SJ" />
+  <field name="country_county_id" ref="FAE_app.xcountry_county_114" />
+  <field name="code">02</field>
+  <field name="name">San Jerónimo</field>
+</record>
+<record id="xcountry_district_11403" model="xcountry.district"> 
+  <field name="country_state_id" ref="base.state_SJ" />
+  <field name="country_county_id" ref="FAE_app.xcountry_county_114" />
+  <field name="code">03</field>
+  <field name="name">La Trinidad</field>
+</record>
+<record id="xcountry_district_11501" model="xcountry.district"> 
+  <field name="country_state_id" ref="base.state_SJ" />
+  <field name="country_county_id" ref="FAE_app.xcountry_county_115" />
+  <field name="code">01</field>
+  <field name="name">San Pedro</field>
+</record>
+<record id="xcountry_district_11502" model="xcountry.district"> 
+  <field name="country_state_id" ref="base.state_SJ" />
+  <field name="country_county_id" ref="FAE_app.xcountry_county_115" />
+  <field name="code">02</field>
+  <field name="name">Sabanilla</field>
+</record>
+<record id="xcountry_district_11503" model="xcountry.district"> 
+  <field name="country_state_id" ref="base.state_SJ" />
+  <field name="country_county_id" ref="FAE_app.xcountry_county_115" />
+  <field name="code">03</field>
+  <field name="name">Mercedes</field>
+</record>
+<record id="xcountry_district_11504" model="xcountry.district"> 
+  <field name="country_state_id" ref="base.state_SJ" />
+  <field name="country_county_id" ref="FAE_app.xcountry_county_115" />
+  <field name="code">04</field>
+  <field name="name">San Rafael</field>
+</record>
+<record id="xcountry_district_11601" model="xcountry.district"> 
+  <field name="country_state_id" ref="base.state_SJ" />
+  <field name="country_county_id" ref="FAE_app.xcountry_county_116" />
+  <field name="code">01</field>
+  <field name="name">San Pablo</field>
+</record>
+<record id="xcountry_district_11602" model="xcountry.district"> 
+  <field name="country_state_id" ref="base.state_SJ" />
+  <field name="country_county_id" ref="FAE_app.xcountry_county_116" />
+  <field name="code">02</field>
+  <field name="name">San Pedro</field>
+</record>
+<record id="xcountry_district_11603" model="xcountry.district"> 
+  <field name="country_state_id" ref="base.state_SJ" />
+  <field name="country_county_id" ref="FAE_app.xcountry_county_116" />
+  <field name="code">03</field>
+  <field name="name">San Juan De Mata</field>
+</record>
+<record id="xcountry_district_11604" model="xcountry.district"> 
+  <field name="country_state_id" ref="base.state_SJ" />
+  <field name="country_county_id" ref="FAE_app.xcountry_county_116" />
+  <field name="code">04</field>
+  <field name="name">San Luis</field>
+</record>
+<record id="xcountry_district_11605" model="xcountry.district"> 
+  <field name="country_state_id" ref="base.state_SJ" />
+  <field name="country_county_id" ref="FAE_app.xcountry_county_116" />
+  <field name="code">05</field>
+  <field name="name">Carara</field>
+</record>
+<record id="xcountry_district_11701" model="xcountry.district"> 
+  <field name="country_state_id" ref="base.state_SJ" />
+  <field name="country_county_id" ref="FAE_app.xcountry_county_117" />
+  <field name="code">01</field>
+  <field name="name">Santa María</field>
+</record>
+<record id="xcountry_district_11702" model="xcountry.district"> 
+  <field name="country_state_id" ref="base.state_SJ" />
+  <field name="country_county_id" ref="FAE_app.xcountry_county_117" />
+  <field name="code">02</field>
+  <field name="name">Jardín</field>
+</record>
+<record id="xcountry_district_11703" model="xcountry.district"> 
+  <field name="country_state_id" ref="base.state_SJ" />
+  <field name="country_county_id" ref="FAE_app.xcountry_county_117" />
+  <field name="code">03</field>
+  <field name="name">Copey</field>
+</record>
+<record id="xcountry_district_11801" model="xcountry.district"> 
+  <field name="country_state_id" ref="base.state_SJ" />
+  <field name="country_county_id" ref="FAE_app.xcountry_county_118" />
+  <field name="code">01</field>
+  <field name="name">Curridabat</field>
+</record>
+<record id="xcountry_district_11802" model="xcountry.district"> 
+  <field name="country_state_id" ref="base.state_SJ" />
+  <field name="country_county_id" ref="FAE_app.xcountry_county_118" />
+  <field name="code">02</field>
+  <field name="name">Granadilla</field>
+</record>
+<record id="xcountry_district_11803" model="xcountry.district"> 
+  <field name="country_state_id" ref="base.state_SJ" />
+  <field name="country_county_id" ref="FAE_app.xcountry_county_118" />
+  <field name="code">03</field>
+  <field name="name">Sánchez</field>
+</record>
+<record id="xcountry_district_11804" model="xcountry.district"> 
+  <field name="country_state_id" ref="base.state_SJ" />
+  <field name="country_county_id" ref="FAE_app.xcountry_county_118" />
+  <field name="code">04</field>
+  <field name="name">Tirrases</field>
+</record>
+<record id="xcountry_district_11901" model="xcountry.district"> 
+  <field name="country_state_id" ref="base.state_SJ" />
+  <field name="country_county_id" ref="FAE_app.xcountry_county_119" />
+  <field name="code">01</field>
+  <field name="name">San Isidro De El General</field>
+</record>
+<record id="xcountry_district_11902" model="xcountry.district"> 
+  <field name="country_state_id" ref="base.state_SJ" />
+  <field name="country_county_id" ref="FAE_app.xcountry_county_119" />
+  <field name="code">02</field>
+  <field name="name">El General</field>
+</record>
+<record id="xcountry_district_11903" model="xcountry.district"> 
+  <field name="country_state_id" ref="base.state_SJ" />
+  <field name="country_county_id" ref="FAE_app.xcountry_county_119" />
+  <field name="code">03</field>
+  <field name="name">Daniel Flores</field>
+</record>
+<record id="xcountry_district_11904" model="xcountry.district"> 
+  <field name="country_state_id" ref="base.state_SJ" />
+  <field name="country_county_id" ref="FAE_app.xcountry_county_119" />
+  <field name="code">04</field>
+  <field name="name">Rivas</field>
+</record>
+<record id="xcountry_district_11905" model="xcountry.district"> 
+  <field name="country_state_id" ref="base.state_SJ" />
+  <field name="country_county_id" ref="FAE_app.xcountry_county_119" />
+  <field name="code">05</field>
+  <field name="name">San Pedro</field>
+</record>
+<record id="xcountry_district_11906" model="xcountry.district"> 
+  <field name="country_state_id" ref="base.state_SJ" />
+  <field name="country_county_id" ref="FAE_app.xcountry_county_119" />
+  <field name="code">06</field>
+  <field name="name">Platanares</field>
+</record>
+<record id="xcountry_district_11907" model="xcountry.district"> 
+  <field name="country_state_id" ref="base.state_SJ" />
+  <field name="country_county_id" ref="FAE_app.xcountry_county_119" />
+  <field name="code">07</field>
+  <field name="name">Pejibaye</field>
+</record>
+<record id="xcountry_district_11908" model="xcountry.district"> 
+  <field name="country_state_id" ref="base.state_SJ" />
+  <field name="country_county_id" ref="FAE_app.xcountry_county_119" />
+  <field name="code">08</field>
+  <field name="name">Cajón</field>
+</record>
+<record id="xcountry_district_11909" model="xcountry.district"> 
+  <field name="country_state_id" ref="base.state_SJ" />
+  <field name="country_county_id" ref="FAE_app.xcountry_county_119" />
+  <field name="code">09</field>
+  <field name="name">Barú</field>
+</record>
+<record id="xcountry_district_11910" model="xcountry.district"> 
+  <field name="country_state_id" ref="base.state_SJ" />
+  <field name="country_county_id" ref="FAE_app.xcountry_county_119" />
+  <field name="code">10</field>
+  <field name="name">Río Nuevo</field>
+</record>
+<record id="xcountry_district_11911" model="xcountry.district"> 
+  <field name="country_state_id" ref="base.state_SJ" />
+  <field name="country_county_id" ref="FAE_app.xcountry_county_119" />
+  <field name="code">11</field>
+  <field name="name">Páramo</field>
+</record>
+<record id="xcountry_district_12001" model="xcountry.district"> 
+  <field name="country_state_id" ref="base.state_SJ" />
+  <field name="country_county_id" ref="FAE_app.xcountry_county_120" />
+  <field name="code">01</field>
+  <field name="name">San Pablo</field>
+</record>
+<record id="xcountry_district_12002" model="xcountry.district"> 
+  <field name="country_state_id" ref="base.state_SJ" />
+  <field name="country_county_id" ref="FAE_app.xcountry_county_120" />
+  <field name="code">02</field>
+  <field name="name">San Andrés</field>
+</record>
+<record id="xcountry_district_12003" model="xcountry.district"> 
+  <field name="country_state_id" ref="base.state_SJ" />
+  <field name="country_county_id" ref="FAE_app.xcountry_county_120" />
+  <field name="code">03</field>
+  <field name="name">Llano Bonito</field>
+</record>
+<record id="xcountry_district_12004" model="xcountry.district"> 
+  <field name="country_state_id" ref="base.state_SJ" />
+  <field name="country_county_id" ref="FAE_app.xcountry_county_120" />
+  <field name="code">04</field>
+  <field name="name">San Isidro</field>
+</record>
+<record id="xcountry_district_12005" model="xcountry.district"> 
+  <field name="country_state_id" ref="base.state_SJ" />
+  <field name="country_county_id" ref="FAE_app.xcountry_county_120" />
+  <field name="code">05</field>
+  <field name="name">Santa Cruz</field>
+</record>
+<record id="xcountry_district_12006" model="xcountry.district"> 
+  <field name="country_state_id" ref="base.state_SJ" />
+  <field name="country_county_id" ref="FAE_app.xcountry_county_120" />
+  <field name="code">06</field>
+  <field name="name">San Antonio</field>
+</record>
+<record id="xcountry_district_20101" model="xcountry.district"> 
+  <field name="country_state_id" ref="base.state_A" />
+  <field name="country_county_id" ref="FAE_app.xcountry_county_201" />
+  <field name="code">01</field>
+  <field name="name">Alajuela</field>
+</record>
+<record id="xcountry_district_20102" model="xcountry.district"> 
+  <field name="country_state_id" ref="base.state_A" />
+  <field name="country_county_id" ref="FAE_app.xcountry_county_201" />
+  <field name="code">02</field>
+  <field name="name">San José</field>
+</record>
+<record id="xcountry_district_20103" model="xcountry.district"> 
+  <field name="country_state_id" ref="base.state_A" />
+  <field name="country_county_id" ref="FAE_app.xcountry_county_201" />
+  <field name="code">03</field>
+  <field name="name">Carrizal</field>
+</record>
+<record id="xcountry_district_20104" model="xcountry.district"> 
+  <field name="country_state_id" ref="base.state_A" />
+  <field name="country_county_id" ref="FAE_app.xcountry_county_201" />
+  <field name="code">04</field>
+  <field name="name">San Antonio</field>
+</record>
+<record id="xcountry_district_20105" model="xcountry.district"> 
+  <field name="country_state_id" ref="base.state_A" />
+  <field name="country_county_id" ref="FAE_app.xcountry_county_201" />
+  <field name="code">05</field>
+  <field name="name">Guácima</field>
+</record>
+<record id="xcountry_district_20106" model="xcountry.district"> 
+  <field name="country_state_id" ref="base.state_A" />
+  <field name="country_county_id" ref="FAE_app.xcountry_county_201" />
+  <field name="code">06</field>
+  <field name="name">San Isidro</field>
+</record>
+<record id="xcountry_district_20107" model="xcountry.district"> 
+  <field name="country_state_id" ref="base.state_A" />
+  <field name="country_county_id" ref="FAE_app.xcountry_county_201" />
+  <field name="code">07</field>
+  <field name="name">Sabanilla</field>
+</record>
+<record id="xcountry_district_20108" model="xcountry.district"> 
+  <field name="country_state_id" ref="base.state_A" />
+  <field name="country_county_id" ref="FAE_app.xcountry_county_201" />
+  <field name="code">08</field>
+  <field name="name">San Rafael</field>
+</record>
+<record id="xcountry_district_20109" model="xcountry.district"> 
+  <field name="country_state_id" ref="base.state_A" />
+  <field name="country_county_id" ref="FAE_app.xcountry_county_201" />
+  <field name="code">09</field>
+  <field name="name">Río Segundo</field>
+</record>
+<record id="xcountry_district_20110" model="xcountry.district"> 
+  <field name="country_state_id" ref="base.state_A" />
+  <field name="country_county_id" ref="FAE_app.xcountry_county_201" />
+  <field name="code">10</field>
+  <field name="name">Desamparados</field>
+</record>
+<record id="xcountry_district_20111" model="xcountry.district"> 
+  <field name="country_state_id" ref="base.state_A" />
+  <field name="country_county_id" ref="FAE_app.xcountry_county_201" />
+  <field name="code">11</field>
+  <field name="name">Turrúcares</field>
+</record>
+<record id="xcountry_district_20112" model="xcountry.district"> 
+  <field name="country_state_id" ref="base.state_A" />
+  <field name="country_county_id" ref="FAE_app.xcountry_county_201" />
+  <field name="code">12</field>
+  <field name="name">Tambor</field>
+</record>
+<record id="xcountry_district_20113" model="xcountry.district"> 
+  <field name="country_state_id" ref="base.state_A" />
+  <field name="country_county_id" ref="FAE_app.xcountry_county_201" />
+  <field name="code">13</field>
+  <field name="name">Garita</field>
+</record>
+<record id="xcountry_district_20114" model="xcountry.district"> 
+  <field name="country_state_id" ref="base.state_A" />
+  <field name="country_county_id" ref="FAE_app.xcountry_county_201" />
+  <field name="code">14</field>
+  <field name="name">Sarapiquí</field>
+</record>
+<record id="xcountry_district_20201" model="xcountry.district"> 
+  <field name="country_state_id" ref="base.state_A" />
+  <field name="country_county_id" ref="FAE_app.xcountry_county_202" />
+  <field name="code">01</field>
+  <field name="name">San Ramón</field>
+</record>
+<record id="xcountry_district_20202" model="xcountry.district"> 
+  <field name="country_state_id" ref="base.state_A" />
+  <field name="country_county_id" ref="FAE_app.xcountry_county_202" />
+  <field name="code">02</field>
+  <field name="name">Santiago</field>
+</record>
+<record id="xcountry_district_20203" model="xcountry.district"> 
+  <field name="country_state_id" ref="base.state_A" />
+  <field name="country_county_id" ref="FAE_app.xcountry_county_202" />
+  <field name="code">03</field>
+  <field name="name">San Juan</field>
+</record>
+<record id="xcountry_district_20204" model="xcountry.district"> 
+  <field name="country_state_id" ref="base.state_A" />
+  <field name="country_county_id" ref="FAE_app.xcountry_county_202" />
+  <field name="code">04</field>
+  <field name="name">Piedades Norte</field>
+</record>
+<record id="xcountry_district_20205" model="xcountry.district"> 
+  <field name="country_state_id" ref="base.state_A" />
+  <field name="country_county_id" ref="FAE_app.xcountry_county_202" />
+  <field name="code">05</field>
+  <field name="name">Piedades Sur</field>
+</record>
+<record id="xcountry_district_20206" model="xcountry.district"> 
+  <field name="country_state_id" ref="base.state_A" />
+  <field name="country_county_id" ref="FAE_app.xcountry_county_202" />
+  <field name="code">06</field>
+  <field name="name">San Rafael</field>
+</record>
+<record id="xcountry_district_20207" model="xcountry.district"> 
+  <field name="country_state_id" ref="base.state_A" />
+  <field name="country_county_id" ref="FAE_app.xcountry_county_202" />
+  <field name="code">07</field>
+  <field name="name">San Isidro</field>
+</record>
+<record id="xcountry_district_20208" model="xcountry.district"> 
+  <field name="country_state_id" ref="base.state_A" />
+  <field name="country_county_id" ref="FAE_app.xcountry_county_202" />
+  <field name="code">08</field>
+  <field name="name">Ángeles</field>
+</record>
+<record id="xcountry_district_20209" model="xcountry.district"> 
+  <field name="country_state_id" ref="base.state_A" />
+  <field name="country_county_id" ref="FAE_app.xcountry_county_202" />
+  <field name="code">09</field>
+  <field name="name">Alfaro</field>
+</record>
+<record id="xcountry_district_20210" model="xcountry.district"> 
+  <field name="country_state_id" ref="base.state_A" />
+  <field name="country_county_id" ref="FAE_app.xcountry_county_202" />
+  <field name="code">10</field>
+  <field name="name">Volio</field>
+</record>
+<record id="xcountry_district_20211" model="xcountry.district"> 
+  <field name="country_state_id" ref="base.state_A" />
+  <field name="country_county_id" ref="FAE_app.xcountry_county_202" />
+  <field name="code">11</field>
+  <field name="name">Concepción</field>
+</record>
+<record id="xcountry_district_20212" model="xcountry.district"> 
+  <field name="country_state_id" ref="base.state_A" />
+  <field name="country_county_id" ref="FAE_app.xcountry_county_202" />
+  <field name="code">12</field>
+  <field name="name">Zapotal</field>
+</record>
+<record id="xcountry_district_20213" model="xcountry.district"> 
+  <field name="country_state_id" ref="base.state_A" />
+  <field name="country_county_id" ref="FAE_app.xcountry_county_202" />
+  <field name="code">13</field>
+  <field name="name">Peñas Blancas</field>
+</record>
+<record id="xcountry_district_20301" model="xcountry.district"> 
+  <field name="country_state_id" ref="base.state_A" />
+  <field name="country_county_id" ref="FAE_app.xcountry_county_203" />
+  <field name="code">01</field>
+  <field name="name">Grecia</field>
+</record>
+<record id="xcountry_district_20302" model="xcountry.district"> 
+  <field name="country_state_id" ref="base.state_A" />
+  <field name="country_county_id" ref="FAE_app.xcountry_county_203" />
+  <field name="code">02</field>
+  <field name="name">San Isidro</field>
+</record>
+<record id="xcountry_district_20303" model="xcountry.district"> 
+  <field name="country_state_id" ref="base.state_A" />
+  <field name="country_county_id" ref="FAE_app.xcountry_county_203" />
+  <field name="code">03</field>
+  <field name="name">San José</field>
+</record>
+<record id="xcountry_district_20304" model="xcountry.district"> 
+  <field name="country_state_id" ref="base.state_A" />
+  <field name="country_county_id" ref="FAE_app.xcountry_county_203" />
+  <field name="code">04</field>
+  <field name="name">San Roque</field>
+</record>
+<record id="xcountry_district_20305" model="xcountry.district"> 
+  <field name="country_state_id" ref="base.state_A" />
+  <field name="country_county_id" ref="FAE_app.xcountry_county_203" />
+  <field name="code">05</field>
+  <field name="name">Tacares</field>
+</record>
+<record id="xcountry_district_20306" model="xcountry.district"> 
+  <field name="country_state_id" ref="base.state_A" />
+  <field name="country_county_id" ref="FAE_app.xcountry_county_203" />
+  <field name="code">06</field>
+  <field name="name">Río Cuarto</field>
+</record>
+<record id="xcountry_district_20307" model="xcountry.district"> 
+  <field name="country_state_id" ref="base.state_A" />
+  <field name="country_county_id" ref="FAE_app.xcountry_county_203" />
+  <field name="code">07</field>
+  <field name="name">Puente De Piedra</field>
+</record>
+<record id="xcountry_district_20308" model="xcountry.district"> 
+  <field name="country_state_id" ref="base.state_A" />
+  <field name="country_county_id" ref="FAE_app.xcountry_county_203" />
+  <field name="code">08</field>
+  <field name="name">Bolívar</field>
+</record>
+<record id="xcountry_district_20401" model="xcountry.district"> 
+  <field name="country_state_id" ref="base.state_A" />
+  <field name="country_county_id" ref="FAE_app.xcountry_county_204" />
+  <field name="code">01</field>
+  <field name="name">San Mateo</field>
+</record>
+<record id="xcountry_district_20402" model="xcountry.district"> 
+  <field name="country_state_id" ref="base.state_A" />
+  <field name="country_county_id" ref="FAE_app.xcountry_county_204" />
+  <field name="code">02</field>
+  <field name="name">Desmonte</field>
+</record>
+<record id="xcountry_district_20403" model="xcountry.district"> 
+  <field name="country_state_id" ref="base.state_A" />
+  <field name="country_county_id" ref="FAE_app.xcountry_county_204" />
+  <field name="code">03</field>
+  <field name="name">Jesús María</field>
+</record>
+<record id="xcountry_district_20404" model="xcountry.district"> 
+  <field name="country_state_id" ref="base.state_A" />
+  <field name="country_county_id" ref="FAE_app.xcountry_county_204" />
+  <field name="code">04</field>
+  <field name="name">Labrador</field>
+</record>
+<record id="xcountry_district_20501" model="xcountry.district"> 
+  <field name="country_state_id" ref="base.state_A" />
+  <field name="country_county_id" ref="FAE_app.xcountry_county_205" />
+  <field name="code">01</field>
+  <field name="name">Atenas</field>
+</record>
+<record id="xcountry_district_20502" model="xcountry.district"> 
+  <field name="country_state_id" ref="base.state_A" />
+  <field name="country_county_id" ref="FAE_app.xcountry_county_205" />
+  <field name="code">02</field>
+  <field name="name">Jesús</field>
+</record>
+<record id="xcountry_district_20503" model="xcountry.district"> 
+  <field name="country_state_id" ref="base.state_A" />
+  <field name="country_county_id" ref="FAE_app.xcountry_county_205" />
+  <field name="code">03</field>
+  <field name="name">Mercedes</field>
+</record>
+<record id="xcountry_district_20504" model="xcountry.district"> 
+  <field name="country_state_id" ref="base.state_A" />
+  <field name="country_county_id" ref="FAE_app.xcountry_county_205" />
+  <field name="code">04</field>
+  <field name="name">San Isidro</field>
+</record>
+<record id="xcountry_district_20505" model="xcountry.district"> 
+  <field name="country_state_id" ref="base.state_A" />
+  <field name="country_county_id" ref="FAE_app.xcountry_county_205" />
+  <field name="code">05</field>
+  <field name="name">Concepción</field>
+</record>
+<record id="xcountry_district_20506" model="xcountry.district"> 
+  <field name="country_state_id" ref="base.state_A" />
+  <field name="country_county_id" ref="FAE_app.xcountry_county_205" />
+  <field name="code">06</field>
+  <field name="name">San Jose</field>
+</record>
+<record id="xcountry_district_20507" model="xcountry.district"> 
+  <field name="country_state_id" ref="base.state_A" />
+  <field name="country_county_id" ref="FAE_app.xcountry_county_205" />
+  <field name="code">07</field>
+  <field name="name">Santa Eulalia</field>
+</record>
+<record id="xcountry_district_20508" model="xcountry.district"> 
+  <field name="country_state_id" ref="base.state_A" />
+  <field name="country_county_id" ref="FAE_app.xcountry_county_205" />
+  <field name="code">08</field>
+  <field name="name">Escobal</field>
+</record>
+<record id="xcountry_district_20601" model="xcountry.district"> 
+  <field name="country_state_id" ref="base.state_A" />
+  <field name="country_county_id" ref="FAE_app.xcountry_county_206" />
+  <field name="code">01</field>
+  <field name="name">Naranjo</field>
+</record>
+<record id="xcountry_district_20602" model="xcountry.district"> 
+  <field name="country_state_id" ref="base.state_A" />
+  <field name="country_county_id" ref="FAE_app.xcountry_county_206" />
+  <field name="code">02</field>
+  <field name="name">San Miguel</field>
+</record>
+<record id="xcountry_district_20603" model="xcountry.district"> 
+  <field name="country_state_id" ref="base.state_A" />
+  <field name="country_county_id" ref="FAE_app.xcountry_county_206" />
+  <field name="code">03</field>
+  <field name="name">San José</field>
+</record>
+<record id="xcountry_district_20604" model="xcountry.district"> 
+  <field name="country_state_id" ref="base.state_A" />
+  <field name="country_county_id" ref="FAE_app.xcountry_county_206" />
+  <field name="code">04</field>
+  <field name="name">Cirrí Sur</field>
+</record>
+<record id="xcountry_district_20605" model="xcountry.district"> 
+  <field name="country_state_id" ref="base.state_A" />
+  <field name="country_county_id" ref="FAE_app.xcountry_county_206" />
+  <field name="code">05</field>
+  <field name="name">San Jerónimo</field>
+</record>
+<record id="xcountry_district_20606" model="xcountry.district"> 
+  <field name="country_state_id" ref="base.state_A" />
+  <field name="country_county_id" ref="FAE_app.xcountry_county_206" />
+  <field name="code">06</field>
+  <field name="name">San Juan</field>
+</record>
+<record id="xcountry_district_20607" model="xcountry.district"> 
+  <field name="country_state_id" ref="base.state_A" />
+  <field name="country_county_id" ref="FAE_app.xcountry_county_206" />
+  <field name="code">07</field>
+  <field name="name">El Rosario</field>
+</record>
+<record id="xcountry_district_20608" model="xcountry.district"> 
+  <field name="country_state_id" ref="base.state_A" />
+  <field name="country_county_id" ref="FAE_app.xcountry_county_206" />
+  <field name="code">08</field>
+  <field name="name">Palmitos</field>
+</record>
+<record id="xcountry_district_20701" model="xcountry.district"> 
+  <field name="country_state_id" ref="base.state_A" />
+  <field name="country_county_id" ref="FAE_app.xcountry_county_207" />
+  <field name="code">01</field>
+  <field name="name">Palmares</field>
+</record>
+<record id="xcountry_district_20702" model="xcountry.district"> 
+  <field name="country_state_id" ref="base.state_A" />
+  <field name="country_county_id" ref="FAE_app.xcountry_county_207" />
+  <field name="code">02</field>
+  <field name="name">Zaragoza</field>
+</record>
+<record id="xcountry_district_20703" model="xcountry.district"> 
+  <field name="country_state_id" ref="base.state_A" />
+  <field name="country_county_id" ref="FAE_app.xcountry_county_207" />
+  <field name="code">03</field>
+  <field name="name">Buenos Aires</field>
+</record>
+<record id="xcountry_district_20704" model="xcountry.district"> 
+  <field name="country_state_id" ref="base.state_A" />
+  <field name="country_county_id" ref="FAE_app.xcountry_county_207" />
+  <field name="code">04</field>
+  <field name="name">Santiago</field>
+</record>
+<record id="xcountry_district_20705" model="xcountry.district"> 
+  <field name="country_state_id" ref="base.state_A" />
+  <field name="country_county_id" ref="FAE_app.xcountry_county_207" />
+  <field name="code">05</field>
+  <field name="name">Candelaria</field>
+</record>
+<record id="xcountry_district_20706" model="xcountry.district"> 
+  <field name="country_state_id" ref="base.state_A" />
+  <field name="country_county_id" ref="FAE_app.xcountry_county_207" />
+  <field name="code">06</field>
+  <field name="name">Esquípulas</field>
+</record>
+<record id="xcountry_district_20707" model="xcountry.district"> 
+  <field name="country_state_id" ref="base.state_A" />
+  <field name="country_county_id" ref="FAE_app.xcountry_county_207" />
+  <field name="code">07</field>
+  <field name="name">La Granja</field>
+</record>
+<record id="xcountry_district_20801" model="xcountry.district"> 
+  <field name="country_state_id" ref="base.state_A" />
+  <field name="country_county_id" ref="FAE_app.xcountry_county_208" />
+  <field name="code">01</field>
+  <field name="name">San Pedro</field>
+</record>
+<record id="xcountry_district_20802" model="xcountry.district"> 
+  <field name="country_state_id" ref="base.state_A" />
+  <field name="country_county_id" ref="FAE_app.xcountry_county_208" />
+  <field name="code">02</field>
+  <field name="name">San Juan</field>
+</record>
+<record id="xcountry_district_20803" model="xcountry.district"> 
+  <field name="country_state_id" ref="base.state_A" />
+  <field name="country_county_id" ref="FAE_app.xcountry_county_208" />
+  <field name="code">03</field>
+  <field name="name">San Rafael</field>
+</record>
+<record id="xcountry_district_20804" model="xcountry.district"> 
+  <field name="country_state_id" ref="base.state_A" />
+  <field name="country_county_id" ref="FAE_app.xcountry_county_208" />
+  <field name="code">04</field>
+  <field name="name">Carrillos</field>
+</record>
+<record id="xcountry_district_20805" model="xcountry.district"> 
+  <field name="country_state_id" ref="base.state_A" />
+  <field name="country_county_id" ref="FAE_app.xcountry_county_208" />
+  <field name="code">05</field>
+  <field name="name">Sabana Redonda</field>
+</record>
+<record id="xcountry_district_20901" model="xcountry.district"> 
+  <field name="country_state_id" ref="base.state_A" />
+  <field name="country_county_id" ref="FAE_app.xcountry_county_209" />
+  <field name="code">01</field>
+  <field name="name">Orotina</field>
+</record>
+<record id="xcountry_district_20902" model="xcountry.district"> 
+  <field name="country_state_id" ref="base.state_A" />
+  <field name="country_county_id" ref="FAE_app.xcountry_county_209" />
+  <field name="code">02</field>
+  <field name="name">El Mastate</field>
+</record>
+<record id="xcountry_district_20903" model="xcountry.district"> 
+  <field name="country_state_id" ref="base.state_A" />
+  <field name="country_county_id" ref="FAE_app.xcountry_county_209" />
+  <field name="code">03</field>
+  <field name="name">Hacienda Vieja</field>
+</record>
+<record id="xcountry_district_20904" model="xcountry.district"> 
+  <field name="country_state_id" ref="base.state_A" />
+  <field name="country_county_id" ref="FAE_app.xcountry_county_209" />
+  <field name="code">04</field>
+  <field name="name">Coyolar</field>
+</record>
+<record id="xcountry_district_20905" model="xcountry.district"> 
+  <field name="country_state_id" ref="base.state_A" />
+  <field name="country_county_id" ref="FAE_app.xcountry_county_209" />
+  <field name="code">05</field>
+  <field name="name">La Ceiba</field>
+</record>
+<record id="xcountry_district_21001" model="xcountry.district"> 
+  <field name="country_state_id" ref="base.state_A" />
+  <field name="country_county_id" ref="FAE_app.xcountry_county_210" />
+  <field name="code">01</field>
+  <field name="name">Quesada</field>
+</record>
+<record id="xcountry_district_21002" model="xcountry.district"> 
+  <field name="country_state_id" ref="base.state_A" />
+  <field name="country_county_id" ref="FAE_app.xcountry_county_210" />
+  <field name="code">02</field>
+  <field name="name">Florencia</field>
+</record>
+<record id="xcountry_district_21003" model="xcountry.district"> 
+  <field name="country_state_id" ref="base.state_A" />
+  <field name="country_county_id" ref="FAE_app.xcountry_county_210" />
+  <field name="code">03</field>
+  <field name="name">Buenavista</field>
+</record>
+<record id="xcountry_district_21004" model="xcountry.district"> 
+  <field name="country_state_id" ref="base.state_A" />
+  <field name="country_county_id" ref="FAE_app.xcountry_county_210" />
+  <field name="code">04</field>
+  <field name="name">Aguas Zarcas</field>
+</record>
+<record id="xcountry_district_21005" model="xcountry.district"> 
+  <field name="country_state_id" ref="base.state_A" />
+  <field name="country_county_id" ref="FAE_app.xcountry_county_210" />
+  <field name="code">05</field>
+  <field name="name">Venecia</field>
+</record>
+<record id="xcountry_district_21006" model="xcountry.district"> 
+  <field name="country_state_id" ref="base.state_A" />
+  <field name="country_county_id" ref="FAE_app.xcountry_county_210" />
+  <field name="code">06</field>
+  <field name="name">Pital</field>
+</record>
+<record id="xcountry_district_21007" model="xcountry.district"> 
+  <field name="country_state_id" ref="base.state_A" />
+  <field name="country_county_id" ref="FAE_app.xcountry_county_210" />
+  <field name="code">07</field>
+  <field name="name">La Fortuna</field>
+</record>
+<record id="xcountry_district_21008" model="xcountry.district"> 
+  <field name="country_state_id" ref="base.state_A" />
+  <field name="country_county_id" ref="FAE_app.xcountry_county_210" />
+  <field name="code">08</field>
+  <field name="name">La Tigra</field>
+</record>
+<record id="xcountry_district_21009" model="xcountry.district"> 
+  <field name="country_state_id" ref="base.state_A" />
+  <field name="country_county_id" ref="FAE_app.xcountry_county_210" />
+  <field name="code">09</field>
+  <field name="name">La Palmera</field>
+</record>
+<record id="xcountry_district_21010" model="xcountry.district"> 
+  <field name="country_state_id" ref="base.state_A" />
+  <field name="country_county_id" ref="FAE_app.xcountry_county_210" />
+  <field name="code">10</field>
+  <field name="name">Venado</field>
+</record>
+<record id="xcountry_district_21011" model="xcountry.district"> 
+  <field name="country_state_id" ref="base.state_A" />
+  <field name="country_county_id" ref="FAE_app.xcountry_county_210" />
+  <field name="code">11</field>
+  <field name="name">Cutris</field>
+</record>
+<record id="xcountry_district_21012" model="xcountry.district"> 
+  <field name="country_state_id" ref="base.state_A" />
+  <field name="country_county_id" ref="FAE_app.xcountry_county_210" />
+  <field name="code">12</field>
+  <field name="name">Monterrey</field>
+</record>
+<record id="xcountry_district_21013" model="xcountry.district"> 
+  <field name="country_state_id" ref="base.state_A" />
+  <field name="country_county_id" ref="FAE_app.xcountry_county_210" />
+  <field name="code">13</field>
+  <field name="name">Pocosol</field>
+</record>
+<record id="xcountry_district_21101" model="xcountry.district"> 
+  <field name="country_state_id" ref="base.state_A" />
+  <field name="country_county_id" ref="FAE_app.xcountry_county_211" />
+  <field name="code">01</field>
+  <field name="name">Zarcero</field>
+</record>
+<record id="xcountry_district_21102" model="xcountry.district"> 
+  <field name="country_state_id" ref="base.state_A" />
+  <field name="country_county_id" ref="FAE_app.xcountry_county_211" />
+  <field name="code">02</field>
+  <field name="name">Laguna</field>
+</record>
+<record id="xcountry_district_21104" model="xcountry.district"> 
+  <field name="country_state_id" ref="base.state_A" />
+  <field name="country_county_id" ref="FAE_app.xcountry_county_211" />
+  <field name="code">04</field>
+  <field name="name">Guadalupe</field>
+</record>
+<record id="xcountry_district_21105" model="xcountry.district"> 
+  <field name="country_state_id" ref="base.state_A" />
+  <field name="country_county_id" ref="FAE_app.xcountry_county_211" />
+  <field name="code">05</field>
+  <field name="name">Palmira</field>
+</record>
+<record id="xcountry_district_21106" model="xcountry.district"> 
+  <field name="country_state_id" ref="base.state_A" />
+  <field name="country_county_id" ref="FAE_app.xcountry_county_211" />
+  <field name="code">06</field>
+  <field name="name">Zapote</field>
+</record>
+<record id="xcountry_district_21107" model="xcountry.district"> 
+  <field name="country_state_id" ref="base.state_A" />
+  <field name="country_county_id" ref="FAE_app.xcountry_county_211" />
+  <field name="code">07</field>
+  <field name="name">Brisas</field>
+</record>
+<record id="xcountry_district_21201" model="xcountry.district"> 
+  <field name="country_state_id" ref="base.state_A" />
+  <field name="country_county_id" ref="FAE_app.xcountry_county_212" />
+  <field name="code">01</field>
+  <field name="name">Sarchí Norte</field>
+</record>
+<record id="xcountry_district_21202" model="xcountry.district"> 
+  <field name="country_state_id" ref="base.state_A" />
+  <field name="country_county_id" ref="FAE_app.xcountry_county_212" />
+  <field name="code">02</field>
+  <field name="name">Sarchí Sur</field>
+</record>
+<record id="xcountry_district_21203" model="xcountry.district"> 
+  <field name="country_state_id" ref="base.state_A" />
+  <field name="country_county_id" ref="FAE_app.xcountry_county_212" />
+  <field name="code">03</field>
+  <field name="name">Toro Amarillo</field>
+</record>
+<record id="xcountry_district_21204" model="xcountry.district"> 
+  <field name="country_state_id" ref="base.state_A" />
+  <field name="country_county_id" ref="FAE_app.xcountry_county_212" />
+  <field name="code">04</field>
+  <field name="name">San Pedro</field>
+</record>
+<record id="xcountry_district_21205" model="xcountry.district"> 
+  <field name="country_state_id" ref="base.state_A" />
+  <field name="country_county_id" ref="FAE_app.xcountry_county_212" />
+  <field name="code">05</field>
+  <field name="name">Rodríguez</field>
+</record>
+<record id="xcountry_district_21301" model="xcountry.district"> 
+  <field name="country_state_id" ref="base.state_A" />
+  <field name="country_county_id" ref="FAE_app.xcountry_county_213" />
+  <field name="code">01</field>
+  <field name="name">Upala</field>
+</record>
+<record id="xcountry_district_21302" model="xcountry.district"> 
+  <field name="country_state_id" ref="base.state_A" />
+  <field name="country_county_id" ref="FAE_app.xcountry_county_213" />
+  <field name="code">02</field>
+  <field name="name">Aguas Claras</field>
+</record>
+<record id="xcountry_district_21303" model="xcountry.district"> 
+  <field name="country_state_id" ref="base.state_A" />
+  <field name="country_county_id" ref="FAE_app.xcountry_county_213" />
+  <field name="code">03</field>
+  <field name="name">San José O Pizote</field>
+</record>
+<record id="xcountry_district_21304" model="xcountry.district"> 
+  <field name="country_state_id" ref="base.state_A" />
+  <field name="country_county_id" ref="FAE_app.xcountry_county_213" />
+  <field name="code">04</field>
+  <field name="name">Bijagua</field>
+</record>
+<record id="xcountry_district_21305" model="xcountry.district"> 
+  <field name="country_state_id" ref="base.state_A" />
+  <field name="country_county_id" ref="FAE_app.xcountry_county_213" />
+  <field name="code">05</field>
+  <field name="name">Delicias</field>
+</record>
+<record id="xcountry_district_21306" model="xcountry.district"> 
+  <field name="country_state_id" ref="base.state_A" />
+  <field name="country_county_id" ref="FAE_app.xcountry_county_213" />
+  <field name="code">06</field>
+  <field name="name">Dos Ríos</field>
+</record>
+<record id="xcountry_district_21307" model="xcountry.district"> 
+  <field name="country_state_id" ref="base.state_A" />
+  <field name="country_county_id" ref="FAE_app.xcountry_county_213" />
+  <field name="code">07</field>
+  <field name="name">Yolillal</field>
+</record>
+<record id="xcountry_district_21308" model="xcountry.district"> 
+  <field name="country_state_id" ref="base.state_A" />
+  <field name="country_county_id" ref="FAE_app.xcountry_county_213" />
+  <field name="code">08</field>
+  <field name="name">Canalete</field>
+</record>
+<record id="xcountry_district_21401" model="xcountry.district"> 
+  <field name="country_state_id" ref="base.state_A" />
+  <field name="country_county_id" ref="FAE_app.xcountry_county_214" />
+  <field name="code">01</field>
+  <field name="name">Los Chiles</field>
+</record>
+<record id="xcountry_district_21402" model="xcountry.district"> 
+  <field name="country_state_id" ref="base.state_A" />
+  <field name="country_county_id" ref="FAE_app.xcountry_county_214" />
+  <field name="code">02</field>
+  <field name="name">Caño Negro</field>
+</record>
+<record id="xcountry_district_21403" model="xcountry.district"> 
+  <field name="country_state_id" ref="base.state_A" />
+  <field name="country_county_id" ref="FAE_app.xcountry_county_214" />
+  <field name="code">03</field>
+  <field name="name">El Amparo</field>
+</record>
+<record id="xcountry_district_21404" model="xcountry.district"> 
+  <field name="country_state_id" ref="base.state_A" />
+  <field name="country_county_id" ref="FAE_app.xcountry_county_214" />
+  <field name="code">04</field>
+  <field name="name">San Jorge</field>
+</record>
+<record id="xcountry_district_21502" model="xcountry.district"> 
+  <field name="country_state_id" ref="base.state_A" />
+  <field name="country_county_id" ref="FAE_app.xcountry_county_215" />
+  <field name="code">02</field>
+  <field name="name">Buenavista</field>
+</record>
+<record id="xcountry_district_21503" model="xcountry.district"> 
+  <field name="country_state_id" ref="base.state_A" />
+  <field name="country_county_id" ref="FAE_app.xcountry_county_215" />
+  <field name="code">03</field>
+  <field name="name">Cote</field>
+</record>
+<record id="xcountry_district_21504" model="xcountry.district"> 
+  <field name="country_state_id" ref="base.state_A" />
+  <field name="country_county_id" ref="FAE_app.xcountry_county_215" />
+  <field name="code">04</field>
+  <field name="name">Katira</field>
+</record>
+<record id="xcountry_district_30101" model="xcountry.district"> 
+  <field name="country_state_id" ref="base.state_C" />
+  <field name="country_county_id" ref="FAE_app.xcountry_county_301" />
+  <field name="code">01</field>
+  <field name="name">Oriental</field>
+</record>
+<record id="xcountry_district_30102" model="xcountry.district"> 
+  <field name="country_state_id" ref="base.state_C" />
+  <field name="country_county_id" ref="FAE_app.xcountry_county_301" />
+  <field name="code">02</field>
+  <field name="name">Occidental</field>
+</record>
+<record id="xcountry_district_30103" model="xcountry.district"> 
+  <field name="country_state_id" ref="base.state_C" />
+  <field name="country_county_id" ref="FAE_app.xcountry_county_301" />
+  <field name="code">03</field>
+  <field name="name">Carmen</field>
+</record>
+<record id="xcountry_district_30104" model="xcountry.district"> 
+  <field name="country_state_id" ref="base.state_C" />
+  <field name="country_county_id" ref="FAE_app.xcountry_county_301" />
+  <field name="code">04</field>
+  <field name="name">San Nicolás</field>
+</record>
+<record id="xcountry_district_30105" model="xcountry.district"> 
+  <field name="country_state_id" ref="base.state_C" />
+  <field name="country_county_id" ref="FAE_app.xcountry_county_301" />
+  <field name="code">05</field>
+  <field name="name">Aguacaliente O San Francisco</field>
+</record>
+<record id="xcountry_district_30106" model="xcountry.district"> 
+  <field name="country_state_id" ref="base.state_C" />
+  <field name="country_county_id" ref="FAE_app.xcountry_county_301" />
+  <field name="code">06</field>
+  <field name="name">Guadalupe O Arenilla</field>
+</record>
+<record id="xcountry_district_30107" model="xcountry.district"> 
+  <field name="country_state_id" ref="base.state_C" />
+  <field name="country_county_id" ref="FAE_app.xcountry_county_301" />
+  <field name="code">07</field>
+  <field name="name">Corralillo</field>
+</record>
+<record id="xcountry_district_30108" model="xcountry.district"> 
+  <field name="country_state_id" ref="base.state_C" />
+  <field name="country_county_id" ref="FAE_app.xcountry_county_301" />
+  <field name="code">08</field>
+  <field name="name">Tierra Blanca</field>
+</record>
+<record id="xcountry_district_30109" model="xcountry.district"> 
+  <field name="country_state_id" ref="base.state_C" />
+  <field name="country_county_id" ref="FAE_app.xcountry_county_301" />
+  <field name="code">09</field>
+  <field name="name">Dulce Nombre</field>
+</record>
+<record id="xcountry_district_30110" model="xcountry.district"> 
+  <field name="country_state_id" ref="base.state_C" />
+  <field name="country_county_id" ref="FAE_app.xcountry_county_301" />
+  <field name="code">10</field>
+  <field name="name">Llano Grande</field>
+</record>
+<record id="xcountry_district_30111" model="xcountry.district"> 
+  <field name="country_state_id" ref="base.state_C" />
+  <field name="country_county_id" ref="FAE_app.xcountry_county_301" />
+  <field name="code">11</field>
+  <field name="name">Quebradilla</field>
+</record>
+<record id="xcountry_district_30201" model="xcountry.district"> 
+  <field name="country_state_id" ref="base.state_C" />
+  <field name="country_county_id" ref="FAE_app.xcountry_county_302" />
+  <field name="code">01</field>
+  <field name="name">Paraíso</field>
+</record>
+<record id="xcountry_district_30202" model="xcountry.district"> 
+  <field name="country_state_id" ref="base.state_C" />
+  <field name="country_county_id" ref="FAE_app.xcountry_county_302" />
+  <field name="code">02</field>
+  <field name="name">Santiago</field>
+</record>
+<record id="xcountry_district_30203" model="xcountry.district"> 
+  <field name="country_state_id" ref="base.state_C" />
+  <field name="country_county_id" ref="FAE_app.xcountry_county_302" />
+  <field name="code">03</field>
+  <field name="name">Orosi</field>
+</record>
+<record id="xcountry_district_30204" model="xcountry.district"> 
+  <field name="country_state_id" ref="base.state_C" />
+  <field name="country_county_id" ref="FAE_app.xcountry_county_302" />
+  <field name="code">04</field>
+  <field name="name">Cachí</field>
+</record>
+<record id="xcountry_district_30205" model="xcountry.district"> 
+  <field name="country_state_id" ref="base.state_C" />
+  <field name="country_county_id" ref="FAE_app.xcountry_county_302" />
+  <field name="code">05</field>
+  <field name="name">Llanos De Santa Lucía</field>
+</record>
+<record id="xcountry_district_30301" model="xcountry.district"> 
+  <field name="country_state_id" ref="base.state_C" />
+  <field name="country_county_id" ref="FAE_app.xcountry_county_303" />
+  <field name="code">01</field>
+  <field name="name">Tres Ríos</field>
+</record>
+<record id="xcountry_district_30302" model="xcountry.district"> 
+  <field name="country_state_id" ref="base.state_C" />
+  <field name="country_county_id" ref="FAE_app.xcountry_county_303" />
+  <field name="code">02</field>
+  <field name="name">San Diego</field>
+</record>
+<record id="xcountry_district_30303" model="xcountry.district"> 
+  <field name="country_state_id" ref="base.state_C" />
+  <field name="country_county_id" ref="FAE_app.xcountry_county_303" />
+  <field name="code">03</field>
+  <field name="name">San Juan</field>
+</record>
+<record id="xcountry_district_30304" model="xcountry.district"> 
+  <field name="country_state_id" ref="base.state_C" />
+  <field name="country_county_id" ref="FAE_app.xcountry_county_303" />
+  <field name="code">04</field>
+  <field name="name">San Rafael</field>
+</record>
+<record id="xcountry_district_30305" model="xcountry.district"> 
+  <field name="country_state_id" ref="base.state_C" />
+  <field name="country_county_id" ref="FAE_app.xcountry_county_303" />
+  <field name="code">05</field>
+  <field name="name">Concepción</field>
+</record>
+<record id="xcountry_district_30306" model="xcountry.district"> 
+  <field name="country_state_id" ref="base.state_C" />
+  <field name="country_county_id" ref="FAE_app.xcountry_county_303" />
+  <field name="code">06</field>
+  <field name="name">Dulce Nombre</field>
+</record>
+<record id="xcountry_district_30307" model="xcountry.district"> 
+  <field name="country_state_id" ref="base.state_C" />
+  <field name="country_county_id" ref="FAE_app.xcountry_county_303" />
+  <field name="code">07</field>
+  <field name="name">San Ramón</field>
+</record>
+<record id="xcountry_district_30308" model="xcountry.district"> 
+  <field name="country_state_id" ref="base.state_C" />
+  <field name="country_county_id" ref="FAE_app.xcountry_county_303" />
+  <field name="code">08</field>
+  <field name="name">Río Azul</field>
+</record>
+<record id="xcountry_district_30401" model="xcountry.district"> 
+  <field name="country_state_id" ref="base.state_C" />
+  <field name="country_county_id" ref="FAE_app.xcountry_county_304" />
+  <field name="code">01</field>
+  <field name="name">Juan Viñas</field>
+</record>
+<record id="xcountry_district_30402" model="xcountry.district"> 
+  <field name="country_state_id" ref="base.state_C" />
+  <field name="country_county_id" ref="FAE_app.xcountry_county_304" />
+  <field name="code">02</field>
+  <field name="name">Tucurrique</field>
+</record>
+<record id="xcountry_district_30403" model="xcountry.district"> 
+  <field name="country_state_id" ref="base.state_C" />
+  <field name="country_county_id" ref="FAE_app.xcountry_county_304" />
+  <field name="code">03</field>
+  <field name="name">Pejibaye</field>
+</record>
+<record id="xcountry_district_30501" model="xcountry.district"> 
+  <field name="country_state_id" ref="base.state_C" />
+  <field name="country_county_id" ref="FAE_app.xcountry_county_305" />
+  <field name="code">01</field>
+  <field name="name">Turrialba</field>
+</record>
+<record id="xcountry_district_30502" model="xcountry.district"> 
+  <field name="country_state_id" ref="base.state_C" />
+  <field name="country_county_id" ref="FAE_app.xcountry_county_305" />
+  <field name="code">02</field>
+  <field name="name">La Suiza</field>
+</record>
+<record id="xcountry_district_30503" model="xcountry.district"> 
+  <field name="country_state_id" ref="base.state_C" />
+  <field name="country_county_id" ref="FAE_app.xcountry_county_305" />
+  <field name="code">03</field>
+  <field name="name">Peralta</field>
+</record>
+<record id="xcountry_district_30504" model="xcountry.district"> 
+  <field name="country_state_id" ref="base.state_C" />
+  <field name="country_county_id" ref="FAE_app.xcountry_county_305" />
+  <field name="code">04</field>
+  <field name="name">Santa Cruz</field>
+</record>
+<record id="xcountry_district_30505" model="xcountry.district"> 
+  <field name="country_state_id" ref="base.state_C" />
+  <field name="country_county_id" ref="FAE_app.xcountry_county_305" />
+  <field name="code">05</field>
+  <field name="name">Santa Teresita</field>
+</record>
+<record id="xcountry_district_30506" model="xcountry.district"> 
+  <field name="country_state_id" ref="base.state_C" />
+  <field name="country_county_id" ref="FAE_app.xcountry_county_305" />
+  <field name="code">06</field>
+  <field name="name">Pavones</field>
+</record>
+<record id="xcountry_district_30507" model="xcountry.district"> 
+  <field name="country_state_id" ref="base.state_C" />
+  <field name="country_county_id" ref="FAE_app.xcountry_county_305" />
+  <field name="code">07</field>
+  <field name="name">Tuis</field>
+</record>
+<record id="xcountry_district_30508" model="xcountry.district"> 
+  <field name="country_state_id" ref="base.state_C" />
+  <field name="country_county_id" ref="FAE_app.xcountry_county_305" />
+  <field name="code">08</field>
+  <field name="name">Tayutic</field>
+</record>
+<record id="xcountry_district_30509" model="xcountry.district"> 
+  <field name="country_state_id" ref="base.state_C" />
+  <field name="country_county_id" ref="FAE_app.xcountry_county_305" />
+  <field name="code">09</field>
+  <field name="name">Santa Rosa</field>
+</record>
+<record id="xcountry_district_30510" model="xcountry.district"> 
+  <field name="country_state_id" ref="base.state_C" />
+  <field name="country_county_id" ref="FAE_app.xcountry_county_305" />
+  <field name="code">10</field>
+  <field name="name">Tres Equis</field>
+</record>
+<record id="xcountry_district_30511" model="xcountry.district"> 
+  <field name="country_state_id" ref="base.state_C" />
+  <field name="country_county_id" ref="FAE_app.xcountry_county_305" />
+  <field name="code">11</field>
+  <field name="name">La Isabel</field>
+</record>
+<record id="xcountry_district_30512" model="xcountry.district"> 
+  <field name="country_state_id" ref="base.state_C" />
+  <field name="country_county_id" ref="FAE_app.xcountry_county_305" />
+  <field name="code">12</field>
+  <field name="name">Chirripó</field>
+</record>
+<record id="xcountry_district_30601" model="xcountry.district"> 
+  <field name="country_state_id" ref="base.state_C" />
+  <field name="country_county_id" ref="FAE_app.xcountry_county_306" />
+  <field name="code">01</field>
+  <field name="name">Pacayas</field>
+</record>
+<record id="xcountry_district_30602" model="xcountry.district"> 
+  <field name="country_state_id" ref="base.state_C" />
+  <field name="country_county_id" ref="FAE_app.xcountry_county_306" />
+  <field name="code">02</field>
+  <field name="name">Cervantes</field>
+</record>
+<record id="xcountry_district_30603" model="xcountry.district"> 
+  <field name="country_state_id" ref="base.state_C" />
+  <field name="country_county_id" ref="FAE_app.xcountry_county_306" />
+  <field name="code">03</field>
+  <field name="name">Capellades</field>
+</record>
+<record id="xcountry_district_30701" model="xcountry.district"> 
+  <field name="country_state_id" ref="base.state_C" />
+  <field name="country_county_id" ref="FAE_app.xcountry_county_307" />
+  <field name="code">01</field>
+  <field name="name">San Rafael</field>
+</record>
+<record id="xcountry_district_30702" model="xcountry.district"> 
+  <field name="country_state_id" ref="base.state_C" />
+  <field name="country_county_id" ref="FAE_app.xcountry_county_307" />
+  <field name="code">02</field>
+  <field name="name">Cot</field>
+</record>
+<record id="xcountry_district_30703" model="xcountry.district"> 
+  <field name="country_state_id" ref="base.state_C" />
+  <field name="country_county_id" ref="FAE_app.xcountry_county_307" />
+  <field name="code">03</field>
+  <field name="name">Potrero Cerrado</field>
+</record>
+<record id="xcountry_district_30704" model="xcountry.district"> 
+  <field name="country_state_id" ref="base.state_C" />
+  <field name="country_county_id" ref="FAE_app.xcountry_county_307" />
+  <field name="code">04</field>
+  <field name="name">Cipreses</field>
+</record>
+<record id="xcountry_district_30705" model="xcountry.district"> 
+  <field name="country_state_id" ref="base.state_C" />
+  <field name="country_county_id" ref="FAE_app.xcountry_county_307" />
+  <field name="code">05</field>
+  <field name="name">Santa Rosa</field>
+</record>
+<record id="xcountry_district_30801" model="xcountry.district"> 
+  <field name="country_state_id" ref="base.state_C" />
+  <field name="country_county_id" ref="FAE_app.xcountry_county_308" />
+  <field name="code">01</field>
+  <field name="name">El Tejar</field>
+</record>
+<record id="xcountry_district_30802" model="xcountry.district"> 
+  <field name="country_state_id" ref="base.state_C" />
+  <field name="country_county_id" ref="FAE_app.xcountry_county_308" />
+  <field name="code">02</field>
+  <field name="name">San Isidro</field>
+</record>
+<record id="xcountry_district_30803" model="xcountry.district"> 
+  <field name="country_state_id" ref="base.state_C" />
+  <field name="country_county_id" ref="FAE_app.xcountry_county_308" />
+  <field name="code">03</field>
+  <field name="name">Tobosi</field>
+</record>
+<record id="xcountry_district_30804" model="xcountry.district"> 
+  <field name="country_state_id" ref="base.state_C" />
+  <field name="country_county_id" ref="FAE_app.xcountry_county_308" />
+  <field name="code">04</field>
+  <field name="name">Patio De Agua</field>
+</record>
+<record id="xcountry_district_40101" model="xcountry.district"> 
+  <field name="country_state_id" ref="base.state_H" />
+  <field name="country_county_id" ref="FAE_app.xcountry_county_401" />
+  <field name="code">01</field>
+  <field name="name">Heredia</field>
+</record>
+<record id="xcountry_district_40102" model="xcountry.district"> 
+  <field name="country_state_id" ref="base.state_H" />
+  <field name="country_county_id" ref="FAE_app.xcountry_county_401" />
+  <field name="code">02</field>
+  <field name="name">Mercedes</field>
+</record>
+<record id="xcountry_district_40103" model="xcountry.district"> 
+  <field name="country_state_id" ref="base.state_H" />
+  <field name="country_county_id" ref="FAE_app.xcountry_county_401" />
+  <field name="code">03</field>
+  <field name="name">San Francisco</field>
+</record>
+<record id="xcountry_district_40104" model="xcountry.district"> 
+  <field name="country_state_id" ref="base.state_H" />
+  <field name="country_county_id" ref="FAE_app.xcountry_county_401" />
+  <field name="code">04</field>
+  <field name="name">Ulloa</field>
+</record>
+<record id="xcountry_district_40105" model="xcountry.district"> 
+  <field name="country_state_id" ref="base.state_H" />
+  <field name="country_county_id" ref="FAE_app.xcountry_county_401" />
+  <field name="code">05</field>
+  <field name="name">Varablanca</field>
+</record>
+<record id="xcountry_district_40201" model="xcountry.district"> 
+  <field name="country_state_id" ref="base.state_H" />
+  <field name="country_county_id" ref="FAE_app.xcountry_county_402" />
+  <field name="code">01</field>
+  <field name="name">Barva</field>
+</record>
+<record id="xcountry_district_40202" model="xcountry.district"> 
+  <field name="country_state_id" ref="base.state_H" />
+  <field name="country_county_id" ref="FAE_app.xcountry_county_402" />
+  <field name="code">02</field>
+  <field name="name">San Pedro</field>
+</record>
+<record id="xcountry_district_40203" model="xcountry.district"> 
+  <field name="country_state_id" ref="base.state_H" />
+  <field name="country_county_id" ref="FAE_app.xcountry_county_402" />
+  <field name="code">03</field>
+  <field name="name">San Pablo</field>
+</record>
+<record id="xcountry_district_40204" model="xcountry.district"> 
+  <field name="country_state_id" ref="base.state_H" />
+  <field name="country_county_id" ref="FAE_app.xcountry_county_402" />
+  <field name="code">04</field>
+  <field name="name">San Roque</field>
+</record>
+<record id="xcountry_district_40205" model="xcountry.district"> 
+  <field name="country_state_id" ref="base.state_H" />
+  <field name="country_county_id" ref="FAE_app.xcountry_county_402" />
+  <field name="code">05</field>
+  <field name="name">Santa Lucía</field>
+</record>
+<record id="xcountry_district_40206" model="xcountry.district"> 
+  <field name="country_state_id" ref="base.state_H" />
+  <field name="country_county_id" ref="FAE_app.xcountry_county_402" />
+  <field name="code">06</field>
+  <field name="name">San José De La Montaña</field>
+</record>
+<record id="xcountry_district_40302" model="xcountry.district"> 
+  <field name="country_state_id" ref="base.state_H" />
+  <field name="country_county_id" ref="FAE_app.xcountry_county_403" />
+  <field name="code">02</field>
+  <field name="name">San Vicente</field>
+</record>
+<record id="xcountry_district_40303" model="xcountry.district"> 
+  <field name="country_state_id" ref="base.state_H" />
+  <field name="country_county_id" ref="FAE_app.xcountry_county_403" />
+  <field name="code">03</field>
+  <field name="name">San Miguel</field>
+</record>
+<record id="xcountry_district_40304" model="xcountry.district"> 
+  <field name="country_state_id" ref="base.state_H" />
+  <field name="country_county_id" ref="FAE_app.xcountry_county_403" />
+  <field name="code">04</field>
+  <field name="name">Paracito</field>
+</record>
+<record id="xcountry_district_40305" model="xcountry.district"> 
+  <field name="country_state_id" ref="base.state_H" />
+  <field name="country_county_id" ref="FAE_app.xcountry_county_403" />
+  <field name="code">05</field>
+  <field name="name">Santo Tomás</field>
+</record>
+<record id="xcountry_district_40306" model="xcountry.district"> 
+  <field name="country_state_id" ref="base.state_H" />
+  <field name="country_county_id" ref="FAE_app.xcountry_county_403" />
+  <field name="code">06</field>
+  <field name="name">Santa Rosa</field>
+</record>
+<record id="xcountry_district_40307" model="xcountry.district"> 
+  <field name="country_state_id" ref="base.state_H" />
+  <field name="country_county_id" ref="FAE_app.xcountry_county_403" />
+  <field name="code">07</field>
+  <field name="name">Tures</field>
+</record>
+<record id="xcountry_district_40308" model="xcountry.district"> 
+  <field name="country_state_id" ref="base.state_H" />
+  <field name="country_county_id" ref="FAE_app.xcountry_county_403" />
+  <field name="code">08</field>
+  <field name="name">Pará</field>
+</record>
+<record id="xcountry_district_40401" model="xcountry.district"> 
+  <field name="country_state_id" ref="base.state_H" />
+  <field name="country_county_id" ref="FAE_app.xcountry_county_404" />
+  <field name="code">01</field>
+  <field name="name">Santa Bárbara</field>
+</record>
+<record id="xcountry_district_40402" model="xcountry.district"> 
+  <field name="country_state_id" ref="base.state_H" />
+  <field name="country_county_id" ref="FAE_app.xcountry_county_404" />
+  <field name="code">02</field>
+  <field name="name">San Pedro</field>
+</record>
+<record id="xcountry_district_40403" model="xcountry.district"> 
+  <field name="country_state_id" ref="base.state_H" />
+  <field name="country_county_id" ref="FAE_app.xcountry_county_404" />
+  <field name="code">03</field>
+  <field name="name">San Juan</field>
+</record>
+<record id="xcountry_district_40404" model="xcountry.district"> 
+  <field name="country_state_id" ref="base.state_H" />
+  <field name="country_county_id" ref="FAE_app.xcountry_county_404" />
+  <field name="code">04</field>
+  <field name="name">Jesús</field>
+</record>
+<record id="xcountry_district_40405" model="xcountry.district"> 
+  <field name="country_state_id" ref="base.state_H" />
+  <field name="country_county_id" ref="FAE_app.xcountry_county_404" />
+  <field name="code">05</field>
+  <field name="name">Santo Domingo</field>
+</record>
+<record id="xcountry_district_40406" model="xcountry.district"> 
+  <field name="country_state_id" ref="base.state_H" />
+  <field name="country_county_id" ref="FAE_app.xcountry_county_404" />
+  <field name="code">06</field>
+  <field name="name">Purabá</field>
+</record>
+<record id="xcountry_district_40501" model="xcountry.district"> 
+  <field name="country_state_id" ref="base.state_H" />
+  <field name="country_county_id" ref="FAE_app.xcountry_county_405" />
+  <field name="code">01</field>
+  <field name="name">San Rafael</field>
+</record>
+<record id="xcountry_district_40502" model="xcountry.district"> 
+  <field name="country_state_id" ref="base.state_H" />
+  <field name="country_county_id" ref="FAE_app.xcountry_county_405" />
+  <field name="code">02</field>
+  <field name="name">San Josecito</field>
+</record>
+<record id="xcountry_district_40503" model="xcountry.district"> 
+  <field name="country_state_id" ref="base.state_H" />
+  <field name="country_county_id" ref="FAE_app.xcountry_county_405" />
+  <field name="code">03</field>
+  <field name="name">Santiago</field>
+</record>
+<record id="xcountry_district_40504" model="xcountry.district"> 
+  <field name="country_state_id" ref="base.state_H" />
+  <field name="country_county_id" ref="FAE_app.xcountry_county_405" />
+  <field name="code">04</field>
+  <field name="name">Ángeles</field>
+</record>
+<record id="xcountry_district_40505" model="xcountry.district"> 
+  <field name="country_state_id" ref="base.state_H" />
+  <field name="country_county_id" ref="FAE_app.xcountry_county_405" />
+  <field name="code">05</field>
+  <field name="name">Concepción</field>
+</record>
+<record id="xcountry_district_40601" model="xcountry.district"> 
+  <field name="country_state_id" ref="base.state_H" />
+  <field name="country_county_id" ref="FAE_app.xcountry_county_406" />
+  <field name="code">01</field>
+  <field name="name">San Isidro</field>
+</record>
+<record id="xcountry_district_40602" model="xcountry.district"> 
+  <field name="country_state_id" ref="base.state_H" />
+  <field name="country_county_id" ref="FAE_app.xcountry_county_406" />
+  <field name="code">02</field>
+  <field name="name">San José</field>
+</record>
+<record id="xcountry_district_40603" model="xcountry.district"> 
+  <field name="country_state_id" ref="base.state_H" />
+  <field name="country_county_id" ref="FAE_app.xcountry_county_406" />
+  <field name="code">03</field>
+  <field name="name">Concepción</field>
+</record>
+<record id="xcountry_district_40604" model="xcountry.district"> 
+  <field name="country_state_id" ref="base.state_H" />
+  <field name="country_county_id" ref="FAE_app.xcountry_county_406" />
+  <field name="code">04</field>
+  <field name="name">San Francisco</field>
+</record>
+<record id="xcountry_district_40701" model="xcountry.district"> 
+  <field name="country_state_id" ref="base.state_H" />
+  <field name="country_county_id" ref="FAE_app.xcountry_county_407" />
+  <field name="code">01</field>
+  <field name="name">San Antonio</field>
+</record>
+<record id="xcountry_district_40702" model="xcountry.district"> 
+  <field name="country_state_id" ref="base.state_H" />
+  <field name="country_county_id" ref="FAE_app.xcountry_county_407" />
+  <field name="code">02</field>
+  <field name="name">La Ribera</field>
+</record>
+<record id="xcountry_district_40703" model="xcountry.district"> 
+  <field name="country_state_id" ref="base.state_H" />
+  <field name="country_county_id" ref="FAE_app.xcountry_county_407" />
+  <field name="code">03</field>
+  <field name="name">La Asunción</field>
+</record>
+<record id="xcountry_district_40801" model="xcountry.district"> 
+  <field name="country_state_id" ref="base.state_H" />
+  <field name="country_county_id" ref="FAE_app.xcountry_county_408" />
+  <field name="code">01</field>
+  <field name="name">San Joaquín</field>
+</record>
+<record id="xcountry_district_40802" model="xcountry.district"> 
+  <field name="country_state_id" ref="base.state_H" />
+  <field name="country_county_id" ref="FAE_app.xcountry_county_408" />
+  <field name="code">02</field>
+  <field name="name">Barrantes</field>
+</record>
+<record id="xcountry_district_40803" model="xcountry.district"> 
+  <field name="country_state_id" ref="base.state_H" />
+  <field name="country_county_id" ref="FAE_app.xcountry_county_408" />
+  <field name="code">03</field>
+  <field name="name">Llorente</field>
+</record>
+<record id="xcountry_district_40901" model="xcountry.district"> 
+  <field name="country_state_id" ref="base.state_H" />
+  <field name="country_county_id" ref="FAE_app.xcountry_county_409" />
+  <field name="code">01</field>
+  <field name="name">San Pablo</field>
+</record>
+<record id="xcountry_district_41002" model="xcountry.district"> 
+  <field name="country_state_id" ref="base.state_H" />
+  <field name="country_county_id" ref="FAE_app.xcountry_county_410" />
+  <field name="code">02</field>
+  <field name="name">La Virgen</field>
+</record>
+<record id="xcountry_district_41003" model="xcountry.district"> 
+  <field name="country_state_id" ref="base.state_H" />
+  <field name="country_county_id" ref="FAE_app.xcountry_county_410" />
+  <field name="code">03</field>
+  <field name="name">Las Horquetas</field>
+</record>
+<record id="xcountry_district_41004" model="xcountry.district"> 
+  <field name="country_state_id" ref="base.state_H" />
+  <field name="country_county_id" ref="FAE_app.xcountry_county_410" />
+  <field name="code">04</field>
+  <field name="name">Llanuras Del Gaspar</field>
+</record>
+<record id="xcountry_district_41005" model="xcountry.district"> 
+  <field name="country_state_id" ref="base.state_H" />
+  <field name="country_county_id" ref="FAE_app.xcountry_county_410" />
+  <field name="code">05</field>
+  <field name="name">Cureña</field>
+</record>
+<record id="xcountry_district_50101" model="xcountry.district"> 
+  <field name="country_state_id" ref="base.state_G" />
+  <field name="country_county_id" ref="FAE_app.xcountry_county_501" />
+  <field name="code">01</field>
+  <field name="name">Liberia</field>
+</record>
+<record id="xcountry_district_50102" model="xcountry.district"> 
+  <field name="country_state_id" ref="base.state_G" />
+  <field name="country_county_id" ref="FAE_app.xcountry_county_501" />
+  <field name="code">02</field>
+  <field name="name">Cañas Dulces</field>
+</record>
+<record id="xcountry_district_50103" model="xcountry.district"> 
+  <field name="country_state_id" ref="base.state_G" />
+  <field name="country_county_id" ref="FAE_app.xcountry_county_501" />
+  <field name="code">03</field>
+  <field name="name">Mayorga</field>
+</record>
+<record id="xcountry_district_50104" model="xcountry.district"> 
+  <field name="country_state_id" ref="base.state_G" />
+  <field name="country_county_id" ref="FAE_app.xcountry_county_501" />
+  <field name="code">04</field>
+  <field name="name">Nacascolo</field>
+</record>
+<record id="xcountry_district_50105" model="xcountry.district"> 
+  <field name="country_state_id" ref="base.state_G" />
+  <field name="country_county_id" ref="FAE_app.xcountry_county_501" />
+  <field name="code">05</field>
+  <field name="name">Curubandé</field>
+</record>
+<record id="xcountry_district_50201" model="xcountry.district"> 
+  <field name="country_state_id" ref="base.state_G" />
+  <field name="country_county_id" ref="FAE_app.xcountry_county_502" />
+  <field name="code">01</field>
+  <field name="name">Nicoya</field>
+</record>
+<record id="xcountry_district_50202" model="xcountry.district"> 
+  <field name="country_state_id" ref="base.state_G" />
+  <field name="country_county_id" ref="FAE_app.xcountry_county_502" />
+  <field name="code">02</field>
+  <field name="name">Mansión</field>
+</record>
+<record id="xcountry_district_50203" model="xcountry.district"> 
+  <field name="country_state_id" ref="base.state_G" />
+  <field name="country_county_id" ref="FAE_app.xcountry_county_502" />
+  <field name="code">03</field>
+  <field name="name">San Antonio</field>
+</record>
+<record id="xcountry_district_50204" model="xcountry.district"> 
+  <field name="country_state_id" ref="base.state_G" />
+  <field name="country_county_id" ref="FAE_app.xcountry_county_502" />
+  <field name="code">04</field>
+  <field name="name">Quebrada Honda</field>
+</record>
+<record id="xcountry_district_50205" model="xcountry.district"> 
+  <field name="country_state_id" ref="base.state_G" />
+  <field name="country_county_id" ref="FAE_app.xcountry_county_502" />
+  <field name="code">05</field>
+  <field name="name">Sámara</field>
+</record>
+<record id="xcountry_district_50206" model="xcountry.district"> 
+  <field name="country_state_id" ref="base.state_G" />
+  <field name="country_county_id" ref="FAE_app.xcountry_county_502" />
+  <field name="code">06</field>
+  <field name="name">Nosara</field>
+</record>
+<record id="xcountry_district_50207" model="xcountry.district"> 
+  <field name="country_state_id" ref="base.state_G" />
+  <field name="country_county_id" ref="FAE_app.xcountry_county_502" />
+  <field name="code">07</field>
+  <field name="name">Belén De Nosarita</field>
+</record>
+<record id="xcountry_district_50301" model="xcountry.district"> 
+  <field name="country_state_id" ref="base.state_G" />
+  <field name="country_county_id" ref="FAE_app.xcountry_county_503" />
+  <field name="code">01</field>
+  <field name="name">Santa Cruz</field>
+</record>
+<record id="xcountry_district_50302" model="xcountry.district"> 
+  <field name="country_state_id" ref="base.state_G" />
+  <field name="country_county_id" ref="FAE_app.xcountry_county_503" />
+  <field name="code">02</field>
+  <field name="name">Bolsón</field>
+</record>
+<record id="xcountry_district_50303" model="xcountry.district"> 
+  <field name="country_state_id" ref="base.state_G" />
+  <field name="country_county_id" ref="FAE_app.xcountry_county_503" />
+  <field name="code">03</field>
+  <field name="name">Veintisiete De Abril</field>
+</record>
+<record id="xcountry_district_50304" model="xcountry.district"> 
+  <field name="country_state_id" ref="base.state_G" />
+  <field name="country_county_id" ref="FAE_app.xcountry_county_503" />
+  <field name="code">04</field>
+  <field name="name">Tempate</field>
+</record>
+<record id="xcountry_district_50305" model="xcountry.district"> 
+  <field name="country_state_id" ref="base.state_G" />
+  <field name="country_county_id" ref="FAE_app.xcountry_county_503" />
+  <field name="code">05</field>
+  <field name="name">Cartagena</field>
+</record>
+<record id="xcountry_district_50306" model="xcountry.district"> 
+  <field name="country_state_id" ref="base.state_G" />
+  <field name="country_county_id" ref="FAE_app.xcountry_county_503" />
+  <field name="code">06</field>
+  <field name="name">Cuajiniquil</field>
+</record>
+<record id="xcountry_district_50307" model="xcountry.district"> 
+  <field name="country_state_id" ref="base.state_G" />
+  <field name="country_county_id" ref="FAE_app.xcountry_county_503" />
+  <field name="code">07</field>
+  <field name="name">Diriá</field>
+</record>
+<record id="xcountry_district_50308" model="xcountry.district"> 
+  <field name="country_state_id" ref="base.state_G" />
+  <field name="country_county_id" ref="FAE_app.xcountry_county_503" />
+  <field name="code">08</field>
+  <field name="name">Cabo Velas</field>
+</record>
+<record id="xcountry_district_50309" model="xcountry.district"> 
+  <field name="country_state_id" ref="base.state_G" />
+  <field name="country_county_id" ref="FAE_app.xcountry_county_503" />
+  <field name="code">09</field>
+  <field name="name">Tamarindo</field>
+</record>
+<record id="xcountry_district_50401" model="xcountry.district"> 
+  <field name="country_state_id" ref="base.state_G" />
+  <field name="country_county_id" ref="FAE_app.xcountry_county_504" />
+  <field name="code">01</field>
+  <field name="name">Bagaces</field>
+</record>
+<record id="xcountry_district_50402" model="xcountry.district"> 
+  <field name="country_state_id" ref="base.state_G" />
+  <field name="country_county_id" ref="FAE_app.xcountry_county_504" />
+  <field name="code">02</field>
+  <field name="name">La Fortuna</field>
+</record>
+<record id="xcountry_district_50403" model="xcountry.district"> 
+  <field name="country_state_id" ref="base.state_G" />
+  <field name="country_county_id" ref="FAE_app.xcountry_county_504" />
+  <field name="code">03</field>
+  <field name="name">Mogote</field>
+</record>
+<record id="xcountry_district_50404" model="xcountry.district"> 
+  <field name="country_state_id" ref="base.state_G" />
+  <field name="country_county_id" ref="FAE_app.xcountry_county_504" />
+  <field name="code">04</field>
+  <field name="name">Río Naranjo</field>
+</record>
+<record id="xcountry_district_50501" model="xcountry.district"> 
+  <field name="country_state_id" ref="base.state_G" />
+  <field name="country_county_id" ref="FAE_app.xcountry_county_505" />
+  <field name="code">01</field>
+  <field name="name">Filadelfia</field>
+</record>
+<record id="xcountry_district_50502" model="xcountry.district"> 
+  <field name="country_state_id" ref="base.state_G" />
+  <field name="country_county_id" ref="FAE_app.xcountry_county_505" />
+  <field name="code">02</field>
+  <field name="name">Palmira</field>
+</record>
+<record id="xcountry_district_50503" model="xcountry.district"> 
+  <field name="country_state_id" ref="base.state_G" />
+  <field name="country_county_id" ref="FAE_app.xcountry_county_505" />
+  <field name="code">03</field>
+  <field name="name">Sardinal</field>
+</record>
+<record id="xcountry_district_50504" model="xcountry.district"> 
+  <field name="country_state_id" ref="base.state_G" />
+  <field name="country_county_id" ref="FAE_app.xcountry_county_505" />
+  <field name="code">04</field>
+  <field name="name">Belén</field>
+</record>
+<record id="xcountry_district_50601" model="xcountry.district"> 
+  <field name="country_state_id" ref="base.state_G" />
+  <field name="country_county_id" ref="FAE_app.xcountry_county_506" />
+  <field name="code">01</field>
+  <field name="name">Cañas</field>
+</record>
+<record id="xcountry_district_50602" model="xcountry.district"> 
+  <field name="country_state_id" ref="base.state_G" />
+  <field name="country_county_id" ref="FAE_app.xcountry_county_506" />
+  <field name="code">02</field>
+  <field name="name">Palmira</field>
+</record>
+<record id="xcountry_district_50603" model="xcountry.district"> 
+  <field name="country_state_id" ref="base.state_G" />
+  <field name="country_county_id" ref="FAE_app.xcountry_county_506" />
+  <field name="code">03</field>
+  <field name="name">San Miguel</field>
+</record>
+<record id="xcountry_district_50604" model="xcountry.district"> 
+  <field name="country_state_id" ref="base.state_G" />
+  <field name="country_county_id" ref="FAE_app.xcountry_county_506" />
+  <field name="code">04</field>
+  <field name="name">Bebedero</field>
+</record>
+<record id="xcountry_district_50605" model="xcountry.district"> 
+  <field name="country_state_id" ref="base.state_G" />
+  <field name="country_county_id" ref="FAE_app.xcountry_county_506" />
+  <field name="code">05</field>
+  <field name="name">Porozal</field>
+</record>
+<record id="xcountry_district_50701" model="xcountry.district"> 
+  <field name="country_state_id" ref="base.state_G" />
+  <field name="country_county_id" ref="FAE_app.xcountry_county_507" />
+  <field name="code">01</field>
+  <field name="name">Las Juntas</field>
+</record>
+<record id="xcountry_district_50702" model="xcountry.district"> 
+  <field name="country_state_id" ref="base.state_G" />
+  <field name="country_county_id" ref="FAE_app.xcountry_county_507" />
+  <field name="code">02</field>
+  <field name="name">Sierra</field>
+</record>
+<record id="xcountry_district_50703" model="xcountry.district"> 
+  <field name="country_state_id" ref="base.state_G" />
+  <field name="country_county_id" ref="FAE_app.xcountry_county_507" />
+  <field name="code">03</field>
+  <field name="name">San Juan</field>
+</record>
+<record id="xcountry_district_50704" model="xcountry.district"> 
+  <field name="country_state_id" ref="base.state_G" />
+  <field name="country_county_id" ref="FAE_app.xcountry_county_507" />
+  <field name="code">04</field>
+  <field name="name">Colorado</field>
+</record>
+<record id="xcountry_district_50801" model="xcountry.district"> 
+  <field name="country_state_id" ref="base.state_G" />
+  <field name="country_county_id" ref="FAE_app.xcountry_county_508" />
+  <field name="code">01</field>
+  <field name="name">Tilarán</field>
+</record>
+<record id="xcountry_district_50802" model="xcountry.district"> 
+  <field name="country_state_id" ref="base.state_G" />
+  <field name="country_county_id" ref="FAE_app.xcountry_county_508" />
+  <field name="code">02</field>
+  <field name="name">Quebrada Grande</field>
+</record>
+<record id="xcountry_district_50803" model="xcountry.district"> 
+  <field name="country_state_id" ref="base.state_G" />
+  <field name="country_county_id" ref="FAE_app.xcountry_county_508" />
+  <field name="code">03</field>
+  <field name="name">Tronadora</field>
+</record>
+<record id="xcountry_district_50804" model="xcountry.district"> 
+  <field name="country_state_id" ref="base.state_G" />
+  <field name="country_county_id" ref="FAE_app.xcountry_county_508" />
+  <field name="code">04</field>
+  <field name="name">Santa Rosa</field>
+</record>
+<record id="xcountry_district_50805" model="xcountry.district"> 
+  <field name="country_state_id" ref="base.state_G" />
+  <field name="country_county_id" ref="FAE_app.xcountry_county_508" />
+  <field name="code">05</field>
+  <field name="name">Líbano</field>
+</record>
+<record id="xcountry_district_50806" model="xcountry.district"> 
+  <field name="country_state_id" ref="base.state_G" />
+  <field name="country_county_id" ref="FAE_app.xcountry_county_508" />
+  <field name="code">06</field>
+  <field name="name">Tierras Morenas</field>
+</record>
+<record id="xcountry_district_50807" model="xcountry.district"> 
+  <field name="country_state_id" ref="base.state_G" />
+  <field name="country_county_id" ref="FAE_app.xcountry_county_508" />
+  <field name="code">07</field>
+  <field name="name">Arenal</field>
+</record>
+<record id="xcountry_district_50901" model="xcountry.district"> 
+  <field name="country_state_id" ref="base.state_G" />
+  <field name="country_county_id" ref="FAE_app.xcountry_county_509" />
+  <field name="code">01</field>
+  <field name="name">Carmona</field>
+</record>
+<record id="xcountry_district_50902" model="xcountry.district"> 
+  <field name="country_state_id" ref="base.state_G" />
+  <field name="country_county_id" ref="FAE_app.xcountry_county_509" />
+  <field name="code">02</field>
+  <field name="name">Santa Rita</field>
+</record>
+<record id="xcountry_district_50903" model="xcountry.district"> 
+  <field name="country_state_id" ref="base.state_G" />
+  <field name="country_county_id" ref="FAE_app.xcountry_county_509" />
+  <field name="code">03</field>
+  <field name="name">Zapotal</field>
+</record>
+<record id="xcountry_district_50904" model="xcountry.district"> 
+  <field name="country_state_id" ref="base.state_G" />
+  <field name="country_county_id" ref="FAE_app.xcountry_county_509" />
+  <field name="code">04</field>
+  <field name="name">San Pablo</field>
+</record>
+<record id="xcountry_district_50905" model="xcountry.district"> 
+  <field name="country_state_id" ref="base.state_G" />
+  <field name="country_county_id" ref="FAE_app.xcountry_county_509" />
+  <field name="code">05</field>
+  <field name="name">Porvenir</field>
+</record>
+<record id="xcountry_district_50906" model="xcountry.district"> 
+  <field name="country_state_id" ref="base.state_G" />
+  <field name="country_county_id" ref="FAE_app.xcountry_county_509" />
+  <field name="code">06</field>
+  <field name="name">Bejuco</field>
+</record>
+<record id="xcountry_district_51001" model="xcountry.district"> 
+  <field name="country_state_id" ref="base.state_G" />
+  <field name="country_county_id" ref="FAE_app.xcountry_county_510" />
+  <field name="code">01</field>
+  <field name="name">La Cruz</field>
+</record>
+<record id="xcountry_district_51002" model="xcountry.district"> 
+  <field name="country_state_id" ref="base.state_G" />
+  <field name="country_county_id" ref="FAE_app.xcountry_county_510" />
+  <field name="code">02</field>
+  <field name="name">Santa Cecilia</field>
+</record>
+<record id="xcountry_district_51003" model="xcountry.district"> 
+  <field name="country_state_id" ref="base.state_G" />
+  <field name="country_county_id" ref="FAE_app.xcountry_county_510" />
+  <field name="code">03</field>
+  <field name="name">La Garita</field>
+</record>
+<record id="xcountry_district_51004" model="xcountry.district"> 
+  <field name="country_state_id" ref="base.state_G" />
+  <field name="country_county_id" ref="FAE_app.xcountry_county_510" />
+  <field name="code">04</field>
+  <field name="name">Santa Elena</field>
+</record>
+<record id="xcountry_district_51101" model="xcountry.district"> 
+  <field name="country_state_id" ref="base.state_G" />
+  <field name="country_county_id" ref="FAE_app.xcountry_county_511" />
+  <field name="code">01</field>
+  <field name="name">Hojancha</field>
+</record>
+<record id="xcountry_district_51102" model="xcountry.district"> 
+  <field name="country_state_id" ref="base.state_G" />
+  <field name="country_county_id" ref="FAE_app.xcountry_county_511" />
+  <field name="code">02</field>
+  <field name="name">Monte Romo</field>
+</record>
+<record id="xcountry_district_51103" model="xcountry.district"> 
+  <field name="country_state_id" ref="base.state_G" />
+  <field name="country_county_id" ref="FAE_app.xcountry_county_511" />
+  <field name="code">03</field>
+  <field name="name">Puerto Carrillo</field>
+</record>
+<record id="xcountry_district_51104" model="xcountry.district"> 
+  <field name="country_state_id" ref="base.state_G" />
+  <field name="country_county_id" ref="FAE_app.xcountry_county_511" />
+  <field name="code">04</field>
+  <field name="name">Huacas</field>
+</record>
+<record id="xcountry_district_60101" model="xcountry.district"> 
+  <field name="country_state_id" ref="base.state_P" />
+  <field name="country_county_id" ref="FAE_app.xcountry_county_601" />
+  <field name="code">01</field>
+  <field name="name">Puntarenas</field>
+</record>
+<record id="xcountry_district_60102" model="xcountry.district"> 
+  <field name="country_state_id" ref="base.state_P" />
+  <field name="country_county_id" ref="FAE_app.xcountry_county_601" />
+  <field name="code">02</field>
+  <field name="name">Pitahaya</field>
+</record>
+<record id="xcountry_district_60103" model="xcountry.district"> 
+  <field name="country_state_id" ref="base.state_P" />
+  <field name="country_county_id" ref="FAE_app.xcountry_county_601" />
+  <field name="code">03</field>
+  <field name="name">Chomes</field>
+</record>
+<record id="xcountry_district_60104" model="xcountry.district"> 
+  <field name="country_state_id" ref="base.state_P" />
+  <field name="country_county_id" ref="FAE_app.xcountry_county_601" />
+  <field name="code">04</field>
+  <field name="name">Lepanto</field>
+</record>
+<record id="xcountry_district_60105" model="xcountry.district"> 
+  <field name="country_state_id" ref="base.state_P" />
+  <field name="country_county_id" ref="FAE_app.xcountry_county_601" />
+  <field name="code">05</field>
+  <field name="name">Paquera</field>
+</record>
+<record id="xcountry_district_60106" model="xcountry.district"> 
+  <field name="country_state_id" ref="base.state_P" />
+  <field name="country_county_id" ref="FAE_app.xcountry_county_601" />
+  <field name="code">06</field>
+  <field name="name">Manzanillo</field>
+</record>
+<record id="xcountry_district_60107" model="xcountry.district"> 
+  <field name="country_state_id" ref="base.state_P" />
+  <field name="country_county_id" ref="FAE_app.xcountry_county_601" />
+  <field name="code">07</field>
+  <field name="name">Guacimal</field>
+</record>
+<record id="xcountry_district_60108" model="xcountry.district"> 
+  <field name="country_state_id" ref="base.state_P" />
+  <field name="country_county_id" ref="FAE_app.xcountry_county_601" />
+  <field name="code">08</field>
+  <field name="name">Barranca</field>
+</record>
+<record id="xcountry_district_60109" model="xcountry.district"> 
+  <field name="country_state_id" ref="base.state_P" />
+  <field name="country_county_id" ref="FAE_app.xcountry_county_601" />
+  <field name="code">09</field>
+  <field name="name">Monte Verde</field>
+</record>
+<record id="xcountry_district_60111" model="xcountry.district"> 
+  <field name="country_state_id" ref="base.state_P" />
+  <field name="country_county_id" ref="FAE_app.xcountry_county_601" />
+  <field name="code">11</field>
+  <field name="name">Cóbano</field>
+</record>
+<record id="xcountry_district_60112" model="xcountry.district"> 
+  <field name="country_state_id" ref="base.state_P" />
+  <field name="country_county_id" ref="FAE_app.xcountry_county_601" />
+  <field name="code">12</field>
+  <field name="name">Chacarita</field>
+</record>
+<record id="xcountry_district_60113" model="xcountry.district"> 
+  <field name="country_state_id" ref="base.state_P" />
+  <field name="country_county_id" ref="FAE_app.xcountry_county_601" />
+  <field name="code">13</field>
+  <field name="name">Chira</field>
+</record>
+<record id="xcountry_district_60114" model="xcountry.district"> 
+  <field name="country_state_id" ref="base.state_P" />
+  <field name="country_county_id" ref="FAE_app.xcountry_county_601" />
+  <field name="code">14</field>
+  <field name="name">Acapulco</field>
+</record>
+<record id="xcountry_district_60115" model="xcountry.district"> 
+  <field name="country_state_id" ref="base.state_P" />
+  <field name="country_county_id" ref="FAE_app.xcountry_county_601" />
+  <field name="code">15</field>
+  <field name="name">El Roble</field>
+</record>
+<record id="xcountry_district_60116" model="xcountry.district"> 
+  <field name="country_state_id" ref="base.state_P" />
+  <field name="country_county_id" ref="FAE_app.xcountry_county_601" />
+  <field name="code">16</field>
+  <field name="name">Arancibia</field>
+</record>
+<record id="xcountry_district_60201" model="xcountry.district"> 
+  <field name="country_state_id" ref="base.state_P" />
+  <field name="country_county_id" ref="FAE_app.xcountry_county_602" />
+  <field name="code">01</field>
+  <field name="name">Espíritu Santo</field>
+</record>
+<record id="xcountry_district_60202" model="xcountry.district"> 
+  <field name="country_state_id" ref="base.state_P" />
+  <field name="country_county_id" ref="FAE_app.xcountry_county_602" />
+  <field name="code">02</field>
+  <field name="name">San Juan Grande</field>
+</record>
+<record id="xcountry_district_60203" model="xcountry.district"> 
+  <field name="country_state_id" ref="base.state_P" />
+  <field name="country_county_id" ref="FAE_app.xcountry_county_602" />
+  <field name="code">03</field>
+  <field name="name">Macacona</field>
+</record>
+<record id="xcountry_district_60204" model="xcountry.district"> 
+  <field name="country_state_id" ref="base.state_P" />
+  <field name="country_county_id" ref="FAE_app.xcountry_county_602" />
+  <field name="code">04</field>
+  <field name="name">San Rafael</field>
+</record>
+<record id="xcountry_district_60205" model="xcountry.district"> 
+  <field name="country_state_id" ref="base.state_P" />
+  <field name="country_county_id" ref="FAE_app.xcountry_county_602" />
+  <field name="code">05</field>
+  <field name="name">San Jerónimo</field>
+</record>
+<record id="xcountry_district_60206" model="xcountry.district"> 
+  <field name="country_state_id" ref="base.state_P" />
+  <field name="country_county_id" ref="FAE_app.xcountry_county_602" />
+  <field name="code">06</field>
+  <field name="name">Caldera</field>
+</record>
+<record id="xcountry_district_60301" model="xcountry.district"> 
+  <field name="country_state_id" ref="base.state_P" />
+  <field name="country_county_id" ref="FAE_app.xcountry_county_603" />
+  <field name="code">01</field>
+  <field name="name">Buenos Aires</field>
+</record>
+<record id="xcountry_district_60302" model="xcountry.district"> 
+  <field name="country_state_id" ref="base.state_P" />
+  <field name="country_county_id" ref="FAE_app.xcountry_county_603" />
+  <field name="code">02</field>
+  <field name="name">Volcán</field>
+</record>
+<record id="xcountry_district_60303" model="xcountry.district"> 
+  <field name="country_state_id" ref="base.state_P" />
+  <field name="country_county_id" ref="FAE_app.xcountry_county_603" />
+  <field name="code">03</field>
+  <field name="name">Potrero Grande</field>
+</record>
+<record id="xcountry_district_60304" model="xcountry.district"> 
+  <field name="country_state_id" ref="base.state_P" />
+  <field name="country_county_id" ref="FAE_app.xcountry_county_603" />
+  <field name="code">04</field>
+  <field name="name">Boruca</field>
+</record>
+<record id="xcountry_district_60305" model="xcountry.district"> 
+  <field name="country_state_id" ref="base.state_P" />
+  <field name="country_county_id" ref="FAE_app.xcountry_county_603" />
+  <field name="code">05</field>
+  <field name="name">Pilas</field>
+</record>
+<record id="xcountry_district_60306" model="xcountry.district"> 
+  <field name="country_state_id" ref="base.state_P" />
+  <field name="country_county_id" ref="FAE_app.xcountry_county_603" />
+  <field name="code">06</field>
+  <field name="name">Colinas</field>
+</record>
+<record id="xcountry_district_60307" model="xcountry.district"> 
+  <field name="country_state_id" ref="base.state_P" />
+  <field name="country_county_id" ref="FAE_app.xcountry_county_603" />
+  <field name="code">07</field>
+  <field name="name">Chánguena</field>
+</record>
+<record id="xcountry_district_60308" model="xcountry.district"> 
+  <field name="country_state_id" ref="base.state_P" />
+  <field name="country_county_id" ref="FAE_app.xcountry_county_603" />
+  <field name="code">08</field>
+  <field name="name">Biolley</field>
+</record>
+<record id="xcountry_district_60309" model="xcountry.district"> 
+  <field name="country_state_id" ref="base.state_P" />
+  <field name="country_county_id" ref="FAE_app.xcountry_county_603" />
+  <field name="code">09</field>
+  <field name="name">Brunka</field>
+</record>
+<record id="xcountry_district_60401" model="xcountry.district"> 
+  <field name="country_state_id" ref="base.state_P" />
+  <field name="country_county_id" ref="FAE_app.xcountry_county_604" />
+  <field name="code">01</field>
+  <field name="name">Miramar</field>
+</record>
+<record id="xcountry_district_60402" model="xcountry.district"> 
+  <field name="country_state_id" ref="base.state_P" />
+  <field name="country_county_id" ref="FAE_app.xcountry_county_604" />
+  <field name="code">02</field>
+  <field name="name">La Unión</field>
+</record>
+<record id="xcountry_district_60403" model="xcountry.district"> 
+  <field name="country_state_id" ref="base.state_P" />
+  <field name="country_county_id" ref="FAE_app.xcountry_county_604" />
+  <field name="code">03</field>
+  <field name="name">San Isidro</field>
+</record>
+<record id="xcountry_district_60501" model="xcountry.district"> 
+  <field name="country_state_id" ref="base.state_P" />
+  <field name="country_county_id" ref="FAE_app.xcountry_county_605" />
+  <field name="code">01</field>
+  <field name="name">Puerto Cortés</field>
+</record>
+<record id="xcountry_district_60502" model="xcountry.district"> 
+  <field name="country_state_id" ref="base.state_P" />
+  <field name="country_county_id" ref="FAE_app.xcountry_county_605" />
+  <field name="code">02</field>
+  <field name="name">Palmar</field>
+</record>
+<record id="xcountry_district_60503" model="xcountry.district"> 
+  <field name="country_state_id" ref="base.state_P" />
+  <field name="country_county_id" ref="FAE_app.xcountry_county_605" />
+  <field name="code">03</field>
+  <field name="name">Sierpe</field>
+</record>
+<record id="xcountry_district_60504" model="xcountry.district"> 
+  <field name="country_state_id" ref="base.state_P" />
+  <field name="country_county_id" ref="FAE_app.xcountry_county_605" />
+  <field name="code">04</field>
+  <field name="name">Bahía Ballena</field>
+</record>
+<record id="xcountry_district_60505" model="xcountry.district"> 
+  <field name="country_state_id" ref="base.state_P" />
+  <field name="country_county_id" ref="FAE_app.xcountry_county_605" />
+  <field name="code">05</field>
+  <field name="name">Piedras Blancas</field>
+</record>
+<record id="xcountry_district_60506" model="xcountry.district"> 
+  <field name="country_state_id" ref="base.state_P" />
+  <field name="country_county_id" ref="FAE_app.xcountry_county_605" />
+  <field name="code">06</field>
+  <field name="name">Bahía Drake</field>
+</record>
+<record id="xcountry_district_60601" model="xcountry.district"> 
+  <field name="country_state_id" ref="base.state_P" />
+  <field name="country_county_id" ref="FAE_app.xcountry_county_606" />
+  <field name="code">01</field>
+  <field name="name">Quepos</field>
+</record>
+<record id="xcountry_district_60602" model="xcountry.district"> 
+  <field name="country_state_id" ref="base.state_P" />
+  <field name="country_county_id" ref="FAE_app.xcountry_county_606" />
+  <field name="code">02</field>
+  <field name="name">Savegre</field>
+</record>
+<record id="xcountry_district_60603" model="xcountry.district"> 
+  <field name="country_state_id" ref="base.state_P" />
+  <field name="country_county_id" ref="FAE_app.xcountry_county_606" />
+  <field name="code">03</field>
+  <field name="name">Naranjito</field>
+</record>
+<record id="xcountry_district_60701" model="xcountry.district"> 
+  <field name="country_state_id" ref="base.state_P" />
+  <field name="country_county_id" ref="FAE_app.xcountry_county_607" />
+  <field name="code">01</field>
+  <field name="name">Golfito</field>
+</record>
+<record id="xcountry_district_60702" model="xcountry.district"> 
+  <field name="country_state_id" ref="base.state_P" />
+  <field name="country_county_id" ref="FAE_app.xcountry_county_607" />
+  <field name="code">02</field>
+  <field name="name">Puerto Jiménez</field>
+</record>
+<record id="xcountry_district_60703" model="xcountry.district"> 
+  <field name="country_state_id" ref="base.state_P" />
+  <field name="country_county_id" ref="FAE_app.xcountry_county_607" />
+  <field name="code">03</field>
+  <field name="name">Guaycará</field>
+</record>
+<record id="xcountry_district_60704" model="xcountry.district"> 
+  <field name="country_state_id" ref="base.state_P" />
+  <field name="country_county_id" ref="FAE_app.xcountry_county_607" />
+  <field name="code">04</field>
+  <field name="name">Pavón</field>
+</record>
+<record id="xcountry_district_60801" model="xcountry.district"> 
+  <field name="country_state_id" ref="base.state_P" />
+  <field name="country_county_id" ref="FAE_app.xcountry_county_608" />
+  <field name="code">01</field>
+  <field name="name">San Vito</field>
+</record>
+<record id="xcountry_district_60802" model="xcountry.district"> 
+  <field name="country_state_id" ref="base.state_P" />
+  <field name="country_county_id" ref="FAE_app.xcountry_county_608" />
+  <field name="code">02</field>
+  <field name="name">Sabalito</field>
+</record>
+<record id="xcountry_district_60803" model="xcountry.district"> 
+  <field name="country_state_id" ref="base.state_P" />
+  <field name="country_county_id" ref="FAE_app.xcountry_county_608" />
+  <field name="code">03</field>
+  <field name="name">Aguabuena</field>
+</record>
+<record id="xcountry_district_60804" model="xcountry.district"> 
+  <field name="country_state_id" ref="base.state_P" />
+  <field name="country_county_id" ref="FAE_app.xcountry_county_608" />
+  <field name="code">04</field>
+  <field name="name">Limoncito</field>
+</record>
+<record id="xcountry_district_60805" model="xcountry.district"> 
+  <field name="country_state_id" ref="base.state_P" />
+  <field name="country_county_id" ref="FAE_app.xcountry_county_608" />
+  <field name="code">05</field>
+  <field name="name">Pittier</field>
+</record>
+<record id="xcountry_district_60806" model="xcountry.district"> 
+  <field name="country_state_id" ref="base.state_P" />
+  <field name="country_county_id" ref="FAE_app.xcountry_county_608" />
+  <field name="code">06</field>
+  <field name="name">Gutierrez Braun</field>
+</record>
+<record id="xcountry_district_60901" model="xcountry.district"> 
+  <field name="country_state_id" ref="base.state_P" />
+  <field name="country_county_id" ref="FAE_app.xcountry_county_609" />
+  <field name="code">01</field>
+  <field name="name">Parrita</field>
+</record>
+<record id="xcountry_district_61002" model="xcountry.district"> 
+  <field name="country_state_id" ref="base.state_P" />
+  <field name="country_county_id" ref="FAE_app.xcountry_county_610" />
+  <field name="code">02</field>
+  <field name="name">La Cuesta</field>
+</record>
+<record id="xcountry_district_61003" model="xcountry.district"> 
+  <field name="country_state_id" ref="base.state_P" />
+  <field name="country_county_id" ref="FAE_app.xcountry_county_610" />
+  <field name="code">03</field>
+  <field name="name">Canoas</field>
+</record>
+<record id="xcountry_district_61004" model="xcountry.district"> 
+  <field name="country_state_id" ref="base.state_P" />
+  <field name="country_county_id" ref="FAE_app.xcountry_county_610" />
+  <field name="code">04</field>
+  <field name="name">Laurel</field>
+</record>
+<record id="xcountry_district_61101" model="xcountry.district"> 
+  <field name="country_state_id" ref="base.state_P" />
+  <field name="country_county_id" ref="FAE_app.xcountry_county_611" />
+  <field name="code">01</field>
+  <field name="name">Jacó</field>
+</record>
+<record id="xcountry_district_61102" model="xcountry.district"> 
+  <field name="country_state_id" ref="base.state_P" />
+  <field name="country_county_id" ref="FAE_app.xcountry_county_611" />
+  <field name="code">02</field>
+  <field name="name">Tárcoles</field>
+</record>
+<record id="xcountry_district_70101" model="xcountry.district"> 
+  <field name="country_state_id" ref="base.state_L" />
+  <field name="country_county_id" ref="FAE_app.xcountry_county_701" />
+  <field name="code">01</field>
+  <field name="name">Limón</field>
+</record>
+<record id="xcountry_district_70102" model="xcountry.district"> 
+  <field name="country_state_id" ref="base.state_L" />
+  <field name="country_county_id" ref="FAE_app.xcountry_county_701" />
+  <field name="code">02</field>
+  <field name="name">Valle La Estrella</field>
+</record>
+<record id="xcountry_district_70104" model="xcountry.district"> 
+  <field name="country_state_id" ref="base.state_L" />
+  <field name="country_county_id" ref="FAE_app.xcountry_county_701" />
+  <field name="code">04</field>
+  <field name="name">Matama</field>
+</record>
+<record id="xcountry_district_70201" model="xcountry.district"> 
+  <field name="country_state_id" ref="base.state_L" />
+  <field name="country_county_id" ref="FAE_app.xcountry_county_702" />
+  <field name="code">01</field>
+  <field name="name">Guápiles</field>
+</record>
+<record id="xcountry_district_70202" model="xcountry.district"> 
+  <field name="country_state_id" ref="base.state_L" />
+  <field name="country_county_id" ref="FAE_app.xcountry_county_702" />
+  <field name="code">02</field>
+  <field name="name">Jiménez</field>
+</record>
+<record id="xcountry_district_70203" model="xcountry.district"> 
+  <field name="country_state_id" ref="base.state_L" />
+  <field name="country_county_id" ref="FAE_app.xcountry_county_702" />
+  <field name="code">03</field>
+  <field name="name">Rita</field>
+</record>
+<record id="xcountry_district_70204" model="xcountry.district"> 
+  <field name="country_state_id" ref="base.state_L" />
+  <field name="country_county_id" ref="FAE_app.xcountry_county_702" />
+  <field name="code">04</field>
+  <field name="name">Roxana</field>
+</record>
+<record id="xcountry_district_70205" model="xcountry.district"> 
+  <field name="country_state_id" ref="base.state_L" />
+  <field name="country_county_id" ref="FAE_app.xcountry_county_702" />
+  <field name="code">05</field>
+  <field name="name">Cariari</field>
+</record>
+<record id="xcountry_district_70206" model="xcountry.district"> 
+  <field name="country_state_id" ref="base.state_L" />
+  <field name="country_county_id" ref="FAE_app.xcountry_county_702" />
+  <field name="code">06</field>
+  <field name="name">Colorado</field>
+</record>
+<record id="xcountry_district_70207" model="xcountry.district"> 
+  <field name="country_state_id" ref="base.state_L" />
+  <field name="country_county_id" ref="FAE_app.xcountry_county_702" />
+  <field name="code">07</field>
+  <field name="name">La Colonia</field>
+</record>
+<record id="xcountry_district_70301" model="xcountry.district"> 
+  <field name="country_state_id" ref="base.state_L" />
+  <field name="country_county_id" ref="FAE_app.xcountry_county_703" />
+  <field name="code">01</field>
+  <field name="name">Siquirres</field>
+</record>
+<record id="xcountry_district_70302" model="xcountry.district"> 
+  <field name="country_state_id" ref="base.state_L" />
+  <field name="country_county_id" ref="FAE_app.xcountry_county_703" />
+  <field name="code">02</field>
+  <field name="name">Pacuarito</field>
+</record>
+<record id="xcountry_district_70303" model="xcountry.district"> 
+  <field name="country_state_id" ref="base.state_L" />
+  <field name="country_county_id" ref="FAE_app.xcountry_county_703" />
+  <field name="code">03</field>
+  <field name="name">Florida</field>
+</record>
+<record id="xcountry_district_70304" model="xcountry.district"> 
+  <field name="country_state_id" ref="base.state_L" />
+  <field name="country_county_id" ref="FAE_app.xcountry_county_703" />
+  <field name="code">04</field>
+  <field name="name">Germania</field>
+</record>
+<record id="xcountry_district_70305" model="xcountry.district"> 
+  <field name="country_state_id" ref="base.state_L" />
+  <field name="country_county_id" ref="FAE_app.xcountry_county_703" />
+  <field name="code">05</field>
+  <field name="name">El Cairo</field>
+</record>
+<record id="xcountry_district_70306" model="xcountry.district"> 
+  <field name="country_state_id" ref="base.state_L" />
+  <field name="country_county_id" ref="FAE_app.xcountry_county_703" />
+  <field name="code">06</field>
+  <field name="name">Alegría</field>
+</record>
+<record id="xcountry_district_70401" model="xcountry.district"> 
+  <field name="country_state_id" ref="base.state_L" />
+  <field name="country_county_id" ref="FAE_app.xcountry_county_704" />
+  <field name="code">01</field>
+  <field name="name">Bratsi</field>
+</record>
+<record id="xcountry_district_70402" model="xcountry.district"> 
+  <field name="country_state_id" ref="base.state_L" />
+  <field name="country_county_id" ref="FAE_app.xcountry_county_704" />
+  <field name="code">02</field>
+  <field name="name">Sixaola</field>
+</record>
+<record id="xcountry_district_70403" model="xcountry.district"> 
+  <field name="country_state_id" ref="base.state_L" />
+  <field name="country_county_id" ref="FAE_app.xcountry_county_704" />
+  <field name="code">03</field>
+  <field name="name">Cahuita</field>
+</record>
+<record id="xcountry_district_70404" model="xcountry.district"> 
+  <field name="country_state_id" ref="base.state_L" />
+  <field name="country_county_id" ref="FAE_app.xcountry_county_704" />
+  <field name="code">04</field>
+  <field name="name">Telire</field>
+</record>
+<record id="xcountry_district_70501" model="xcountry.district"> 
+  <field name="country_state_id" ref="base.state_L" />
+  <field name="country_county_id" ref="FAE_app.xcountry_county_705" />
+  <field name="code">01</field>
+  <field name="name">Matina</field>
+</record>
+<record id="xcountry_district_70502" model="xcountry.district"> 
+  <field name="country_state_id" ref="base.state_L" />
+  <field name="country_county_id" ref="FAE_app.xcountry_county_705" />
+  <field name="code">02</field>
+  <field name="name">Batán</field>
+</record>
+<record id="xcountry_district_70503" model="xcountry.district"> 
+  <field name="country_state_id" ref="base.state_L" />
+  <field name="country_county_id" ref="FAE_app.xcountry_county_705" />
+  <field name="code">03</field>
+  <field name="name">Carrandi</field>
+</record>
+<record id="xcountry_district_70601" model="xcountry.district"> 
+  <field name="country_state_id" ref="base.state_L" />
+  <field name="country_county_id" ref="FAE_app.xcountry_county_706" />
+  <field name="code">01</field>
+  <field name="name">Guácimo</field>
+</record>
+<record id="xcountry_district_70602" model="xcountry.district"> 
+  <field name="country_state_id" ref="base.state_L" />
+  <field name="country_county_id" ref="FAE_app.xcountry_county_706" />
+  <field name="code">02</field>
+  <field name="name">Mercedes</field>
+</record>
+<record id="xcountry_district_70603" model="xcountry.district"> 
+  <field name="country_state_id" ref="base.state_L" />
+  <field name="country_county_id" ref="FAE_app.xcountry_county_706" />
+  <field name="code">03</field>
+  <field name="name">Pocora</field>
+</record>
+<record id="xcountry_district_70604" model="xcountry.district"> 
+  <field name="country_state_id" ref="base.state_L" />
+  <field name="country_county_id" ref="FAE_app.xcountry_county_706" />
+  <field name="code">04</field>
+  <field name="name">Río Jiménez</field>
+</record>
+<record id="xcountry_district_70605" model="xcountry.district"> 
+  <field name="country_state_id" ref="base.state_L" />
+  <field name="country_county_id" ref="FAE_app.xcountry_county_706" />
+  <field name="code">05</field>
+  <field name="name">Duacarí</field>
+</record>
+
+<record id="xcountry_district_20214" model="xcountry.district"> 
+  <field name="country_state_id" ref="base.state_A" />
+  <field name="country_county_id" ref="FAE_app.xcountry_county_202" />
+  <field name="code">14</field>
+  <field name="name">San Lorenzo</field>
+</record>
+<record id="xcountry_district_21501" model="xcountry.district"> 
+  <field name="country_state_id" ref="base.state_A" />
+  <field name="country_county_id" ref="FAE_app.xcountry_county_215" />
+  <field name="code">01</field>
+  <field name="name">San Rafael</field>
+</record>
+<record id="xcountry_district_40902" model="xcountry.district"> 
+  <field name="country_state_id" ref="base.state_H" />
+  <field name="country_county_id" ref="FAE_app.xcountry_county_409" />
+  <field name="code">02</field>
+  <field name="name">Rincón de Sabanilla</field>
+</record>
+<record id="xcountry_district_41001" model="xcountry.district"> 
+  <field name="country_state_id" ref="base.state_H" />
+  <field name="country_county_id" ref="FAE_app.xcountry_county_410" />
+  <field name="code">01</field>
+  <field name="name">Puerto Viejo</field>
+</record>
+<record id="xcountry_district_61001" model="xcountry.district"> 
+  <field name="country_state_id" ref="base.state_P" />
+  <field name="country_county_id" ref="FAE_app.xcountry_county_610" />
+  <field name="code">01</field>
+  <field name="name">Corredor</field>
+</record>
+<record id="xcountry_district_70103" model="xcountry.district"> 
+  <field name="country_state_id" ref="base.state_L" />
+  <field name="country_county_id" ref="FAE_app.xcountry_county_701" />
+  <field name="code">03</field>
+  <field name="name">Río Blanco</field>
+</record>
+</data>
+</odoo>

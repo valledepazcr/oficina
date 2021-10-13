@@ -1,0 +1,17 @@
+id,code,name,used_for,active
+xreference_document_01,01,Factura electrónica,,t
+xreference_document_02,02,Nota de débito electrónica,,t
+xreference_document_03,03,Nota de crédito electrónica,,t
+xreference_document_04,04,tiquete electrónico,,t
+xreference_document_05,05,Nota de despacho,,t
+xreference_document_06,06,Contrato,,t
+xreference_document_07,07,Procedimiento,,t
+xreference_document_08,08,Comprobante emitido en contingencia,,t
+xreference_document_09,09,Devolución mercadería,,t
+xreference_document_10,10,Sustituye factura rechazada por el Ministerio de Hacienda,,t
+xreference_document_11,11,Sustituye factura rechazada por el Receptor del comprobante,,t
+xreference_document_12,12,Sustituye Factura de exportación,,t
+xreference_document_13,13,*Facturación mes vencido,,t
+xreference_document_14,14,Comprobante aportado por contribuyente del Régimen Simplificado,FEC,t
+xreference_document_15,15,Sustituye una Factura electrónica de Compra,FEC,t
+xreference_document_99,99,Otros,,t

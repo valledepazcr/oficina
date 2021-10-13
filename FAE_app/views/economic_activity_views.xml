@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <record id="economic_activity_view_form" model="ir.ui.view">
+            <field name="name">xeconomic.activity.form</field>
+            <field name="model">xeconomic.activity</field>
+            <field name="arch" type="xml">
+                <form string="Actividad Económica">
+                    <sheet string="Actividad Económica">
+                        <group col="4">
+                            <field name="code" string="Código"/>
+                            <field name="name" string="Nombre"/>
+                            <field name="active" string="Activo" widget="boolean_toggle" />
+                        </group>
+                    </sheet>
+                </form>
+            </field>
+        </record>
+        
+        <record id="economic_activity_view_tree" model="ir.ui.view">
+            <field name="name">xeconomic.activity.tree</field>
+            <field name="model">xeconomic.activity</field>
+            <field name="arch" type="xml">
+                <tree string="Actividad Económica" editable="bottom">
+                    <field name="code" string="Código"/>
+                    <field name="name" string="Nombre"/>
+                    <field name="active" string="Activo" widget="boolean_toggle"/>
+                </tree>
+            </field>
+        </record>
+
+        <record id="action_xeconomic_activity" model="ir.actions.act_window">
+            <field name="name">Actividad Económica</field>
+            <field name="res_model">xeconomic.activity</field>
+            <field name="view_mode">tree,form</field>
+        </record>
+    </data>
+</odoo>

@@ -1,0 +1,19 @@
+<?xml version = "1.0" encoding="utf-8"?>
+<odoo>
+    <record id="xcr_live_rate_currency_rate_tree_view" model="ir.ui.view">
+        <field name="name">xcr_live_rate.res.currency.rate.tree.view</field>
+        <field name="model">res.currency.rate</field>
+        <field name="inherit_id" ref="base.view_currency_rate_tree"/>
+        <field name="arch" type="xml">
+            <field name="company_id" position="replace" />
+            <field name="rate" position="after">
+                <!-- <field name="x_rate2" digits="[12,12]"/> -->
+                <field name="x_cr_rate_selling" string="TC Venta referencia" digits="[12,4]" />
+                <field name="x_cr_rate_buying" string="TC Compra referencia" digits="[12,4]" />
+                <field name="company_id" groups="base.group_multi_company"/>                
+                <field name="create_date" />
+                <field name="write_date" />
+            </field>
+        </field>
+    </record>
+</odoo>

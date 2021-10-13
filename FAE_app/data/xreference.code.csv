@@ -1,0 +1,12 @@
+id,code,name,version,active
+xreference_code_4201,01,ANULA DOCUMENTO DE REFERENCIA,42,FALSO
+xreference_code_4202,02,CORRIGE TEXTO DOCUMENTO DE REFERENCIA,42,FALSO
+xreference_code_4203,03,CORRIGE MONTO,42,FALSO
+xreference_code_4204,04,REFERENCIA A OTRO DOCUMENTO,42,FALSO
+xreference_code_4205,05,SUSTITUYE COMPROBANTE PROVISIONAL POR CONTINGENCIA,42,FALSO
+xreference_code_4299,99,OTROS,42,FALSO
+xreference_code_4301,01,Anula Documento de Referencia,43,VERDADERO
+xreference_code_4302,02,Corrige monto,43,VERDADERO
+xreference_code_4304,04,Referencia a otro documento,43,VERDADERO
+xreference_code_4305,05,Sustituye comprobante provisional por contingencia.,43,VERDADERO
+xreference_code_4399,99,Otros,43,VERDADERO

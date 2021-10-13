@@ -1,0 +1,3576 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+<!-- despues de la instalación no se actualizan los datos porque las actividades economicas se activan con el uso -->
+<data noupdate="1">
+<record id="xeconomic_activity_101001" model="xeconomic.activity"> 
+  <field name="code">101001</field>
+  <field name="name">EXTRACCION Y AGLOMERACION DE CARBON DE PIEDRA</field>
+  <field name="active">False</field>
+</record>
+<record id="xeconomic_activity_111001" model="xeconomic.activity"> 
+  <field name="code">111001</field>
+  <field name="name">EXTRACCION DE PETROLEO CRUDO Y GAS NATURAL</field>
+  <field name="active">False</field>
+</record>
+<record id="xeconomic_activity_11101" model="xeconomic.activity"> 
+  <field name="code">11101</field>
+  <field name="name">CULTIVO Y VENTA DE CEREALES, LEGUMBRES Y GRANOS BÁSICOS NO INCLUIDAS EN CANASTA BÁSICA</field>
+  <field name="active">False</field>
+</record>
+<record id="xeconomic_activity_11102" model="xeconomic.activity"> 
+  <field name="code">11102</field>
+  <field name="name">CULTIVO DE PALMA AFRICANA Y OTROS FRUTOS OLEAGINOSOS</field>
+  <field name="active">False</field>
+</record>
+<record id="xeconomic_activity_11103" model="xeconomic.activity"> 
+  <field name="code">11103</field>
+  <field name="name">CULTIVO Y COMERCIALIZACIÓN DE CESPED</field>
+  <field name="active">False</field>
+</record>
+<record id="xeconomic_activity_11218" model="xeconomic.activity"> 
+  <field name="code">11218</field>
+  <field name="name">PRODUCCIÓN DE MINIVEGETALES</field>
+  <field name="active">False</field>
+</record>
+<record id="xeconomic_activity_11231" model="xeconomic.activity"> 
+  <field name="code">11231</field>
+  <field name="name">CULTIVO HORTALIZAS LEGUMBRES ESPECIALIDADES HORTÍCOLAS PRODUCTOS VIVERO GRAVADOS IVA</field>
+  <field name="active">False</field>
+</record>
+<record id="xeconomic_activity_11301" model="xeconomic.activity"> 
+  <field name="code">11301</field>
+  <field name="name">CULTIVO DE ESPECIAS DE TODO TIPO</field>
+  <field name="active">False</field>
+</record>
+<record id="xeconomic_activity_11302" model="xeconomic.activity"> 
+  <field name="code">11302</field>
+  <field name="name">CULTIVO DE FRUTAS</field>
+  <field name="active">False</field>
+</record>
+<record id="xeconomic_activity_11322" model="xeconomic.activity"> 
+  <field name="code">11322</field>
+  <field name="name">CULTIVO DE SEMILLAS COMESTIBLES Y GERMINACION DE SEMILLAS OLEAGINOSAS</field>
+  <field name="active">False</field>
+</record>
+<record id="xeconomic_activity_11329" model="xeconomic.activity"> 
+  <field name="code">11329</field>
+  <field name="name">CULTIVO DE PLANTAS PARA PREPARAR BEBIDAS Y MEDICINAS</field>
+  <field name="active">False</field>
+</record>
+<record id="xeconomic_activity_11349" model="xeconomic.activity"> 
+  <field name="code">11349</field>
+  <field name="name">CULTIVO DE CACAO</field>
+  <field name="active">False</field>
+</record>
+<record id="xeconomic_activity_11401" model="xeconomic.activity"> 
+  <field name="code">11401</field>
+  <field name="name">CULTIVO DE CAFE</field>
+  <field name="active">False</field>
+</record>
+<record id="xeconomic_activity_11701" model="xeconomic.activity"> 
+  <field name="code">11701</field>
+  <field name="name">CULTIVO DE  CAñA DE AZÚCAR</field>
+  <field name="active">False</field>
+</record>
+<record id="xeconomic_activity_11802" model="xeconomic.activity"> 
+  <field name="code">11802</field>
+  <field name="name">CULTIVO Y VENTA DE CEREALES, LEGUMBRES Y GRANOS BÁSICOS INCLUIDOS  EN CANASTA BÁSICA</field>
+  <field name="active">False</field>
+</record>
+<record id="xeconomic_activity_11901" model="xeconomic.activity"> 
+  <field name="code">11901</field>
+  <field name="name">CULTIVO DE FLORES DE TODO TIPO</field>
+  <field name="active">False</field>
+</record>
+<record id="xeconomic_activity_11903" model="xeconomic.activity"> 
+  <field name="code">11903</field>
+  <field name="name">VIVEROS</field>
+  <field name="active">False</field>
+</record>
+<record id="xeconomic_activity_11907" model="xeconomic.activity"> 
+  <field name="code">11907</field>
+  <field name="name">PEQUEÑOS PRODUCTORES AGRICOLAS (FERIAS DEL AGRICULTOR)</field>
+  <field name="active">False</field>
+</record>
+<record id="xeconomic_activity_120001" model="xeconomic.activity"> 
+  <field name="code">120001</field>
+  <field name="name">EXTRACCIÓN DE MINERALES DE URANIO Y TORIO</field>
+  <field name="active">False</field>
+</record>
+<record id="xeconomic_activity_12101" model="xeconomic.activity"> 
+  <field name="code">12101</field>
+  <field name="name">CRíA DE CABALLOS Y OTROS EQUINOS</field>
+  <field name="active">False</field>
+</record>
+<record id="xeconomic_activity_12102" model="xeconomic.activity"> 
+  <field name="code">12102</field>
+  <field name="name">PRODUCCION DE SEMEN BOVINO, VENTA DE SEMEN CONGELADO Y DILUYENTE PARA SEMEN</field>
+  <field name="active">False</field>
+</record>
+<record id="xeconomic_activity_12103" model="xeconomic.activity"> 
+  <field name="code">12103</field>
+  <field name="name">CRÍA DE ANIMALES DOMÉSTICOS,COMO: GANADO VACUNO, OVEJAS Y CABRAS</field>
+  <field name="active">False</field>
+</record>
+<record id="xeconomic_activity_12201" model="xeconomic.activity"> 
+  <field name="code">12201</field>
+  <field name="name">CRIA DE CERDOS</field>
+  <field name="active">False</field>
+</record>
+<record id="xeconomic_activity_12202" model="xeconomic.activity"> 
+  <field name="code">12202</field>
+  <field name="name">CRIA DE ANIMALES DOMESTICADOS (AVES DE CORRAL)</field>
+  <field name="active">False</field>
+</record>
+<record id="xeconomic_activity_12203" model="xeconomic.activity"> 
+  <field name="code">12203</field>
+  <field name="name">CRíA DE MARIPOSAS</field>
+  <field name="active">False</field>
+</record>
+<record id="xeconomic_activity_12204" model="xeconomic.activity"> 
+  <field name="code">12204</field>
+  <field name="name">CRIA Y VENTA DE OTROS ANIMALES SEMIDOMESTICADOS O SALVAJES</field>
+  <field name="active">False</field>
+</record>
+<record id="xeconomic_activity_12401" model="xeconomic.activity"> 
+  <field name="code">12401</field>
+  <field name="name">PRODUCCION Y VENTA DE HUEVOS DE CUALQUIER TIPO, EXCEPTO  LOS DE GALLINA</field>
+  <field name="active">False</field>
+</record>
+<record id="xeconomic_activity_12402" model="xeconomic.activity"> 
+  <field name="code">12402</field>
+  <field name="name">CRÍA DE ANIMALES Y OBTENCIÓN DE PRODUCTOS DE ANIMALES VIVOS</field>
+  <field name="active">False</field>
+</record>
+<record id="xeconomic_activity_12403" model="xeconomic.activity"> 
+  <field name="code">12403</field>
+  <field name="name">PRODUCCION DE HUEVOS DE GALLINA INCLUIDOS EN LA CANASTA BASICA</field>
+  <field name="active">False</field>
+</record>
+<record id="xeconomic_activity_13001" model="xeconomic.activity"> 
+  <field name="code">13001</field>
+  <field name="name">CULTIVO DE PRODUCTOS AGRICOLAS EN COMBINACION CON LA CRIA DE ANIMALES</field>
+  <field name="active">False</field>
+</record>
+<record id="xeconomic_activity_14001" model="xeconomic.activity"> 
+  <field name="code">14001</field>
+  <field name="name">SERVICIO DE JARDINERIA Y/O DISEÑO PAISAJISTA</field>
+  <field name="active">False</field>
+</record>
+<record id="xeconomic_activity_14002" model="xeconomic.activity"> 
+  <field name="code">14002</field>
+  <field name="name">RECOLECCION DE COSECHAS Y ACTIVIDADES CONEXAS</field>
+  <field name="active">False</field>
+</record>
+<record id="xeconomic_activity_14003" model="xeconomic.activity"> 
+  <field name="code">14003</field>
+  <field name="name">FUMIGACION DE CULTIVOS</field>
+  <field name="active">False</field>
+</record>
+<record id="xeconomic_activity_14004" model="xeconomic.activity"> 
+  <field name="code">14004</field>
+  <field name="name">SERVICIO DE PLANTACION DE ARBOLES Y SIMILARES</field>
+  <field name="active">False</field>
+</record>
+<record id="xeconomic_activity_14005" model="xeconomic.activity"> 
+  <field name="code">14005</field>
+  <field name="name">MANEJO E INSTALACION DE SISTEMAS DE RIEGO</field>
+  <field name="active">False</field>
+</record>
+<record id="xeconomic_activity_141001" model="xeconomic.activity"> 
+  <field name="code">141001</field>
+  <field name="name">EXTRACCION DE PIEDRA, ARENA Y ARCILLA</field>
+  <field name="active">False</field>
+</record>
+<record id="xeconomic_activity_142101" model="xeconomic.activity"> 
+  <field name="code">142101</field>
+  <field name="name">EXTRACCION DE MINERALES Y SUSTANCIAS PARA LA FABRICACION DEABONOS</field>
+  <field name="active">False</field>
+</record>
+<record id="xeconomic_activity_142201" model="xeconomic.activity"> 
+  <field name="code">142201</field>
+  <field name="name">EXTRACCION DE SAL</field>
+  <field name="active">False</field>
+</record>
+<record id="xeconomic_activity_142901" model="xeconomic.activity"> 
+  <field name="code">142901</field>
+  <field name="name">EXPLOTACION DE OTRAS MINAS Y CANTERAS N.C.P.</field>
+  <field name="active">False</field>
+</record>
+<record id="xeconomic_activity_142902" model="xeconomic.activity"> 
+  <field name="code">142902</field>
+  <field name="name">VENTA DE ASFALTO/MEZCLA ASFALTICA</field>
+  <field name="active">False</field>
+</record>
+<record id="xeconomic_activity_15001" model="xeconomic.activity"> 
+  <field name="code">15001</field>
+  <field name="name">CAZA ORDINARIA MEDIANTE TRAMPAS, Y REPOBLACION DE ANIMALES DE CAZA</field>
+  <field name="active">False</field>
+</record>
+<record id="xeconomic_activity_151101" model="xeconomic.activity"> 
+  <field name="code">151101</field>
+  <field name="name">ELABORACION Y CONSERVACIÓN DE CARNE  Y EMBUTIDOS DE GANADO VACUNO, PORCINO  Y DE AVES</field>
+  <field name="active">False</field>
+</record>
+<record id="xeconomic_activity_151102" model="xeconomic.activity"> 
+  <field name="code">151102</field>
+  <field name="name">OPERACIÓN DE MATADEROS QUE REALIZAN ACTIVIDADES DE MATANZA DE ANIMALES</field>
+  <field name="active">False</field>
+</record>
+<record id="xeconomic_activity_151103" model="xeconomic.activity"> 
+  <field name="code">151103</field>
+  <field name="name">PRODUCCION DE CUEROS Y PIELES SIN CURTIR</field>
+  <field name="active">False</field>
+</record>
+<record id="xeconomic_activity_151105" model="xeconomic.activity"> 
+  <field name="code">151105</field>
+  <field name="name">PRODUCCION Y VENTA DE EMBUTIDOS EMPACADOS, ENVASADO Y ENLATADO</field>
+  <field name="active">False</field>
+</record>
+<record id="xeconomic_activity_151201" model="xeconomic.activity"> 
+  <field name="code">151201</field>
+  <field name="name">ELABORACIóN Y CONSERVACIóN DE PESCADO, CRUSTÁCEOS Y MOLUSCOS</field>
+  <field name="active">False</field>
+</record>
+<record id="xeconomic_activity_151301" model="xeconomic.activity"> 
+  <field name="code">151301</field>
+  <field name="name">ELABORACION Y CONSERVACION DE FRUTAS, LEGUMBRES Y HORTALIZAS</field>
+  <field name="active">False</field>
+</record>
+<record id="xeconomic_activity_151304" model="xeconomic.activity"> 
+  <field name="code">151304</field>
+  <field name="name">PRODUCCIóN DE CONCENTRADOS PARA JUGOS (CITRICULTURA)</field>
+  <field name="active">False</field>
+</record>
+<record id="xeconomic_activity_151401" model="xeconomic.activity"> 
+  <field name="code">151401</field>
+  <field name="name">ELABORACION Y VENTA DE ACEITES  Y GRASAS DE ORIGEN VEGETAL Y ANIMAL</field>
+  <field name="active">False</field>
+</record>
+<record id="xeconomic_activity_152001" model="xeconomic.activity"> 
+  <field name="code">152001</field>
+  <field name="name">PRODUCCIóN DE HELADOS Y OTROS PRODUCTOS SIMILARES</field>
+  <field name="active">False</field>
+</record>
+<record id="xeconomic_activity_152002" model="xeconomic.activity"> 
+  <field name="code">152002</field>
+  <field name="name">ELABORACIÓN Y VENTA DE PRODUCTOS LÁCTEOS NO INCLUIDOS EN CANASTA BÁSICA</field>
+  <field name="active">False</field>
+</record>
+<record id="xeconomic_activity_152003" model="xeconomic.activity"> 
+  <field name="code">152003</field>
+  <field name="name">ELABORACIÓN DE PRODUCTOS DE MOLINERÍA NO INCLUIDOS CANASTA BÁSICA</field>
+  <field name="active">False</field>
+</record>
+<record id="xeconomic_activity_153101" model="xeconomic.activity"> 
+  <field name="code">153101</field>
+  <field name="name">SERVICIO DE MOLIENDA</field>
+  <field name="active">False</field>
+</record>
+<record id="xeconomic_activity_153102" model="xeconomic.activity"> 
+  <field name="code">153102</field>
+  <field name="name">ELABORACIÓN DE PRODUCTOS DE MOLINERÍA NO INCLUIDOS CANASTA BÁSICA</field>
+  <field name="active">False</field>
+</record>
+<record id="xeconomic_activity_153103" model="xeconomic.activity"> 
+  <field name="code">153103</field>
+  <field name="name">BENEFICIO DE ARROZ</field>
+  <field name="active">False</field>
+</record>
+<record id="xeconomic_activity_153104" model="xeconomic.activity"> 
+  <field name="code">153104</field>
+  <field name="name">ELABORACIÓN DE PRODUCTOS DE MOLINERÍA INCLUIDOS EN CANASTA BÁSICA</field>
+  <field name="active">False</field>
+</record>
+<record id="xeconomic_activity_153201" model="xeconomic.activity"> 
+  <field name="code">153201</field>
+  <field name="name">ELABORACION DE PRODUCTOS DERIVADOS DE ALMIDON</field>
+  <field name="active">False</field>
+</record>
+<record id="xeconomic_activity_153301" model="xeconomic.activity"> 
+  <field name="code">153301</field>
+  <field name="name">ELABORACION DE ALIMENTOS PARA ANIMALES DESTINADOS AL CONSUMO HUMANO</field>
+  <field name="active">False</field>
+</record>
+<record id="xeconomic_activity_153302" model="xeconomic.activity"> 
+  <field name="code">153302</field>
+  <field name="name">ELABORACION DE PACAS DE HENO</field>
+  <field name="active">False</field>
+</record>
+<record id="xeconomic_activity_154101" model="xeconomic.activity"> 
+  <field name="code">154101</field>
+  <field name="name">VENTA DE PAN Y OTROS PRODUCTOS SIMILARES GRAVADOS CON IVA</field>
+  <field name="active">False</field>
+</record>
+<record id="xeconomic_activity_154102" model="xeconomic.activity"> 
+  <field name="code">154102</field>
+  <field name="name">ELABORACIÓN Y VENTA DE PRODUCTOS DE PANADERIA NO INCLUIDOS EN CANASTA BÁSICA </field>
+  <field name="active">False</field>
+</record>
+<record id="xeconomic_activity_154104" model="xeconomic.activity"> 
+  <field name="code">154104</field>
+  <field name="name">ELABORACIÓN Y VENTA DE PRODUCTOS DE PANADERIA INCLUIDOS EN CANASTA BÁSICA</field>
+  <field name="active">False</field>
+</record>
+<record id="xeconomic_activity_154201" model="xeconomic.activity"> 
+  <field name="code">154201</field>
+  <field name="name">ELABORACIÓN  Y VENTA DE AZÚCAR Y PRODUCTOS DERIVADOS DE LA CAÑA DE AZÚCAR</field>
+  <field name="active">False</field>
+</record>
+<record id="xeconomic_activity_154301" model="xeconomic.activity"> 
+  <field name="code">154301</field>
+  <field name="name">ELABORACION DE CACAO</field>
+  <field name="active">False</field>
+</record>
+<record id="xeconomic_activity_154302" model="xeconomic.activity"> 
+  <field name="code">154302</field>
+  <field name="name">ELABORACIÓN DE CHOCOLATE</field>
+  <field name="active">False</field>
+</record>
+<record id="xeconomic_activity_154303" model="xeconomic.activity"> 
+  <field name="code">154303</field>
+  <field name="name">ELABORACION DE DULCES, GOLOSINAS Y CONSERVAS EN AZUCAR</field>
+  <field name="active">False</field>
+</record>
+<record id="xeconomic_activity_154401" model="xeconomic.activity"> 
+  <field name="code">154401</field>
+  <field name="name">ELABORACIÓN DE MACARRONES, FIDEOS, ALCUZCUZ Y PRODUCTOS FARINÁCEOS SIMILARES</field>
+  <field name="active">False</field>
+</record>
+<record id="xeconomic_activity_154402" model="xeconomic.activity"> 
+  <field name="code">154402</field>
+  <field name="name">ELABORACIÓN DE MACARRONES, FIDEOS, ALCUZCUZ Y PRODUCTOS FARINÁCEOS SIMILARES INCLUIDOS EN CANASTA BÁSICA</field>
+  <field name="active">False</field>
+</record>
+<record id="xeconomic_activity_154902" model="xeconomic.activity"> 
+  <field name="code">154902</field>
+  <field name="name">FABRICACION DE PRODUCTOS ALIMENTICIOS PREPARADOS N.C.P. (NO CONTEMPLADOS EN OTRA</field>
+  <field name="active">False</field>
+</record>
+<record id="xeconomic_activity_154903" model="xeconomic.activity"> 
+  <field name="code">154903</field>
+  <field name="name">FABRICACIóN DE HIELO</field>
+  <field name="active">False</field>
+</record>
+<record id="xeconomic_activity_154904" model="xeconomic.activity"> 
+  <field name="code">154904</field>
+  <field name="name">FABRICACIóN DE CAFÉ (EXCEPTO EL ENVASADO, ENLATADO, SOLUBLEY EL DESCAFEINADO)</field>
+  <field name="active">False</field>
+</record>
+<record id="xeconomic_activity_154905" model="xeconomic.activity"> 
+  <field name="code">154905</field>
+  <field name="name">ELABORACION DE PRODUCTOS DE MAIZ EXENTOS DE IVA</field>
+  <field name="active">False</field>
+</record>
+<record id="xeconomic_activity_154908" model="xeconomic.activity"> 
+  <field name="code">154908</field>
+  <field name="name">ELABORACION DE PRODUCTOS DE MAIZ GRAVADOS CON IVA</field>
+  <field name="active">False</field>
+</record>
+<record id="xeconomic_activity_155101" model="xeconomic.activity"> 
+  <field name="code">155101</field>
+  <field name="name">ELABORAC. RECTIFICAC MEZCLA BEBIDAS ALCOHOLICAS/PROD. DE ALCOHOL ETÍLICO (SUSTAN</field>
+  <field name="active">False</field>
+</record>
+<record id="xeconomic_activity_155103" model="xeconomic.activity"> 
+  <field name="code">155103</field>
+  <field name="name">ELABORACION DE BEBIDAS CON PORCENTAJE DE ALCOHOL POR VOLUMEN MENOR AL 15%.</field>
+  <field name="active">False</field>
+</record>
+<record id="xeconomic_activity_155301" model="xeconomic.activity"> 
+  <field name="code">155301</field>
+  <field name="name">ELABORACION DE BEBIDAS MALTEADAS Y DE MALTA NO ARTESANALES</field>
+  <field name="active">False</field>
+</record>
+<record id="xeconomic_activity_155302" model="xeconomic.activity"> 
+  <field name="code">155302</field>
+  <field name="name">ELABORACION ARTESANAL DE BEBIDAS MALTEADAS Y DE MALTA.</field>
+  <field name="active">False</field>
+</record>
+<record id="xeconomic_activity_155403" model="xeconomic.activity"> 
+  <field name="code">155403</field>
+  <field name="name">ELABORACION DE BEBIDAS NO ALCOHOLICAS / GASEOSAS / AGUA MINERAL Y DE MANANTIAL</field>
+  <field name="active">False</field>
+</record>
+<record id="xeconomic_activity_155404" model="xeconomic.activity"> 
+  <field name="code">155404</field>
+  <field name="name">ELABORACION DE CONCENTRADO PARA BEBIDAS NATURALES Y GASEOSAS</field>
+  <field name="active">False</field>
+</record>
+<record id="xeconomic_activity_160001" model="xeconomic.activity"> 
+  <field name="code">160001</field>
+  <field name="name">ELABORACION DE PRODUCTOS DE TABACO</field>
+  <field name="active">False</field>
+</record>
+<record id="xeconomic_activity_171101" model="xeconomic.activity"> 
+  <field name="code">171101</field>
+  <field name="name">FABRICACION DE TODO TIPO DE TELAS Y/O HILOS</field>
+  <field name="active">False</field>
+</record>
+<record id="xeconomic_activity_171201" model="xeconomic.activity"> 
+  <field name="code">171201</field>
+  <field name="name">MAQUILA DE PRODUCTOS TEXTILES</field>
+  <field name="active">False</field>
+</record>
+<record id="xeconomic_activity_171202" model="xeconomic.activity"> 
+  <field name="code">171202</field>
+  <field name="name">HIDROFUGADO/IMPERMEABILIZADO</field>
+  <field name="active">False</field>
+</record>
+<record id="xeconomic_activity_172101" model="xeconomic.activity"> 
+  <field name="code">172101</field>
+  <field name="name">FABRICACION DE ARTICULOS CONFECCIONADOS DE MATERIALES TEXTILES, EXEPTO PRENDAS D</field>
+  <field name="active">False</field>
+</record>
+<record id="xeconomic_activity_172103" model="xeconomic.activity"> 
+  <field name="code">172103</field>
+  <field name="name">DISEÑO ARTISTICO PARA COSTURA (MOLDES)</field>
+  <field name="active">False</field>
+</record>
+<record id="xeconomic_activity_172201" model="xeconomic.activity"> 
+  <field name="code">172201</field>
+  <field name="name">FABRICACION DE TAPICES Y ALFOMBRAS</field>
+  <field name="active">False</field>
+</record>
+<record id="xeconomic_activity_172301" model="xeconomic.activity"> 
+  <field name="code">172301</field>
+  <field name="name">FABRICACION DE CUERDAS, CORDELES,BRAMANTES Y REDES</field>
+  <field name="active">False</field>
+</record>
+<record id="xeconomic_activity_172302" model="xeconomic.activity"> 
+  <field name="code">172302</field>
+  <field name="name">FABRICACION DE HILOS Y CUERDAS PARA USO AGRICOLA Y PESCA</field>
+  <field name="active">False</field>
+</record>
+<record id="xeconomic_activity_172902" model="xeconomic.activity"> 
+  <field name="code">172902</field>
+  <field name="name">SERVICIO DE BORDADO A MANO O A MAQUINA</field>
+  <field name="active">False</field>
+</record>
+<record id="xeconomic_activity_173001" model="xeconomic.activity"> 
+  <field name="code">173001</field>
+  <field name="name">FABRICACION DE TEJDOS Y ARTICULOS DE PUNTO Y GANCHILLO</field>
+  <field name="active">False</field>
+</record>
+<record id="xeconomic_activity_181001" model="xeconomic.activity"> 
+  <field name="code">181001</field>
+  <field name="name">SERVICIOS DE COSTURA Y SASTRERIA (COSTURERAS Y SASTRES)</field>
+  <field name="active">False</field>
+</record>
+<record id="xeconomic_activity_181002" model="xeconomic.activity"> 
+  <field name="code">181002</field>
+  <field name="name">FABRICACION DE PRENDAS DE VESTIR (ROPA DE TODO TIPO)</field>
+  <field name="active">False</field>
+</record>
+<record id="xeconomic_activity_182001" model="xeconomic.activity"> 
+  <field name="code">182001</field>
+  <field name="name">ADOBO Y TEÑIDO DE PIELES; FABRICACIÓN DE ARTÍCULOS DE PIEL NATURAL O ARTIFICIAL</field>
+  <field name="active">False</field>
+</record>
+<record id="xeconomic_activity_191101" model="xeconomic.activity"> 
+  <field name="code">191101</field>
+  <field name="name">FABRICACIóN DE MALETAS, BOLSOS DE MANO Y ARTICULOS SIMILARES</field>
+  <field name="active">False</field>
+</record>
+<record id="xeconomic_activity_192001" model="xeconomic.activity"> 
+  <field name="code">192001</field>
+  <field name="name">FABRICACION DE  TODO TIPO DE ZAPATOS EXEPTO EL ORTOPEDICO</field>
+  <field name="active">False</field>
+</record>
+<record id="xeconomic_activity_20001" model="xeconomic.activity"> 
+  <field name="code">20001</field>
+  <field name="name">VENTA DE ARBOLES EN PIE (ARBOLES DE REFORESTACION)</field>
+  <field name="active">False</field>
+</record>
+<record id="xeconomic_activity_20002" model="xeconomic.activity"> 
+  <field name="code">20002</field>
+  <field name="name">EXTRACCION Y/O VENTA DE MADERA</field>
+  <field name="active">False</field>
+</record>
+<record id="xeconomic_activity_20005" model="xeconomic.activity"> 
+  <field name="code">20005</field>
+  <field name="name">ACTIVIDADES DE CONSERVACIÓN DE BOSQUES. (SERVICIOS AMBIENTALES, VENTA DE OXÍGENO)</field>
+  <field name="active">False</field>
+</record>
+<record id="xeconomic_activity_201002" model="xeconomic.activity"> 
+  <field name="code">201002</field>
+  <field name="name">ASERRADO Y ACEPILLADURA DE MADERA</field>
+  <field name="active">False</field>
+</record>
+<record id="xeconomic_activity_202101" model="xeconomic.activity"> 
+  <field name="code">202101</field>
+  <field name="name">FABRICACIÓN DE HOJAS DE MADERA PARA ENCHAPADO Y TABLEROS COMO PLYWOOD, DURPANEL</field>
+  <field name="active">False</field>
+</record>
+<record id="xeconomic_activity_202201" model="xeconomic.activity"> 
+  <field name="code">202201</field>
+  <field name="name">FABRICACION DE PARTES Y PIEZAS DE CARPINTERIA PARA EDIFICIOS Y CONSTRUCCIONES</field>
+  <field name="active">False</field>
+</record>
+<record id="xeconomic_activity_202301" model="xeconomic.activity"> 
+  <field name="code">202301</field>
+  <field name="name">FABRICACIóN DE TARIMAS</field>
+  <field name="active">False</field>
+</record>
+<record id="xeconomic_activity_202902" model="xeconomic.activity"> 
+  <field name="code">202902</field>
+  <field name="name">FABRICACIóN  Y/O VENTA DE ATAUDES (CAJAS MORTUORIAS, FERETROS).</field>
+  <field name="active">False</field>
+</record>
+<record id="xeconomic_activity_210101" model="xeconomic.activity"> 
+  <field name="code">210101</field>
+  <field name="name">FABRICACION DE PAPEL Y CARTON Y ENVASES DE PAPEL Y CARTON</field>
+  <field name="active">False</field>
+</record>
+<record id="xeconomic_activity_210201" model="xeconomic.activity"> 
+  <field name="code">210201</field>
+  <field name="name">FABRICACION DE OTROS ARTICULOS DE PAPEL Y CARTON</field>
+  <field name="active">False</field>
+</record>
+<record id="xeconomic_activity_221101" model="xeconomic.activity"> 
+  <field name="code">221101</field>
+  <field name="name">EDICION DE LIBROS DE TEXTOS</field>
+  <field name="active">False</field>
+</record>
+<record id="xeconomic_activity_221201" model="xeconomic.activity"> 
+  <field name="code">221201</field>
+  <field name="name">EDICION DE PERIODICOS, REVISTAS Y OTRAS PUBLICACIONES PERIODICAS</field>
+  <field name="active">False</field>
+</record>
+<record id="xeconomic_activity_221901" model="xeconomic.activity"> 
+  <field name="code">221901</field>
+  <field name="name">ARTES GRáFICAS</field>
+  <field name="active">False</field>
+</record>
+<record id="xeconomic_activity_222102" model="xeconomic.activity"> 
+  <field name="code">222102</field>
+  <field name="name">TIPOGRAFIA  Y/O LITOGRAFIA (IMPRENTA)</field>
+  <field name="active">False</field>
+</record>
+<record id="xeconomic_activity_222104" model="xeconomic.activity"> 
+  <field name="code">222104</field>
+  <field name="name">IMPRESIÓN DIGITAL</field>
+  <field name="active">False</field>
+</record>
+<record id="xeconomic_activity_222105" model="xeconomic.activity"> 
+  <field name="code">222105</field>
+  <field name="name">SERIGRAFIA</field>
+  <field name="active">False</field>
+</record>
+<record id="xeconomic_activity_223001" model="xeconomic.activity"> 
+  <field name="code">223001</field>
+  <field name="name">REPRODUCCION DE GRABACIONES</field>
+  <field name="active">False</field>
+</record>
+<record id="xeconomic_activity_232001" model="xeconomic.activity"> 
+  <field name="code">232001</field>
+  <field name="name">REFINERIAS DE PETROLEO</field>
+  <field name="active">False</field>
+</record>
+<record id="xeconomic_activity_232002" model="xeconomic.activity"> 
+  <field name="code">232002</field>
+  <field name="name">FABRICACIÓN DE PRODUCTOS DIVERSOS DERIVADOS DEL PETRÓLEO</field>
+  <field name="active">False</field>
+</record>
+<record id="xeconomic_activity_232005" model="xeconomic.activity"> 
+  <field name="code">232005</field>
+  <field name="name">ELABORACION DE BIOCOMBUSTIBLES</field>
+  <field name="active">False</field>
+</record>
+<record id="xeconomic_activity_241101" model="xeconomic.activity"> 
+  <field name="code">241101</field>
+  <field name="name">FABRICACION DE SUSTANCIAS QUIMICAS Y GASES INDUSTRIALES EXCEPTO ABONOS</field>
+  <field name="active">False</field>
+</record>
+<record id="xeconomic_activity_241201" model="xeconomic.activity"> 
+  <field name="code">241201</field>
+  <field name="name">FABRICACION DE ABONOS Y COMPUESTOS DE NITROGENO (ORGANICOS Y QUIMICOS)</field>
+  <field name="active">False</field>
+</record>
+<record id="xeconomic_activity_241301" model="xeconomic.activity"> 
+  <field name="code">241301</field>
+  <field name="name">FABRICACION DE PLASTICOS Y CAUCHO SINTETICO EN FORMAS PRIMARIAS</field>
+  <field name="active">False</field>
+</record>
+<record id="xeconomic_activity_241302" model="xeconomic.activity"> 
+  <field name="code">241302</field>
+  <field name="name">FABRICACIÓN DE RESINAS</field>
+  <field name="active">False</field>
+</record>
+<record id="xeconomic_activity_242101" model="xeconomic.activity"> 
+  <field name="code">242101</field>
+  <field name="name">FABRICACION DE PLAGUICIDAS Y OTROS PRODUCTOS QUIMICOS DE USO AGROPECUARIO</field>
+  <field name="active">False</field>
+</record>
+<record id="xeconomic_activity_242201" model="xeconomic.activity"> 
+  <field name="code">242201</field>
+  <field name="name">FABRICACIÓN DE PINTURAS, BARNICES Y PRODUCTOS DE REVESTIMI-TO SIMILARES</field>
+  <field name="active">False</field>
+</record>
+<record id="xeconomic_activity_242202" model="xeconomic.activity"> 
+  <field name="code">242202</field>
+  <field name="name">FABRICACION DE TINTAS DE IMPRENTAS</field>
+  <field name="active">False</field>
+</record>
+<record id="xeconomic_activity_242301" model="xeconomic.activity"> 
+  <field name="code">242301</field>
+  <field name="name">FABRICACIÓN PRODUCTOS FARMACÉUTICOS, SUSTANCIAS QUÍMICAS  Y PRODUCTOS BOTANICOS</field>
+  <field name="active">False</field>
+</record>
+<record id="xeconomic_activity_242401" model="xeconomic.activity"> 
+  <field name="code">242401</field>
+  <field name="name">FABRICACION JABONES, DETERGENTES, PREPARADOS DE TOCADOR, PARA LIMPIAR PULIR </field>
+  <field name="active">False</field>
+</record>
+<record id="xeconomic_activity_242404" model="xeconomic.activity"> 
+  <field name="code">242404</field>
+  <field name="name">FABRICACION DE JABONES DE TOCADOR</field>
+  <field name="active">False</field>
+</record>
+<record id="xeconomic_activity_242405" model="xeconomic.activity"> 
+  <field name="code">242405</field>
+  <field name="name">FABRICACION DE JABONES PARA LAVAR (EXCEPTO PREPARACIONES TENSO ACTIVAS USADAS</field>
+  <field name="active">False</field>
+</record>
+<record id="xeconomic_activity_242406" model="xeconomic.activity"> 
+  <field name="code">242406</field>
+  <field name="name">FABRICACION DE CERAS, ABRILLANTADORES, LUSTRADORES Y PREPARACIONES SIMILARES</field>
+  <field name="active">False</field>
+</record>
+<record id="xeconomic_activity_242901" model="xeconomic.activity"> 
+  <field name="code">242901</field>
+  <field name="name">FABRICACION DE OTROS PRODUCTOS QUIMICOS.</field>
+  <field name="active">False</field>
+</record>
+<record id="xeconomic_activity_242902" model="xeconomic.activity"> 
+  <field name="code">242902</field>
+  <field name="name">FABRICACION DE PEGAMENTOS Y ADHESIVOS</field>
+  <field name="active">False</field>
+</record>
+<record id="xeconomic_activity_242903" model="xeconomic.activity"> 
+  <field name="code">242903</field>
+  <field name="name">REPARACION DE ARMAS DE FUEGO</field>
+  <field name="active">False</field>
+</record>
+<record id="xeconomic_activity_243001" model="xeconomic.activity"> 
+  <field name="code">243001</field>
+  <field name="name">FABRICACION DE FIBRAS SINTETICAS</field>
+  <field name="active">False</field>
+</record>
+<record id="xeconomic_activity_251101" model="xeconomic.activity"> 
+  <field name="code">251101</field>
+  <field name="name">FABRICACION DE LLANTAS Y CUBIERTAS PARA EQUIPO Y MAQUINARIAMOVIL</field>
+  <field name="active">False</field>
+</record>
+<record id="xeconomic_activity_251102" model="xeconomic.activity"> 
+  <field name="code">251102</field>
+  <field name="name">REENCAUCHADORA DE LLANTAS</field>
+  <field name="active">False</field>
+</record>
+<record id="xeconomic_activity_251901" model="xeconomic.activity"> 
+  <field name="code">251901</field>
+  <field name="name">FABRICACIÓN DE OTROS PRODUCTOS DE CAUCHO</field>
+  <field name="active">False</field>
+</record>
+<record id="xeconomic_activity_252001" model="xeconomic.activity"> 
+  <field name="code">252001</field>
+  <field name="name">FABRICACION DE ARTICULOS DE PLASTICO</field>
+  <field name="active">False</field>
+</record>
+<record id="xeconomic_activity_261001" model="xeconomic.activity"> 
+  <field name="code">261001</field>
+  <field name="name">FABRICACION DE VIDRIO Y PRODUCTOS DE VIDRIO</field>
+  <field name="active">False</field>
+</record>
+<record id="xeconomic_activity_269101" model="xeconomic.activity"> 
+  <field name="code">269101</field>
+  <field name="name">FABRICACIÓN PRODUCTOS DE CERÁMICA BARRO LOZA Y/O PORCELANANO REFRACTARIA USO NO ESTRUCTURAL</field>
+  <field name="active">False</field>
+</record>
+<record id="xeconomic_activity_269201" model="xeconomic.activity"> 
+  <field name="code">269201</field>
+  <field name="name">FABRICACION DE PRODUCTOS DE CERAMICA REFRACTARIA</field>
+  <field name="active">False</field>
+</record>
+<record id="xeconomic_activity_269301" model="xeconomic.activity"> 
+  <field name="code">269301</field>
+  <field name="name">FABRICACIÓN DE PRODUCTOS DE ARCILLA Y CERÁMICA NO REFRACTARIAS PARA USO ESTRUCTURAL</field>
+  <field name="active">False</field>
+</record>
+<record id="xeconomic_activity_269401" model="xeconomic.activity"> 
+  <field name="code">269401</field>
+  <field name="name">FABRICACIÓN Y/O VENTA DE CEMENTO, CAL Y YESO</field>
+  <field name="active">False</field>
+</record>
+<record id="xeconomic_activity_269501" model="xeconomic.activity"> 
+  <field name="code">269501</field>
+  <field name="name">FABRICACION DE ARTÍCULOS DE CEMENTO, YESO Y HORMIGON PARA LA CONSTRUCCION</field>
+  <field name="active">False</field>
+</record>
+<record id="xeconomic_activity_269601" model="xeconomic.activity"> 
+  <field name="code">269601</field>
+  <field name="name">CORTE, TALLADO Y ACABADO DE LA PIEDRA</field>
+  <field name="active">False</field>
+</record>
+<record id="xeconomic_activity_269901" model="xeconomic.activity"> 
+  <field name="code">269901</field>
+  <field name="name">FABRICACIÓN DE OTROS PRODUCTOS MINERALES NO METÁLICOS N.C.P.</field>
+  <field name="active">False</field>
+</record>
+<record id="xeconomic_activity_271001" model="xeconomic.activity"> 
+  <field name="code">271001</field>
+  <field name="name">INDUSTRIAS BÁSICAS DE HIERRO Y ACERO</field>
+  <field name="active">False</field>
+</record>
+<record id="xeconomic_activity_272001" model="xeconomic.activity"> 
+  <field name="code">272001</field>
+  <field name="name">FABRICACIÓN DE PRODUCTOS PRIMARIOS DE METALES PRECIOSOS Y METALES NO FERROSOS</field>
+  <field name="active">False</field>
+</record>
+<record id="xeconomic_activity_273101" model="xeconomic.activity"> 
+  <field name="code">273101</field>
+  <field name="name">FUNDICION DE HIERRO Y ACERO</field>
+  <field name="active">False</field>
+</record>
+<record id="xeconomic_activity_273201" model="xeconomic.activity"> 
+  <field name="code">273201</field>
+  <field name="name">FUNDICIÓN DE METALES NO FERROSOS</field>
+  <field name="active">False</field>
+</record>
+<record id="xeconomic_activity_281101" model="xeconomic.activity"> 
+  <field name="code">281101</field>
+  <field name="name">FABRICACION DE PRODUCTOS METALICOS PARA USO ESTRUCTURAL</field>
+  <field name="active">False</field>
+</record>
+<record id="xeconomic_activity_281201" model="xeconomic.activity"> 
+  <field name="code">281201</field>
+  <field name="name">FABRICACIÓN DE TANQUES, DEPÓSITOS Y RECIPIENTES DE METAL</field>
+  <field name="active">False</field>
+</record>
+<record id="xeconomic_activity_281301" model="xeconomic.activity"> 
+  <field name="code">281301</field>
+  <field name="name">FABRICACIÓN GENERADORES DE VAPOR, EXCEPTO CALDERAS DE AGUA CALIENTE PARA CALEFACCIÓN</field>
+  <field name="active">False</field>
+</record>
+<record id="xeconomic_activity_289201" model="xeconomic.activity"> 
+  <field name="code">289201</field>
+  <field name="name">SERVICIOS DE SOLDADURA</field>
+  <field name="active">False</field>
+</record>
+<record id="xeconomic_activity_289202" model="xeconomic.activity"> 
+  <field name="code">289202</field>
+  <field name="name">SERVICIO DE TRATAMIENTO Y REVESTIMIENTO DE TODO TIPO DE MATERIALES</field>
+  <field name="active">False</field>
+</record>
+<record id="xeconomic_activity_289302" model="xeconomic.activity"> 
+  <field name="code">289302</field>
+  <field name="name">HOJALATERIA</field>
+  <field name="active">False</field>
+</record>
+<record id="xeconomic_activity_289304" model="xeconomic.activity"> 
+  <field name="code">289304</field>
+  <field name="name">TALLER DE MECáNICA DE PRECISIÓN</field>
+  <field name="active">False</field>
+</record>
+<record id="xeconomic_activity_289305" model="xeconomic.activity"> 
+  <field name="code">289305</field>
+  <field name="name">FABRICACION DE PIEZAS, ARTICULOS Y ACCESORIOS DE METAL INCLUYE LAS CERRAJERIAS.</field>
+  <field name="active">False</field>
+</record>
+<record id="xeconomic_activity_289306" model="xeconomic.activity"> 
+  <field name="code">289306</field>
+  <field name="name">SERVICIOS DE TORNO (MECANICA DE PRECISION)</field>
+  <field name="active">False</field>
+</record>
+<record id="xeconomic_activity_289902" model="xeconomic.activity"> 
+  <field name="code">289902</field>
+  <field name="name">FABRICACIÓN DE OTROS PRODUCTOS ELABORADOS DE METAL N.C.P.</field>
+  <field name="active">False</field>
+</record>
+<record id="xeconomic_activity_290001" model="xeconomic.activity"> 
+  <field name="code">290001</field>
+  <field name="name">SERVICIO DE REPARACION DE MAQUINARIA Y EQUIPO.</field>
+  <field name="active">False</field>
+</record>
+<record id="xeconomic_activity_290003" model="xeconomic.activity"> 
+  <field name="code">290003</field>
+  <field name="name">SERVICIO DE MANTENIMIENTO DE MAQUINARIA Y EQUIPO.</field>
+  <field name="active">False</field>
+</record>
+<record id="xeconomic_activity_291101" model="xeconomic.activity"> 
+  <field name="code">291101</field>
+  <field name="name">FABRICACIÓN DE MOTORES Y TURBINAS, EXCEPTO MOTORES PARA AERONAVES, VEHÍCULOS AUT</field>
+  <field name="active">False</field>
+</record>
+<record id="xeconomic_activity_291201" model="xeconomic.activity"> 
+  <field name="code">291201</field>
+  <field name="name">FABRICACIÓN DE BOMBAS, COMPRESORES, GRIFOS Y VÁLVULAS</field>
+  <field name="active">False</field>
+</record>
+<record id="xeconomic_activity_291202" model="xeconomic.activity"> 
+  <field name="code">291202</field>
+  <field name="name">VENTA DE BOMBAS DE AGUA</field>
+  <field name="active">False</field>
+</record>
+<record id="xeconomic_activity_291401" model="xeconomic.activity"> 
+  <field name="code">291401</field>
+  <field name="name">FABRICACIÓN DE HORNOS Y QUEMADORES</field>
+  <field name="active">False</field>
+</record>
+<record id="xeconomic_activity_291901" model="xeconomic.activity"> 
+  <field name="code">291901</field>
+  <field name="name">REPARACION DE EQUIPO DE REFRIGERACION Y CONGELACION</field>
+  <field name="active">False</field>
+</record>
+<record id="xeconomic_activity_291903" model="xeconomic.activity"> 
+  <field name="code">291903</field>
+  <field name="name">INSTALACION Y/O MANTENIMIENTO DE EQUIPO DE REFRIGERACION Y CONGELACION</field>
+  <field name="active">False</field>
+</record>
+<record id="xeconomic_activity_292101" model="xeconomic.activity"> 
+  <field name="code">292101</field>
+  <field name="name">FABRICACION DE MAQUINARIA AGRICOLA</field>
+  <field name="active">False</field>
+</record>
+<record id="xeconomic_activity_292201" model="xeconomic.activity"> 
+  <field name="code">292201</field>
+  <field name="name">FABRICACIÓN DE MÁQUINAS HERRAMIENTA</field>
+  <field name="active">False</field>
+</record>
+<record id="xeconomic_activity_292301" model="xeconomic.activity"> 
+  <field name="code">292301</field>
+  <field name="name">FABRICACIÓN DE MAQUINARIA METALÚRGICA</field>
+  <field name="active">False</field>
+</record>
+<record id="xeconomic_activity_292401" model="xeconomic.activity"> 
+  <field name="code">292401</field>
+  <field name="name">FABRICACIÓN DE MAQUINARIA PARA LA EXPLOTACIÓN DE MINAS Y CANTERAS </field>
+  <field name="active">False</field>
+</record>
+<record id="xeconomic_activity_292402" model="xeconomic.activity"> 
+  <field name="code">292402</field>
+  <field name="name">PERFORACION DE POZOS</field>
+  <field name="active">False</field>
+</record>
+<record id="xeconomic_activity_292501" model="xeconomic.activity"> 
+  <field name="code">292501</field>
+  <field name="name">FABRICACIÓN DE MAQUINARIA PARA LA ELABORACIÓN DE ALIMENTOS,BEBIDAS Y TABACO</field>
+  <field name="active">False</field>
+</record>
+<record id="xeconomic_activity_292601" model="xeconomic.activity"> 
+  <field name="code">292601</field>
+  <field name="name">FABRICACIÓN MAQUINARIA PARA LA ELABORACIÓN DE PRODUCTOS TEXTILES, PRENDAS DE VES</field>
+  <field name="active">False</field>
+</record>
+<record id="xeconomic_activity_292701" model="xeconomic.activity"> 
+  <field name="code">292701</field>
+  <field name="name">FABRICACIÓN DE ARMAS Y MUNICIONES</field>
+  <field name="active">False</field>
+</record>
+<record id="xeconomic_activity_292901" model="xeconomic.activity"> 
+  <field name="code">292901</field>
+  <field name="name">FABRICACIÓN DE OTROS TIPOS DE MAQUINARIA DE USO ESPECIAL</field>
+  <field name="active">False</field>
+</record>
+<record id="xeconomic_activity_293001" model="xeconomic.activity"> 
+  <field name="code">293001</field>
+  <field name="name">FABRICACIÓN DE APARATOS DE USO DOMÉSTICO N.C.P.</field>
+  <field name="active">False</field>
+</record>
+<record id="xeconomic_activity_300001" model="xeconomic.activity"> 
+  <field name="code">300001</field>
+  <field name="name">FABRICACIÓN DE MAQUINARIA DE OFICINA, CONTABILIDAD E INFORMÁTICA</field>
+  <field name="active">False</field>
+</record>
+<record id="xeconomic_activity_311001" model="xeconomic.activity"> 
+  <field name="code">311001</field>
+  <field name="name">FABRICACION DE MOTORES, GENERADORES Y TRANSFORMADORES ELECTRICOS, PARTES Y ACCESORIOS</field>
+  <field name="active">False</field>
+</record>
+<record id="xeconomic_activity_313001" model="xeconomic.activity"> 
+  <field name="code">313001</field>
+  <field name="name">FABRICACIÓN DE HILOS Y CABLES AISLADOS</field>
+  <field name="active">False</field>
+</record>
+<record id="xeconomic_activity_314001" model="xeconomic.activity"> 
+  <field name="code">314001</field>
+  <field name="name">FABRICACION DE PILAS, BATERIAS Y ACUMULADORES</field>
+  <field name="active">False</field>
+</record>
+<record id="xeconomic_activity_315001" model="xeconomic.activity"> 
+  <field name="code">315001</field>
+  <field name="name">FABRICACION DE LAMPARAS ELECTRICAS Y EQUIPO DE ILUMINACION</field>
+  <field name="active">False</field>
+</record>
+<record id="xeconomic_activity_319001" model="xeconomic.activity"> 
+  <field name="code">319001</field>
+  <field name="name">FABRICACIÓN DE OTROS TIPOS DE EQUIPO ELÉCTRICO N.C.P.</field>
+  <field name="active">False</field>
+</record>
+<record id="xeconomic_activity_321001" model="xeconomic.activity"> 
+  <field name="code">321001</field>
+  <field name="name">MANUFACTURA O FABRICACION DE OTROS COMPONENTES ELECTRONICOS</field>
+  <field name="active">False</field>
+</record>
+<record id="xeconomic_activity_321002" model="xeconomic.activity"> 
+  <field name="code">321002</field>
+  <field name="name">DISEÑO DE COMPONENTES ELECTRONICOS</field>
+  <field name="active">False</field>
+</record>
+<record id="xeconomic_activity_322001" model="xeconomic.activity"> 
+  <field name="code">322001</field>
+  <field name="name">FABRICACION DE TRANSMISORES Y RECEPTORES DE RADIO Y TELEVISION</field>
+  <field name="active">False</field>
+</record>
+<record id="xeconomic_activity_331101" model="xeconomic.activity"> 
+  <field name="code">331101</field>
+  <field name="name">FABRICACION  DE PROTESIS EN GENERAL</field>
+  <field name="active">False</field>
+</record>
+<record id="xeconomic_activity_331102" model="xeconomic.activity"> 
+  <field name="code">331102</field>
+  <field name="name">FABRICACION Y COMERCIALIZACION DE EQUIPO MEDICO</field>
+  <field name="active">False</field>
+</record>
+<record id="xeconomic_activity_331103" model="xeconomic.activity"> 
+  <field name="code">331103</field>
+  <field name="name">FABRICACION Y COMERCIALIZACION DE ZAPATOS ORTOPEDICOS</field>
+  <field name="active">False</field>
+</record>
+<record id="xeconomic_activity_331201" model="xeconomic.activity"> 
+  <field name="code">331201</field>
+  <field name="name">FABRICACIÓN DE EQUIPOS PARA MEDIR, VERIFICAR, Y NAVEGAR Y DE EQUIPOS DE CONTROL</field>
+  <field name="active">False</field>
+</record>
+<record id="xeconomic_activity_332001" model="xeconomic.activity"> 
+  <field name="code">332001</field>
+  <field name="name">FABRICACIÓN DE INSTRUMENTOS OPTICOS Y EQUIPO FOTOGRÁFICO</field>
+  <field name="active">False</field>
+</record>
+<record id="xeconomic_activity_333001" model="xeconomic.activity"> 
+  <field name="code">333001</field>
+  <field name="name">FABRICACION DE RELOJES DE TODO TIPO</field>
+  <field name="active">False</field>
+</record>
+<record id="xeconomic_activity_341001" model="xeconomic.activity"> 
+  <field name="code">341001</field>
+  <field name="name">FABRICACIÓN DE VEHÍCULOS AUTOMOTORES</field>
+  <field name="active">False</field>
+</record>
+<record id="xeconomic_activity_34200" model="xeconomic.activity"> 
+  <field name="code">34200</field>
+  <field name="name">2 FABRICACION DE CARROCERIAS PARA CAMIONES DE LAS PARTIDAS ARANCELARIAS 870790002</field>
+  <field name="active">False</field>
+</record>
+<record id="xeconomic_activity_342001" model="xeconomic.activity"> 
+  <field name="code">342001</field>
+  <field name="name">FABRICACIÓN DE CARROCERÍAS PARA VEHÍCULOS AUTOMOTORES, REMOLQUES Y SEMIREMOLQUES</field>
+  <field name="active">False</field>
+</record>
+<record id="xeconomic_activity_343001" model="xeconomic.activity"> 
+  <field name="code">343001</field>
+  <field name="name">FABRICACIÓN DE PARTES, PIEZAS Y ACCESORIOS PARA VEHÍCULOS AUTOMOTORES</field>
+  <field name="active">False</field>
+</record>
+<record id="xeconomic_activity_351101" model="xeconomic.activity"> 
+  <field name="code">351101</field>
+  <field name="name">SERVICIO DE REPARACION DE EMBARCACIONES Y SUS PARTES Y/O ESTRUCTURAS FLOTANTES</field>
+  <field name="active">False</field>
+</record>
+<record id="xeconomic_activity_351102" model="xeconomic.activity"> 
+  <field name="code">351102</field>
+  <field name="name">CONSTRUCCION DE EMBARCACIONES Y ESTRUCTURAS FLOTANTES</field>
+  <field name="active">False</field>
+</record>
+<record id="xeconomic_activity_351103" model="xeconomic.activity"> 
+  <field name="code">351103</field>
+  <field name="name">VENTA DE EMBARCACIONES DE MOTOR Y VELA</field>
+  <field name="active">False</field>
+</record>
+<record id="xeconomic_activity_352001" model="xeconomic.activity"> 
+  <field name="code">352001</field>
+  <field name="name">FABRICACIÓN DE LOCOMOTORAS Y  MATERIAL RODANTE PARA FERROCARRILES Y TRANVÍAS</field>
+  <field name="active">False</field>
+</record>
+<record id="xeconomic_activity_353001" model="xeconomic.activity"> 
+  <field name="code">353001</field>
+  <field name="name">FABRICACIÓN DE AERONAVES Y NAVES ESPACIALES Y MAQUINARIA CONEXA</field>
+  <field name="active">False</field>
+</record>
+<record id="xeconomic_activity_359101" model="xeconomic.activity"> 
+  <field name="code">359101</field>
+  <field name="name">FABRICACIÓN DE MOTOCICLETAS, PARTES, PIEZAS Y SUS ACCESORIOS</field>
+  <field name="active">False</field>
+</record>
+<record id="xeconomic_activity_359201" model="xeconomic.activity"> 
+  <field name="code">359201</field>
+  <field name="name">FABRICACION DE BICICLETAS Y SILLAS DE RUEDAS, PARTES, PIEZAS Y SUS ACCESORIOS</field>
+  <field name="active">False</field>
+</record>
+<record id="xeconomic_activity_359901" model="xeconomic.activity"> 
+  <field name="code">359901</field>
+  <field name="name">FABRICACIÓN DE OTROS TIPOS DE EQUIPO DE TRANSPORTE N.C.P.</field>
+  <field name="active">False</field>
+</record>
+<record id="xeconomic_activity_361001" model="xeconomic.activity"> 
+  <field name="code">361001</field>
+  <field name="name">FABRICACION Y/O REPARACION DE MUEBLES Y ACCESORIOS (INCLUYECOLCHONES)</field>
+  <field name="active">False</field>
+</record>
+<record id="xeconomic_activity_361002" model="xeconomic.activity"> 
+  <field name="code">361002</field>
+  <field name="name">REPARACIóN DE TAPICERíA</field>
+  <field name="active">False</field>
+</record>
+<record id="xeconomic_activity_361004" model="xeconomic.activity"> 
+  <field name="code">361004</field>
+  <field name="name">MAQUILA DE MUEBLES</field>
+  <field name="active">False</field>
+</record>
+<record id="xeconomic_activity_369101" model="xeconomic.activity"> 
+  <field name="code">369101</field>
+  <field name="name">FABRICACIÓN DE JOYAS, BISUTERIA Y ARTÍCULOS CONEXOS</field>
+  <field name="active">False</field>
+</record>
+<record id="xeconomic_activity_369201" model="xeconomic.activity"> 
+  <field name="code">369201</field>
+  <field name="name">FABRICACION DE INSTRUMENTOS MUSICALES, PARTES Y PIEZAS Y SUS ACCESORIOS</field>
+  <field name="active">False</field>
+</record>
+<record id="xeconomic_activity_369301" model="xeconomic.activity"> 
+  <field name="code">369301</field>
+  <field name="name">FABRICACIÓN DE ARTÍCULOS DE DEPORTE</field>
+  <field name="active">False</field>
+</record>
+<record id="xeconomic_activity_369401" model="xeconomic.activity"> 
+  <field name="code">369401</field>
+  <field name="name">FABRICACION DE JUEGOS Y JUGUETES</field>
+  <field name="active">False</field>
+</record>
+<record id="xeconomic_activity_369901" model="xeconomic.activity"> 
+  <field name="code">369901</field>
+  <field name="name">FABRICACIÓN DE  ESCOBAS</field>
+  <field name="active">False</field>
+</record>
+<record id="xeconomic_activity_369902" model="xeconomic.activity"> 
+  <field name="code">369902</field>
+  <field name="name">FABRICACIóN DE VELAS (CANDELAS) EXCEPTO LAS PERFUMADAS, COLOREADAS Y DECORADAS.</field>
+  <field name="active">False</field>
+</record>
+<record id="xeconomic_activity_369903" model="xeconomic.activity"> 
+  <field name="code">369903</field>
+  <field name="name">FABRICACIóN DE VELAS COLOREADAS, PERFUMADAS Y DECORADAS</field>
+  <field name="active">False</field>
+</record>
+<record id="xeconomic_activity_369904" model="xeconomic.activity"> 
+  <field name="code">369904</field>
+  <field name="name">FABRICACION DE SELLOS DE MANO, METAL O HULE (CAUCHO)</field>
+  <field name="active">False</field>
+</record>
+<record id="xeconomic_activity_371001" model="xeconomic.activity"> 
+  <field name="code">371001</field>
+  <field name="name">RECICLAJE DE DESPERDICIOS Y DESECHOS METáLICOS</field>
+  <field name="active">False</field>
+</record>
+<record id="xeconomic_activity_372001" model="xeconomic.activity"> 
+  <field name="code">372001</field>
+  <field name="name">RECICLAJE DE OTRO TIPO DE MATERIALES N.C.P.</field>
+  <field name="active">False</field>
+</record>
+<record id="xeconomic_activity_372003" model="xeconomic.activity"> 
+  <field name="code">372003</field>
+  <field name="name">RECICLAJE DE PAPEL Y PLASTICO Y MATERIALES RELACIONADOS</field>
+  <field name="active">False</field>
+</record>
+<record id="xeconomic_activity_401002" model="xeconomic.activity"> 
+  <field name="code">401002</field>
+  <field name="name">GENERACIÓN Y/O DISTRIBUCION DE ENERGIA ELECTRICA (HIDRAULICA,CONVENCIONAL, TERMI</field>
+  <field name="active">False</field>
+</record>
+<record id="xeconomic_activity_401004" model="xeconomic.activity"> 
+  <field name="code">401004</field>
+  <field name="name">FABRICACION, ENSAMBLE Y VENTA DE SISTEMAS PARA EL APROVECHAMIENTO DE ENERGIAS RE</field>
+  <field name="active">False</field>
+</record>
+<record id="xeconomic_activity_402001" model="xeconomic.activity"> 
+  <field name="code">402001</field>
+  <field name="name">FABRICACIÓN DE GAS; DISTRIBUCIÓN DE COMBUSTIBLES GASEOSOS POR TUBERÍAS</field>
+  <field name="active">False</field>
+</record>
+<record id="xeconomic_activity_402002" model="xeconomic.activity"> 
+  <field name="code">402002</field>
+  <field name="name">INSTALACION Y VENTA DE TANQUES PARA GAS</field>
+  <field name="active">False</field>
+</record>
+<record id="xeconomic_activity_403001" model="xeconomic.activity"> 
+  <field name="code">403001</field>
+  <field name="name">SUMINISTRO DE VAPOR Y AIRE ACONDICIONADO</field>
+  <field name="active">False</field>
+</record>
+<record id="xeconomic_activity_410001" model="xeconomic.activity"> 
+  <field name="code">410001</field>
+  <field name="name">CAPTACION, TRATAMIENTO Y DISTRIBUCION DE AGUA</field>
+  <field name="active">False</field>
+</record>
+<record id="xeconomic_activity_451001" model="xeconomic.activity"> 
+  <field name="code">451001</field>
+  <field name="name">DEMOLICION DE EDIFICIOS Y OTRAS ESTRUCTURAS</field>
+  <field name="active">False</field>
+</record>
+<record id="xeconomic_activity_451002" model="xeconomic.activity"> 
+  <field name="code">451002</field>
+  <field name="name">PREPARACIóN DE TERRENOS</field>
+  <field name="active">False</field>
+</record>
+<record id="xeconomic_activity_452002" model="xeconomic.activity"> 
+  <field name="code">452002</field>
+  <field name="name">CONSTRUCCION DE EDIFICIOS, APARTAMENTOS, CONDOMINIOS  Y CASAS DE HABITACION</field>
+  <field name="active">False</field>
+</record>
+<record id="xeconomic_activity_452003" model="xeconomic.activity"> 
+  <field name="code">452003</field>
+  <field name="name">MANTENIMIENTO, REPARACION Y AMPLIACIONES DE EDIFICIOS, APARTAMENTOS, CONDOMINIOS</field>
+  <field name="active">False</field>
+</record>
+<record id="xeconomic_activity_452005" model="xeconomic.activity"> 
+  <field name="code">452005</field>
+  <field name="name">CONSTRUCCION Y MANTENIMIENTO DE CARRETERAS Y OTRAS VIAS</field>
+  <field name="active">False</field>
+</record>
+<record id="xeconomic_activity_452006" model="xeconomic.activity"> 
+  <field name="code">452006</field>
+  <field name="name">ACTIVIDADES DE CONSTRUCCIÓN ESPECIALES</field>
+  <field name="active">False</field>
+</record>
+<record id="xeconomic_activity_453001" model="xeconomic.activity"> 
+  <field name="code">453001</field>
+  <field name="name">REPARACION DE AIRE ACONDICIONADO</field>
+  <field name="active">False</field>
+</record>
+<record id="xeconomic_activity_453002" model="xeconomic.activity"> 
+  <field name="code">453002</field>
+  <field name="name">REPARACIóN  DE ASCENSORES(ELEVADORES)</field>
+  <field name="active">False</field>
+</record>
+<record id="xeconomic_activity_453003" model="xeconomic.activity"> 
+  <field name="code">453003</field>
+  <field name="name">VENTA E INSTALACION DE ALARMAS Y OTROS SISTEMAS ELECTRICOS</field>
+  <field name="active">False</field>
+</record>
+<record id="xeconomic_activity_453004" model="xeconomic.activity"> 
+  <field name="code">453004</field>
+  <field name="name">REPARACION DE CABLEADO DE COMUNICACIONES</field>
+  <field name="active">False</field>
+</record>
+<record id="xeconomic_activity_453005" model="xeconomic.activity"> 
+  <field name="code">453005</field>
+  <field name="name">INSTALACIÓN DE ALARMAS Y OTROS SISTEMAS DE SEGURIDAD</field>
+  <field name="active">False</field>
+</record>
+<record id="xeconomic_activity_453006" model="xeconomic.activity"> 
+  <field name="code">453006</field>
+  <field name="name">INSTALACION Y MANTENIMIENTO DE AIRE ACONDICIONADO</field>
+  <field name="active">False</field>
+</record>
+<record id="xeconomic_activity_453007" model="xeconomic.activity"> 
+  <field name="code">453007</field>
+  <field name="name">INSTALACION Y MANTENIMIENTO DE ASCENSORES (ELEVADORES)</field>
+  <field name="active">False</field>
+</record>
+<record id="xeconomic_activity_453008" model="xeconomic.activity"> 
+  <field name="code">453008</field>
+  <field name="name">INSTALACION Y MANTENIMIENTO DE CABLEADO DE COMUNICACIONES Y/O ENERGIA ELECTRICA</field>
+  <field name="active">False</field>
+</record>
+<record id="xeconomic_activity_453009" model="xeconomic.activity"> 
+  <field name="code">453009</field>
+  <field name="name">REPARACION DE PORTONES ELECTRICOS</field>
+  <field name="active">False</field>
+</record>
+<record id="xeconomic_activity_453010" model="xeconomic.activity"> 
+  <field name="code">453010</field>
+  <field name="name">INSTALACION Y MANTENIMIENTO DE PORTONES ELECTRICOS</field>
+  <field name="active">False</field>
+</record>
+<record id="xeconomic_activity_453011" model="xeconomic.activity"> 
+  <field name="code">453011</field>
+  <field name="name">INSTALACION Y MANTENIMIENTO DE CONMUTADORES Y OTROS SISTEMAS PARA TELECOMUNICACI</field>
+  <field name="active">False</field>
+</record>
+<record id="xeconomic_activity_454001" model="xeconomic.activity"> 
+  <field name="code">454001</field>
+  <field name="name">SERVICIOS DE TERMINACIÓN Y ACABADO DE EDIFICIOS</field>
+  <field name="active">False</field>
+</record>
+<record id="xeconomic_activity_455001" model="xeconomic.activity"> 
+  <field name="code">455001</field>
+  <field name="name">ALQUILER DE EQUIPO DE CONSTRUCCION O DEMOLICION CON OPERADORES</field>
+  <field name="active">False</field>
+</record>
+<record id="xeconomic_activity_50001" model="xeconomic.activity"> 
+  <field name="code">50001</field>
+  <field name="name">PESCADORES ARTESANALES EN PEQ. ESCALA</field>
+  <field name="active">False</field>
+</record>
+<record id="xeconomic_activity_50002" model="xeconomic.activity"> 
+  <field name="code">50002</field>
+  <field name="name">PESCADORES ARTESANALES MEDIOS</field>
+  <field name="active">False</field>
+</record>
+<record id="xeconomic_activity_50003" model="xeconomic.activity"> 
+  <field name="code">50003</field>
+  <field name="name">CRIADERO DE PECES, CRUSTACEOS O MOLUSCOS. COMERCIALIZACION DE LARVAS DE ESPECIES</field>
+  <field name="active">False</field>
+</record>
+<record id="xeconomic_activity_50005" model="xeconomic.activity"> 
+  <field name="code">50005</field>
+  <field name="name">PESCADORES EN GRAN ESCALA</field>
+  <field name="active">False</field>
+</record>
+<record id="xeconomic_activity_501001" model="xeconomic.activity"> 
+  <field name="code">501001</field>
+  <field name="name">VENTA AL POR MAYOR Y MENOR DE VEHICULOS NUEVOS Y/O USADOS (PARTIDAS ARANCELARIAS 8702 Y 8704)</field>
+  <field name="active">False</field>
+</record>
+<record id="xeconomic_activity_501002" model="xeconomic.activity"> 
+  <field name="code">501002</field>
+  <field name="name">VENTA AL POR MAYOR Y MENOR DE VEHICULOS NUEVOS Y/O USADOS, EXCEPTO PARTIDAS ARANCELARIAS 8702 Y 8704</field>
+  <field name="active">False</field>
+</record>
+<record id="xeconomic_activity_502001" model="xeconomic.activity"> 
+  <field name="code">502001</field>
+  <field name="name">LAVADO, ENCERADO Y PULIDO DE AUTOMÓVILES (LAVA CAR)</field>
+  <field name="active">False</field>
+</record>
+<record id="xeconomic_activity_502002" model="xeconomic.activity"> 
+  <field name="code">502002</field>
+  <field name="name">SERVICIOS DE  ALINEAMIENTO Y REPARACIÓN DE LLANTAS</field>
+  <field name="active">False</field>
+</record>
+<record id="xeconomic_activity_502003" model="xeconomic.activity"> 
+  <field name="code">502003</field>
+  <field name="name">SERVICIO DE REPARACION DE TODA CLASE DE VEHICULOS Y SUS PARTES</field>
+  <field name="active">False</field>
+</record>
+<record id="xeconomic_activity_502004" model="xeconomic.activity"> 
+  <field name="code">502004</field>
+  <field name="name">SERVICIO DE ENDEREZADO Y PINTURA PARA TODA CLASE DE VEHICULO</field>
+  <field name="active">False</field>
+</record>
+<record id="xeconomic_activity_502007" model="xeconomic.activity"> 
+  <field name="code">502007</field>
+  <field name="name">AUTODECORACIóN</field>
+  <field name="active">False</field>
+</record>
+<record id="xeconomic_activity_502008" model="xeconomic.activity"> 
+  <field name="code">502008</field>
+  <field name="name">SERVICIO DE REVISION TECNICA VEHICULAR(DIAGNOSTICOS POR ESCANER)</field>
+  <field name="active">False</field>
+</record>
+<record id="xeconomic_activity_503002" model="xeconomic.activity"> 
+  <field name="code">503002</field>
+  <field name="name">VENTA DE REPUESTOS USADOS PARA AUTOMOVILES</field>
+  <field name="active">False</field>
+</record>
+<record id="xeconomic_activity_503004" model="xeconomic.activity"> 
+  <field name="code">503004</field>
+  <field name="name">VENTA DE REPUESTOS NUEVOS PARA AUTOMOVILES</field>
+  <field name="active">False</field>
+</record>
+<record id="xeconomic_activity_503005" model="xeconomic.activity"> 
+  <field name="code">503005</field>
+  <field name="name">COMERCIALIZACION DE LLANTAS (NEUMATICAS) PARA VEHICULOS AUTOMOTORES</field>
+  <field name="active">False</field>
+</record>
+<record id="xeconomic_activity_503006" model="xeconomic.activity"> 
+  <field name="code">503006</field>
+  <field name="name">ACTIVIDADES DE DESARME DE VEHICULOS Y VENTA DE REPUESTOS</field>
+  <field name="active">False</field>
+</record>
+<record id="xeconomic_activity_504001" model="xeconomic.activity"> 
+  <field name="code">504001</field>
+  <field name="name">VENTA DE MOTOCICLETAS</field>
+  <field name="active">False</field>
+</record>
+<record id="xeconomic_activity_504003" model="xeconomic.activity"> 
+  <field name="code">504003</field>
+  <field name="name">VENTA DE PARTES O ACCESORIOS DE MOTOCICLETAS</field>
+  <field name="active">False</field>
+</record>
+<record id="xeconomic_activity_504004" model="xeconomic.activity"> 
+  <field name="code">504004</field>
+  <field name="name">SERVICIO DE REPARACION DE TODA CLASE DE MOTOCICLETAS Y SUS PARTES</field>
+  <field name="active">False</field>
+</record>
+<record id="xeconomic_activity_505001" model="xeconomic.activity"> 
+  <field name="code">505001</field>
+  <field name="name">VENTA DE COMBUSTIBLES (CONOCIDAS COMO GASOLINERAS O BOMBAS)</field>
+  <field name="active">False</field>
+</record>
+<record id="xeconomic_activity_505002" model="xeconomic.activity"> 
+  <field name="code">505002</field>
+  <field name="name">VENTA DE LUBRICANTES, ACEITES, GRASAS Y PRODUCTOS DE LIMPIEZA PARA AUTOMOTORES</field>
+  <field name="active">False</field>
+</record>
+<record id="xeconomic_activity_505003" model="xeconomic.activity"> 
+  <field name="code">505003</field>
+  <field name="name">COMERCIO DE COMBUSTIBLE SIN PUNTO FIJO (PEDDLER)</field>
+  <field name="active">False</field>
+</record>
+<record id="xeconomic_activity_511001" model="xeconomic.activity"> 
+  <field name="code">511001</field>
+  <field name="name">COMISIONISTAS, AGENTES DE VENTAS, ORGANIZADORES DE SUBASTAS,TIQUETERAS, ETC.</field>
+  <field name="active">False</field>
+</record>
+<record id="xeconomic_activity_512102" model="xeconomic.activity"> 
+  <field name="code">512102</field>
+  <field name="name">VENTA AL POR MAYOR DE FLORES Y PLANTAS DE TODO TIPO</field>
+  <field name="active">False</field>
+</record>
+<record id="xeconomic_activity_512201" model="xeconomic.activity"> 
+  <field name="code">512201</field>
+  <field name="name">VENTA AL POR MAYOR DE OTROS ALIMENTOS INCLUIDOS EN CANASTA BÁSICA</field>
+  <field name="active">False</field>
+</record>
+<record id="xeconomic_activity_512202" model="xeconomic.activity"> 
+  <field name="code">512202</field>
+  <field name="name">VENTA AL POR MAYOR DE FRUTAS Y VERDURAS FRESCAS INCLUIDAS EN CANASTA BÁSICA</field>
+  <field name="active">False</field>
+</record>
+<record id="xeconomic_activity_512204" model="xeconomic.activity"> 
+  <field name="code">512204</field>
+  <field name="name">COMERCIO AL POR MAYOR DE PRODUCTOS LáCTEOS</field>
+  <field name="active">False</field>
+</record>
+<record id="xeconomic_activity_512208" model="xeconomic.activity"> 
+  <field name="code">512208</field>
+  <field name="name">COMERCIO AL POR MAYOR DE PRODUCTOS DE CONFITERíA</field>
+  <field name="active">False</field>
+</record>
+<record id="xeconomic_activity_512209" model="xeconomic.activity"> 
+  <field name="code">512209</field>
+  <field name="name">COMERCIO AL POR MAYOR DE PRODUCTOS DE TABACO</field>
+  <field name="active">False</field>
+</record>
+<record id="xeconomic_activity_512210" model="xeconomic.activity"> 
+  <field name="code">512210</field>
+  <field name="name">COMERCIO AL POR MAYOR DE BEBIDAS CON CONTENIDO ALCOHOLICO (IMPORTADORES)</field>
+  <field name="active">False</field>
+</record>
+<record id="xeconomic_activity_512211" model="xeconomic.activity"> 
+  <field name="code">512211</field>
+  <field name="name">COMERCIO AL POR MAYOR DE OTROS ALIMENTOS N.C.P. GRAVADOS CON IVA</field>
+  <field name="active">False</field>
+</record>
+<record id="xeconomic_activity_512213" model="xeconomic.activity"> 
+  <field name="code">512213</field>
+  <field name="name">COMERCIO AL POR MAYOR DE BEBIDAS GASEOSAS Y CARBONATADAS</field>
+  <field name="active">False</field>
+</record>
+<record id="xeconomic_activity_512214" model="xeconomic.activity"> 
+  <field name="code">512214</field>
+  <field name="name">VENTA AL POR MAYOR DE CAFE (EXCEPTO EL ENVASADO, ENLATADO, SOLUBLE, DESCAFEINADO</field>
+  <field name="active">False</field>
+</record>
+<record id="xeconomic_activity_512217" model="xeconomic.activity"> 
+  <field name="code">512217</field>
+  <field name="name">COMERCIO AL POR MAYOR DE VINOS. BEBIDAS FERMENTADAS Y NO FERMENTADAS</field>
+  <field name="active">False</field>
+</record>
+<record id="xeconomic_activity_512225" model="xeconomic.activity"> 
+  <field name="code">512225</field>
+  <field name="name">COMERCIO AL POR MAYOR DE BEBIDAS NO ALCOHOLICAS (JUGOS DEFRUTAS, VEGETALES) Y AG</field>
+  <field name="active">False</field>
+</record>
+<record id="xeconomic_activity_512232" model="xeconomic.activity"> 
+  <field name="code">512232</field>
+  <field name="name">COMERCIO AL POR MAYOR DE PRODUCTOS SUSTITUTOS DEL AZUCAR</field>
+  <field name="active">False</field>
+</record>
+<record id="xeconomic_activity_512233" model="xeconomic.activity"> 
+  <field name="code">512233</field>
+  <field name="name">VENTA AL POR MAYOR DE CARNES Y PRODUCTOS CÁRNICOS</field>
+  <field name="active">False</field>
+</record>
+<record id="xeconomic_activity_512234" model="xeconomic.activity"> 
+  <field name="code">512234</field>
+  <field name="name">COMERCIO AL POR MAYOR DE CERVEZA IMPORTADA</field>
+  <field name="active">False</field>
+</record>
+<record id="xeconomic_activity_512235" model="xeconomic.activity"> 
+  <field name="code">512235</field>
+  <field name="name">VENTA AL POR MAYOR DE FRUTAS Y VERDURAS FRESCAS NO INCLUIDAS EN CANASTA BÁSICA</field>
+  <field name="active">False</field>
+</record>
+<record id="xeconomic_activity_513101" model="xeconomic.activity"> 
+  <field name="code">513101</field>
+  <field name="name">VENTA AL POR MAYOR DE  CALZADO, PRODUCTOS TEXTíLES; PRENDAS DE VESTIR</field>
+  <field name="active">False</field>
+</record>
+<record id="xeconomic_activity_513501" model="xeconomic.activity"> 
+  <field name="code">513501</field>
+  <field name="name">VENTA AL POR MAYOR DE PREPARADOS Y/O ARTICULOS PARA LA LIMPIEZA DE USO GENERAL</field>
+  <field name="active">False</field>
+</record>
+<record id="xeconomic_activity_513602" model="xeconomic.activity"> 
+  <field name="code">513602</field>
+  <field name="name">VENTA AL POR MAYOR DE PRODUCTOS VETERINARIOS GRAVADOS CON IVA</field>
+  <field name="active">False</field>
+</record>
+<record id="xeconomic_activity_513604" model="xeconomic.activity"> 
+  <field name="code">513604</field>
+  <field name="name">VENTA AL POR MAYOR EQUIPO MÉDICO ACCESORIO MEDICAMENTO PRODUC FARMACEUTICO GRAVADOS IVA</field>
+  <field name="active">False</field>
+</record>
+<record id="xeconomic_activity_513710" model="xeconomic.activity"> 
+  <field name="code">513710</field>
+  <field name="name">VENTA AL POR MAYOR DE LIBROS (EXCEPTO EN MEDIOS ELECTRÓNICOS)</field>
+  <field name="active">False</field>
+</record>
+<record id="xeconomic_activity_513901" model="xeconomic.activity"> 
+  <field name="code">513901</field>
+  <field name="name">VENTA AL POR MENOR DE ARTICULOS DEPORTIVOS</field>
+  <field name="active">False</field>
+</record>
+<record id="xeconomic_activity_513904" model="xeconomic.activity"> 
+  <field name="code">513904</field>
+  <field name="name">VENTA AL POR MAYOR DE SUMINISTROS Y ARTíCULOS DE LIBRERíA</field>
+  <field name="active">False</field>
+</record>
+<record id="xeconomic_activity_513906" model="xeconomic.activity"> 
+  <field name="code">513906</field>
+  <field name="name">VENTA AL POR MAYOR DE ARTICULOS, ARTEFACTOS, DISCOS Y MUEBLES PARA EL HOGAR</field>
+  <field name="active">False</field>
+</record>
+<record id="xeconomic_activity_513907" model="xeconomic.activity"> 
+  <field name="code">513907</field>
+  <field name="name">VENTA AL POR MAYOR DE DISCOS COMPACTOS Y OTROS DISPOSITIVOSDE GRABACION</field>
+  <field name="active">False</field>
+</record>
+<record id="xeconomic_activity_513910" model="xeconomic.activity"> 
+  <field name="code">513910</field>
+  <field name="name">VENTA AL POR MAYOR DE TODO TIPO DE ARTICULOS POR CATALOGO</field>
+  <field name="active">False</field>
+</record>
+<record id="xeconomic_activity_514101" model="xeconomic.activity"> 
+  <field name="code">514101</field>
+  <field name="name">VENTA AL POR MAYOR DE COMBUSTIBLES SOLIDOS (LEÑA Y SIMILARES)</field>
+  <field name="active">False</field>
+</record>
+<record id="xeconomic_activity_514103" model="xeconomic.activity"> 
+  <field name="code">514103</field>
+  <field name="name">VENTA AL POR MAYOR DE COMBUSTIBLES SOLIDOS (CARBON)</field>
+  <field name="active">False</field>
+</record>
+<record id="xeconomic_activity_514201" model="xeconomic.activity"> 
+  <field name="code">514201</field>
+  <field name="name">VENTA AL POR MAYOR DE METALES Y MINERALES METALÍFEROS</field>
+  <field name="active">False</field>
+</record>
+<record id="xeconomic_activity_514304" model="xeconomic.activity"> 
+  <field name="code">514304</field>
+  <field name="name">VENTA AL POR MAYOR DE EQUIPO DE AIRE ACONDICIONADO Y CALENTADORES (ELECTRICOS)</field>
+  <field name="active">False</field>
+</record>
+<record id="xeconomic_activity_514308" model="xeconomic.activity"> 
+  <field name="code">514308</field>
+  <field name="name">VENTA AL POR MAYOR DE  MATERIALES PARA LA CONTRUCCION, ARTICULOS DE FERRETERIA,</field>
+  <field name="active">False</field>
+</record>
+<record id="xeconomic_activity_514701" model="xeconomic.activity"> 
+  <field name="code">514701</field>
+  <field name="name">VENTA AL POR MAYOR DE PRODUCTOS,SUSTANCIAS O REACTIVOS QUIMICOS Y SOLVENTES</field>
+  <field name="active">False</field>
+</record>
+<record id="xeconomic_activity_514901" model="xeconomic.activity"> 
+  <field name="code">514901</field>
+  <field name="name">VENTA AL POR MAYOR  Y AL POR MENOR DE CHATARRA</field>
+  <field name="active">False</field>
+</record>
+<record id="xeconomic_activity_514903" model="xeconomic.activity"> 
+  <field name="code">514903</field>
+  <field name="name">VENTA AL POR MAYOR DE PRODUCTOS PARA USO AGROPECUARIO Y VENTA DESECHOS ORGANICOS</field>
+  <field name="active">False</field>
+</record>
+<record id="xeconomic_activity_515001" model="xeconomic.activity"> 
+  <field name="code">515001</field>
+  <field name="name">VENTA AL POR MAYOR DE MAQUINARIA Y EQUIPO INDUSTRIAL, DE CONSTRUCCION, INGENIERIA</field>
+  <field name="active">False</field>
+</record>
+<record id="xeconomic_activity_515002" model="xeconomic.activity"> 
+  <field name="code">515002</field>
+  <field name="name">VENTA AL POR MAYOR DE REPUESTOS Y/O ACCESORIOS PARA MAQUINARIA Y EQUIPO AGROPECUARIO</field>
+  <field name="active">False</field>
+</record>
+<record id="xeconomic_activity_515003" model="xeconomic.activity"> 
+  <field name="code">515003</field>
+  <field name="name">VENTA AL POR MAYOR DE MAQUINARIA Y EQUIPO AGROPECUARIO</field>
+  <field name="active">False</field>
+</record>
+<record id="xeconomic_activity_515004" model="xeconomic.activity"> 
+  <field name="code">515004</field>
+  <field name="name">VENTA AL POR MAYOR DE EXTINTORES Y EQUIPO SIMILAR</field>
+  <field name="active">False</field>
+</record>
+<record id="xeconomic_activity_515201" model="xeconomic.activity"> 
+  <field name="code">515201</field>
+  <field name="name">VENTA AL  POR MAYOR DE EQUIPO DE COMPUTO, SUS PARTES Y ACCESORIOS</field>
+  <field name="active">False</field>
+</record>
+<record id="xeconomic_activity_515203" model="xeconomic.activity"> 
+  <field name="code">515203</field>
+  <field name="name">VENTA AL POR MAYOR DE EQUIPO Y SUMINISTROS DE OFICINA</field>
+  <field name="active">False</field>
+</record>
+<record id="xeconomic_activity_519003" model="xeconomic.activity"> 
+  <field name="code">519003</field>
+  <field name="name">VENTA AL POR MAYOR DE EQUIPO, ARTICULOS Y ACCESORIOS DE BELLEZA, COSMETICOS E HIGIENE</field>
+  <field name="active">False</field>
+</record>
+<record id="xeconomic_activity_519005" model="xeconomic.activity"> 
+  <field name="code">519005</field>
+  <field name="name">VENTA AL POR MAYOR DE EQUIPO PARA CAMPO DE JUEGOS (PLAY)</field>
+  <field name="active">False</field>
+</record>
+<record id="xeconomic_activity_519006" model="xeconomic.activity"> 
+  <field name="code">519006</field>
+  <field name="name">DISTRIBUCION Y COMERCIALIZACION AL POR MAYOR DE MATERIAL DEEMPAQUE</field>
+  <field name="active">False</field>
+</record>
+<record id="xeconomic_activity_519010" model="xeconomic.activity"> 
+  <field name="code">519010</field>
+  <field name="name">COMERCIALIZACION Y DISTRIBUCION AL POR MAYOR DE ALIMENTOS PREPARADOS PARA ANIMAL</field>
+  <field name="active">False</field>
+</record>
+<record id="xeconomic_activity_519011" model="xeconomic.activity"> 
+  <field name="code">519011</field>
+  <field name="name">COMERCIO AL POR MAYOR DE EQUIPO Y ACCESORIOS PARA PESCA DEPORTIVA O ARTESANAL</field>
+  <field name="active">False</field>
+</record>
+<record id="xeconomic_activity_519013" model="xeconomic.activity"> 
+  <field name="code">519013</field>
+  <field name="name">COMERCIALIZACION AL POR MAYOR DE SUPLEMENTOS ALIMENTICIOS</field>
+  <field name="active">False</field>
+</record>
+<record id="xeconomic_activity_519014" model="xeconomic.activity"> 
+  <field name="code">519014</field>
+  <field name="name">VENTA AL POR MAYOR DE POLEN Y/O  SEMILLAS PARA USO AGRICOLA</field>
+  <field name="active">False</field>
+</record>
+<record id="xeconomic_activity_519015" model="xeconomic.activity"> 
+  <field name="code">519015</field>
+  <field name="name">VENTA AL POR MAYOR DE OTROS PRODUCTOS NO ESPECIALIZADOS</field>
+  <field name="active">False</field>
+</record>
+<record id="xeconomic_activity_519016" model="xeconomic.activity"> 
+  <field name="code">519016</field>
+  <field name="name">VENTA AL POR MAYOR DE ARTICULOS Y ACCESORIOS ELECTRONICOS</field>
+  <field name="active">False</field>
+</record>
+<record id="xeconomic_activity_521101" model="xeconomic.activity"> 
+  <field name="code">521101</field>
+  <field name="name">VENTA AL POR MENOR EN SUPERMERCADOS, ALMACENES Y SIMILARES DE PRODUCTOS ALIMENTICIOS</field>
+  <field name="active">False</field>
+</record>
+<record id="xeconomic_activity_521102" model="xeconomic.activity"> 
+  <field name="code">521102</field>
+  <field name="name">VENTA AL POR MENOR DE ESPECIAS, SALSAS Y CONDIMENTOS</field>
+  <field name="active">False</field>
+</record>
+<record id="xeconomic_activity_521201" model="xeconomic.activity"> 
+  <field name="code">521201</field>
+  <field name="name">VENTA AL POR MENOR EN TIENDAS POR DEPARTAMENTOS</field>
+  <field name="active">False</field>
+</record>
+<record id="xeconomic_activity_521202" model="xeconomic.activity"> 
+  <field name="code">521202</field>
+  <field name="name">PULPERíAS ( MINI-SUPER)(SIN CANTINA)</field>
+  <field name="active">False</field>
+</record>
+<record id="xeconomic_activity_521901" model="xeconomic.activity"> 
+  <field name="code">521901</field>
+  <field name="name">VENTA AL POR MENOR EN TIENDAS POR DEPARTAMENTOS</field>
+  <field name="active">False</field>
+</record>
+<record id="xeconomic_activity_522001" model="xeconomic.activity"> 
+  <field name="code">522001</field>
+  <field name="name">COMERCIO AL POR MENOR DE CONFITES Y OTROS PRODUCTOS RELACIONADOS (CONFITERIA)</field>
+  <field name="active">False</field>
+</record>
+<record id="xeconomic_activity_522002" model="xeconomic.activity"> 
+  <field name="code">522002</field>
+  <field name="name">VENTA AL POR MENOR DE CARNE DE BOVINO, PORCINO Y AVES (ADEMÁS EMBUTIDOS), INCLUIDOS EN CANASTA BÁSICA</field>
+  <field name="active">False</field>
+</record>
+<record id="xeconomic_activity_522003" model="xeconomic.activity"> 
+  <field name="code">522003</field>
+  <field name="name">MACROBIóTICAS</field>
+  <field name="active">False</field>
+</record>
+<record id="xeconomic_activity_522004" model="xeconomic.activity"> 
+  <field name="code">522004</field>
+  <field name="name">VENTA AL POR MENOR DE PRUTAS Y VERDURAS FRESCAS INCLUIDAS EN CANASTA BÁSICA</field>
+  <field name="active">False</field>
+</record>
+<record id="xeconomic_activity_522005" model="xeconomic.activity"> 
+  <field name="code">522005</field>
+  <field name="name">VENTA AL POR MENOR DE PESCADOS INCLUIDOS EN CANASTA BÁSICA</field>
+  <field name="active">False</field>
+</record>
+<record id="xeconomic_activity_522007" model="xeconomic.activity"> 
+  <field name="code">522007</field>
+  <field name="name">LICORERíAS Y/O DEPOSITO DE LICORES (VENTA AL POR MENOR)</field>
+  <field name="active">False</field>
+</record>
+<record id="xeconomic_activity_522008" model="xeconomic.activity"> 
+  <field name="code">522008</field>
+  <field name="name">VENTA AL POR MENOR DE HUEVOS DE GALLINA INCLUIDOS EN LA CANASTA BASICA</field>
+  <field name="active">False</field>
+</record>
+<record id="xeconomic_activity_522009" model="xeconomic.activity"> 
+  <field name="code">522009</field>
+  <field name="name">VENTA AL POR MENOR DE PRUTAS Y VERDURAS FRESCAS, NO INCLUIDAS EN CANASTA BÁSICA</field>
+  <field name="active">False</field>
+</record>
+<record id="xeconomic_activity_522011" model="xeconomic.activity"> 
+  <field name="code">522011</field>
+  <field name="name">PREPARACIÓN, SERVICIO Y VENTA DE FRUTAS PICADAS Y BEBIDAS DE FRUTAS Y/O LEGUMBRE</field>
+  <field name="active">False</field>
+</record>
+<record id="xeconomic_activity_522012" model="xeconomic.activity"> 
+  <field name="code">522012</field>
+  <field name="name">COMERCIO AL POR MENOR DE BEBIDAS GASEOSAS Y CARBONATADAS</field>
+  <field name="active">False</field>
+</record>
+<record id="xeconomic_activity_522013" model="xeconomic.activity"> 
+  <field name="code">522013</field>
+  <field name="name">COMERCIO AL POR MENOR DE AGUA EMBOTELLADA</field>
+  <field name="active">False</field>
+</record>
+<record id="xeconomic_activity_522016" model="xeconomic.activity"> 
+  <field name="code">522016</field>
+  <field name="name">COMERCIO AL POR MENOR DE PRODUCTOS DE TABACO</field>
+  <field name="active">False</field>
+</record>
+<record id="xeconomic_activity_522017" model="xeconomic.activity"> 
+  <field name="code">522017</field>
+  <field name="name">VENTA AL POR MENOR DE CARNE DE BOVINO, PORCINO Y AVES (ADEMÁS EMBUTIDOS) NO INCLUIDOS EN CANASTA BÁSICA</field>
+  <field name="active">False</field>
+</record>
+<record id="xeconomic_activity_522018" model="xeconomic.activity"> 
+  <field name="code">522018</field>
+  <field name="name">VENTA AL POR MENOR  DE PESCADOS Y MARISCOS , ASI COMO OTROS PRODUCTOS DE ORIGEN MARINO</field>
+  <field name="active">False</field>
+</record>
+<record id="xeconomic_activity_522020" model="xeconomic.activity"> 
+  <field name="code">522020</field>
+  <field name="name">VENTA AL POR MENOR DE OTROS ALIMENTOS INCLUIDOS EN CANASTA BÁSICA</field>
+  <field name="active">False</field>
+</record>
+<record id="xeconomic_activity_522021" model="xeconomic.activity"> 
+  <field name="code">522021</field>
+  <field name="name">VENTA AL POR MENOR DE OTROS ALIMENTOS NO INCLUIDOS EN CANASTA BÁSICA</field>
+  <field name="active">False</field>
+</record>
+<record id="xeconomic_activity_523101" model="xeconomic.activity"> 
+  <field name="code">523101</field>
+  <field name="name">FARMACIAS</field>
+  <field name="active">False</field>
+</record>
+<record id="xeconomic_activity_523102" model="xeconomic.activity"> 
+  <field name="code">523102</field>
+  <field name="name">VENTA AL POR MENOR DE COSMETICOS Y PERFUMERIA</field>
+  <field name="active">False</field>
+</record>
+<record id="xeconomic_activity_523103" model="xeconomic.activity"> 
+  <field name="code">523103</field>
+  <field name="name">VENTA AL POR MENOR DE PRÓTESIS EN GENERAL</field>
+  <field name="active">False</field>
+</record>
+<record id="xeconomic_activity_523201" model="xeconomic.activity"> 
+  <field name="code">523201</field>
+  <field name="name">BAZARES</field>
+  <field name="active">False</field>
+</record>
+<record id="xeconomic_activity_523202" model="xeconomic.activity"> 
+  <field name="code">523202</field>
+  <field name="name">VENTA AL POR MENOR DE ROPA (BOUTIQUE)</field>
+  <field name="active">False</field>
+</record>
+<record id="xeconomic_activity_523203" model="xeconomic.activity"> 
+  <field name="code">523203</field>
+  <field name="name">VENTA AL POR MENOR DE CALZADO (ZAPATAERIAS)</field>
+  <field name="active">False</field>
+</record>
+<record id="xeconomic_activity_523204" model="xeconomic.activity"> 
+  <field name="code">523204</field>
+  <field name="name">PASAMANERíAS</field>
+  <field name="active">False</field>
+</record>
+<record id="xeconomic_activity_523205" model="xeconomic.activity"> 
+  <field name="code">523205</field>
+  <field name="name">VENTA AL POR MENOR DE PRENDAS DE VESTIR, ROPA Y ZAPATOS (TIENDAS)</field>
+  <field name="active">False</field>
+</record>
+<record id="xeconomic_activity_523206" model="xeconomic.activity"> 
+  <field name="code">523206</field>
+  <field name="name">SERVICIO DE FOTOCOPIADORA</field>
+  <field name="active">False</field>
+</record>
+<record id="xeconomic_activity_523207" model="xeconomic.activity"> 
+  <field name="code">523207</field>
+  <field name="name">VENTA AL POR MENOR DE ARTíCULOS DE CUERO (EXCEPTO CALZADO)</field>
+  <field name="active">False</field>
+</record>
+<record id="xeconomic_activity_523208" model="xeconomic.activity"> 
+  <field name="code">523208</field>
+  <field name="name">VENTA AL POR MENOR DE PRODUCTOS TEXTILES (TELAS)</field>
+  <field name="active">False</field>
+</record>
+<record id="xeconomic_activity_523209" model="xeconomic.activity"> 
+  <field name="code">523209</field>
+  <field name="name">VENTA AL POR MENOR DE MATERIALES PARA CALZADO</field>
+  <field name="active">False</field>
+</record>
+<record id="xeconomic_activity_523301" model="xeconomic.activity"> 
+  <field name="code">523301</field>
+  <field name="name">COMERCIO AL POR MENOR DE OBJETOS DE CERAMICA  Y PORCELANA</field>
+  <field name="active">False</field>
+</record>
+<record id="xeconomic_activity_523302" model="xeconomic.activity"> 
+  <field name="code">523302</field>
+  <field name="name">VENTA AL POR MENOR DE CRISTALERíA</field>
+  <field name="active">False</field>
+</record>
+<record id="xeconomic_activity_523303" model="xeconomic.activity"> 
+  <field name="code">523303</field>
+  <field name="name">VENTA AL POR MENOR DE DISCOS, CD S Y OTROS SIMILARES</field>
+  <field name="active">False</field>
+</record>
+<record id="xeconomic_activity_523304" model="xeconomic.activity"> 
+  <field name="code">523304</field>
+  <field name="name">VENTA AL POR MENOR DE ELECTRODOMESTICOS, MUEBLES Y ARTICULOS PARA EL HOGAR</field>
+  <field name="active">False</field>
+</record>
+<record id="xeconomic_activity_523306" model="xeconomic.activity"> 
+  <field name="code">523306</field>
+  <field name="name">VENTA AL POR MENOR DE ANTIGUEDADES</field>
+  <field name="active">False</field>
+</record>
+<record id="xeconomic_activity_523308" model="xeconomic.activity"> 
+  <field name="code">523308</field>
+  <field name="name">VENTA AL POR MENOR DE INSTRUMENTOS MUSICALES, PARTES Y ACCESORIOS</field>
+  <field name="active">False</field>
+</record>
+<record id="xeconomic_activity_523309" model="xeconomic.activity"> 
+  <field name="code">523309</field>
+  <field name="name">VENTA DE CUADROS PINTURAS HECHAS POR PINTORES NACIONALES Y EXTRANJEROS PRODUCIDO</field>
+  <field name="active">False</field>
+</record>
+<record id="xeconomic_activity_523401" model="xeconomic.activity"> 
+  <field name="code">523401</field>
+  <field name="name">VENTA AL POR MENOR DE DEPóSITO DE MADERA</field>
+  <field name="active">False</field>
+</record>
+<record id="xeconomic_activity_523402" model="xeconomic.activity"> 
+  <field name="code">523402</field>
+  <field name="name">VENTA AL POR MENOR ARTÍCULOS DE FERRETERÍA PINTURAS MADERA Y MATERIALES PARA LA CONSTRUCCIÓN</field>
+  <field name="active">False</field>
+</record>
+<record id="xeconomic_activity_523403" model="xeconomic.activity"> 
+  <field name="code">523403</field>
+  <field name="name">VENTA DE PINTURAS</field>
+  <field name="active">False</field>
+</record>
+<record id="xeconomic_activity_523404" model="xeconomic.activity"> 
+  <field name="code">523404</field>
+  <field name="name">VENTA AL POR MENOR DE VIDRIO PARA LA CONSTRUCCION</field>
+  <field name="active">False</field>
+</record>
+<record id="xeconomic_activity_523405" model="xeconomic.activity"> 
+  <field name="code">523405</field>
+  <field name="name">VENTA AL POR MENOR DE MATERIALES PARA LA CONSTRUCCION</field>
+  <field name="active">False</field>
+</record>
+<record id="xeconomic_activity_523406" model="xeconomic.activity"> 
+  <field name="code">523406</field>
+  <field name="name">VENTA AL POR MENOR DE ARTICULOS ELECTRONICOS, ELECTRICOS Y SIMILARES</field>
+  <field name="active">False</field>
+</record>
+<record id="xeconomic_activity_523407" model="xeconomic.activity"> 
+  <field name="code">523407</field>
+  <field name="name">VENTA AL POR MENOR DE PLYWOOD</field>
+  <field name="active">False</field>
+</record>
+<record id="xeconomic_activity_523501" model="xeconomic.activity"> 
+  <field name="code">523501</field>
+  <field name="name">VENTA AL POR MENOR REALIZADA DENTRO DEL DEPÓSITO LIBRE COMERCIAL DE GOLFITO.</field>
+  <field name="active">False</field>
+</record>
+<record id="xeconomic_activity_523601" model="xeconomic.activity"> 
+  <field name="code">523601</field>
+  <field name="name">COMERCIO AL POR MENOR DE COMPUTADORAS, ACCESORIOS, MICROCOMPONENTES Y PAQUETES </field>
+  <field name="active">False</field>
+</record>
+<record id="xeconomic_activity_523701" model="xeconomic.activity"> 
+  <field name="code">523701</field>
+  <field name="name">LIBRERÍAS</field>
+  <field name="active">False</field>
+</record>
+<record id="xeconomic_activity_523702" model="xeconomic.activity"> 
+  <field name="code">523702</field>
+  <field name="name">VENTA AL POR MENOR DE REVISTAS/PERIODICOS EN PUESTOS DE VENTAS O MERCADOS</field>
+  <field name="active">False</field>
+</record>
+<record id="xeconomic_activity_523703" model="xeconomic.activity"> 
+  <field name="code">523703</field>
+  <field name="name">VENTA AL POR MENOR DE LIBROS (EXCEPTO EN MEDIOS ELECTRÓNICOS)</field>
+  <field name="active">False</field>
+</record>
+<record id="xeconomic_activity_523801" model="xeconomic.activity"> 
+  <field name="code">523801</field>
+  <field name="name">VENTA AL POR MENOR DE ARMAS (ARMERIAS)</field>
+  <field name="active">False</field>
+</record>
+<record id="xeconomic_activity_523803" model="xeconomic.activity"> 
+  <field name="code">523803</field>
+  <field name="name">VENTA AL POR MENOR DE MAQUINARIA Y EQUIPO DE TODO TIPO Y ARTICULOS CONEXOS</field>
+  <field name="active">False</field>
+</record>
+<record id="xeconomic_activity_523805" model="xeconomic.activity"> 
+  <field name="code">523805</field>
+  <field name="name">VENTA AL POR MENOR DE PURIFICADORES DE AGUA, SUS PARTES Y REPUESTOS</field>
+  <field name="active">False</field>
+</record>
+<record id="xeconomic_activity_523806" model="xeconomic.activity"> 
+  <field name="code">523806</field>
+  <field name="name">VENTA AL POR MENOR DE MAQUINARIA INDUSTRIAL USADA</field>
+  <field name="active">False</field>
+</record>
+<record id="xeconomic_activity_523807" model="xeconomic.activity"> 
+  <field name="code">523807</field>
+  <field name="name">VENTA AL POR MENOR DE REPUESTOS NUEVOS PARA MAQUINARIA, EQUIPO Y OTROS</field>
+  <field name="active">False</field>
+</record>
+<record id="xeconomic_activity_523808" model="xeconomic.activity"> 
+  <field name="code">523808</field>
+  <field name="name">VENTA AL POR MENOR DE REPUESTOS USADOS PARA MAQUINARIA, EQUIPO Y OTROS</field>
+  <field name="active">False</field>
+</record>
+<record id="xeconomic_activity_523901" model="xeconomic.activity"> 
+  <field name="code">523901</field>
+  <field name="name">VENTA AL POR MENOR DE OTROS PRODUCTOS EN ALMACENES ESPECIALIZADOS</field>
+  <field name="active">False</field>
+</record>
+<record id="xeconomic_activity_523902" model="xeconomic.activity"> 
+  <field name="code">523902</field>
+  <field name="name">VENTA AL POR MENOR DE SUMINISTROS Y/0 EQUIPO DE OFICINA</field>
+  <field name="active">False</field>
+</record>
+<record id="xeconomic_activity_523903" model="xeconomic.activity"> 
+  <field name="code">523903</field>
+  <field name="name">VENTA AL POR MENOR DE FLORES</field>
+  <field name="active">False</field>
+</record>
+<record id="xeconomic_activity_523904" model="xeconomic.activity"> 
+  <field name="code">523904</field>
+  <field name="name">SERVICIOS DE REPARACION DE JOYERIA Y RELOJERIA EN GENERAL</field>
+  <field name="active">False</field>
+</record>
+<record id="xeconomic_activity_523905" model="xeconomic.activity"> 
+  <field name="code">523905</field>
+  <field name="name">VENTA AL POR MENOR DE JOYERíA, RELOJERIA Y BISUTERIA</field>
+  <field name="active">False</field>
+</record>
+<record id="xeconomic_activity_523906" model="xeconomic.activity"> 
+  <field name="code">523906</field>
+  <field name="name">VENTA AL POR MENOR CELULARES ACCESORIOS EQUIPO Y ART PARA COMUNICACIONES </field>
+  <field name="active">False</field>
+</record>
+<record id="xeconomic_activity_523907" model="xeconomic.activity"> 
+  <field name="code">523907</field>
+  <field name="name">FLORISTERIA</field>
+  <field name="active">False</field>
+</record>
+<record id="xeconomic_activity_523908" model="xeconomic.activity"> 
+  <field name="code">523908</field>
+  <field name="name">COMERCIO AL POR MENOR DE ANIMALES DOMÉSTICOS PARA CONSUMO HUMANO</field>
+  <field name="active">False</field>
+</record>
+<record id="xeconomic_activity_523909" model="xeconomic.activity"> 
+  <field name="code">523909</field>
+  <field name="name">VENTA DE PRODUCTOS DE ARTESANIA Y SOUVENIR</field>
+  <field name="active">False</field>
+</record>
+<record id="xeconomic_activity_523910" model="xeconomic.activity"> 
+  <field name="code">523910</field>
+  <field name="name">VENTA AL POR MENOR DE JUGUETES Y/O ARTICULOS DE ESPARCIMIENTO</field>
+  <field name="active">False</field>
+</record>
+<record id="xeconomic_activity_523911" model="xeconomic.activity"> 
+  <field name="code">523911</field>
+  <field name="name">VENTA AL POR MENOR DE OTROS PRODUCTOS NUEVOS EN COMERCIOS ESPECIALIZADOS NO INCLUIDOS EN CANASTA BÁSICA</field>
+  <field name="active">False</field>
+</record>
+<record id="xeconomic_activity_523912" model="xeconomic.activity"> 
+  <field name="code">523912</field>
+  <field name="name">VENTA AL POR MENOR Y MAYOR DE PRODUCTOS E INSUMOS AGROPECUARIOS</field>
+  <field name="active">False</field>
+</record>
+<record id="xeconomic_activity_523913" model="xeconomic.activity"> 
+  <field name="code">523913</field>
+  <field name="name">VENTA AL POR MENOR DE ANIMALES DOMESTICOS PARA MASCOTAS.</field>
+  <field name="active">False</field>
+</record>
+<record id="xeconomic_activity_523915" model="xeconomic.activity"> 
+  <field name="code">523915</field>
+  <field name="name">DISTRIBUCION Y VENTA DE GAS EN CILINDRO</field>
+  <field name="active">False</field>
+</record>
+<record id="xeconomic_activity_523916" model="xeconomic.activity"> 
+  <field name="code">523916</field>
+  <field name="name">COMERCIO AL POR MENOR DE ALIMENTOS Y PRODUCTOS N.C.P. EXENTOS DE IVA</field>
+  <field name="active">False</field>
+</record>
+<record id="xeconomic_activity_523917" model="xeconomic.activity"> 
+  <field name="code">523917</field>
+  <field name="name">VENTA AL POR MENOR DE BICICLETAS Y SUS ACCESORIOS</field>
+  <field name="active">False</field>
+</record>
+<record id="xeconomic_activity_523918" model="xeconomic.activity"> 
+  <field name="code">523918</field>
+  <field name="name">VENTA AL POR MENOR DE EQUIPO DE AUDIO Y VIDEO</field>
+  <field name="active">False</field>
+</record>
+<record id="xeconomic_activity_523919" model="xeconomic.activity"> 
+  <field name="code">523919</field>
+  <field name="name">VENTA AL POR MENOR DE ARTICULOS Y ACCESORIOS ORTOPEDICOS</field>
+  <field name="active">False</field>
+</record>
+<record id="xeconomic_activity_523920" model="xeconomic.activity"> 
+  <field name="code">523920</field>
+  <field name="name">VENTA AL POR MENOR DE ANTEOJOS Y ARTICULOS OPTICOS (OPTICA)</field>
+  <field name="active">False</field>
+</record>
+<record id="xeconomic_activity_523921" model="xeconomic.activity"> 
+  <field name="code">523921</field>
+  <field name="name">VENTA AL POR MENOR DE CAJAS REGISTRADORAS, CALCULADORAS O MAQUINAS DE CONTABILIDAD</field>
+  <field name="active">False</field>
+</record>
+<record id="xeconomic_activity_523922" model="xeconomic.activity"> 
+  <field name="code">523922</field>
+  <field name="name">VENTA AL POR MENOR DE POLEN Y SEMILLAS</field>
+  <field name="active">False</field>
+</record>
+<record id="xeconomic_activity_523923" model="xeconomic.activity"> 
+  <field name="code">523923</field>
+  <field name="name">VENTA AL POR MENOR DE REPUESTOS PARA ELECTRODOMESTICOS</field>
+  <field name="active">False</field>
+</record>
+<record id="xeconomic_activity_523925" model="xeconomic.activity"> 
+  <field name="code">523925</field>
+  <field name="name">VENTA AL POR MENOR DE EXTINTORES</field>
+  <field name="active">False</field>
+</record>
+<record id="xeconomic_activity_523926" model="xeconomic.activity"> 
+  <field name="code">523926</field>
+  <field name="name">MANTENIMIENTO DE EXTINTORES</field>
+  <field name="active">False</field>
+</record>
+<record id="xeconomic_activity_523927" model="xeconomic.activity"> 
+  <field name="code">523927</field>
+  <field name="name">REPARACION EQUIPO DE AUDIO Y VIDEO</field>
+  <field name="active">False</field>
+</record>
+<record id="xeconomic_activity_523929" model="xeconomic.activity"> 
+  <field name="code">523929</field>
+  <field name="name">VENTA DE PERROS ENTRENADOS PARA SEGURIDAD</field>
+  <field name="active">False</field>
+</record>
+<record id="xeconomic_activity_523930" model="xeconomic.activity"> 
+  <field name="code">523930</field>
+  <field name="name">VENTA AL POR MENOR DE PIEZAS DE BAMBU</field>
+  <field name="active">False</field>
+</record>
+<record id="xeconomic_activity_523935" model="xeconomic.activity"> 
+  <field name="code">523935</field>
+  <field name="name">VENTA AL POR MENOR DE OTROS PRODUCTOS NUEVOS EN COMERCIOS ESPECIALIZADOS NO INCLUIDOS EN CANASTA BÁSICA</field>
+  <field name="active">False</field>
+</record>
+<record id="xeconomic_activity_524001" model="xeconomic.activity"> 
+  <field name="code">524001</field>
+  <field name="name">VENTA DE TODO TIPO DE ARTICULOS USADOS</field>
+  <field name="active">False</field>
+</record>
+<record id="xeconomic_activity_524002" model="xeconomic.activity"> 
+  <field name="code">524002</field>
+  <field name="name">CASA DE EMPEñO Y AFíN</field>
+  <field name="active">False</field>
+</record>
+<record id="xeconomic_activity_524004" model="xeconomic.activity"> 
+  <field name="code">524004</field>
+  <field name="name">VENTA DE LIBROS USADOS</field>
+  <field name="active">False</field>
+</record>
+<record id="xeconomic_activity_524005" model="xeconomic.activity"> 
+  <field name="code">524005</field>
+  <field name="name">VENTA DE MONEDAS, BILLETES,ESTAMPILLAS (NUEVAS Y USADAS) PARA COLECCION </field>
+  <field name="active">False</field>
+</record>
+<record id="xeconomic_activity_525101" model="xeconomic.activity"> 
+  <field name="code">525101</field>
+  <field name="name">VENTA AL POR MENOR DE TODO TIPO DE ARTICULOS POR CATALOGO</field>
+  <field name="active">False</field>
+</record>
+<record id="xeconomic_activity_525201" model="xeconomic.activity"> 
+  <field name="code">525201</field>
+  <field name="name">VENTA DE REVISTAS/PERIÓDICOS (PUESTOS CALLEJEROS)</field>
+  <field name="active">False</field>
+</record>
+<record id="xeconomic_activity_525301" model="xeconomic.activity"> 
+  <field name="code">525301</field>
+  <field name="name">VENTA AL POR MENOR DE LOTERIA Y SIMILARES</field>
+  <field name="active">False</field>
+</record>
+<record id="xeconomic_activity_525303" model="xeconomic.activity"> 
+  <field name="code">525303</field>
+  <field name="name">EMISIÓN DE LA LOTERIA NACIONAL Y SIMILARES</field>
+  <field name="active">False</field>
+</record>
+<record id="xeconomic_activity_525901" model="xeconomic.activity"> 
+  <field name="code">525901</field>
+  <field name="name">VENTA DE ALFOMBRAS Y TAPICES</field>
+  <field name="active">False</field>
+</record>
+<record id="xeconomic_activity_525902" model="xeconomic.activity"> 
+  <field name="code">525902</field>
+  <field name="name">VENTA AMBULANTE DE ARTICULOS PARA EL HOGAR</field>
+  <field name="active">False</field>
+</record>
+<record id="xeconomic_activity_525903" model="xeconomic.activity"> 
+  <field name="code">525903</field>
+  <field name="name">VENTA DE LIBROS A DOMICILIO</field>
+  <field name="active">False</field>
+</record>
+<record id="xeconomic_activity_525904" model="xeconomic.activity"> 
+  <field name="code">525904</field>
+  <field name="name">TRABAJOS DE  MANUALIDADES</field>
+  <field name="active">False</field>
+</record>
+<record id="xeconomic_activity_525905" model="xeconomic.activity"> 
+  <field name="code">525905</field>
+  <field name="name">VENTA AL POR MENOR DE TARJETAS TELEFóNICAS, PINES, TIEMPO AIRE Y SIMILARES</field>
+  <field name="active">False</field>
+</record>
+<record id="xeconomic_activity_526001" model="xeconomic.activity"> 
+  <field name="code">526001</field>
+  <field name="name">SERVICIOS DE REPARACIÓN DE ZAPATOS</field>
+  <field name="active">False</field>
+</record>
+<record id="xeconomic_activity_526002" model="xeconomic.activity"> 
+  <field name="code">526002</field>
+  <field name="name">REPARACION DE MUEBLES Y ACCESORIOS DOMESTICOS</field>
+  <field name="active">False</field>
+</record>
+<record id="xeconomic_activity_526003" model="xeconomic.activity"> 
+  <field name="code">526003</field>
+  <field name="name">REPARACION DE BICICLETAS</field>
+  <field name="active">False</field>
+</record>
+<record id="xeconomic_activity_526005" model="xeconomic.activity"> 
+  <field name="code">526005</field>
+  <field name="name">ELECTRICISTA, SERVICIOS</field>
+  <field name="active">False</field>
+</record>
+<record id="xeconomic_activity_526006" model="xeconomic.activity"> 
+  <field name="code">526006</field>
+  <field name="name">REPARACION DE ARTICULOS ELECTRICOS</field>
+  <field name="active">False</field>
+</record>
+<record id="xeconomic_activity_526008" model="xeconomic.activity"> 
+  <field name="code">526008</field>
+  <field name="name">REPARACION Y MANTENIMIENTO DE PERSIANAS Y CORTINAS</field>
+  <field name="active">False</field>
+</record>
+<record id="xeconomic_activity_526010" model="xeconomic.activity"> 
+  <field name="code">526010</field>
+  <field name="name">INSTALACION Y MANTENIMIENTO DE PERSIANAS Y CORTINAS</field>
+  <field name="active">False</field>
+</record>
+<record id="xeconomic_activity_526011" model="xeconomic.activity"> 
+  <field name="code">526011</field>
+  <field name="name">REPARACION Y MANTENIMIENTO DE EQUIPO PARA TELECOMUNICACIONES</field>
+  <field name="active">False</field>
+</record>
+<record id="xeconomic_activity_526012" model="xeconomic.activity"> 
+  <field name="code">526012</field>
+  <field name="name">INSTALACION Y MANTENIMIENTO DE PISCINAS,JACUZZIS Y SIMILARES</field>
+  <field name="active">False</field>
+</record>
+<record id="xeconomic_activity_551002" model="xeconomic.activity"> 
+  <field name="code">551002</field>
+  <field name="name">HOTEL</field>
+  <field name="active">False</field>
+</record>
+<record id="xeconomic_activity_551004" model="xeconomic.activity"> 
+  <field name="code">551004</field>
+  <field name="name">MOTEL Y/O SERVICIO DE HABITACION OCASIONAL, ALBERGUES, POSADAS Y SIMILARES</field>
+  <field name="active">False</field>
+</record>
+<record id="xeconomic_activity_551005" model="xeconomic.activity"> 
+  <field name="code">551005</field>
+  <field name="name">SERVICIO DE SALAS VIP Y PREMIUN EN AEROPUERTOS</field>
+  <field name="active">False</field>
+</record>
+<record id="xeconomic_activity_552001" model="xeconomic.activity"> 
+  <field name="code">552001</field>
+  <field name="name">BARES, CANTINAS O TABERNAS</field>
+  <field name="active">False</field>
+</record>
+<record id="xeconomic_activity_552002" model="xeconomic.activity"> 
+  <field name="code">552002</field>
+  <field name="name">CAFETERíAS</field>
+  <field name="active">False</field>
+</record>
+<record id="xeconomic_activity_552003" model="xeconomic.activity"> 
+  <field name="code">552003</field>
+  <field name="name">SERVICIOS DE CATERING SERVICE</field>
+  <field name="active">False</field>
+</record>
+<record id="xeconomic_activity_552004" model="xeconomic.activity"> 
+  <field name="code">552004</field>
+  <field name="name">SERVICIO DE RESTAURANTE, CAFETERIAS, SODAS Y OTROS EXPENDIOS DE COMIDA</field>
+  <field name="active">False</field>
+</record>
+<record id="xeconomic_activity_552005" model="xeconomic.activity"> 
+  <field name="code">552005</field>
+  <field name="name">SODAS</field>
+  <field name="active">False</field>
+</record>
+<record id="xeconomic_activity_552007" model="xeconomic.activity"> 
+  <field name="code">552007</field>
+  <field name="name">OTROS EXPENDIOS DE COMIDAS</field>
+  <field name="active">False</field>
+</record>
+<record id="xeconomic_activity_601001" model="xeconomic.activity"> 
+  <field name="code">601001</field>
+  <field name="name">SERVICIO DE TRANSPORTE POR VÍA FÉRREA</field>
+  <field name="active">False</field>
+</record>
+<record id="xeconomic_activity_602001" model="xeconomic.activity"> 
+  <field name="code">602001</field>
+  <field name="name">SERVICIO DE TRANSPORTE DE CARGA POR VÍA TERRESTRE</field>
+  <field name="active">False</field>
+</record>
+<record id="xeconomic_activity_602002" model="xeconomic.activity"> 
+  <field name="code">602002</field>
+  <field name="name">TRANSPORTE DE  PRODUCTOS DERIVADOS DEL PETROLEO</field>
+  <field name="active">False</field>
+</record>
+<record id="xeconomic_activity_602101" model="xeconomic.activity"> 
+  <field name="code">602101</field>
+  <field name="name">TRANSPORTE REGULAR DE ESTUDIANTES Y EMPLEADOS POR VIA TERRESTRE</field>
+  <field name="active">False</field>
+</record>
+<record id="xeconomic_activity_602102" model="xeconomic.activity"> 
+  <field name="code">602102</field>
+  <field name="name">TRANSPORTE REGULAR DE PASAJEROS POR VIA TERRESTRE</field>
+  <field name="active">False</field>
+</record>
+<record id="xeconomic_activity_602201" model="xeconomic.activity"> 
+  <field name="code">602201</field>
+  <field name="name">TRANSPORTE NO REGULAR DE PASAJEROS POR VIA TERRESTRE (EXCURSIONES)</field>
+  <field name="active">False</field>
+</record>
+<record id="xeconomic_activity_602202" model="xeconomic.activity"> 
+  <field name="code">602202</field>
+  <field name="name">SERVICIO DE TAXI</field>
+  <field name="active">False</field>
+</record>
+<record id="xeconomic_activity_602203" model="xeconomic.activity"> 
+  <field name="code">602203</field>
+  <field name="name">SERVICIO ESPECIAL ESTABLE DE TAXI (SEETAXI)</field>
+  <field name="active">False</field>
+</record>
+<record id="xeconomic_activity_602301" model="xeconomic.activity"> 
+  <field name="code">602301</field>
+  <field name="name">SERVICIO DE ACARREO Y DISTRIBUCION DE TODO TIPO DE MERCANCIA (INCLUYE LA MUDANZA</field>
+  <field name="active">False</field>
+</record>
+<record id="xeconomic_activity_602302" model="xeconomic.activity"> 
+  <field name="code">602302</field>
+  <field name="name">SERVICIOS DE GRUA</field>
+  <field name="active">False</field>
+</record>
+<record id="xeconomic_activity_602304" model="xeconomic.activity"> 
+  <field name="code">602304</field>
+  <field name="name">SERVICIO DE MUDANZA INTERNACIONAL</field>
+  <field name="active">False</field>
+</record>
+<record id="xeconomic_activity_603001" model="xeconomic.activity"> 
+  <field name="code">603001</field>
+  <field name="name">SERVICIO DE TRANSPORTE POR TUBERÍAS</field>
+  <field name="active">False</field>
+</record>
+<record id="xeconomic_activity_611001" model="xeconomic.activity"> 
+  <field name="code">611001</field>
+  <field name="name">TRANSPORTE DE CARGA POR  VIA ACUATICA</field>
+  <field name="active">False</field>
+</record>
+<record id="xeconomic_activity_611002" model="xeconomic.activity"> 
+  <field name="code">611002</field>
+  <field name="name">TRANSPORTE DE CABOTAJE DE PASAJEROS POR  VIA ACUATICA</field>
+  <field name="active">False</field>
+</record>
+<record id="xeconomic_activity_621001" model="xeconomic.activity"> 
+  <field name="code">621001</field>
+  <field name="name">SERVICIO DE TRANSPORTE DE CARGA POR VIA AEREA</field>
+  <field name="active">False</field>
+</record>
+<record id="xeconomic_activity_621002" model="xeconomic.activity"> 
+  <field name="code">621002</field>
+  <field name="name">SERVICIO DE TRANSPORTE AEREO REGULADO DE PASAJEROS (LINEAS AEREAS)</field>
+  <field name="active">False</field>
+</record>
+<record id="xeconomic_activity_621003" model="xeconomic.activity"> 
+  <field name="code">621003</field>
+  <field name="name">SERVICIO DE PILOTAJE</field>
+  <field name="active">False</field>
+</record>
+<record id="xeconomic_activity_622001" model="xeconomic.activity"> 
+  <field name="code">622001</field>
+  <field name="name">SERVICIO DE TRANSPORTE AEREO NO REGULAR DE PASAJEROS</field>
+  <field name="active">False</field>
+</record>
+<record id="xeconomic_activity_630001" model="xeconomic.activity"> 
+  <field name="code">630001</field>
+  <field name="name">PRESTACION DE SERVICIOS DE TRANSITO AEREO</field>
+  <field name="active">False</field>
+</record>
+<record id="xeconomic_activity_630101" model="xeconomic.activity"> 
+  <field name="code">630101</field>
+  <field name="name">SERVICIO DE CONSOLIDACION DE CARGA Y DESCARGA</field>
+  <field name="active">False</field>
+</record>
+<record id="xeconomic_activity_630201" model="xeconomic.activity"> 
+  <field name="code">630201</field>
+  <field name="name">SERVICIOS DE ALMACENAJE</field>
+  <field name="active">False</field>
+</record>
+<record id="xeconomic_activity_630301" model="xeconomic.activity"> 
+  <field name="code">630301</field>
+  <field name="name">PARQUEOS/ESTACIONAMIENTO DE VEHíCULOS</field>
+  <field name="active">False</field>
+</record>
+<record id="xeconomic_activity_630302" model="xeconomic.activity"> 
+  <field name="code">630302</field>
+  <field name="name">FUNCIONAMIENTO DE INSTALACIONES TERMINALES COMO PUERTOS, MUELLES Y AEROPUERTOS</field>
+  <field name="active">False</field>
+</record>
+<record id="xeconomic_activity_630303" model="xeconomic.activity"> 
+  <field name="code">630303</field>
+  <field name="name">PERMISO DE PASO POR PROPIEDADES PRIVADAS (PEAJE)</field>
+  <field name="active">False</field>
+</record>
+<record id="xeconomic_activity_630401" model="xeconomic.activity"> 
+  <field name="code">630401</field>
+  <field name="name">ACTIVIDADES DE AGENCIAS DE VIAJES </field>
+  <field name="active">False</field>
+</record>
+<record id="xeconomic_activity_630403" model="xeconomic.activity"> 
+  <field name="code">630403</field>
+  <field name="name">ACTIVIDADES DE OPERADORES TURÍSTICOS (GUIA  DE TURISMO)</field>
+  <field name="active">False</field>
+</record>
+<record id="xeconomic_activity_630405" model="xeconomic.activity"> 
+  <field name="code">630405</field>
+  <field name="name">EXPLOTACIóN DE ACTIVIDADES TURíSTICAS(CUYA PRESTACION NO SEA REALIZADA POR UN CE</field>
+  <field name="active">False</field>
+</record>
+<record id="xeconomic_activity_630901" model="xeconomic.activity"> 
+  <field name="code">630901</field>
+  <field name="name">ALMACENES FISCALES (DEPOSITOS ADUANEROS) Y ESTACIONAMIENTOSTRANSITORIOS</field>
+  <field name="active">False</field>
+</record>
+<record id="xeconomic_activity_630903" model="xeconomic.activity"> 
+  <field name="code">630903</field>
+  <field name="name">AGENCIA DE TRANSPORTE (NAVIERA)</field>
+  <field name="active">False</field>
+</record>
+<record id="xeconomic_activity_630904" model="xeconomic.activity"> 
+  <field name="code">630904</field>
+  <field name="name">AGENTE ADUANERO INDEPENDIENTE Y AGENCIA DE ADUANAS</field>
+  <field name="active">False</field>
+</record>
+<record id="xeconomic_activity_641101" model="xeconomic.activity"> 
+  <field name="code">641101</field>
+  <field name="name">ACTIVIDADES POSTALES Y DE CORREO</field>
+  <field name="active">False</field>
+</record>
+<record id="xeconomic_activity_642001" model="xeconomic.activity"> 
+  <field name="code">642001</field>
+  <field name="name">SERVICIOS DE RADIO-MENSAJES, RADIOLOCALIZADORES Y SIMILARES</field>
+  <field name="active">False</field>
+</record>
+<record id="xeconomic_activity_642002" model="xeconomic.activity"> 
+  <field name="code">642002</field>
+  <field name="name">SERVICIO DE TELEVISION POR CABLE, SATELITE U OTROS SISTEMA S SIMILARES</field>
+  <field name="active">False</field>
+</record>
+<record id="xeconomic_activity_642003" model="xeconomic.activity"> 
+  <field name="code">642003</field>
+  <field name="name">MANTENIMIENTO DE REDES DE TELECOMUNICACION</field>
+  <field name="active">False</field>
+</record>
+<record id="xeconomic_activity_642004" model="xeconomic.activity"> 
+  <field name="code">642004</field>
+  <field name="name">SERVICIO DE RADIO FRECUENCIA</field>
+  <field name="active">False</field>
+</record>
+<record id="xeconomic_activity_642005" model="xeconomic.activity"> 
+  <field name="code">642005</field>
+  <field name="name">SERVICIOS TELEFONICOS, TELEGRAFICOS Y POR TELEX</field>
+  <field name="active">False</field>
+</record>
+<record id="xeconomic_activity_642007" model="xeconomic.activity"> 
+  <field name="code">642007</field>
+  <field name="name">VENTA DE ESPACIO EN EL CABLE SUBMARINO</field>
+  <field name="active">False</field>
+</record>
+<record id="xeconomic_activity_642008" model="xeconomic.activity"> 
+  <field name="code">642008</field>
+  <field name="name">SERVICIO DE TRANSMISION  DE  DATOS, TEXTO, SONIDO, VOZ  Y VIDEO POR MEDIO DE LA</field>
+  <field name="active">False</field>
+</record>
+<record id="xeconomic_activity_642009" model="xeconomic.activity"> 
+  <field name="code">642009</field>
+  <field name="name">SERVICIOS DIGITALES O DE TELECOMUNICACIONES E INTANGIBLES PRESTADOS DESDE EL EXTERIOR</field>
+  <field name="active">False</field>
+</record>
+<record id="xeconomic_activity_651101" model="xeconomic.activity"> 
+  <field name="code">651101</field>
+  <field name="name">BANCA CENTRAL</field>
+  <field name="active">False</field>
+</record>
+<record id="xeconomic_activity_651901" model="xeconomic.activity"> 
+  <field name="code">651901</field>
+  <field name="name">COOPERATIVAS DE AHORRO Y CREDITO</field>
+  <field name="active">False</field>
+</record>
+<record id="xeconomic_activity_651903" model="xeconomic.activity"> 
+  <field name="code">651903</field>
+  <field name="name">BANCOS ESTATALES (EXCEPTO EL BANCO CENTRAL)</field>
+  <field name="active">False</field>
+</record>
+<record id="xeconomic_activity_651904" model="xeconomic.activity"> 
+  <field name="code">651904</field>
+  <field name="name">ENTIDADES FINANCIERAS PRIVADAS (BANCOS)</field>
+  <field name="active">False</field>
+</record>
+<record id="xeconomic_activity_651905" model="xeconomic.activity"> 
+  <field name="code">651905</field>
+  <field name="name">SERVICIO DE ENVIO Y RECIBO DE DINERO</field>
+  <field name="active">False</field>
+</record>
+<record id="xeconomic_activity_651906" model="xeconomic.activity"> 
+  <field name="code">651906</field>
+  <field name="name">INSTITUCIONES DE AHORRO Y CREDITO PARA VIVIENDA</field>
+  <field name="active">False</field>
+</record>
+<record id="xeconomic_activity_659101" model="xeconomic.activity"> 
+  <field name="code">659101</field>
+  <field name="name">ARRENDAMIENTO OPERATIVO EN FUNCION FINANCIERA CON OPCION DECOMPRA O RENOVACION (</field>
+  <field name="active">False</field>
+</record>
+<record id="xeconomic_activity_659201" model="xeconomic.activity"> 
+  <field name="code">659201</field>
+  <field name="name">ENTIDADES FINANCIERAS DISTINTAS AL SISTEMA BANCARIO NACIONAL</field>
+  <field name="active">False</field>
+</record>
+<record id="xeconomic_activity_659202" model="xeconomic.activity"> 
+  <field name="code">659202</field>
+  <field name="name">EMISORAS Y PROCESADORAS DE TARJETAS DE CREDITO</field>
+  <field name="active">False</field>
+</record>
+<record id="xeconomic_activity_659901" model="xeconomic.activity"> 
+  <field name="code">659901</field>
+  <field name="name">SERVICIO DE PRESTAMO (PRESTAMISTAS)</field>
+  <field name="active">False</field>
+</record>
+<record id="xeconomic_activity_659902" model="xeconomic.activity"> 
+  <field name="code">659902</field>
+  <field name="name">FIDEICOMISOS Y/O ADMINISTRADORES DE FONDOS DE INVERSION</field>
+  <field name="active">False</field>
+</record>
+<record id="xeconomic_activity_659903" model="xeconomic.activity"> 
+  <field name="code">659903</field>
+  <field name="name">SOCIEDADES DE INVERSION MOBILIARIA</field>
+  <field name="active">False</field>
+</record>
+<record id="xeconomic_activity_659904" model="xeconomic.activity"> 
+  <field name="code">659904</field>
+  <field name="name">SERVICIO RECUPERACION DE DEUDAS (FACTORE0)</field>
+  <field name="active">False</field>
+</record>
+<record id="xeconomic_activity_659905" model="xeconomic.activity"> 
+  <field name="code">659905</field>
+  <field name="name">FONDOS DE INVERSION</field>
+  <field name="active">False</field>
+</record>
+<record id="xeconomic_activity_659906" model="xeconomic.activity"> 
+  <field name="code">659906</field>
+  <field name="name">ACTIVIDADES DE SOCIEDADES DE CARTERA (HOLDING)</field>
+  <field name="active">False</field>
+</record>
+<record id="xeconomic_activity_659907" model="xeconomic.activity"> 
+  <field name="code">659907</field>
+  <field name="name">INGRESOS POR INTERESES DIFERENTES AL COMERCIO DEL PRESTAMO</field>
+  <field name="active">False</field>
+</record>
+<record id="xeconomic_activity_659908" model="xeconomic.activity"> 
+  <field name="code">659908</field>
+  <field name="name">FONDOS DE LA LEY DEL SISTEMA DE BANCA PARA EL DESARROLLO</field>
+  <field name="active">False</field>
+</record>
+<record id="xeconomic_activity_659909" model="xeconomic.activity"> 
+  <field name="code">659909</field>
+  <field name="name">FIDEICOMISOS DE LA LEY DEL SISTEMA DE BANCA PARA EL DESARROLLO</field>
+  <field name="active">False</field>
+</record>
+<record id="xeconomic_activity_660101" model="xeconomic.activity"> 
+  <field name="code">660101</field>
+  <field name="name">SEGUROS DE VIDA</field>
+  <field name="active">False</field>
+</record>
+<record id="xeconomic_activity_660201" model="xeconomic.activity"> 
+  <field name="code">660201</field>
+  <field name="name">OPERADORAS DE PENSIONES</field>
+  <field name="active">False</field>
+</record>
+<record id="xeconomic_activity_660202" model="xeconomic.activity"> 
+  <field name="code">660202</field>
+  <field name="name">FONDOS DE OPERADORAS DE PENSIONES EXENTOS DEL 8%</field>
+  <field name="active">False</field>
+</record>
+<record id="xeconomic_activity_660301" model="xeconomic.activity"> 
+  <field name="code">660301</field>
+  <field name="name">AGENTES DE SEGUROS</field>
+  <field name="active">False</field>
+</record>
+<record id="xeconomic_activity_660302" model="xeconomic.activity"> 
+  <field name="code">660302</field>
+  <field name="name">COMERCIALIZADORES DE SEGUROS</field>
+  <field name="active">False</field>
+</record>
+<record id="xeconomic_activity_660303" model="xeconomic.activity"> 
+  <field name="code">660303</field>
+  <field name="name">SEGUROS GENERALES</field>
+  <field name="active">False</field>
+</record>
+<record id="xeconomic_activity_671101" model="xeconomic.activity"> 
+  <field name="code">671101</field>
+  <field name="name">ADMINISTRACIÓN DE MERCADOS FINANCIEROS</field>
+  <field name="active">False</field>
+</record>
+<record id="xeconomic_activity_671201" model="xeconomic.activity"> 
+  <field name="code">671201</field>
+  <field name="name">CORREDORES DE BOLSA</field>
+  <field name="active">False</field>
+</record>
+<record id="xeconomic_activity_671202" model="xeconomic.activity"> 
+  <field name="code">671202</field>
+  <field name="name">PUESTOS DE BOLSA</field>
+  <field name="active">False</field>
+</record>
+<record id="xeconomic_activity_671901" model="xeconomic.activity"> 
+  <field name="code">671901</field>
+  <field name="name">PUESTOS Y/O CASAS DE CAMBIO DE MONEDA EXTRANJERA</field>
+  <field name="active">False</field>
+</record>
+<record id="xeconomic_activity_671902" model="xeconomic.activity"> 
+  <field name="code">671902</field>
+  <field name="name">ASESORES FINANCIEROS Y ACTIVIDADES AUXILIARES DE LA INTERMEDICIACION FINANCIERA</field>
+  <field name="active">False</field>
+</record>
+<record id="xeconomic_activity_672001" model="xeconomic.activity"> 
+  <field name="code">672001</field>
+  <field name="name">ACTIVIDADES AUXILIARES DE LA FINANCIACIÓN DE PLANES DE SEGUROS Y DE PENSIONES</field>
+  <field name="active">False</field>
+</record>
+<record id="xeconomic_activity_701001" model="xeconomic.activity"> 
+  <field name="code">701001</field>
+  <field name="name">ACTIVIDADES INMOBILIARIAS (ALQUILER DE VIVIENDA SUPERIOR A 1.5 SALARIO BASE)</field>
+  <field name="active">False</field>
+</record>
+<record id="xeconomic_activity_701002" model="xeconomic.activity"> 
+  <field name="code">701002</field>
+  <field name="name">ALQUILER DE LOCALES COMERCIALES Y CENTROS COMERCIALES</field>
+  <field name="active">False</field>
+</record>
+<record id="xeconomic_activity_701003" model="xeconomic.activity"> 
+  <field name="code">701003</field>
+  <field name="name">COMPRA Y VENTA DE PROPIEDADES (INVERSIONISTAS)</field>
+  <field name="active">False</field>
+</record>
+<record id="xeconomic_activity_701004" model="xeconomic.activity"> 
+  <field name="code">701004</field>
+  <field name="name">ALQUILER DE EDIFICIOS Y PROPIEDADES DIFERENTES A CASAS DE HABITACION</field>
+  <field name="active">False</field>
+</record>
+<record id="xeconomic_activity_701005" model="xeconomic.activity"> 
+  <field name="code">701005</field>
+  <field name="name">ALQUILER DE MARCAS REGISTRADAS</field>
+  <field name="active">False</field>
+</record>
+<record id="xeconomic_activity_701006" model="xeconomic.activity"> 
+  <field name="code">701006</field>
+  <field name="name">ALQUILER DE PATENTES (DE LICORES, UNICAMENTE)</field>
+  <field name="active">False</field>
+</record>
+<record id="xeconomic_activity_701007" model="xeconomic.activity"> 
+  <field name="code">701007</field>
+  <field name="name">EXPLOTACION DE FRANQUICIAS</field>
+  <field name="active">False</field>
+</record>
+<record id="xeconomic_activity_701008" model="xeconomic.activity"> 
+  <field name="code">701008</field>
+  <field name="name">ACTIVIDADES INMOBILIARIAS (ALQUILER DE VIVIENDA INFERIOR A 1.5 SALARIO BASE)</field>
+  <field name="active">False</field>
+</record>
+<record id="xeconomic_activity_702001" model="xeconomic.activity"> 
+  <field name="code">702001</field>
+  <field name="name">AGENTES O CORREDORES DE BIENES RAICES</field>
+  <field name="active">False</field>
+</record>
+<record id="xeconomic_activity_702003" model="xeconomic.activity"> 
+  <field name="code">702003</field>
+  <field name="name">ADMINISTRACIóN, MANTENIMIENTO, REPARACIóN Y LIMPIEZA DE LOS SERVICIOS Y BIENES COMUNES DE LA PROPIEDAD EN CONDOMINIO</field>
+  <field name="active">False</field>
+</record>
+<record id="xeconomic_activity_711101" model="xeconomic.activity"> 
+  <field name="code">711101</field>
+  <field name="name">ALQUILER DE AUTOMOVILES  DE TODO TIPO</field>
+  <field name="active">False</field>
+</record>
+<record id="xeconomic_activity_711102" model="xeconomic.activity"> 
+  <field name="code">711102</field>
+  <field name="name">ALQUILER DE MOTOCICLETA/SERVICIO</field>
+  <field name="active">False</field>
+</record>
+<record id="xeconomic_activity_711103" model="xeconomic.activity"> 
+  <field name="code">711103</field>
+  <field name="name">ALQUILER DE EQUIPO DE TRANSPORTE POR VIA TERRESTRE, ACUATICA O AEREA</field>
+  <field name="active">False</field>
+</record>
+<record id="xeconomic_activity_711105" model="xeconomic.activity"> 
+  <field name="code">711105</field>
+  <field name="name">ALQUILER DE CARRITOS DE GOLF Y OTROS</field>
+  <field name="active">False</field>
+</record>
+<record id="xeconomic_activity_712101" model="xeconomic.activity"> 
+  <field name="code">712101</field>
+  <field name="name">ALQUILER DE MAQUINARIA Y EQUIPO PARA USO AGRICOLA</field>
+  <field name="active">False</field>
+</record>
+<record id="xeconomic_activity_712201" model="xeconomic.activity"> 
+  <field name="code">712201</field>
+  <field name="name">ALQUILER DE MAQUINARIA Y EQUIPO DE CONSTRUCCIÓN E INGENIERÍA CIVIL</field>
+  <field name="active">False</field>
+</record>
+<record id="xeconomic_activity_712301" model="xeconomic.activity"> 
+  <field name="code">712301</field>
+  <field name="name">SERVICIOS DE INTERNET EN LOCALES PUBLICOS ( CAFE INTERNET )</field>
+  <field name="active">False</field>
+</record>
+<record id="xeconomic_activity_712302" model="xeconomic.activity"> 
+  <field name="code">712302</field>
+  <field name="name">ALQUILER DE MAQUINARIA Y EQUIPO DE OFICINA</field>
+  <field name="active">False</field>
+</record>
+<record id="xeconomic_activity_712901" model="xeconomic.activity"> 
+  <field name="code">712901</field>
+  <field name="name">ALQUILER DE MáQUINAS EXPENDEDORAS DE ALIMENTOS Y OTROS</field>
+  <field name="active">False</field>
+</record>
+<record id="xeconomic_activity_712902" model="xeconomic.activity"> 
+  <field name="code">712902</field>
+  <field name="name">ALQUILER DE MAQUINAS DE ENTRETENIMIENTO (CON MONEDAS)</field>
+  <field name="active">False</field>
+</record>
+<record id="xeconomic_activity_712904" model="xeconomic.activity"> 
+  <field name="code">712904</field>
+  <field name="name">ALQUILER DE PELICULAS CINEMATOGRAFICAS (VIDEO CLUB) Y/O VIDEO JUEGOS</field>
+  <field name="active">False</field>
+</record>
+<record id="xeconomic_activity_712905" model="xeconomic.activity"> 
+  <field name="code">712905</field>
+  <field name="name">ALQUILER DE EQUIPO PARA RADIO, TELEVISIóN Y COMUNICACIONES</field>
+  <field name="active">False</field>
+</record>
+<record id="xeconomic_activity_712906" model="xeconomic.activity"> 
+  <field name="code">712906</field>
+  <field name="name">ALQUILER DE EQUIPO PARA DISPENSAR BILLETES (CAJERO AUTOMá-TICO)</field>
+  <field name="active">False</field>
+</record>
+<record id="xeconomic_activity_712907" model="xeconomic.activity"> 
+  <field name="code">712907</field>
+  <field name="name">ALQUILER MAQUINARIA Y EQUIPO PARA LA ELABORACION Y/O MANTENIMIENTO DE PRODUCTOS</field>
+  <field name="active">False</field>
+</record>
+<record id="xeconomic_activity_712909" model="xeconomic.activity"> 
+  <field name="code">712909</field>
+  <field name="name">ALQUILER DE OTROS TIPOS DE MAQUINARIA Y EQUIPO PARA USO COMERCIAL</field>
+  <field name="active">False</field>
+</record>
+<record id="xeconomic_activity_712910" model="xeconomic.activity"> 
+  <field name="code">712910</field>
+  <field name="name">ALQUILER DE MAQUINARIA Y/O EQUIPO PARA USO INDUSTRIAL</field>
+  <field name="active">False</field>
+</record>
+<record id="xeconomic_activity_712911" model="xeconomic.activity"> 
+  <field name="code">712911</field>
+  <field name="name">ALQUILER DE RAMPAS Y SIMILARES</field>
+  <field name="active">False</field>
+</record>
+<record id="xeconomic_activity_713001" model="xeconomic.activity"> 
+  <field name="code">713001</field>
+  <field name="name">ALQUILER DE MENAJE</field>
+  <field name="active">False</field>
+</record>
+<record id="xeconomic_activity_713002" model="xeconomic.activity"> 
+  <field name="code">713002</field>
+  <field name="name">ALQUILER DE EQUIPO RECREATIVO Y DEPORTIVO</field>
+  <field name="active">False</field>
+</record>
+<record id="xeconomic_activity_713003" model="xeconomic.activity"> 
+  <field name="code">713003</field>
+  <field name="name">ALQUILER DE EQUIPO MEDICO Y ARTICULOS CONEXOS</field>
+  <field name="active">False</field>
+</record>
+<record id="xeconomic_activity_713012" model="xeconomic.activity"> 
+  <field name="code">713012</field>
+  <field name="name">ALQUILER DE TRAJES DE TODO TIPO</field>
+  <field name="active">False</field>
+</record>
+<record id="xeconomic_activity_713013" model="xeconomic.activity"> 
+  <field name="code">713013</field>
+  <field name="name">ALQUILER DE EQUIPO Y UTENSILIOS PARA EVENTOS ESPECIALES</field>
+  <field name="active">False</field>
+</record>
+<record id="xeconomic_activity_713053" model="xeconomic.activity"> 
+  <field name="code">713053</field>
+  <field name="name">ALQUILER DE ANIMALES (CABALLOS, SERPIENTES, ETC)</field>
+  <field name="active">False</field>
+</record>
+<record id="xeconomic_activity_721001" model="xeconomic.activity"> 
+  <field name="code">721001</field>
+  <field name="name">CONSULTORES INFORMÁTICOS</field>
+  <field name="active">False</field>
+</record>
+<record id="xeconomic_activity_722003" model="xeconomic.activity"> 
+  <field name="code">722003</field>
+  <field name="name">DISEÑADOR GRAFICO, DE SOFWARE Y PAGINAS WEB</field>
+  <field name="active">False</field>
+</record>
+<record id="xeconomic_activity_723001" model="xeconomic.activity"> 
+  <field name="code">723001</field>
+  <field name="name">PROCESAMIENTO DE DATOS</field>
+  <field name="active">False</field>
+</record>
+<record id="xeconomic_activity_724001" model="xeconomic.activity"> 
+  <field name="code">724001</field>
+  <field name="name">ACTIVIDADES RELACIONADAS CON BASES DE DATOS</field>
+  <field name="active">False</field>
+</record>
+<record id="xeconomic_activity_725001" model="xeconomic.activity"> 
+  <field name="code">725001</field>
+  <field name="name">REPARACION DE EQUIPO DE COMPUTO</field>
+  <field name="active">False</field>
+</record>
+<record id="xeconomic_activity_725002" model="xeconomic.activity"> 
+  <field name="code">725002</field>
+  <field name="name">MANTENIMIENTO DE EQUIPO DE COMPUTO</field>
+  <field name="active">False</field>
+</record>
+<record id="xeconomic_activity_725003" model="xeconomic.activity"> 
+  <field name="code">725003</field>
+  <field name="name">REPARACIÓN CAJAS REGISTRADORAS, CALCULADORAS, MAQUINAS DE CONTABILIDAD Y EQUIPO</field>
+  <field name="active">False</field>
+</record>
+<record id="xeconomic_activity_725004" model="xeconomic.activity"> 
+  <field name="code">725004</field>
+  <field name="name">MANTENIMIENTO DE CAJAS REGISTRADORAS, CALCULADORAS, MAQUINAS DE CONTABILIDAD</field>
+  <field name="active">False</field>
+</record>
+<record id="xeconomic_activity_729001" model="xeconomic.activity"> 
+  <field name="code">729001</field>
+  <field name="name">OTRAS ACTIVIDADES DE INFORMÁTICA</field>
+  <field name="active">False</field>
+</record>
+<record id="xeconomic_activity_731001" model="xeconomic.activity"> 
+  <field name="code">731001</field>
+  <field name="name">INVESTIGACION Y DESARROLLO EXPERIMENTAL EN EL CAMPO DE LAS CIENCIAS NATURALES </field>
+  <field name="active">False</field>
+</record>
+<record id="xeconomic_activity_731003" model="xeconomic.activity"> 
+  <field name="code">731003</field>
+  <field name="name">METEOROLOGO POR CUENTA PROPIA</field>
+  <field name="active">False</field>
+</record>
+<record id="xeconomic_activity_732001" model="xeconomic.activity"> 
+  <field name="code">732001</field>
+  <field name="name">INVESTIGACIONES Y DESARROLLO EXPERIMENTAL EN EL CAMPO DE LAS CIENCIAS SOCIALES </field>
+  <field name="active">False</field>
+</record>
+<record id="xeconomic_activity_741101" model="xeconomic.activity"> 
+  <field name="code">741101</field>
+  <field name="name">BUFFETE DE ABOGADO, NOTARIO, ASESOR LEGAL</field>
+  <field name="active">False</field>
+</record>
+<record id="xeconomic_activity_741203" model="xeconomic.activity"> 
+  <field name="code">741203</field>
+  <field name="name">ACTVIDAD DE CONTABILIDAD (CONTADORES), TENEDURIA DE LIBROS,AUDITORIA Y ASESOR FINANCIERO</field>
+  <field name="active">False</field>
+</record>
+<record id="xeconomic_activity_74130" model="xeconomic.activity"> 
+  <field name="code">74130</field>
+  <field name="name">2 ENCUESTAS DE OPINIóN PúBLICA</field>
+  <field name="active">False</field>
+</record>
+<record id="xeconomic_activity_741301" model="xeconomic.activity"> 
+  <field name="code">741301</field>
+  <field name="name">ASESORES EN MERCADEO Y VENTAS</field>
+  <field name="active">False</field>
+</record>
+<record id="xeconomic_activity_741401" model="xeconomic.activity"> 
+  <field name="code">741401</field>
+  <field name="name">ECONOMISTAS</field>
+  <field name="active">False</field>
+</record>
+<record id="xeconomic_activity_741402" model="xeconomic.activity"> 
+  <field name="code">741402</field>
+  <field name="name">ASESORAMIENTO EMPRESARIAL Y EN MATERIA DE GESTIÓN (HANDLING)</field>
+  <field name="active">False</field>
+</record>
+<record id="xeconomic_activity_741407" model="xeconomic.activity"> 
+  <field name="code">741407</field>
+  <field name="name">ASESOR ADUANERO</field>
+  <field name="active">False</field>
+</record>
+<record id="xeconomic_activity_741408" model="xeconomic.activity"> 
+  <field name="code">741408</field>
+  <field name="name">CORRESPONSAL DE RADIO, TELEVISION Y PRENSA ESCRITA</field>
+  <field name="active">False</field>
+</record>
+<record id="xeconomic_activity_742102" model="xeconomic.activity"> 
+  <field name="code">742102</field>
+  <field name="name">ACTIVIDADES DE ARQUITECTURA E INGENIERÍA</field>
+  <field name="active">False</field>
+</record>
+<record id="xeconomic_activity_742105" model="xeconomic.activity"> 
+  <field name="code">742105</field>
+  <field name="name">SERVICIOS DE CONSULTORIA EN MANTENIMIENTO INDUSTRIAL Y MECANICO</field>
+  <field name="active">False</field>
+</record>
+<record id="xeconomic_activity_742107" model="xeconomic.activity"> 
+  <field name="code">742107</field>
+  <field name="name">QUIMICOS</field>
+  <field name="active">False</field>
+</record>
+<record id="xeconomic_activity_742108" model="xeconomic.activity"> 
+  <field name="code">742108</field>
+  <field name="name">ACTIVIDADES DE GEOGRAFIA Y/O GEOLOGIA</field>
+  <field name="active">False</field>
+</record>
+<record id="xeconomic_activity_74211" model="xeconomic.activity"> 
+  <field name="code">74211</field>
+  <field name="name">2 DIBUJANTE ARQUITECTONICO Y/O PLANOS DE CONSTRUCCION</field>
+  <field name="active">False</field>
+</record>
+<record id="xeconomic_activity_742110" model="xeconomic.activity"> 
+  <field name="code">742110</field>
+  <field name="name">BIOLOGO POR CUENTA PROPIA</field>
+  <field name="active">False</field>
+</record>
+<record id="xeconomic_activity_742201" model="xeconomic.activity"> 
+  <field name="code">742201</field>
+  <field name="name">ENSAYOS Y ANÁLISIS TÉCNICOS</field>
+  <field name="active">False</field>
+</record>
+<record id="xeconomic_activity_742202" model="xeconomic.activity"> 
+  <field name="code">742202</field>
+  <field name="name">PROFESIONALES EN TECNOLOGÍA DE ALIMENTOS</field>
+  <field name="active">False</field>
+</record>
+<record id="xeconomic_activity_743001" model="xeconomic.activity"> 
+  <field name="code">743001</field>
+  <field name="name">PUBLICIDAD</field>
+  <field name="active">False</field>
+</record>
+<record id="xeconomic_activity_743004" model="xeconomic.activity"> 
+  <field name="code">743004</field>
+  <field name="name">SERVICIOS DE PUBLICIDAD</field>
+  <field name="active">False</field>
+</record>
+<record id="xeconomic_activity_743005" model="xeconomic.activity"> 
+  <field name="code">743005</field>
+  <field name="name">ALQUILER DE ESPACIOS PUBLICITARIOS</field>
+  <field name="active">False</field>
+</record>
+<record id="xeconomic_activity_743006" model="xeconomic.activity"> 
+  <field name="code">743006</field>
+  <field name="name">PUBLICIDAD A TRAVES DE MEDIOS ELECTRONICOS</field>
+  <field name="active">False</field>
+</record>
+<record id="xeconomic_activity_749101" model="xeconomic.activity"> 
+  <field name="code">749101</field>
+  <field name="name">SERVICIOS DE ADMINISTRACIÓN DE PERSONAL</field>
+  <field name="active">False</field>
+</record>
+<record id="xeconomic_activity_749102" model="xeconomic.activity"> 
+  <field name="code">749102</field>
+  <field name="name">SERVICIOS DE BIBLIOTECOLOGíA</field>
+  <field name="active">False</field>
+</record>
+<record id="xeconomic_activity_749201" model="xeconomic.activity"> 
+  <field name="code">749201</field>
+  <field name="name">SERVICIOS DE INVESTIGACION, SEGURIDAD PRIVADA, AGENCIAS Y CONSULTORES</field>
+  <field name="active">False</field>
+</record>
+<record id="xeconomic_activity_749204" model="xeconomic.activity"> 
+  <field name="code">749204</field>
+  <field name="name">INSTRUCTOR DE TIRO (MANEJO DE ARMAS).</field>
+  <field name="active">False</field>
+</record>
+<record id="xeconomic_activity_749301" model="xeconomic.activity"> 
+  <field name="code">749301</field>
+  <field name="name">SERVICIOS DE FUMIGACIóN (NO AGRíCOLA)</field>
+  <field name="active">False</field>
+</record>
+<record id="xeconomic_activity_749302" model="xeconomic.activity"> 
+  <field name="code">749302</field>
+  <field name="name">SERVICIOS DE LIMPIEZA (INTERIORES Y EXTERIORES)</field>
+  <field name="active">False</field>
+</record>
+<record id="xeconomic_activity_749401" model="xeconomic.activity"> 
+  <field name="code">749401</field>
+  <field name="name">ESTUDIOS FOTOGRAFICOS</field>
+  <field name="active">False</field>
+</record>
+<record id="xeconomic_activity_749402" model="xeconomic.activity"> 
+  <field name="code">749402</field>
+  <field name="name">SERVICIO DE FOTOGRAFIA (FOTOGRAFO)</field>
+  <field name="active">False</field>
+</record>
+<record id="xeconomic_activity_749501" model="xeconomic.activity"> 
+  <field name="code">749501</field>
+  <field name="name">SERVICIOS DE ENVASE Y EMPAQUE</field>
+  <field name="active">False</field>
+</record>
+<record id="xeconomic_activity_749901" model="xeconomic.activity"> 
+  <field name="code">749901</field>
+  <field name="name">SERVICIO DE FOTOCOPIADO Y OTROS</field>
+  <field name="active">False</field>
+</record>
+<record id="xeconomic_activity_749902" model="xeconomic.activity"> 
+  <field name="code">749902</field>
+  <field name="name">SERVICIOS DE LEVANTADO DE TEXTO Y/O CORRECCION DE TEXTOS Y OTROS</field>
+  <field name="active">False</field>
+</record>
+<record id="xeconomic_activity_749903" model="xeconomic.activity"> 
+  <field name="code">749903</field>
+  <field name="name">SERVICIOS SECRETARIALES Y/O OFICINISTA</field>
+  <field name="active">False</field>
+</record>
+<record id="xeconomic_activity_749904" model="xeconomic.activity"> 
+  <field name="code">749904</field>
+  <field name="name">SERVICIO DE DISEÑO O DECORACION DE INTERIORES (POR CUENTA PROPIA).</field>
+  <field name="active">False</field>
+</record>
+<record id="xeconomic_activity_749905" model="xeconomic.activity"> 
+  <field name="code">749905</field>
+  <field name="name">SERVICIO DE CONTESTACIóN DE TELéFONOS (CALL CENTER)</field>
+  <field name="active">False</field>
+</record>
+<record id="xeconomic_activity_749906" model="xeconomic.activity"> 
+  <field name="code">749906</field>
+  <field name="name">SERVICIOS DE TRADUCTOR</field>
+  <field name="active">False</field>
+</record>
+<record id="xeconomic_activity_749907" model="xeconomic.activity"> 
+  <field name="code">749907</field>
+  <field name="name">SERVICIO DE INSPECCION DE TODO TIPO DE MERCADERIAS Y ACTIVOS(INCLUYE DROGAS)</field>
+  <field name="active">False</field>
+</record>
+<record id="xeconomic_activity_749908" model="xeconomic.activity"> 
+  <field name="code">749908</field>
+  <field name="name">SERVICIO DE RECOLECCION DE MONEDAS DE LOS TELEFONOS PUBLICOS</field>
+  <field name="active">False</field>
+</record>
+<record id="xeconomic_activity_749911" model="xeconomic.activity"> 
+  <field name="code">749911</field>
+  <field name="name">AGENCIAS FOTOGRAFICAS POR CATALOGO</field>
+  <field name="active">False</field>
+</record>
+<record id="xeconomic_activity_749914" model="xeconomic.activity"> 
+  <field name="code">749914</field>
+  <field name="name">SERVCICIO DE COBRANZA DE RECIBOS PUBLICOS Y OTROS</field>
+  <field name="active">False</field>
+</record>
+<record id="xeconomic_activity_749917" model="xeconomic.activity"> 
+  <field name="code">749917</field>
+  <field name="name">MODELAJE PROFESIONAL (MODELO)</field>
+  <field name="active">False</field>
+</record>
+<record id="xeconomic_activity_749918" model="xeconomic.activity"> 
+  <field name="code">749918</field>
+  <field name="name">AGENCIAS DE COBRO Y CALIFICACION CREDITICIA</field>
+  <field name="active">False</field>
+</record>
+<record id="xeconomic_activity_751101" model="xeconomic.activity"> 
+  <field name="code">751101</field>
+  <field name="name">ACTIVIDADES DE LA ADMINISTRACION PUBLICA EN GENERAL</field>
+  <field name="active">False</field>
+</record>
+<record id="xeconomic_activity_751102" model="xeconomic.activity"> 
+  <field name="code">751102</field>
+  <field name="name">ACTIVIDADES DE LA ADMINISTRACIÓN PÚBLICA EN GENERAL, NO SUJETAS AL IMPUESTO SOBR</field>
+  <field name="active">False</field>
+</record>
+<record id="xeconomic_activity_751103" model="xeconomic.activity"> 
+  <field name="code">751103</field>
+  <field name="name">MUNICIPALIDADES Y CONCEJOS DE DISTRITO</field>
+  <field name="active">False</field>
+</record>
+<record id="xeconomic_activity_751106" model="xeconomic.activity"> 
+  <field name="code">751106</field>
+  <field name="name">ACTIVIDADES DE LA ADMINISTRACION PUBLICA EN GENERAL GRAVADAS CON IVA</field>
+  <field name="active">False</field>
+</record>
+<record id="xeconomic_activity_751201" model="xeconomic.activity"> 
+  <field name="code">751201</field>
+  <field name="name">JUNTAS DE EDUCACIÓN, COMEDORES ESCOLARES, PATRONATOS, COOPERATIVAS ESCOLARES, CO</field>
+  <field name="active">False</field>
+</record>
+<record id="xeconomic_activity_751202" model="xeconomic.activity"> 
+  <field name="code">751202</field>
+  <field name="name">COMITES CANTONALES DE DEPORTES Y RECREACION</field>
+  <field name="active">False</field>
+</record>
+<record id="xeconomic_activity_751301" model="xeconomic.activity"> 
+  <field name="code">751301</field>
+  <field name="name">ACTIVIDADES DEL SECTOR PúBLICO RELACIONADAS CON LA INFRAESTRUCTURA</field>
+  <field name="active">False</field>
+</record>
+<record id="xeconomic_activity_751302" model="xeconomic.activity"> 
+  <field name="code">751302</field>
+  <field name="name">FONDOS PUBLICOS (ACTIVIDADES DEL SECTOR PUBLICO)</field>
+  <field name="active">False</field>
+</record>
+<record id="xeconomic_activity_751401" model="xeconomic.activity"> 
+  <field name="code">751401</field>
+  <field name="name">ACTIVIDADES DE SERVICIOS AUXILIARES PARA LA ADMINISTRACIÓN PÚBLICA EN GENERAL</field>
+  <field name="active">False</field>
+</record>
+<record id="xeconomic_activity_752101" model="xeconomic.activity"> 
+  <field name="code">752101</field>
+  <field name="name">RELACIONES EXTERIORES</field>
+  <field name="active">False</field>
+</record>
+<record id="xeconomic_activity_752201" model="xeconomic.activity"> 
+  <field name="code">752201</field>
+  <field name="name">ACTIVIDADES DE DEFENSA</field>
+  <field name="active">False</field>
+</record>
+<record id="xeconomic_activity_752301" model="xeconomic.activity"> 
+  <field name="code">752301</field>
+  <field name="name">ACTIVIDADES DE MANTENIMIENTO DEL ORDEN PÚBLICO Y DE SEGURIDAD</field>
+  <field name="active">False</field>
+</record>
+<record id="xeconomic_activity_752302" model="xeconomic.activity"> 
+  <field name="code">752302</field>
+  <field name="name">SERVICIOS DE VIGILANCIA O CONTROL PORTUARIA, COSTERA, AEREA,Y FRONTERIZA</field>
+  <field name="active">False</field>
+</record>
+<record id="xeconomic_activity_753001" model="xeconomic.activity"> 
+  <field name="code">753001</field>
+  <field name="name">ACTIVIDADES DE PLANES DE SEGURIDAD SOCIAL DE AFILIACIÓN OBLIGATORIA</field>
+  <field name="active">False</field>
+</record>
+<record id="xeconomic_activity_801001" model="xeconomic.activity"> 
+  <field name="code">801001</field>
+  <field name="name">ENSEÑANZA PREESCOLAR Y PRIMARIA PRIVADA</field>
+  <field name="active">False</field>
+</record>
+<record id="xeconomic_activity_801002" model="xeconomic.activity"> 
+  <field name="code">801002</field>
+  <field name="name">ENSEÑANZA PREESCOLAR Y PRIMARIA PRIVADA NO AUTORIZADOS POR EL MEP</field>
+  <field name="active">False</field>
+</record>
+<record id="xeconomic_activity_802101" model="xeconomic.activity"> 
+  <field name="code">802101</field>
+  <field name="name">ENSEÑANZA SECUNDARIA PRIVADA</field>
+  <field name="active">False</field>
+</record>
+<record id="xeconomic_activity_802102" model="xeconomic.activity"> 
+  <field name="code">802102</field>
+  <field name="name">ENSEÑANZA SECUNDARIA PRIVADA NO AUTORIZADA POR EL MEP</field>
+  <field name="active">False</field>
+</record>
+<record id="xeconomic_activity_802201" model="xeconomic.activity"> 
+  <field name="code">802201</field>
+  <field name="name">ENSEÑANZA DE FORMACIÓN TÉCNICA Y PARAUNIVERSITARIA</field>
+  <field name="active">False</field>
+</record>
+<record id="xeconomic_activity_802202" model="xeconomic.activity"> 
+  <field name="code">802202</field>
+  <field name="name">ENSEÑANZA SECUNDARIA DE FORMACIÓN TÉCNICA Y PROFESIONAL NO AUTORIZADA POR EL MEP</field>
+  <field name="active">False</field>
+</record>
+<record id="xeconomic_activity_803002" model="xeconomic.activity"> 
+  <field name="code">803002</field>
+  <field name="name">ENSEÑANZA SUPERIOR PRIVADA (UNIVERSIDADES)</field>
+  <field name="active">False</field>
+</record>
+<record id="xeconomic_activity_803003" model="xeconomic.activity"> 
+  <field name="code">803003</field>
+  <field name="name">ENSEÑANZA SUPERIOR PUBLICA (UNIVERSIDADES)</field>
+  <field name="active">False</field>
+</record>
+<record id="xeconomic_activity_809001" model="xeconomic.activity"> 
+  <field name="code">809001</field>
+  <field name="name">ESCUELAS COMERCIALES (NO ESTATALES)</field>
+  <field name="active">False</field>
+</record>
+<record id="xeconomic_activity_809004" model="xeconomic.activity"> 
+  <field name="code">809004</field>
+  <field name="name">PROFESOR POR CUENTA PROPIA</field>
+  <field name="active">False</field>
+</record>
+<record id="xeconomic_activity_809005" model="xeconomic.activity"> 
+  <field name="code">809005</field>
+  <field name="name">ENSEÑANZA CULTURAL</field>
+  <field name="active">False</field>
+</record>
+<record id="xeconomic_activity_809006" model="xeconomic.activity"> 
+  <field name="code">809006</field>
+  <field name="name">ENSEÑANZA DE LA DE SEGURIDAD PRIVADA</field>
+  <field name="active">False</field>
+</record>
+<record id="xeconomic_activity_809007" model="xeconomic.activity"> 
+  <field name="code">809007</field>
+  <field name="name">ESCUELA Y AGENCIA DE MODELOS</field>
+  <field name="active">False</field>
+</record>
+<record id="xeconomic_activity_851101" model="xeconomic.activity"> 
+  <field name="code">851101</field>
+  <field name="name">ACTIVIDADES DE HOSPITALES </field>
+  <field name="active">False</field>
+</record>
+<record id="xeconomic_activity_851201" model="xeconomic.activity"> 
+  <field name="code">851201</field>
+  <field name="name">GINECÓLOGO</field>
+  <field name="active">False</field>
+</record>
+<record id="xeconomic_activity_851202" model="xeconomic.activity"> 
+  <field name="code">851202</field>
+  <field name="name">SERVICOS DE MÉDICO GENERAL</field>
+  <field name="active">False</field>
+</record>
+<record id="xeconomic_activity_851203" model="xeconomic.activity"> 
+  <field name="code">851203</field>
+  <field name="name">NEURÓLOGOS</field>
+  <field name="active">False</field>
+</record>
+<record id="xeconomic_activity_851204" model="xeconomic.activity"> 
+  <field name="code">851204</field>
+  <field name="name">SERVICIOS DE OFTALMOLOGO U OCULISTA, OPTOMETRISTA Y/O OPTICO</field>
+  <field name="active">False</field>
+</record>
+<record id="xeconomic_activity_851206" model="xeconomic.activity"> 
+  <field name="code">851206</field>
+  <field name="name">ORTOPEDISTA (CONSULTA PRIVADA)</field>
+  <field name="active">False</field>
+</record>
+<record id="xeconomic_activity_851207" model="xeconomic.activity"> 
+  <field name="code">851207</field>
+  <field name="name">SERVICIOS DE ODONTOLOGO Y CONEXOS</field>
+  <field name="active">False</field>
+</record>
+<record id="xeconomic_activity_851208" model="xeconomic.activity"> 
+  <field name="code">851208</field>
+  <field name="name">OTORRINOLARINGOLOGIA, AUDIOLOGíA Y SERVICIOS CONEXOS.</field>
+  <field name="active">False</field>
+</record>
+<record id="xeconomic_activity_851209" model="xeconomic.activity"> 
+  <field name="code">851209</field>
+  <field name="name">FARMACEUTICO O BOTICARIO</field>
+  <field name="active">False</field>
+</record>
+<record id="xeconomic_activity_851210" model="xeconomic.activity"> 
+  <field name="code">851210</field>
+  <field name="name">CARDIOLOGOS</field>
+  <field name="active">False</field>
+</record>
+<record id="xeconomic_activity_851212" model="xeconomic.activity"> 
+  <field name="code">851212</field>
+  <field name="name">ONCOLOGOS</field>
+  <field name="active">False</field>
+</record>
+<record id="xeconomic_activity_851213" model="xeconomic.activity"> 
+  <field name="code">851213</field>
+  <field name="name">REUMATOLOGO</field>
+  <field name="active">False</field>
+</record>
+<record id="xeconomic_activity_851901" model="xeconomic.activity"> 
+  <field name="code">851901</field>
+  <field name="name">MEDICINA ALTERNATIVA</field>
+  <field name="active">False</field>
+</record>
+<record id="xeconomic_activity_851902" model="xeconomic.activity"> 
+  <field name="code">851902</field>
+  <field name="name">FÍSICO TERAPISTA</field>
+  <field name="active">False</field>
+</record>
+<record id="xeconomic_activity_851905" model="xeconomic.activity"> 
+  <field name="code">851905</field>
+  <field name="name">PSICOLOGO</field>
+  <field name="active">False</field>
+</record>
+<record id="xeconomic_activity_851906" model="xeconomic.activity"> 
+  <field name="code">851906</field>
+  <field name="name">PSIQUIATRÍA</field>
+  <field name="active">False</field>
+</record>
+<record id="xeconomic_activity_851907" model="xeconomic.activity"> 
+  <field name="code">851907</field>
+  <field name="name">SERVICIOS DE ENFERMERÍA</field>
+  <field name="active">False</field>
+</record>
+<record id="xeconomic_activity_851908" model="xeconomic.activity"> 
+  <field name="code">851908</field>
+  <field name="name">LABORATORIOS MÉDICOS - CLÍNICOS</field>
+  <field name="active">False</field>
+</record>
+<record id="xeconomic_activity_851909" model="xeconomic.activity"> 
+  <field name="code">851909</field>
+  <field name="name">SERVICIOS DE RADIOLOGÍA, ANESTESIOLOGIA Y OTROS</field>
+  <field name="active">False</field>
+</record>
+<record id="xeconomic_activity_851910" model="xeconomic.activity"> 
+  <field name="code">851910</field>
+  <field name="name">TRANSPORTE EN AMBULANCIA TERRESTRE Y AEREO (SERVICIO PRIVADO)</field>
+  <field name="active">False</field>
+</record>
+<record id="xeconomic_activity_851911" model="xeconomic.activity"> 
+  <field name="code">851911</field>
+  <field name="name">PROFESIONALES EN SALUD OCUPACIONAL</field>
+  <field name="active">False</field>
+</record>
+<record id="xeconomic_activity_851912" model="xeconomic.activity"> 
+  <field name="code">851912</field>
+  <field name="name">NUTRICIONISTA</field>
+  <field name="active">False</field>
+</record>
+<record id="xeconomic_activity_851913" model="xeconomic.activity"> 
+  <field name="code">851913</field>
+  <field name="name">PROFESIONALES EN EDUCACION ESPECIAL</field>
+  <field name="active">False</field>
+</record>
+<record id="xeconomic_activity_851914" model="xeconomic.activity"> 
+  <field name="code">851914</field>
+  <field name="name">SERVICIOS DE PARAMEDICOS</field>
+  <field name="active">False</field>
+</record>
+<record id="xeconomic_activity_851915" model="xeconomic.activity"> 
+  <field name="code">851915</field>
+  <field name="name">SERVICIOS DE ESTERILIZACIÓN DE PRODUCTOS MÉDICOS Y FARMACÉUTICOS</field>
+  <field name="active">False</field>
+</record>
+<record id="xeconomic_activity_851916" model="xeconomic.activity"> 
+  <field name="code">851916</field>
+  <field name="name">OTRAS ACTIVIDADES RELACIONADAS CON LA SALUD HUMANA(BANCO DE SANGRE…)</field>
+  <field name="active">False</field>
+</record>
+<record id="xeconomic_activity_851917" model="xeconomic.activity"> 
+  <field name="code">851917</field>
+  <field name="name">CIRUJANO PLÁSTICO</field>
+  <field name="active">False</field>
+</record>
+<record id="xeconomic_activity_853101" model="xeconomic.activity"> 
+  <field name="code">853101</field>
+  <field name="name">FUNDACIONES DE BIEN SOCIAL</field>
+  <field name="active">False</field>
+</record>
+<record id="xeconomic_activity_853102" model="xeconomic.activity"> 
+  <field name="code">853102</field>
+  <field name="name">FUNDACIONES DE SERVICIO SOCIAL (PRIVADAS)</field>
+  <field name="active">False</field>
+</record>
+<record id="xeconomic_activity_853103" model="xeconomic.activity"> 
+  <field name="code">853103</field>
+  <field name="name">RESIDENCIAS UNIVERSITARIAS CON SERVICIOS INTEGRADOS</field>
+  <field name="active">False</field>
+</record>
+<record id="xeconomic_activity_853201" model="xeconomic.activity"> 
+  <field name="code">853201</field>
+  <field name="name">GUARDERIAS/CENTROS INFANTILES Y SERVICIOS SOCIALES</field>
+  <field name="active">False</field>
+</record>
+<record id="xeconomic_activity_853202" model="xeconomic.activity"> 
+  <field name="code">853202</field>
+  <field name="name">SERVICIOS SOCIALES DE REDES DE CUIDO  Y CENTROS DE ATENCIÓN DE ADULTOS MAYORES</field>
+  <field name="active">False</field>
+</record>
+<record id="xeconomic_activity_853301" model="xeconomic.activity"> 
+  <field name="code">853301</field>
+  <field name="name">ASOCIACIONES DECLARADAS DE UTILIDAD PUBLICA POR EL PODER EJECUTIVO</field>
+  <field name="active">False</field>
+</record>
+<record id="xeconomic_activity_900001" model="xeconomic.activity"> 
+  <field name="code">900001</field>
+  <field name="name">ASESORAMIENTO Y ELIMINACION DE DESPERDICIOS, SANEAMIENTO (EXCEPTO LIMPIEZA DE TANQUES)</field>
+  <field name="active">False</field>
+</record>
+<record id="xeconomic_activity_900002" model="xeconomic.activity"> 
+  <field name="code">900002</field>
+  <field name="name">LIMPIEZA DE TANQUES SEPTICOS Y AGUAS REDISUALES</field>
+  <field name="active">False</field>
+</record>
+<record id="xeconomic_activity_911101" model="xeconomic.activity"> 
+  <field name="code">911101</field>
+  <field name="name">ACTIVIDADES DE ORGANIZACIONES EMPRESARIALES Y DE EMPLEADORES</field>
+  <field name="active">False</field>
+</record>
+<record id="xeconomic_activity_911102" model="xeconomic.activity"> 
+  <field name="code">911102</field>
+  <field name="name">CAMARAS DE COMERCIO</field>
+  <field name="active">False</field>
+</record>
+<record id="xeconomic_activity_911201" model="xeconomic.activity"> 
+  <field name="code">911201</field>
+  <field name="name">ACTIVIDADES DE ORGANIZACIONES PROFESIONALES</field>
+  <field name="active">False</field>
+</record>
+<record id="xeconomic_activity_912001" model="xeconomic.activity"> 
+  <field name="code">912001</field>
+  <field name="name">ASOCIACIONES SOLIDARISTAS</field>
+  <field name="active">False</field>
+</record>
+<record id="xeconomic_activity_912002" model="xeconomic.activity"> 
+  <field name="code">912002</field>
+  <field name="name">ACTIVIDADES DE SINDICATOS</field>
+  <field name="active">False</field>
+</record>
+<record id="xeconomic_activity_919101" model="xeconomic.activity"> 
+  <field name="code">919101</field>
+  <field name="name">ACTIVIDADES DE ORGANIZACIONES RELIGIOSAS</field>
+  <field name="active">False</field>
+</record>
+<record id="xeconomic_activity_919201" model="xeconomic.activity"> 
+  <field name="code">919201</field>
+  <field name="name">ACTIVIDADES DE ORGANIZACIONES POLÍTICAS</field>
+  <field name="active">False</field>
+</record>
+<record id="xeconomic_activity_919901" model="xeconomic.activity"> 
+  <field name="code">919901</field>
+  <field name="name">ASOCIACION DE DESARROLLO COMUNAL Y/O SERVICIOS COMUNITARIOS</field>
+  <field name="active">False</field>
+</record>
+<record id="xeconomic_activity_919903" model="xeconomic.activity"> 
+  <field name="code">919903</field>
+  <field name="name">ASOCIACIONES O ENTIDADES CON FINES CULTURALES, SOCIALES, RECREATIVOS, ARTESANALE</field>
+  <field name="active">False</field>
+</record>
+<record id="xeconomic_activity_919906" model="xeconomic.activity"> 
+  <field name="code">919906</field>
+  <field name="name">ASOCIACIONES ADMINISTRADORAS DE LOS SISTEMAS DE ACUEDUCTOS Y ALCANTARILLADOS (ASADAS)</field>
+  <field name="active">False</field>
+</record>
+<record id="xeconomic_activity_921101" model="xeconomic.activity"> 
+  <field name="code">921101</field>
+  <field name="name">ACTIVIDADES PRODUCCION POSTPRODUCCION Y DISTRIBUCION DE PELICULAS CINEMATOGRAFIC</field>
+  <field name="active">False</field>
+</record>
+<record id="xeconomic_activity_921201" model="xeconomic.activity"> 
+  <field name="code">921201</field>
+  <field name="name">EXHIBICIÓN DE FILMES Y VIDEOCINTAS  (SALAS DE CINE)</field>
+  <field name="active">False</field>
+</record>
+<record id="xeconomic_activity_921301" model="xeconomic.activity"> 
+  <field name="code">921301</field>
+  <field name="name">TRANSMISIONES DE RADIO</field>
+  <field name="active">False</field>
+</record>
+<record id="xeconomic_activity_921302" model="xeconomic.activity"> 
+  <field name="code">921302</field>
+  <field name="name">PROGRAMACIÓN Y TRANSMISIONES DE TELEVISIÓN</field>
+  <field name="active">False</field>
+</record>
+<record id="xeconomic_activity_921303" model="xeconomic.activity"> 
+  <field name="code">921303</field>
+  <field name="name">TRANSMISIONES DE RADIO CULTURALES SEGÚN LEY GENERAL DE TELECOMUNICACIONES</field>
+  <field name="active">False</field>
+</record>
+<record id="xeconomic_activity_921401" model="xeconomic.activity"> 
+  <field name="code">921401</field>
+  <field name="name">TEATROS (EXPLOTACION)</field>
+  <field name="active">False</field>
+</record>
+<record id="xeconomic_activity_921402" model="xeconomic.activity"> 
+  <field name="code">921402</field>
+  <field name="name">ACTIVIDADES MUSICALES Y ARTÍSTICAS (SERVICIOS)</field>
+  <field name="active">False</field>
+</record>
+<record id="xeconomic_activity_921403" model="xeconomic.activity"> 
+  <field name="code">921403</field>
+  <field name="name">PERIODISTA POR CUENTA PROPIA</field>
+  <field name="active">False</field>
+</record>
+<record id="xeconomic_activity_921501" model="xeconomic.activity"> 
+  <field name="code">921501</field>
+  <field name="name">CANALES DE TELEVISIóN</field>
+  <field name="active">False</field>
+</record>
+<record id="xeconomic_activity_921902" model="xeconomic.activity"> 
+  <field name="code">921902</field>
+  <field name="name">VENTA AL POR MENOR DE DISCOS, GRABACIONES DE MUSICA Y DE VIDEO</field>
+  <field name="active">False</field>
+</record>
+<record id="xeconomic_activity_921903" model="xeconomic.activity"> 
+  <field name="code">921903</field>
+  <field name="name">SALóN DE BAILE Y DISCOTECA</field>
+  <field name="active">False</field>
+</record>
+<record id="xeconomic_activity_921904" model="xeconomic.activity"> 
+  <field name="code">921904</field>
+  <field name="name">SALON DE PATINES</field>
+  <field name="active">False</field>
+</record>
+<record id="xeconomic_activity_922001" model="xeconomic.activity"> 
+  <field name="code">922001</field>
+  <field name="name">ACTIVIDADES DE AGENCIAS DE NOTICIAS</field>
+  <field name="active">False</field>
+</record>
+<record id="xeconomic_activity_923101" model="xeconomic.activity"> 
+  <field name="code">923101</field>
+  <field name="name">ACTIVIDADES DE BIBLIOTECAS Y ARCHIVOS</field>
+  <field name="active">False</field>
+</record>
+<record id="xeconomic_activity_923201" model="xeconomic.activity"> 
+  <field name="code">923201</field>
+  <field name="name">GALERIAS DE ARTE</field>
+  <field name="active">False</field>
+</record>
+<record id="xeconomic_activity_923202" model="xeconomic.activity"> 
+  <field name="code">923202</field>
+  <field name="name">SERVICIOS DE RESTAURACION DE OBRAS DE ARTE</field>
+  <field name="active">False</field>
+</record>
+<record id="xeconomic_activity_923301" model="xeconomic.activity"> 
+  <field name="code">923301</field>
+  <field name="name">ACTIVIDADES DE JARDINES BOTANICOS, ZOOLOGICOS, PARQUES NACIONALES Y RESERVAS NACIONALES</field>
+  <field name="active">False</field>
+</record>
+<record id="xeconomic_activity_924101" model="xeconomic.activity"> 
+  <field name="code">924101</field>
+  <field name="name">GIMNASIOS</field>
+  <field name="active">False</field>
+</record>
+<record id="xeconomic_activity_924102" model="xeconomic.activity"> 
+  <field name="code">924102</field>
+  <field name="name">EXPLOTACIÓN DE PISCINAS O ALBERCAS DE BAÑO</field>
+  <field name="active">False</field>
+</record>
+<record id="xeconomic_activity_924103" model="xeconomic.activity"> 
+  <field name="code">924103</field>
+  <field name="name">ENTRENADOR, INSTRUCTORES Y/O PREPARADORES FISICOS POR CUENTA PROPIA</field>
+  <field name="active">False</field>
+</record>
+<record id="xeconomic_activity_924104" model="xeconomic.activity"> 
+  <field name="code">924104</field>
+  <field name="name">ACTIVIDADES DE ESCUELAS Y CLUBES DEPORTIVOS</field>
+  <field name="active">False</field>
+</record>
+<record id="xeconomic_activity_924105" model="xeconomic.activity"> 
+  <field name="code">924105</field>
+  <field name="name">EXPLOTACION DE INSTALACIONES Y CAMPOS DEPORTIVOS</field>
+  <field name="active">False</field>
+</record>
+<record id="xeconomic_activity_924106" model="xeconomic.activity"> 
+  <field name="code">924106</field>
+  <field name="name">ACTIVIDADES DEPORTIVAS Y OTRAS POR CUENTA PROPIA</field>
+  <field name="active">False</field>
+</record>
+<record id="xeconomic_activity_924107" model="xeconomic.activity"> 
+  <field name="code">924107</field>
+  <field name="name">ESPECTÁCULOS DEPORTIVOS</field>
+  <field name="active">False</field>
+</record>
+<record id="xeconomic_activity_924901" model="xeconomic.activity"> 
+  <field name="code">924901</field>
+  <field name="name">NIGHT CLUB/CABARETTE</field>
+  <field name="active">False</field>
+</record>
+<record id="xeconomic_activity_924902" model="xeconomic.activity"> 
+  <field name="code">924902</field>
+  <field name="name">EXPLOTACIÓN DE CASINOS (INCLUYE MESAS DE JUEGOS Y MAQUINAS TRAGAMONEDAS)</field>
+  <field name="active">False</field>
+</record>
+<record id="xeconomic_activity_924903" model="xeconomic.activity"> 
+  <field name="code">924903</field>
+  <field name="name">PESCA DEPORTIVA</field>
+  <field name="active">False</field>
+</record>
+<record id="xeconomic_activity_924904" model="xeconomic.activity"> 
+  <field name="code">924904</field>
+  <field name="name">ACTIVIDADES DE JUEGOS DE BILLAR, POOL Y OTROS SIMILARES</field>
+  <field name="active">False</field>
+</record>
+<record id="xeconomic_activity_924905" model="xeconomic.activity"> 
+  <field name="code">924905</field>
+  <field name="name">SALA DE VIDEO JUEGOS</field>
+  <field name="active">False</field>
+</record>
+<record id="xeconomic_activity_924906" model="xeconomic.activity"> 
+  <field name="code">924906</field>
+  <field name="name">GRABACIÓN DE SONIDO (MUSICA, ETC.) EN DISCOS GRAMOFONICOS YEN CINTA MAGNETOFONIC</field>
+  <field name="active">False</field>
+</record>
+<record id="xeconomic_activity_924907" model="xeconomic.activity"> 
+  <field name="code">924907</field>
+  <field name="name">SERVICIO DE ENLACE DE LLAMADAS Y CASAS DE APUESTAS ELECTRONICAS (SPORTBOOKS)</field>
+  <field name="active">False</field>
+</record>
+<record id="xeconomic_activity_924908" model="xeconomic.activity"> 
+  <field name="code">924908</field>
+  <field name="name">ESPECTACULOS PUBLICOS EN GENERAL EXCEPTO LOS DEPORTIVOS Y EL TEATRO</field>
+  <field name="active">False</field>
+</record>
+<record id="xeconomic_activity_924909" model="xeconomic.activity"> 
+  <field name="code">924909</field>
+  <field name="name">OTRAS ACTIVIDADES DE ESPARCIMIENTO</field>
+  <field name="active">False</field>
+</record>
+<record id="xeconomic_activity_924910" model="xeconomic.activity"> 
+  <field name="code">924910</field>
+  <field name="name">EXPLOTACIÓN DE JUEGOS DE ÁZAR NO ELECTRÓNICOS (INCLUYE MÁQUINAS TRAGAMONEDAS</field>
+  <field name="active">False</field>
+</record>
+<record id="xeconomic_activity_930101" model="xeconomic.activity"> 
+  <field name="code">930101</field>
+  <field name="name">SERVICIOS DE LAVANDERíA DE TODO TIPO</field>
+  <field name="active">False</field>
+</record>
+<record id="xeconomic_activity_930102" model="xeconomic.activity"> 
+  <field name="code">930102</field>
+  <field name="name">SERVICIO DE TEÑIDO DE PRENDAS DE VESTIR</field>
+  <field name="active">False</field>
+</record>
+<record id="xeconomic_activity_930103" model="xeconomic.activity"> 
+  <field name="code">930103</field>
+  <field name="name">SERVICIO DE LIMPIEZA Y LAVADO DE MUEBLES</field>
+  <field name="active">False</field>
+</record>
+<record id="xeconomic_activity_930202" model="xeconomic.activity"> 
+  <field name="code">930202</field>
+  <field name="name">SALONES DE BELLEZA, PELUQUERIA Y BARBERIA</field>
+  <field name="active">False</field>
+</record>
+<record id="xeconomic_activity_93030" model="xeconomic.activity"> 
+  <field name="code">93030</field>
+  <field name="name">1 SERVICIOS FUNEBRES Y ACTIVIDADES CONEXAS</field>
+  <field name="active">False</field>
+</record>
+<record id="xeconomic_activity_930302" model="xeconomic.activity"> 
+  <field name="code">930302</field>
+  <field name="name">CEMENTERIO PUBLICO (JUNTA ADMINISTRATIVA)</field>
+  <field name="active">False</field>
+</record>
+<record id="xeconomic_activity_930303" model="xeconomic.activity"> 
+  <field name="code">930303</field>
+  <field name="name">CEMENTERIO O CAMPOSANTO PRIVADO</field>
+  <field name="active">False</field>
+</record>
+<record id="xeconomic_activity_930901" model="xeconomic.activity"> 
+  <field name="code">930901</field>
+  <field name="name">SALAS DE MASAJES</field>
+  <field name="active">False</field>
+</record>
+<record id="xeconomic_activity_930903" model="xeconomic.activity"> 
+  <field name="code">930903</field>
+  <field name="name">OTRAS ACTIVIDADES DE SERVICIOS PERSONALES N.C.P.</field>
+  <field name="active">False</field>
+</record>
+<record id="xeconomic_activity_930904" model="xeconomic.activity"> 
+  <field name="code">930904</field>
+  <field name="name">CENTRO O SALA DE BRONCEADO</field>
+  <field name="active">False</field>
+</record>
+<record id="xeconomic_activity_930905" model="xeconomic.activity"> 
+  <field name="code">930905</field>
+  <field name="name">PELUQUERíA Y SALA DE ESTÉTICA PARA ANIMALES</field>
+  <field name="active">False</field>
+</record>
+<record id="xeconomic_activity_930906" model="xeconomic.activity"> 
+  <field name="code">930906</field>
+  <field name="name">SERVICIO DE TATUAJE Y PIERCING</field>
+  <field name="active">False</field>
+</record>
+<record id="xeconomic_activity_930907" model="xeconomic.activity"> 
+  <field name="code">930907</field>
+  <field name="name">SERVICIO DE DISCO MOVIL</field>
+  <field name="active">False</field>
+</record>
+<record id="xeconomic_activity_930908" model="xeconomic.activity"> 
+  <field name="code">930908</field>
+  <field name="name">SERVICIO DE HERRADURA</field>
+  <field name="active">False</field>
+</record>
+<record id="xeconomic_activity_930915" model="xeconomic.activity"> 
+  <field name="code">930915</field>
+  <field name="name">ALBERGUE Y CUIDO DE ANIMALES A DOMICILIO</field>
+  <field name="active">False</field>
+</record>
+<record id="xeconomic_activity_950001" model="xeconomic.activity"> 
+  <field name="code">950001</field>
+  <field name="name">HOGARES PRIVADOS CON SERVICIO DOMÉSTICO</field>
+  <field name="active">False</field>
+</record>
+<record id="xeconomic_activity_960104" model="xeconomic.activity"> 
+  <field name="code">960104</field>
+  <field name="name">IMPUESTO A LAS PERSONAS JURIDICAS</field>
+  <field name="active">False</field>
+</record>
+<record id="xeconomic_activity_960105" model="xeconomic.activity"> 
+  <field name="code">960105</field>
+  <field name="name">ACTIVIDADES PREOPERATIVAS O DE ORGANIZACION</field>
+  <field name="active">False</field>
+</record>
+<record id="xeconomic_activity_960106" model="xeconomic.activity"> 
+  <field name="code">960106</field>
+  <field name="name">EXPORTADORES DE MERCANCIAS EXENTAS DEL IMPUESTO DE VENTAS</field>
+  <field name="active">False</field>
+</record>
+<record id="xeconomic_activity_960107" model="xeconomic.activity"> 
+  <field name="code">960107</field>
+  <field name="name">PRODUCTORES DE MERCANCIAS EXENTAS DEL IMPUESTO DE VENTAS</field>
+  <field name="active">False</field>
+</record>
+<record id="xeconomic_activity_960108" model="xeconomic.activity"> 
+  <field name="code">960108</field>
+  <field name="name">COMERCIALIZADORES DE MERCANCIAS EXENTAS DEL IMPUESTO DE VENTAS</field>
+  <field name="active">False</field>
+</record>
+<record id="xeconomic_activity_960109" model="xeconomic.activity"> 
+  <field name="code">960109</field>
+  <field name="name">DISTRIBUIDORES DE MERCANCIAS EXENTAS DEL IMPUESTO DE VENTAS</field>
+  <field name="active">False</field>
+</record>
+<record id="xeconomic_activity_990001" model="xeconomic.activity"> 
+  <field name="code">990001</field>
+  <field name="name">ACTVIDADES DE ORGANIZACIONES Y ORGANOS EXTRATERRITORIALES, INCLUYE LAS EMBAJADAS</field>
+  <field name="active">False</field>
+</record>
+</data>
+</odoo>

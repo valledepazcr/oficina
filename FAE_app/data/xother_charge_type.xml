@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+<data noupdate="0">
+<record id="xother_charge_type_01" model="xother.charge.type"> 
+  <field name="code">01</field>
+  <field name="name">Contribución  parafiscal</field>
+</record>
+<record id="xother_charge_type_02" model="xother.charge.type"> 
+  <field name="code">02</field>
+  <field name="name">Timbre de la Cruz Roja</field>
+</record>
+<record id="xother_charge_type_03" model="xother.charge.type"> 
+  <field name="code">03</field>
+  <field name="name">Timbre de Benemérito Cuerpo de Bomberos de Costa Rica</field>
+</record>
+<record id="xother_charge_type_04" model="xother.charge.type"> 
+  <field name="code">04</field>
+  <field name="name">Cobro de un tercero</field>
+</record>
+<record id="xother_charge_type_05" model="xother.charge.type"> 
+  <field name="code">05</field>
+  <field name="name">Costos de Exportación</field>
+</record>
+<record id="xother_charge_type_06" model="xother.charge.type"> 
+  <field name="code">06</field>
+  <field name="name">Impuesto de servicio 10%</field>
+</record>
+<record id="xother_charge_type_07" model="xother.charge.type"> 
+  <field name="code">07</field>
+  <field name="name">Timbre de Colegios Profesionales</field>
+</record>
+<record id="xother_charge_type_99" model="xother.charge.type"> 
+  <field name="code">99</field>
+  <field name="name">Otros Cargos</field>
+</record>
+</data>
+</odoo>

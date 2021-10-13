@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <menuitem id="menu_FAE_electronic_invoice"  name="Factura Electrónica"
+                  web_icon="FAE_app,static/description/logoFAEweb.jpg"/>
+
+        <menuitem id="menu_FAE_documentos_electronicos"  name="Documentos" parent="menu_FAE_electronic_invoice" sequence="2"/>
+            <menuitem id="menu_xfae_recibidos"  name="Recibidos" parent="menu_FAE_documentos_electronicos" sequence="1"
+                      action="action_xfae_incoming_doc"/>
+
+        <menuitem id="menu_FAE_configuration"  name="Configuración" parent="menu_FAE_electronic_invoice" sequence="3"/>
+            <menuitem id="menu_xidentificacion_type"  name="Tipo de Identificación" parent="menu_FAE_configuration" sequence="1"
+                      action="action_xidentification_type"/>
+            <menuitem id="menu_FAE_dist_geopolitica"  name="Dist.GeoPolítica" parent="menu_FAE_configuration" sequence="2"/>
+                <menuitem id="menu_xcountry_county"  name="Cantones" parent="menu_FAE_dist_geopolitica" sequence="1"
+                          action="action_xcountry_county"/>
+                <menuitem id="menu_xcountry_district"  name="Distrito" parent="menu_FAE_dist_geopolitica" sequence="2"
+                          action="action_xcountry_district"/>
+            <menuitem id="menu_xeconomic_activity"  name="Actividad Económica" parent="menu_FAE_configuration" sequence="4"
+                      action="action_xeconomic_activity"/>
+            <menuitem id="menu_xreference_document" name="Tipo de documento de referencia" parent="menu_FAE_configuration" sequence="5"
+                      action="action_xreference_document"/>
+            <menuitem id="menu_xreference_code" name="Código de Referencia" parent="menu_FAE_configuration" sequence="6"
+                      action="action_xreference_code"/>
+            <menuitem id="menu_FAE_parametros_ventas"  name="Parámetros de Ventas" parent="menu_FAE_configuration" sequence="8"/>
+                <menuitem id="menu_xpayment_method" name="Métodos de pago" parent="menu_FAE_parametros_ventas" sequence="1"
+                          action="action_xpayment_method"/>
+                <menuitem id="menu_xsale_condition" name="Condiciones de venta" parent="menu_FAE_parametros_ventas" sequence="2"
+                          action="action_xsale_condition"/>
+                <menuitem id="menu_xpayment_term" name="Plazos de Pago" parent="menu_FAE_parametros_ventas" sequence="3"
+                          action="account.action_payment_term_form"/>
+            <menuitem id="menu_xtax_code" name="Códigos de Impuesto" parent="menu_FAE_configuration" sequence="10"
+                      action="action_xtax_code"/>
+            <menuitem id="menu_xtax_use_code" name="Códigos de Uso Impuesto" parent="menu_FAE_configuration" sequence="12"
+                      action="action_xtax_use_code"/>
+            <menuitem id="menu_xcabys_company" name="CAByS de la Compañía" parent="menu_FAE_configuration" sequence="13"
+                      action="action_xcabys_company"/>                      
+            <menuitem id="menu_xfetchmail" name="Servidores de Correo" parent="menu_FAE_configuration" sequence="21"
+                      action="action_fae_mail"/>
+
+    </data>
+</odoo>

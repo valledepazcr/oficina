@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <record id="fae_tax_form_inherit" model="ir.ui.view">
+            <field name="name">account.tax.form.inherit</field>
+            <field name="model">account.tax</field>
+            <field name="inherit_id" ref="account.view_tax_form"/>
+            <field name="arch" type="xml">
+                <field name="active" position="before">
+                    <field name="x_tax_code_id" options="{'no_open': True, 'no_create': True}"/>
+                </field>
+                <xpath expr="//form/sheet/group/*/div[span]" position="after">
+                    <field name="x_tax_rate_id" options="{'no_open': True, 'no_create': True}" attrs="{'invisible': [('type_tax_use', '!=', 'sale')]}"/>
+                    <div colspan="2" col="2">
+                        <div style="width:65%;display:inline-block;" attrs="{'invisible': [('type_tax_use', '!=', 'sale')]}">
+                            <label for="x_has_exoneration" style="font-weight:bold;margin-right:90px;"/>
+                            <field name="x_has_exoneration"/>
+                            <label for="x_exoneration_rate" style="font-weight:bold;margin-left:40px;" attrs="{'invisible': ['|',('type_tax_use', '!=', 'sale'),('x_has_exoneration', '=', False)]}"/>
+                        </div>
+                        <div style="width:20%;display:inline-block;" attrs="{'invisible': ['|',('type_tax_use', '!=', 'sale'),('x_has_exoneration', '=', False)]}">
+                            <field name="x_exoneration_rate"/> 
+                        </div>
+                    </div>             
+                </xpath>
+            </field>
+        </record>
+    </data>
+</odoo>

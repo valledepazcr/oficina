@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <record id="xcr_live_rate_res_config_settings_form_view" model="ir.ui.view">
+            <field name="name">xcr_live_rate.res.config.settings.crc.view.form</field>
+            <field name="model">res.config.settings</field>
+            <field name="inherit_id" ref="account.res_config_settings_view_form"/>
+            <field name="arch" type="xml">
+                <xpath expr="//div[@id='record_transactions']/div[2]/div[2]" position="after">
+                    <div id="cr_currency_live_exchange" class="content-group" attrs="{'invisible': [('group_multi_currency', '=', False)]}">
+                        <div class="text-muted mt8">                            
+                            <b>Parámetros para obtener Tipo de Cambio</b>
+                            <br/>
+                        </div>
+                        <div class="row mt8">
+                            <label for="x_exchange_source" class="col-lg-3 o_light_label" string="Fuente" />
+                            <field name="x_exchange_source"/>
+                        </div>
+                        <div class="row mt4" attrs="{'invisible':[('x_exchange_source', '!=', 'bccr')]}" >
+                            <label for="x_bccr_username" class="col-lg-3 o_light_label" string="Usuario Registrado" />
+                            <field name="x_bccr_username" />
+                        </div>
+                        <div class="row mt4" attrs="{'invisible':[('x_exchange_source', '!=', 'bccr')]}" >
+                            <label for="x_bccr_email" class="col-lg-3 o_light_label" string="Email Registrado" />
+                            <field name="x_bccr_email" />
+                        </div>
+                        <div class="row mt4" attrs="{'invisible':[('x_exchange_source', '!=', 'bccr')]}" >
+                            <label for="x_bccr_token" class="col-lg-3 o_light_label" string="BCCR Token" />
+                            <field name="x_bccr_token" />
+                        </div> 
+                    </div>
+                </xpath>
+           </field>
+        </record>
+    </data>
+</odoo>

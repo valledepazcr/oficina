@@ -1,0 +1,9 @@
+<odoo>
+    <data>
+        <template id="assets_backend" name="custom page assets" inherit_id="web.assets_backend">
+            <xpath expr="//script[last()]" position="after">
+                <script type="text/javascript" src="/FAE_app/static/src/js/xfae_load_doc.js"/>
+            </xpath>
+        </template>
+    </data>
+</odoo>

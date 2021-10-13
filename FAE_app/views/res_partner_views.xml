@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<odoo>
+    <data>
+        <record id="fae_partner_form_inherit"  model="ir.ui.view">
+            <field name="name">view.partner.form.inherit</field>
+            <field name="model">res.partner</field>
+            <field name="type">form</field>
+            <field name="inherit_id" ref="base.view_partner_form"/>
+            <field name="arch" type="xml">
+                <xpath expr="//form/sheet/group/group/div[hasclass('o_address_format')]/field[@name='state_id']" position="attributes">
+                    <attribute name="context">{'country_id': country_id}</attribute>
+                </xpath>
+
+                <xpath expr="//form/sheet/group/group/div[hasclass('o_address_format')]/field[@name='country_id']" position="replace" />
+                <xpath expr="//form/sheet/group/group/div[hasclass('o_address_format')]/field[@name='state_id']" position="replace" />
+                <xpath expr="//form/sheet/group/group/div[hasclass('o_address_format')]/field[@name='city']" position="replace" />
+                <xpath expr="//form/sheet/group/group/div[hasclass('o_address_format')]/field[@name='zip']" position="replace" />
+
+                <xpath expr="//form/sheet/group/group/div[hasclass('o_address_format')]/field[@name='street']" position="before">
+                    <field name="country_id" placeholder="Country" />
+                    <field name="state_id" class="o_address_state" placeholder="State"/>
+                    <field name="x_country_county_id"  class="o_address_state" style="width:60%;"
+                        placeholder="County"
+                        options='{"no_open": True, "no_create": True}'
+                        attrs="{'readonly': [('parent_id', '!=', False)], 'invisible': [('country_id','!=',%(base.cr)d)]}"
+                        domain="[('country_state_id', '=', state_id)]"
+                        context="{'country_id': country_id, 'state_id': state_id}"/>
+                    <field name="x_country_district_id"
+                        class="o_address_state"
+                        placeholder="District"
+                        options='{"no_open": True, "no_create": True}'
+                        domain="[('country_county_id', '=', x_country_county_id)]"/>
+                    <field name="city" placeholder="City" class="o_address_city" options="{'invisible': [('country_id','=',%(base.cr)d)]}"/>
+                </xpath>
+
+                <xpath expr="//form/sheet/group/group/div[hasclass('o_address_format')]/field[@name='city']" position="after">
+                    <field name="zip" placeholder="Zip" class="o_address_zip" options="{'invisible': [('country_id','=',%(base.cr)d)]}"/>
+                </xpath>
+
+                <field name="vat" position="before">
+                    <field name="x_identification_type_id" string="Tipo Identificación" options="{'no_open': True}"/>
+                </field>
+<!--                 <field name="vat" position="after">
+                    <field name="x_email_fae"/>
+                </field> -->
+
+                <field name="category_id" position="after">
+                    <field name="x_foreign_partner" />
+                    <field name="x_special_tax_type" />
+                </field>
+
+                <field name="property_account_position_id" position="replace">
+                    <field name="property_account_position_id" attrs="{'required': [('x_special_tax_type','!=',False)]}" />
+                </field>
+
+                <xpath expr="//page[3]" position="after">
+                    <page name="exoneration_tab" string="Exoneración" attrs="{'invisible': [('x_special_tax_type', '!=', 'E')]}">
+                        <span>Exoneración que aplica para todos los productos vendidos</span>
+                        <group>
+                            <group>
+                                <field name="x_exo_type_exoneration" options="{'no_open': True}"/>
+                                <field name="x_exo_institution_name"/>
+                                <field name="x_exo_exoneration_number"/>
+                            </group>
+                            <group>
+                                <field name="x_exo_date_issue"/>
+                                <field name="x_exo_date_expiration"/>
+                            </group>
+                        </group>
+                    </page>
+                </xpath>
+
+                <field name="property_supplier_payment_term_id" position="after">
+                    <field name="x_economic_activity_id" options="{'no_create': True, 'active_test': False}" colspan="4" />
+                    <button name="action_get_economic_activities" type="object" string="Consultar Actividad Económica" colspan="2" class="oe_highlight"/> 
+                </field>
+
+            </field>
+        </record>
+    </data>
+</odoo>

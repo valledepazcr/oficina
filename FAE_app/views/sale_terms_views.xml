@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <record id="xsale_condition_tree_view" model="ir.ui.view">
+            <field name="name">xsale.conditions.tree</field>
+            <field name="model">xsale.condition</field>
+            <field name="arch" type="xml">
+                <tree string="Condiciones de venta" editable="bottom">
+                    <field name="code" string="Código"/>
+                    <field name="name" string="Nombre"/>
+                    <field name="active" string="Activo"/>
+                </tree>
+            </field>
+        </record>
+
+        <record id="xpayment_method_tree_view" model="ir.ui.view">
+            <field name="name">xpayment.method.tree</field>
+            <field name="model">xpayment.method</field>
+            <field name="arch" type="xml">
+                <tree string="Métodos de pago" editable="bottom">
+                    <field name="code" string="Código"/>
+                    <field name="name" string="Nombre"/>
+                    <field name="active" string="Activo"/>
+                </tree>
+            </field>
+        </record>
+
+        <record id="fae_account_payment_term_form_view_inherit" model="ir.ui.view">
+            <field name="name">account.payment.term.form.inherit</field>
+            <field name="model">account.payment.term</field>
+            <field name="inherit_id" ref="account.view_payment_term_form"/>
+            <field name="arch" type="xml">
+                <field name="name" position="after">
+                    <field name="x_sale_condition_id" string="Condición de Venta"/>
+                </field>
+            </field>
+        </record>
+
+        <!--    Actions -->
+        <record id="action_xsale_condition" model="ir.actions.act_window">
+            <field name="name">Condiciones de Venta</field>
+            <field name="res_model">xsale.condition</field>
+            <field name="view_mode">tree,form</field>
+            <field name="context">{'active_test': False}</field>
+        </record>
+
+        <record id="action_xpayment_method" model="ir.actions.act_window">
+            <field name="name">Métodos de pago</field>
+            <field name="res_model">xpayment.method</field>
+            <field name="view_mode">tree,form</field>
+            <field name="context">{'active_test': False}</field>
+        </record>
+
+
+    </data>
+</odoo>

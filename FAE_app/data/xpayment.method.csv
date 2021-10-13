@@ -1,0 +1,7 @@
+id,code,name,active
+xpayment_method_01,01,Efectivo,VERDADERO
+xpayment_method_02,02,Tarjeta,VERDADERO
+xpayment_method_03,03,Cheque,VERDADERO
+xpayment_method_04,04,Transferencia - Depósito Bancario,VERDADERO
+xpayment_method_05,05,Recaudado Por Terceros,VERDADERO
+xpayment_method_99,99,Otros,VERDADERO

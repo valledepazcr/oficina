@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+<data noupdate="0">
+<record id="xexo_authorization_01" model="xexo.authorization"> 
+  <field name="code">01</field>
+  <field name="name">COMPRAS AUTORIZADAS</field>
+  <field name="active">True</field>
+</record>
+<record id="xexo_authorization_02" model="xexo.authorization"> 
+  <field name="code">02</field>
+  <field name="name">VENTAS EXENTAS A DIPLOMATICOS</field>
+  <field name="active">True</field>
+</record>
+<record id="xexo_authorization_03" model="xexo.authorization"> 
+  <field name="code">03</field>
+  <field name="name">AUTORIZADOS POR LEY ESPECIAL</field>
+  <field name="active">True</field>
+</record>
+<record id="xexo_authorization_04" model="xexo.authorization"> 
+  <field name="code">04</field>
+  <field name="name">EXENCIONES DIRECCION GENERAL DE HACIENDA</field>
+  <field name="active">True</field>
+</record>
+<record id="xexo_authorization_05" model="xexo.authorization"> 
+  <field name="code">05</field>
+  <field name="name">TRANSITORIO V</field>
+  <field name="active">True</field>
+</record>
+<record id="xexo_authorization_06" model="xexo.authorization"> 
+  <field name="code">06</field>
+  <field name="name">TRANSITORIO IX</field>
+  <field name="active">True</field>
+</record>
+<record id="xexo_authorization_07" model="xexo.authorization"> 
+  <field name="code">07</field>
+  <field name="name">TRANSITORIO XVII</field>
+  <field name="active">True</field>
+</record>
+<record id="xexo_authorization_99" model="xexo.authorization"> 
+  <field name="code">99</field>
+  <field name="name">OTROS</field>
+  <field name="active">True</field>
+</record>
+</data>
+</odoo>

@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <!-- search view!-->
+    <record id="fae_account_invoice_inherit" model="ir.ui.view">
+        <field name="name">account.move.filter</field>        
+        <field name="model">account.move</field>
+        <field name="inherit_id" ref="account.view_account_invoice_filter"/>
+        <field name="arch" type="xml">
+            <xpath expr="//field[@name='invoice_user_id']" position="after">
+                <field name="x_document_type"/>
+                <field name="x_sequence"/> 
+                <field name="move_type" invisible="True"/> 
+                <field name="x_state_dgt"/>
+            </xpath>
+        </field>
+    </record>
+
+    <record id="fae_account_invoice_view_tree" model="ir.ui.view">
+        <field name="name">account.move.tree.inherit</field>
+        <field name="model">account.move</field>
+        <field name="inherit_id" ref="account.view_invoice_tree"/>
+        <field name="arch" type="xml">
+            <tree position="attributes">
+                <attribute name="decoration-danger">x_state_dgt in ('2','FI','ERR')</attribute>
+            </tree>
+            <field name="invoice_date_due" position="after">
+                <field name="x_document_type" />
+                <field name="x_sequence" invisible="context.get('default_move_type') in ('in_invoice', 'in_refund','in_receipt')" />
+                <field name="x_state_dgt" />
+            </field>
+            <field name="amount_untaxed_signed" position="before">
+                <field name="amount_total" string="Total Invoice" widget="monetary" optional="show"
+                        invisible="context.get('default_move_type') in ('in_invoice','in_refund','in_receipt')" />
+            </field>
+        </field>
+    </record>
+
+    <!-- account invoice !-->
+    <record id="fae_account_invoice_form_inherit" model="ir.ui.view" >
+        <field name="name">Account Invoice</field>
+        <field name="model">account.move</field>
+        <field name="inherit_id" ref="account.view_move_form"/>
+        <field name="arch" type="xml">
+            <xpath expr="//form/sheet/div" position="after">
+                <field name="posted_before" invisible="1" />
+                <widget name="web_ribbon" title="Posted Before"
+                        bg_color="bg-info"
+                        attrs="{'invisible': ['|','|',('state','!=','draft'),('posted_before','=',False),('move_type', 'not in', ('out_invoice', 'out_refund', 'in_invoice', 'in_refund', 'out_receipt', 'in_receipt'))]}"/>                
+            </xpath>
+
+            <xpath expr="//button[@name='button_draft']" position="after">
+                <field name="x_move_editable" invisible="1" />
+                <field name="x_show_generate_xml_button" invisible="1" />
+                <button name="generate_xml_and_send_dgt_manual" type="object" string="Generar XML" colspan="2" 
+                    attrs="{'invisible':[('x_show_generate_xml_button','=',False)]}"/>
+                <button name="consulta_status_doc_enviado" type="object" string="Consultar Hacienda" colspan="2" 
+                    attrs="{'invisible':['|',('x_state_dgt','=', False),('x_state_dgt','not in',['PRO','FI'])]}"/>
+            </xpath>
+            
+            <xpath expr="//button[@name='button_draft']" position="replace">
+                <field name="x_show_reset_to_draft_button" invisible="1" />
+                <button name="button_draft" string="Reset to Draft" type="object" groups="account.group_account_invoice"
+                        attrs="{'invisible' : [('x_show_reset_to_draft_button', '=', False)]}"/>
+            </xpath>
+
+
+            <xpath expr="//label[@for='ref']" position="replace" />
+            <xpath expr="//field[@name='ref']" position="replace" />
+
+            <xpath expr="//field[@name='ref']" position="replace">
+                <label for="ref" string="Reference Journal"
+                        attrs="{'invisible':[('move_type','!=','entry')]}" />
+                <field name="ref" nolabel="1"
+                        attrs="{'invisible':[('move_type','!=','entry')],'readonly':[('x_move_editable','=',False)]}" />
+            </xpath>
+
+            <field name="partner_id" position="attributes">
+                <attribute name="attrs">{'readonly':[('x_move_editable','=',False)], 'invisible': [('move_type', 'not in', ('out_invoice', 'out_refund', 'in_invoice', 'in_refund', 'out_receipt', 'in_receipt'))] }</attribute>
+            </field> 
+
+            <xpath expr="//field[@name='partner_id']" position="after">
+                <field name="x_accounting_lock" invisible="1"/>
+                <field name="x_generated_dgt" invisible="1"/>
+                <field name="x_move_editable" invisible="1"/>
+                <field name="x_partner_vat" invisible="1" />
+                <field name="x_economic_activity_id" 
+                        attrs="{'invisible':[('move_type', 'not in', ('out_invoice', 'out_refund'))], 'readonly':[('x_move_editable','=',False)]}" />
+                <field name="x_document_type" 
+                        attrs="{'invisible':[('move_type', 'not in', ('out_invoice', 'out_refund', 'in_invoice', 'in_refund'))], 'readonly':[('x_move_editable','=',False)]}" />
+                <field name="x_fae_incoming_doc_id" 
+                        attrs="{'invisible':['|',('x_document_type','in',(False,'FEC')), ('move_type', 'not in', ('in_invoice', 'in_refund'))] }" 
+                        options="{'no_create':True, 'no_create_edit':True, 'no_open':False}" />
+                <field name="x_sequence"
+                        attrs="{'invisible':[('move_type','not in',('out_invoice','out_refund')),('x_document_type','!=','FEC')], 'readonly':['|',('move_type','in',('out_invoice','out_refund')),('x_document_type','==','FEC')]}"/>
+                <label for="ref" string="Bill Reference"
+                        attrs="{'invisible':['|',('x_fae_incoming_doc_id','=',True), ('move_type', 'not in', ('in_invoice', 'in_receipt', 'in_refund'))]}" />
+                <field name="ref" nolabel="1"
+                        attrs="{'invisible':['|',('x_fae_incoming_doc_id','=',True), ('move_type', 'not in', ('in_invoice', 'in_receipt', 'in_refund'))], 'readonly':[('state','!=','draft')]}" />
+                <label for="ref" string="Reference"
+                        attrs="{'invisible':[('move_type', 'not in', ('out_invoice', 'out_refund'))]}" />
+                <field name="ref" nolabel="1"
+                        attrs="{'invisible':[('move_type', 'not in', ('out_invoice', 'out_refund'))], 'readonly':[('x_move_editable','=',False)]}" />
+            </xpath>
+
+            <field name="invoice_date" position="attributes">
+                <attribute name="attrs">{'readonly':[('x_accounting_lock','=',True)], 'invisible':[('move_type', 'not in', ('out_invoice', 'out_refund', 'in_invoice', 'in_refund', 'out_receipt', 'in_receipt'))]}</attribute>
+            </field>
+
+            <xpath expr="//field[@name='invoice_date']" position="after">
+                <field name="x_issue_date" attrs="{'invisible':[('move_type','not in',('out_invoice','out_refund')), ('x_document_type','!=','FEC')], 'readonly':True}"/>
+                <field name="x_state_dgt"  attrs="{'invisible':[('move_type','not in',('out_invoice','out_refund')), ('x_document_type','!=','FEC')], 'readonly':True}"/>
+                <field name="x_payment_method_id" 
+                        attrs="{'invisible':[('move_type','not in',('out_invoice','out_refund'))], 'required':[('move_type','=','out_invoice')], 'readonly':[('x_move_editable','=',False)]}"/>
+                <field name="x_reference_code_id" options="{'no_open': True}" 
+                        attrs="{'invisible':[('move_type', 'not in', ('out_invoice', 'out_refund', 'in_invoice', 'in_refund'))], 'readonly':[('x_move_editable','=',False)]}"/>
+                <field name="x_error_count" invisible="1"/>
+            </xpath>
+
+            <xpath expr="//field[@name='invoice_line_ids']" position="attributes">
+                <attribute name="attrs">{'readonly': [('x_move_editable','=',False)]}</attribute>                
+            </xpath>
+
+            <xpath expr="//field[@name='invoice_line_ids']//tree//field[@name='name']" position="after">
+                <field name="x_product_code" invisible="1" readonly="1" />
+                <field name="x_other_charge_partner_id" attrs="{'invisible':[('x_product_code', '!=', '04')]}"/>
+            </xpath>
+
+            <xpath expr="//field[@name='invoice_line_ids']//tree//field[@name='discount']" position="after">
+                <field name="x_discount_note" groups="product.group_discount_per_so_line"/>
+            </xpath>
+
+            <!-- Configura el tab de detalle contable -->
+            <xpath expr="//field[@name='line_ids']" position="attributes">
+                <attribute name="attrs">{'readonly': ['|',('x_accounting_lock', '=', True),('state','!=','draft')],
+                     'invisible': [('payment_state','=','invoicing_legacy'), ('move_type','!=','entry')]}</attribute>
+            </xpath>
+
+            <!-- Agrega tab de referencias y FAE-information -->
+            <xpath expr="//page[@id='other_tab_entry']" position="after">
+                <page string="Datos Referencia" attrs="{'invisible': [('x_reference_code_id','=',False)]}">
+                    <group>
+                        <group>
+                            <field name="x_is_external_reference" attrs="{'readonly':[('x_move_editable','=',False)]}"/>
+                            <field name="x_invoice_reference_id" options="{'no_open': True}"
+                                    attrs="{'invisible':['|',('x_reference_code_id','=',False),('x_is_external_reference','=',True)], 'required':[('x_reference_code_id','!=',False),('x_is_external_reference','=',False)], 'readonly':[('x_move_editable','=',False)], }"
+                                />
+                            <field name="x_reference_document_type_id" options="{'no_open': True}"
+                                attrs="{'invisible':[('x_reference_code_id','=',False)], 'readonly':[('x_move_editable','=',False)], }"/>
+                            <field name="x_ext_reference_num"
+                                    placeholder="Clave númerica de 50 dígitos"
+                                    attrs="{'invisible':[('x_is_external_reference','=',False)], 'required':[('x_is_external_reference','=',True)], 'readonly':[('x_move_editable','=',False)]}" />
+                        </group>
+                        <group>
+                            <field name="x_ext_reference_date"
+                                    attrs="{'invisible':[('x_is_external_reference','=',False)], 'required':[('x_is_external_reference','=',True)], 'readonly':[('x_move_editable','=',False)]}" />
+                            <field name="x_ext_reference_razon"
+                                placeholder="Motivo de la referencia"
+                                attrs="{'readonly':[('x_move_editable','=',False)]}" />
+                        </group>
+                    </group>
+                </page>
+                <page string="FAE Information" attrs="{'invisible':[('move_type','not in',('out_invoice', 'out_refund')), ('x_document_type','!=','FEC')]}" >
+                    <group>
+                        <field name="x_issue_date" readonly="True"/>
+                        <field name="x_electronic_code50" readonly="True"/>
+                        <field name="x_xml_comprobante_fname" invisible="1" readonly="1"/>
+                        <field name="x_xml_comprobante" filename="x_xml_comprobante_fname" readonly="1"/>
+                        <field name="x_xml_respuesta_fname" invisible="1" readonly="1"/>
+                        <field name="x_xml_respuesta" filename="x_xml_respuesta_fname" readonly="1"/>
+                        <field name="x_mensaje_respuesta" readonly="1"/>
+                    </group>
+                </page>
+            </xpath>
+
+            <xpath expr="//group[@id='other_tab_group']//field[@name='fiscal_position_id']" position="attributes">
+                <attribute name="attrs">{'readonly':[('x_move_editable','=',False)]}</attribute>
+            </xpath>
+
+        </field>
+    </record>
+
+    <record id="action_move_out_invoice_type" model="ir.actions.act_window">
+        <field name="name">Facturas de Cliente</field>
+        <field name="res_model">account.move</field>
+        <field name="view_mode">tree,form</field>
+        <field name="view_id" ref="account.view_invoice_tree"/>
+        <field name="search_view_id" ref="account.view_account_invoice_filter"/>
+        <field name="domain">[('type', '=', 'out_invoice')]</field>
+        <field name="context">{'default_type': 'out_invoice'}</field>
+        <field name="help" type="html">
+          <p class="o_view_nocontent_smiling_face">
+            Create a customer invoice
+          </p><p>
+            Create invoices, register payments and keep track of the discussions with your customers.
+          </p>
+        </field>
+    </record>
+</odoo>

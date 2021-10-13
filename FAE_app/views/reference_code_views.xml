@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+<!--    Códigos de referencia -->
+        <record id="xreference_code_form_view" model="ir.ui.view">
+            <field name="name">xreference.code.form</field>
+            <field name="model">xreference.code</field>
+            <field name="arch" type="xml">
+                <form string="Código de referencia a documentos">
+                    <sheet string="Código de referencia a documentos">
+                        <group col="4">
+                            <field name="code" string="Código"/>
+                            <field name="version" string="Versión"/>
+                            <field name="name" string="Nombre"/>
+                            <field name="active" string="Activo" widget="boolean_toggle"/>
+                        </group>
+                    </sheet>
+                </form>
+            </field>
+        </record>
+
+        <record id="xreference_code_tree_view" model="ir.ui.view">
+            <field name="name">xreference.code.tree</field>
+            <field name="model">xreference.code</field>
+            <field name="arch" type="xml">
+                <tree string="Código de referencia a documentos">
+                    <field name="code" string="Código"/>
+                    <field name="version" string="Versión"/>
+                    <field name="name" string="Nombre"/>
+                    <field name="active" string="Activo" widget="boolean_toggle"/>
+                </tree>
+            </field>
+        </record>
+
+<!--    Tipos de documentos que se referencia -->
+        <record id="xreference_document_form_view" model="ir.ui.view">
+            <field name="name">xreference.document.form</field>
+            <field name="model">xreference.document</field>
+            <field name="arch" type="xml">
+                <form string="Códigos de Documentos de referencia">
+                    <sheet string="Códigos de Documentos de referencia">
+                        <group col="4">
+                            <field name="code" string="Código"/>
+                            <field name="name" string="Nombre"/>
+                            <field name="used_for" string="Uso en"/>
+                            <field name="active" string="Activo" widget="boolean_toggle"/>
+                        </group>
+                    </sheet>
+                </form>
+            </field>
+        </record>
+
+        <record id="xreference_document_tree_view" model="ir.ui.view">
+            <field name="name">xreference.document.tree</field>
+            <field name="model">xreference.document</field>
+            <field name="arch" type="xml">
+                <tree string="Códigos de Documentos de referencia">
+                    <field name="code" string="Código"/>
+                    <field name="name" string="Nombre"/>
+                    <field name="used_for" string="Uso en"/>
+                    <field name="active" string="Activo" widget="boolean_toggle"/>
+                </tree>
+            </field>
+        </record>
+
+<!--    Actions -->
+        <record id="action_xreference_code" model="ir.actions.act_window">
+            <field name="name">Código de referencia</field>
+            <field name="res_model">xreference.code</field>
+            <field name="view_mode">tree,form</field>
+            <field name="context">{'active_test': False}</field>
+        </record>
+
+        <record id="action_xreference_document" model="ir.actions.act_window">
+            <field name="name">Tipos de documentos de referencia</field>
+            <field name="res_model">xreference.document</field>
+            <field name="view_mode">tree,form</field>
+            <field name="context">{'active_test': False}</field>
+        </record>
+
+    </data>
+</odoo>

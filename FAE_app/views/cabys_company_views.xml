@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>        
+        <record id="xcabys_company_view_tree" model="ir.ui.view">
+            <field name="name">xcabys.company.view.tree</field>
+            <field name="model">xcabys.company</field>
+            <field name="arch" type="xml">
+                <tree string="Códigos CAByS de la compañía" editable="bottom">
+                    <field name="code"/>
+                    <field name="description"/>
+                    <field name="name"/>
+                    <field name="impuesto"/>
+                    <field name="company_id" options="{'no_create': True}" groups="base.group_multi_company"/>                    
+                    <field name="active" widget="boolean_toggle"/>                    
+                </tree>
+            </field>
+        </record>
+
+        <record id="xcabys_company_view_form" model="ir.ui.view">
+            <field name="name">xcabys.company.view.form</field>
+            <field name="model">xcabys.company</field>
+            <field name="arch" type="xml">
+                <form string="Códigos CAByS de la compañía">
+                    <sheet string="Tipos de códigos">
+                        <group col="4">
+                            <field name="code"/>
+                            <field name="description"/>
+                            <field name="name"/>
+                            <field name="impuesto"/>
+                            <field name="active" widget="boolean_toggle"/>
+                        </group>
+                    </sheet>
+                </form>
+            </field>
+        </record>
+
+        <record id="action_xcabys_company" model="ir.actions.act_window">
+            <field name="name">CAByS de compañía</field>
+            <field name="res_model">xcabys.company</field>
+            <field name="view_mode">tree,form</field>
+        </record>
+    </data>
+</odoo>

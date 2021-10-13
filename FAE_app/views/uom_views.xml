@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <record id="view_product_uom_form_inherit" model="ir.ui.view">
+            <field name="name">view.uom.form.inherit</field>
+            <field name="model">uom.uom</field>
+            <field name="inherit_id" ref="uom.product_uom_form_view"/>
+            <field name="arch" type="xml">
+                <field name="rounding" position="after">
+                    <field name="x_code_dgt" string="Código DGT"/>
+                </field>
+            </field>
+        </record>
+    </data>
+</odoo>

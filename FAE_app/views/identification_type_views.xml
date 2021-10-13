@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <record id="xidentification_type_view_form" model="ir.ui.view">
+            <field name="name">xidentification.type.form</field>
+            <field name="model">xidentification.type</field>
+            <field name="arch" type="xml">
+                <form string="Tipo de identificación">
+                    <sheet string="Tipo de identificación">
+                        <group col="4">
+                            <field name="code" string="Código"/>
+                            <field name="name" string="Nombre"/>
+                            <field name="type" string="Tipo"/>
+                        </group>
+                    </sheet>
+                </form>
+            </field>
+        </record>
+        
+        <record id="xidentification_type_view_tree" model="ir.ui.view">
+            <field name="name">xidentification.type.tree</field>
+            <field name="model">xidentification.type</field>
+            <field name="arch" type="xml">
+                <tree string="Tipo de identificación" editable="bottom">
+                    <field name="code" string="Código"/>
+                    <field name="name" string="Nombre"/>
+                    <field name="type" string="Tipo"/>
+                </tree>
+            </field>
+        </record>
+
+        <record id="action_xidentification_type" model="ir.actions.act_window">
+            <field name="name">Tipo de Identificación</field>
+            <field name="res_model">xidentification.type</field>
+            <field name="view_mode">tree,form</field>
+        </record>
+    </data>
+</odoo>

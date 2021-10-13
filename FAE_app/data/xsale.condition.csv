@@ -1,0 +1,11 @@
+id,code,name,active
+xsale_condition_01,01,Contado,VERDADERO
+xsale_condition_02,02,Crédito,VERDADERO
+xsale_condition_03,03,Consignación,VERDADERO
+xsale_condition_04,04,Apartado,VERDADERO
+xsale_condition_05,05,Arriendamiento Con Opción De Compra,VERDADERO
+xsale_condition_06,06,Arrendamiento Con Opción Financiera,VERDADERO
+xsale_condition_07,07,Cobro A Favor De Un Tercero,VERDADERO
+xsale_condition_08,08,Servicios Prestados Al Estado A Crédito,VERDADERO
+xsale_condition_09,09,Pago Del Servicios Prestado Al Estado,VERDADERO
+xsale_condition_99,99,Otros,VERDADERO

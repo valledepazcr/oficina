@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+<data noupdate="0">
+<record id="base.state_SJ" model="res.country.state"> 
+  <field name="code">1</field>
+  <field name="name">San José</field>
+</record>
+<record id="base.state_A" model="res.country.state"> 
+  <field name="code">2</field>
+  <field name="name">Alajuela</field>
+</record>
+<record id="base.state_C" model="res.country.state"> 
+  <field name="code">3</field>
+  <field name="name">Cartago</field>
+</record>
+<record id="base.state_H" model="res.country.state"> 
+  <field name="code">4</field>
+  <field name="name">Heredia</field>
+</record>
+<record id="base.state_G" model="res.country.state"> 
+  <field name="code">5</field>
+  <field name="name">Guanacaste</field>
+</record>
+<record id="base.state_P" model="res.country.state"> 
+  <field name="code">6</field>
+  <field name="name">Puntarenas</field>
+</record>
+<record id="base.state_L" model="res.country.state"> 
+  <field name="code">7</field>
+  <field name="name">Limón</field>
+</record>
+</data>
+</odoo>

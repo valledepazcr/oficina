@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <!-- search view !-->
+        <record id="xfae_incoming_documents_search" model="ir.ui.view">
+            <field name="name">xfae.incoming.documents.search</field>        
+            <field name="model">xfae.incoming.documents</field>
+            <field name="arch" type="xml">
+                <search string="Search Incoming Documents">
+                    <field name="issuer_name"/>
+                    <field name="issuer_identification_num"/> 
+                    <field name="issuer_sequence"/>
+                    <filter string="Sin aceptación" name="code_accept" domain="[('code_accept','=',False)]"/>
+                    <filter string="Sin Contabilizar" name="purchase_registried" domain="[('purchase_registried','=',False)]"/>
+                    <filter string="Fecha Emisión" name="bill_date" date="bill_date"/>
+                    <group expand="0" string="Group By">
+                        <filter string="Céd.Receptor" name="identification_number" context="{'group_by':'identification_number'}" />
+                        <filter string="Código Aceptación" name="code_accept" context="{'group_by':'code_accept'}"/>
+                        <filter string="Emisor" name="issuer_name" context="{'group_by':'issuer_name'}"/>
+                        <separator/>
+                        <filter string="Fecha emisión" name="bill_date" context="{'group_by': 'bill_date'}"/>
+                    </group>                    
+                </search>
+            </field>
+        </record>
+
+
+        <record id="xfae_electronic_doc_tree" model="ir.ui.view">
+            <field name="name">xfae.incoming.documents.tree</field>
+            <field name="model">xfae.incoming.documents</field>
+            <field name="arch" type="xml">
+                <tree string="Documento Recibido" duplicate="0" create="0" edit="0">
+                    <field name="identification_type_id" />
+                    <field name="identification_number"/>
+                    <field name="document_type"/>
+                    <field name="issuer_identification_type"/>
+                    <field name="issuer_identification_num"/>
+                    <field name="issuer_name"/>
+                    <field name="issuer_sequence"/>
+                    <field name="response_state" />
+                    <field name="bill_date" string="Fecha"/>
+                    <field name="currency_id" />
+                    <field name="amount_tax"/>
+                    <field name="amount_total" />
+                    <field name="code_accept"/>
+                    <field name="sequence"/>
+                    <field name="state_response_dgt"/>
+                </tree>
+            </field>
+        </record>
+
+        <!-- form view!-->
+        <record id="xfae_electronic_doc_form" model="ir.ui.view">
+            <field name="name">xfae.incoming.documents.form</field>
+            <field name="model">xfae.incoming.documents</field>
+            <field name="arch" type="xml">
+                <form string="Documento Recibido" duplicate="0" create="0">
+                    <header>
+                        <button name="action_send_aceptacion" type="object" string="Enviar a Hacienda" 
+                                    attrs="{'invisible':['|',('code_accept','not in',('A','P','R')),('state_response_dgt','=','1')]}"/>
+                        <button name="consulta_status_doc_enviado" type="object" string="Consultar Hacienda" colspan="2" 
+                                    attrs="{'invisible':['|',('state_response_dgt','=', False),('state_response_dgt','!=','PRO')]}"/>
+                    </header>
+                    <sheet string="Documento Recibido">
+                        <widget name="web_ribbon" title="Rechazado" bg_color="bg-danger" attrs="{'invisible': [('state_response_dgt', '!=', '2')]}"/>
+                        <group>
+                            <field name="issuer_sequence" readonly="1"/>
+                            <field name="issuer_electronic_code50" readonly="1" />                            
+                        </group>
+                        <group>
+                            <group>
+                                <field name="company_id" invisible="1"/>
+                                <field name="quantity_xmls" invisible="1"/>
+                                <field name="origin" readonly="1"/>
+                                <field name="document_type" readonly="1"/>
+                                <field name="identification_type_id" readonly="1"/>
+                                <field name="identification_number" readonly="1"/>
+                                <field name="issuer_name" readonly="1"/>
+                                <field name="issuer_identification_type" readonly="1"/>
+                                <field name="issuer_identification_num" readonly="1"/>
+                            </group>
+                            <group>
+                                <field name="bill_date" readonly="1"/>
+                                <field name="currency_id" readonly="1"/>
+                                <field name="amount_tax" readonly="1"/>
+                                <field name="amount_total" readonly="1"/>
+                                <label for="issuer_xml_doc" string="XML documento" />
+                                <div class="o_row">
+                                    <field name="issuer_xml_doc" class="oe_inline" readonly="1"/>
+                                    <label for="issuer_xml_response" string="XML respuesta" style="font-weight:bold; margin-left:60px" />
+                                    <field name="issuer_xml_response" style="margin-left:10px" readonly="1"/>
+                                </div>                                
+                                <field name="response_state" readonly="1"/>
+                            </group>
+                        </group>
+                        <notebook>
+                            <page string="Detalles aceptación">
+                                <group>
+                                    <group>
+                                        <field name="code_accept"/>
+                                        <field name="motive_accept" string="Motivo aceptación" 
+                                                attrs="{'invisible': [('code_accept','=', 'A')], 'required': [('code_accept','in', ('P','R'))] }"/>
+                                        <field name="tax_use_code_id" attrs="{'readonly': [('code_accept','not in', ('A','P'))], 'required': [('code_accept','in', ('A','P'))] }"/>
+                                        <field name="amount_tax_credit" attrs="{'readonly': [('code_accept','not in', ('A','P'))], }" />
+                                        <field name="amount_tax_expenses" attrs="{'readonly': [('code_accept','not in', ('A','P'))], }" />
+                                    </group>
+                                    <group>
+                                        <field name="sequence" readonly="1"/>
+                                        <field name="state_response_dgt" readonly="1"/>
+                                        <label for="message_accept_xml" string="XML aceptación" />
+                                        <div class="o_row">
+                                            <field name="message_accept_xml" class="oe_inline" readonly="1"/>
+                                            <label for="message_response_xml" string="XML respuesta" style="font-weight:bold; margin-left:60px" />
+                                            <field name="message_response_xml" style="margin-left:10px" readonly="1"/>
+                                        </div>
+                                        <label for="ready2accounting" />
+                                        <div class="o_row">
+                                            <field name="ready2accounting" class="oe_inline" attrs="{'readonly':['|',('response_state','=','2'),('code_accept','in',('D','R'))]}" />
+                                            <label for="purchase_registried" string="Registrado" style="font-weight:bold; margin-left:60px" />
+                                            <field name="purchase_registried" style="margin-left:10px" readonly="1"/>
+                                        </div>
+                                    </group>
+                                </group>
+                            </page>
+                            <page string="PDF">
+                                <field name="issuer_pdf" widget="pdf_viewer" readonly="1"/>
+                            </page>
+                            <page string="Rechazos de Hacienda" >
+                                <field name="documents_rejected" readonly="1">
+                                    <tree>
+                                        <field name="code_accept" optional="show" />
+                                        <field name="motive_accept" optional="show" />
+                                        <field name="send_date" optional="hide" />
+                                        <field name="tax_use_code_id" optional="show" />
+                                        <field name="state_response_dgt" optional="show" />
+                                        <field name="response_date" optional="show" />
+                                    </tree>
+                                </field>
+                            </page>                            
+                        </notebook>
+                    </sheet>
+                </form>
+            </field>
+        </record>
+
+        <record id="action_xfae_incoming_doc" model="ir.actions.act_window">
+            <field name="name">Documentos Recibidos</field>
+            <field name="res_model">xfae.incoming.documents</field>
+            <field name="view_mode">tree,form</field>
+        </record>
+    </data>
+</odoo>

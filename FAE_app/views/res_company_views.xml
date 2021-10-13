@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+  <data>
+    <record id="view_company_form_inherit" model="ir.ui.view">
+        <field name="name">view.company.form.inherit</field>
+        <field name="model">res.company</field>
+        <field name="inherit_id" ref="base.view_company_form"/>
+        <field name="arch" type="xml">
+
+            <xpath expr="//field[@name='partner_id']" position="after">
+                <field name="x_commercial_name"/>
+            </xpath>
+
+            <xpath expr="//field[@name='country_id']" position="replace" />
+            <xpath expr="//field[@name='state_id']" position="replace"/>
+            <xpath expr="//field[@name='city']" position="replace"/>
+            <xpath expr="//field[@name='zip']" position="replace"/>
+
+            <xpath expr="//field[@name='street']" position="before">
+                <field name="country_id"/>
+                <field name="state_id" class="o_address_state"
+                    placeholder="State"
+                    options='{"no_open": True, "no_create": True}'/>
+                <field name="x_country_county_id" class="o_address_state" style="width:60%;"
+                    placeholder="County"
+                    options='{"no_open": True, "no_create": True}'
+                    domain="[('country_state_id', '=', state_id)]"
+                    context="{'country_id': country_id, 'state_id': state_id}"/>
+                <field name="x_country_district_id"
+                    class="o_address_state"
+                    placeholder="District"
+                    options='{"no_open": True, "no_create": True}'
+                    domain="[('country_county_id', '=', x_country_county_id)]"/>
+                <field name="zip" placeholder="ZIP" class="o_address_zip"/>
+            </xpath>
+
+            <xpath expr="//field[@name='vat']" position="before">
+                <field name="x_identification_type_id"/>
+            </xpath>
+
+            <xpath expr="//field[@name='vat']" position="after">
+                <field name="x_economic_activity_id"  domain="[('active', '=', True)]" options='{"no_open": True, "no_create": True}' />                
+                <button name="action_get_economic_activities" type="object" string="Consultar Actividad Económica en Hacienda" colspan="2" class="oe_highlight"/> 
+            </xpath>
+
+            <xpath expr="//page[1]" position="after">
+                <page string="Cuentas Bancarias">
+                    <p>Coloque los datos de las cuentas bancarias para imprimir en la factura electrónica.
+                    Puede utilizarse tag HTML para darle formato al texto al momento de imprimir el documento 
+                    </p>
+                    <group>
+                        <field name="x_info_bank_accounts"/>
+                    </group>
+                </page>
+                <page string="Info para Factura">
+                    <p>
+                    Términos, condiciones o cualquier información a imprimir en la factura (formato HTML) 
+                    </p>
+                    <group>
+                        <field name="x_line_info_invoice"/>
+                    </group>
+                </page>                
+                <page string="FAE Connection">
+                    <!-- <group style="width:50%;"> -->
+                    <group>
+                        <group>
+                            <field name="x_fae_mode"/>
+                        </group>
+                        <group>
+                            <field name="x_situacion_comprobante"/>
+                        </group>
+                    </group>
+                    <h2>Testing Data</h2>
+                    <group>
+                        <group>
+                            <field name="x_test_username"/>
+                            <field name="x_test_pin"/>
+                            <field name="x_test_password" password="True"/>
+                        </group>
+                        <group>
+                            <field name="x_test_crypto_key"/>
+                            <field name="x_test_expire_date" readonly="1" force_save="1"/>
+                            <button name="verify_test_connection" type="object" string="Verify Connection" class="oe_highlight"/>
+                        </group>
+                    </group>
+                    <hr/>
+                    <h2>Production Data</h2>
+                    <group>
+                        <group>
+                            <field name="x_prod_username"/>
+                            <field name="x_prod_pin"/>
+                            <field name="x_prod_password" password="True"/>
+                        </group>
+                        <group>
+                            <field name="x_prod_crypto_key"/>
+                            <field name="x_prod_expire_date" readonly="1" force_save="1"/>
+                            <button name="verify_production_connection" type="object" string="Verify Connection" class="oe_highlight"/>
+                        </group>
+                    </group>
+                </page> 
+                <page string="FAE Information">
+                    <group col="4">
+                        <field name="x_sucursal"/>
+                        <field name="x_terminal"/>
+                    </group>
+                    <group>
+                        <group string="Consecutivos">
+                            <field name="x_sequence_FE_id"/>
+                            <field name="x_sequence_TE_id"/>
+                            <field name="x_sequence_NC_id"/>
+                            <field name="x_sequence_ND_id"/>
+                            <field name="x_sequence_FEE_id"/>
+                            <field name="x_sequence_FEC_id"/>
+                        </group>
+                        <group string="Consecutivos para Aceptación o Rechazo">
+                            <field name="x_sequence_MRA_id"/>
+                            <field name="x_sequence_MRP_id"/>
+                            <field name="x_sequence_MRR_id"/>
+                        </group>
+                    </group>
+                    <group string="Carga de XML recibido de proveedores" col="4" >
+                        <field name="x_load_bill_xml_lines" string="Carga Líneas XML"/>
+                        <field name="x_def_expenses_account" colspan="2"/>
+                    </group>
+                </page>
+            </xpath>
+        </field>
+    </record>
+  </data>
+</odoo>

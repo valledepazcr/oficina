@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <!-- sale order !-->
+    <record id="fae_sale_order_form_inherit" model="ir.ui.view" >
+        <field name="name">Sale Order</field>
+        <field name="model">sale.order</field>
+        <field name="inherit_id" ref="sale.view_order_form"/>
+        <field name="arch" type="xml">
+            <xpath expr="//field[@name='partner_id']" position="after">
+                <field name="x_economic_activity_id" />
+            </xpath>
+        </field>
+    </record>
+
+<!-- 
+    <template id="sale.report_invoice_document_inherit_sale" inherit_id="account.report_invoice_document">
+    </template>
+ -->
+
+</odoo>

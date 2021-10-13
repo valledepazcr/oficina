@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+<!-- Grupo de Impuesto -->
+<data noupdate="0">
+<record id="tax_group_dgt_iva0" model="account.tax.group"> 
+  <field name="name">IVA 0%</field>
+  <field name="sequence">0</field>
+</record>
+<record id="tax_group_dgt_iva1" model="account.tax.group"> 
+  <field name="name">IVA 1%</field>
+  <field name="sequence">0</field>
+</record>
+<record id="tax_group_dgt_iva2" model="account.tax.group"> 
+  <field name="name">IVA 2%</field>
+  <field name="sequence">0</field>
+</record>
+<record id="tax_group_dgt_iva4" model="account.tax.group"> 
+  <field name="name">IVA 4%</field>
+  <field name="sequence">0</field>
+</record>
+<record id="tax_group_dgt_iva8" model="account.tax.group"> 
+  <field name="name">IVA 8%</field>
+  <field name="sequence">0</field>
+</record>
+<record id="tax_group_dgt_sc" model="account.tax.group"> 
+  <field name="name">Imp.Selectivo Consumo</field>
+  <field name="sequence">0</field>
+</record>
+<record id="tax_group_dgt_nd" model="account.tax.group"> 
+  <field name="name">Imp.No deducible</field>
+  <field name="sequence">0</field>
+</record>
+<record id="tax_group_dgt_eba" model="account.tax.group"> 
+  <field name="name">Imp.Específico Bebidas Bebidas Alcohólicas</field>
+  <field name="sequence">0</field>
+</record>
+<record id="tax_group_dgt_ebe" model="account.tax.group"> 
+  <field name="name">Imp.Específico Bebidas envasadas no Alcohólicas</field>
+  <field name="sequence">0</field>
+</record>
+<record id="tax_group_dgt_pt" model="account.tax.group"> 
+  <field name="name">Imp. A Productos Tabaco</field>
+  <field name="sequence">0</field>
+</record>
+<record id="tax_group_dgt_bu" model="account.tax.group"> 
+  <field name="name">Imp.Bienes Usados</field>
+  <field name="sequence">0</field>
+</record>
+<record id="tax_group_dgt_ec" model="account.tax.group"> 
+  <field name="name">Imp.Específico al Cemento</field>
+  <field name="sequence">0</field>
+</record>
+</data>
+
+<!-- Catalogo de impuestos -->
+<data noupdate="0">
+<record id="xtax_code_00_00" model="xtax.code"> 
+  <field name="code">00</field>
+  <field name="name">Sin Impuesto (Exento)</field>
+  <field name="version">00</field>
+  <field name="active">True</field>
+</record>
+<record id="xtax_code_43_01" model="xtax.code"> 
+  <field name="code">01</field>
+  <field name="name">Impuesto al Valor Agregado</field>
+  <field name="version">43</field>
+  <field name="active">True</field>
+</record>
+<record id="xtax_code_43_02" model="xtax.code"> 
+  <field name="code">02</field>
+  <field name="name">Impuesto Selectivo de Consumo</field>
+  <field name="version">43</field>
+  <field name="active">True</field>
+</record>
+<record id="xtax_code_43_03" model="xtax.code"> 
+  <field name="code">03</field>
+  <field name="name">Impuesto Único a los Combustibles</field>
+  <field name="version">43</field>
+  <field name="active">True</field>
+</record>
+<record id="xtax_code_43_04" model="xtax.code"> 
+  <field name="code">04</field>
+  <field name="name">Impuesto específico de Bebidas Alcohólicas</field>
+  <field name="version">43</field>
+  <field name="active">True</field>
+</record>
+<record id="xtax_code_43_05" model="xtax.code"> 
+  <field name="code">05</field>
+  <field name="name">Impuesto Específico sobre las bebidas envasadas sin contenido alcohólico y jabones de tocador</field>
+  <field name="version">43</field>
+  <field name="active">True</field>
+</record>
+<record id="xtax_code_43_06" model="xtax.code"> 
+  <field name="code">06</field>
+  <field name="name">Impuesto a los Productos de Tabaco</field>
+  <field name="version">43</field>
+  <field name="active">True</field>
+</record>
+<record id="xtax_code_43_07" model="xtax.code"> 
+  <field name="code">07</field>
+  <field name="name">IVA (cálculo especial)</field>
+  <field name="version">43</field>
+  <field name="active">True</field>
+</record>
+<record id="xtax_code_43_08" model="xtax.code"> 
+  <field name="code">08</field>
+  <field name="name">IVA Régimen de Bienes Usados (Factor)</field>
+  <field name="version">43</field>
+  <field name="active">True</field>
+</record>
+<record id="xtax_code_43_09" model="xtax.code"> 
+  <field name="code">09</field>
+  <field name="name">Impuesto Específico al Cemento</field>
+  <field name="version">43</field>
+  <field name="active">True</field>
+</record>
+<record id="xtax_code_43_99" model="xtax.code"> 
+  <field name="code">99</field>
+  <field name="name">Otros</field>
+  <field name="version">43</field>
+  <field name="active">True</field>
+</record>
+</data>
+
+<!-- Tarifa de impuestos -->
+<data noupdate="0">
+<record id="xtax_rate_01" model="xtax.rate"> 
+  <field name="code">01</field>
+  <field name="name">Tarifa 0% (Exento)</field>
+  <field name="amount">0</field>
+</record>
+<record id="xtax_rate_02" model="xtax.rate"> 
+  <field name="code">02</field>
+  <field name="name">Tarifa reducida 1%</field>
+  <field name="amount">1</field>
+</record>
+<record id="xtax_rate_03" model="xtax.rate"> 
+  <field name="code">03</field>
+  <field name="name">Tarifa reducida 2%</field>
+  <field name="amount">2</field>
+</record>
+<record id="xtax_rate_04" model="xtax.rate"> 
+  <field name="code">04</field>
+  <field name="name">Tarifa reducida 4%</field>
+  <field name="amount">4</field>
+</record>
+<record id="xtax_rate_05" model="xtax.rate"> 
+  <field name="code">05</field>
+  <field name="name">Transitorio 0%,</field>
+  <field name="amount">0</field>
+</record>
+<record id="xtax_rate_06" model="xtax.rate"> 
+  <field name="code">06</field>
+  <field name="name">Transitorio 4%</field>
+  <field name="amount">4</field>
+</record>
+<record id="xtax_rate_07" model="xtax.rate"> 
+  <field name="code">07</field>
+  <field name="name">Transitorio 8%</field>
+  <field name="amount">8</field>
+</record>
+<record id="xtax_rate_08" model="xtax.rate"> 
+  <field name="code">08</field>
+  <field name="name">Tarifa general 13%</field>
+  <field name="amount">13</field>
+</record>
+</data>
+
+</odoo>

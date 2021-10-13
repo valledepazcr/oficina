@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <record id="fae_product_form_inherit_view" model="ir.ui.view">
+            <field name="name">view.product.template.common.form.inherit</field>
+            <field name="model">product.template</field>
+            <field name="inherit_id" ref="product.product_template_form_view"/>
+            <field name="arch" type="xml">
+                <field name="categ_id" position="after">
+                    <field name="x_code_type" string="Tipo de Código" required="1"/>
+                    <field name="x_other_charge_type_id"  options='{"no_open": True, "no_create": True}'/>
+                    <!-- <field name="x_non_tax_deductible" default="0"/> -->
+                 </field>
+                <field name="uom_po_id" position="after">
+                    <field name="x_commercial_unit_measure" string="Unidad Comercial" required="0"/>
+                    <field name="x_tariff_heading" />
+                </field>
+                <xpath expr="//page[@name='general_information']//group" position="after" >
+                    <group>
+                        <field name="x_cabys_code_id" string="Código Cabys" context="{'default_company_id': company_id }" />
+                    </group>
+                </xpath> 
+            </field>
+        </record>
+
+    </data>
+</odoo>

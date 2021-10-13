@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+<data noupdate="0">
+<record id="xidentification_type_01" model="xidentification.type"> 
+  <field name="code">01</field>
+  <field name="name">CEDULA FISICA</field>
+  <field name="type">F</field>
+</record>
+<record id="xidentification_type_02" model="xidentification.type"> 
+  <field name="code">02</field>
+  <field name="name">CEDULA JURÍDICA</field>
+  <field name="type">J</field>
+</record>
+<record id="xidentification_type_03" model="xidentification.type"> 
+  <field name="code">03</field>
+  <field name="name">DIMEX</field>
+  <field name="type">F</field>
+</record>
+<record id="xidentification_type_04" model="xidentification.type"> 
+  <field name="code">04</field>
+  <field name="name">NITE</field>
+  <field name="type">F</field>
+</record>
+<record id="xidentification_type_E" model="xidentification.type"> 
+  <field name="code">E</field>
+  <field name="name">EXTRANJERO</field>
+  <field name="type">F</field>
+</record>
+</data>
+</odoo>

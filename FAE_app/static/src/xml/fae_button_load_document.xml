@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<templates id="button_load_doc" xml:space="preserve">
+    <t t-extend="ListView.buttons" id="template" xml:space="preserve">
+        <t t-jquery="button.o_list_button_discard" t-operation="after">
+            <button t-if='widget.modelName == "xfae.incoming.documents"' class="btn btn-primary btn-sm sync_button o_button_help"
+                    type="button">
+                Cargar Documento XML
+            </button>
+            <button t-if='widget.modelName == "xfae.incoming.documents"' class="btn btn-primary btn-sm sync_button o_read_email"
+                    type="button">
+                Leer Correo
+            </button>            
+        </t>
+    </t>
+</templates>
