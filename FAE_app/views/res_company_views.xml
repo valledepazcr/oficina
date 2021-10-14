@@ -118,10 +118,10 @@
                             <field name="x_sequence_MRR_id"/>
                         </group>
                     </group>
-                    <group string="Carga de XML recibido de proveedores" col="4" >
+<!--                     <group string="Carga de XML recibido de proveedores" col="4" >
                         <field name="x_load_bill_xml_lines" string="Carga Líneas XML"/>
                         <field name="x_def_expenses_account" colspan="2"/>
-                    </group>
+                    </group> -->
                 </page>
             </xpath>
         </field>
