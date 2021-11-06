@@ -28,6 +28,7 @@
         'views/tax_use_code.xml',
         'views/sale_terms_views.xml',
         'views/fae_incoming_document_views.xml',
+        'views/fae_incoming_email_views.xml',
         'views/sale_account_invoice_views.xml',
         'views/sale_order_views.xml',
         'views/menu_views.xml',

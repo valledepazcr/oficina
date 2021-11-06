@@ -23,6 +23,9 @@ class ResCompanyInherit(models.Model):
                                            ('api-stag', 'Pruebas')],
                                 required=True,
                                 default='N')
+    x_email_fae = fields.Char(string="Email Doc.Electrónicos",
+                              help='Correo exclusivo para imprimir en documentos Electrónicos y enviar en el XML')
+
     x_identification_type_id = fields.Many2one("xidentification.type", string="Tipo Identificación", required=False)
     x_commercial_name = fields.Char(string="Nombre Comercial", size=80)
     x_country_county_id = fields.Many2one("xcountry.county", string="Cantón", required=False, )
@@ -84,6 +87,21 @@ class ResCompanyInherit(models.Model):
             error_msg = fae_utiles.val_identification_vat(self.x_identification_type_id.code, self.vat)
             if error_msg:
                 raise UserError(error_msg)
+
+    @api.onchange('x_email_fae')
+    def _onchange_x_email_fae(self):
+        if self.x_email_fae:
+            emails = None
+            lista = re.split(';|,', self.x_email_fae.replace(' ',''))
+            for e in lista:
+                if not re.match(r'^\s*(([^<>()\[\]\.,;:\s@\\"]+(\.[^<>()\[\]\.,;:\s@\\"]+)*)|(\\".+\\"))@(([^<>()\[\]\.,;:\s@\\"]+\.)+[^<>()\[\]\.,;:\s@\\"]{0,})\s*$', e.lower()):
+                    vals = {'x_email_fae': False}
+                    alerta = {'title': 'Atención',
+                                'message': 'El correo electrónico para documentos electrónicos no cumple con una estructura válida. ' + str(e)
+                            }
+                    return {'value': vals, 'warning': alerta}
+                emails = e if not emails else emails + '; ' + e
+            self.x_email_fae = emails
 
     @api.onchange('x_test_crypto_key', 'x_test_pin')
     def get_cryptography_expire_test(self):

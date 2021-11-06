@@ -110,7 +110,7 @@
                 <field name="x_issue_date" attrs="{'invisible':[('move_type','not in',('out_invoice','out_refund')), ('x_document_type','!=','FEC')], 'readonly':True}"/>
                 <field name="x_state_dgt"  attrs="{'invisible':[('move_type','not in',('out_invoice','out_refund')), ('x_document_type','!=','FEC')], 'readonly':True}"/>
                 <field name="x_payment_method_id" 
-                        attrs="{'invisible':[('move_type','not in',('out_invoice','out_refund'))], 'required':[('move_type','=','out_invoice')], 'readonly':[('x_move_editable','=',False)]}"/>
+                        attrs="{'invisible':[('move_type','not in',('out_invoice','out_refund'))], 'required':[('x_document_type','!=',False),('move_type','=','out_invoice')], 'readonly':[('x_move_editable','=',False)]}"/>
                 <field name="x_reference_code_id" options="{'no_open': True}" 
                         attrs="{'invisible':[('move_type', 'not in', ('out_invoice', 'out_refund', 'in_invoice', 'in_refund'))], 'readonly':[('x_move_editable','=',False)]}"/>
                 <field name="x_error_count" invisible="1"/>

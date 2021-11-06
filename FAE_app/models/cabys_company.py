@@ -25,9 +25,9 @@ class xCabysCompany(models.Model):
         if self.code: 
             if len(self.code) != 13:
                 raise ValidationError('El código CAByS debe tener una longitud de 13 dígitos')
+            self._onchange_description()
 
     @api.onchange('description')
     def _onchange_description(self):
-        if self.description and not self.name:
-            descripcion = (self.description or " ")
-            self.name = self.code + ' - ' + descripcion[:120]
+        if self.description:
+            self.name = self.code + ' - ' + self.description[:120]

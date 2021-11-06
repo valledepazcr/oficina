@@ -60,7 +60,6 @@
                         <page string="Advanced" groups="base.group_no_one">
                             <group string="Opciones" col="4">
                                 <field name="priority"/>
-                                <field name="active" widget="boolean_toggle"/> 
                             </group>
                         </page>
                     </notebook>

@@ -15,5 +15,6 @@ access_xtax_use_code,xtax_use_code,model_xtax_use_code,account.group_account_inv
 access_xfae_incoming_document,xfae_incoming_document,model_xfae_incoming_documents,account.group_account_invoice,1,1,1,1
 access_xfae_incoming_document_rejected,xfae_incoming_document_rejected,model_xfae_incoming_documents_rejected,account.group_account_invoice,1,1,1,1
 access_xfae_read_local_doc,xfae_read_local_doc,model_xfae_read_local_doc,account.group_account_invoice,1,1,1,1
+access_xfae_incoming_email,xfae_incoming_email,model_xfae_incoming_email,account.group_account_invoice,1,1,1,1
 access_xmail,xmail,model_xfae_mail,base.group_user,1,1,1,1
 access_xcabys_company,xcabys_company,model_xcabys_company,base.group_user,1,1,1,1

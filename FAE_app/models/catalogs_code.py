@@ -28,7 +28,7 @@ class xReferenceDocument(models.Model):
 
     code = fields.Char(string="Code", size=2, required=True, )
     name = fields.Char(string="Name", size=100, required=True, )
-    used_for = fields.Selection(string="Usado en", 
+    used_for = fields.Selection(string="Usado en",
                             selection=[('FEC','Fact.Compra')], )
     active = fields.Boolean(string="Active", default=True)
 

@@ -55,19 +55,17 @@ class PartnerElectronic(models.Model):
     @api.onchange('phone')
     def _onchange_phone(self):
         if self.phone:
-            phone = phonenumbers.parse(self.phone, self.country_id and self.country_id.code or 'CR')
-            valid = phonenumbers.is_valid_number(phone)
-            if not valid:
-                alert = {'title': 'Atención', 'message': 'Número de teléfono inválido' }
+            parsed = phonenumbers.parse(self.phone, self.country_id and self.country_id.code or 'CR')
+            if not phonenumbers.is_possible_number(parsed):
+                alert = {'title': 'Atención', 'message': 'Número de teléfono  parece incorrecto' }
                 return {'value': {'phone': ''}, 'warning': alert}
 
     @api.onchange('mobile')
     def _onchange_mobile(self):
         if self.mobile:
-            mobile = phonenumbers.parse(self.mobile, self.country_id and self.country_id.code or 'CR')
-            valid = phonenumbers.is_valid_number(mobile)
-            if not valid:
-                alert = {'title': 'Atención', 'message': 'Número de teléfono inválido' }
+            parsed = phonenumbers.parse(self.mobile, self.country_id and self.country_id.code or 'CR')
+            if not phonenumbers.is_possible_number(parsed):
+                alert = {'title': 'Atención', 'message': 'Número de teléfono parece incorrecto' }
                 return {'value': {'mobile': ''}, 'warning': alert}
 
     @api.onchange('email')

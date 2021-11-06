@@ -12,6 +12,7 @@ dgt_url = {
   'api-stag' : 'https://api.comprobanteselectronicos.go.cr/recepcion-sandbox/v1/recepcion/',
   'api-prod' : 'https://api.comprobanteselectronicos.go.cr/recepcion/v1/recepcion/',
   'api-ae'   : 'https://api.hacienda.go.cr/fe/ae?identificacion=', 
+  'api-ex'   : 'https://api.hacienda.go.cr/fe/ex?autorizacion=',
 }
 
 

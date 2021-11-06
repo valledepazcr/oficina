@@ -19,6 +19,20 @@ import logging
 
 _logger = logging.getLogger(__name__)
 
+# almacena datos de correos que no fallaron al momento de procesarlo
+class XFaeIncomingEmail(models.Model):
+    _name = "xfae.incoming.email"
+    _description = "Correos que no pudieron procesarse"
+    _order = "id desc"
+
+
+    email_account_id = fields.Many2one("xfae.mail", string="Correo Recibe")
+    sender = fields.Char(string='Emisor')
+    subject = fields.Char(string='Asunto')
+    date = fields.Datetime(string='Fecha')
+
+
+
 # Almacena los XML que fueron rechazados por hacienda y enviados otros vez luego de corregirse la razon de rechazo
 class XFaeIncomingDocRejected(models.Model):
     _name = "xfae.incoming.documents.rejected"
@@ -83,7 +97,6 @@ class XFaeIncomingDoc(models.Model):
     
     # move_id = fields.Many2one("account.move", string="Factura", required=False)
 
-
     include_tax_tag = fields.Boolean(string='Impuestos', default=False)
     #  currency = fields.Char(string='Currency')
     currency_id = fields.Many2one('res.currency', string='Moneda')
@@ -100,7 +113,7 @@ class XFaeIncomingDoc(models.Model):
     message_send_date = fields.Date(string="Fecha Envío", required=False)
     quantity_messages = fields.Integer(string='Cantidad Mensaje XML')
     origin = fields.Char(string='Origen', default='mail')
-    email_account_id = fields.Many2one("xfae.mail", string="Cuenta Correo Recibo", )
+    email_account_id = fields.Many2one("xfae.mail", string="Cuenta Correo Recibe", )
 
     # necesito el tener issuer_xml_doc para A, P, o R
     code_accept = fields.Selection(string='Código Aceptación', 
@@ -108,7 +121,7 @@ class XFaeIncomingDoc(models.Model):
                                               ('P', 'Parcial'),
                                               ('R', 'Rechazado'),
                                               ('D', 'Descartado'),
-                                              ('AA','Auto-Aceptado') ], 
+                                              ('AA','Auto-Aceptado') ],
                                     default=None, )
     # motive_code_accept = fields.Char(string='Motivo código aceptación', size=160, )  
     motive_accept = fields.Char(string='Motivo código aceptación', size=160, )  
@@ -182,11 +195,9 @@ class XFaeIncomingDoc(models.Model):
 
     @api.onchange('code_accept')
     def _onchange_code_accept(self):
-        if self.code_accept == 'AA':
-            raise ValidationError('Este código es para uso reservado del sistema')
-        elif self.code_accept in ('A','P','R'):
+        if self.code_accept in ('A','P','R','AA'):
             if not self.company_id:
-                raise Warning('La cedula del receptor no corresponde a alguna de las compañías instaladas')
+                raise Warning('La cédula del receptor no corresponde a alguna de las compañías instaladas')
             elif not self.issuer_xml_doc:
                 raise Warning('No puede Aceptar o Rechazar el documento debido a que no tiene el documento electrónico adjunto (XML)')
 
@@ -211,193 +222,158 @@ class XFaeIncomingDoc(models.Model):
         if total > (self.amount_tax or 0):
             raise Warning('El total impuestos acreditados no puede ser mayor al impuesto pagado' )
 
-
-    def message_process(self, message, strip_attachments=False):
-        if isinstance(message, xmlrpclib.Binary):
-            message = bytes(message.data)
-        if isinstance(message, str):
-            message = message.encode('utf-8')
-        message = email.message_from_bytes(message, policy=email.policy.SMTP)
-
-
     # descarga los documentos recibidos en el correo
     def read_email(self):
-
-        _logger.info('>> fae_incoming_doc.read_email: Inicio ')
-
         fae_email = self.env['xfae.mail'].search([('type', '=', 'in')])
         identification_types = self.env['xidentification.type'].search([])
         companies = self.env['res.company'].search([])
-        currencies = self.env['res.currency'].search([('name','in',['CRC','USD'])])
+        currencies = self.env['res.currency'].search([('name', 'in', ['CRC', 'USD'])])
+
+        failed = 0
+
+        # >> método interno
+        def procesa_correo(email_account_id, num, message):
+            """ like Mail_thread.message_process
+            Process an incoming RFC2822 email message
+            """
+            nonlocal failed
+            msg_dict = {}
+            try:
+                # extract message bytes - we are forced to pass the message as binary because
+                # we don't know its encoding until we parse its headers and hence can't
+                # convert it to utf-8 for transport between the mailgate script and here.
+                MailThread = self.env['mail.thread']
+                if isinstance(message, xmlrpclib.Binary):
+                    message = bytes(message.data)
+                if isinstance(message, str):
+                    message = message.encode('utf-8')
+                message = email.message_from_bytes(message, policy=email.policy.SMTP)
+
+                msg_dict = MailThread.message_parse(message, save_original=False)
+                _logger.info('>>   fae_incoming_doc.read_email: num: %s  From: %s  - Subject: %s', num,  msg_dict.get('email_from'), msg_dict.get('subject'))
+                attachments = msg_dict.pop('attachments', None)
+                if attachments:
+                    complete_vals = {}
+                    flag2save = True
+                    attach_pdf = None
+                    clave_hacienda = None
+                    for a in attachments:
+                        if a.fname:
+                            file_name = a.fname.lower()
+                            attach_xml = None
+                            if file_name.find('.xml') > 0:
+                                attach_xml = a.content
+                                inicio_xml = '<?xml' if isinstance(attach_xml, str) else b'<?xml'
+                                i = attach_xml.find(inicio_xml)
+                                if i > 0:
+                                    # se detectaron problemas con xml que traian caracteres extraños al inicio
+                                    attach_xml = attach_xml[i:]
+                            elif file_name.find('.pdf') > 0:
+                                attach_pdf = a.content
+
+                            # _logger.info('>> fae_incoming_doc.read_email/pop:    attach_xml: %s', str(attach_xml))
+                            if attach_xml:
+                                values = fae_utiles.parser_xml(identification_types, companies, currencies, 'email', attach_xml)
+                                clave_xml = values.get('issuer_electronic_code50')
+                                # _logger.info('>> fae_incoming_doc.read_email/pop:    despues parser xml declave_xml: %s', clave_xml)
+                                if clave_hacienda and clave_xml:
+                                    if clave_hacienda != clave_xml:
+                                        flag2save = False
+                                elif clave_xml:
+                                    clave_hacienda = clave_xml
+                                complete_vals.update(values)
+
+                    if clave_hacienda and flag2save:
+                        complete_vals.update({'email_account_id': server.id})
+                        # _logger.info('>> fae_incoming_doc.read_email/pop:    antes de save_incoming document')
+                        res = self.save_incoming_document(clave_hacienda, complete_vals, attach_pdf)
+
+            except Exception as e:
+                if msg_dict:
+                    incoming_email = self.env['xfae.incoming.email']
+                    values = {'email_account_id': email_account_id,
+                              'sender': msg_dict.get('email_from'),
+                              'subject': msg_dict.get('subject'),
+                              'date': msg_dict.get('date')
+                             }
+                    incoming_email.sudo().create(values)
+                _logger.error('>> fae_incoming_doc.read_email: Exception al procesar correo num: %s  from: %s   Err: %s',
+                              str(num), msg_dict.get('email_from'), tools.ustr(e))
+                failed += 1
+        #<< Fin de métodos internos
 
         for server in fae_email:
-            _logger.info('>> fae_incoming_doc.read_email: Cuenta: %s   - Servidor: %s ', server.name, server.server )
-            connection = None
-            if server.server_type == 'imap':
-                try:
-                    connection = server.connect()
-                    num_Messages = len(connection.list()[1])
-                    status, messages = connection.select("INBOX")
-                    unseen_count = len(connection.search(None,'UnSeen')[1][0].split())      # search(None, '(UNSEEN)')
-                    messages = int(messages[0])
+            _logger.info('>> fae_incoming_doc.read_email: Cuenta: %s   - Servidor: %s ', server.name, server.server)
+            email_server = None
+            failed = 0
+            try:
+                if server.server_type == 'imap':
+                    try:
+                        email_server = server.connect()
+                        email_server.select()
+                        result, data = email_server.search(None, '(UNSEEN)')
 
-                    _logger.info('>> fae_incoming_doc.read_email/imap:  Cantidad de correos: %s', str(unseen_count) )
+                        unseen_count = data[0].split()
+                        _logger.info('>> fae_incoming_doc.read_email/imap:  Cantidad de correos: %s', str(unseen_count) )
+                        for num in unseen_count:
+                            try:
+                                result, data = email_server.fetch(num, '(RFC822)')
+                                email_server.store(num, '-FLAGS', '\\Seen')
+                                procesa_correo(server.id, num, data[0][1])
+                            except Exception as e:
+                                _logger.error('>> fae_incoming_doc.read_email/pop: Exception traer correo num: %s   Err: %s', str(num), tools.ustr(e)[:320])
+                                failed += 1
+                            email_server.store(num, '+FLAGS', '\\Seen')
+                            self._cr.commit()
+                    except Exception:
+                        _logger.info('>> fae_incoming_doc.read_email: Fallo tratando de hacer un fetch: %s  server %s', server.server_type, server.name, exc_info=True)
+                    finally:
+                        if email_server:
+                            email_server.close()
+                            email_server.logout()
 
-                    for num in range(messages, messages - unseen_count, -1):
-                        try:                        
-                            res, msg = connection.fetch(str(num), "(RFC822)")
-                            for response in msg:
-                                if not isinstance(response, tuple):
-                                    continue
-                                
-                                msg = email.message_from_bytes(response[1])
-                                # _logger.info('>> fae_incoming_doc.read_email/imap: num: %s', str(num) )
-                                if msg.is_multipart():
-                                    complete_vals = {}
-                                    flag2save = True
-                                    attach_pdf = None
-                                    clave_hacienda = None
+                elif server.server_type == 'pop':
+                    try:
+                        email_server = server.connect()
+                        # stat() function return email count and occupied disk size
+                        (messageCount, totalMessageSize) = email_server.stat()
+                        email_server.list()  # return all email list
 
-                                    for part in msg.walk():
-                                        content_type = part.get_content_type()
-                                        content_disposition = str(part.get("Content-Disposition"))
+                        _logger.info('>> fae_incoming_doc.read_email/pop:  Cantidad de correos: %s', str(messageCount))
+                        for num in range(messageCount, 0, -1):
+                            try:
+                                (header, messages, octets) = email_server.retr(num)
+                                message = (b'\n').join(messages)
+                                procesa_correo(server.id, num, message)
+                            except Exception as e:
+                                _logger.error('>> fae_incoming_doc.read_email/pop: Exception traer correo num: %s   Err: %s', str(num), tools.ustr(e)[:320])
+                                failed += 1
+                            self._cr.commit()
+                    except Exception:
+                        _logger.info('>> fae_incoming_doc.read_email: Fallo tratando de hacer un fetch: %s  server %s', server.server_type, server.name,
+                                     exc_info=True)
+                    finally:
+                        if email_server:
+                            email_server.quit()
+            except Exception as e:
+                _logger.info('>>   fae_incoming_doc.read_email: Exception: %s', tools.ustr(e)[:320] )
 
-                                        _logger.info('>> fae_incoming_doc.read_email/imap: num: %s  From: %s  - Subject: ', num, part.get('From'), part.get('Subject') )
+            if failed > 0:
+                _logger.info('>>   fae_incoming_doc.read_email: Cuenta: %s,  No se pudo procesar: %s correos ', server.name, str(failed))
 
-                                        if content_type == "application/xml" or content_type == 'text/xml' or content_type == 'application/octet-stream':
-                                            file_name = part.get_filename()
-                                            if file_name:
-                                                attach_xml = part.get_payload(decode=True)
-                                                values = fae_utiles.parser_xml(identification_types, companies, currencies, 'email', attach_xml)
-
-                                                clave_xml = values.get('issuer_electronic_code50')
-                                                if clave_hacienda and clave_xml:
-                                                    if clave_hacienda != clave_xml:
-                                                        flag2save = False
-                                                elif clave_xml:
-                                                    clave_hacienda = clave_xml
-
-                                                if complete_vals:
-                                                    complete_vals.update(values)
-                                                else:
-                                                    complete_vals = values
-
-                                        if content_type == "application/pdf":
-                                            file_name = part.get_filename()
-                                            if file_name:
-                                                attach_pdf = part.get_payload(decode=True)
-
-                                    if clave_hacienda and flag2save:
-                                        complete_vals.update({'email_account_id': server.id })
-                                        res = self.save_incoming_document(clave_hacienda, complete_vals, attach_pdf)
-                        except Exception as e:
-                            _logger.error('>> fae_incoming_doc.read_email/imap: Exception al procesar correo num: %s   Err: %s', str(num), tools.ustr(e))
-                except Exception:
-                    _logger.info('>> fae_incoming_doc.read_email: Fallo tratando de hacer un fetch: %s  server %s', server.server_type, server.name, exc_info=True)
-                finally:
-                    if connection:
-                        connection.close()
-                        connection.logout()
-
-            elif server.server_type == 'pop':
-                try:
-                    connection = server.connect()
-                    # stat() function return email count and occupied disk size
-                    (messageCount, totalMessageSize) = connection.stat()
-                    connection.list()       # return all email list
-
-                    _logger.info('>> fae_incoming_doc.read_email/pop:  Cantidad de correos: %s', str(messageCount) )
-                    for num in range(messageCount,0,-1):
-                        messages = ''
-                        header =''
-                        try:
-                            (header, messages, octets) = connection.retr(num)
-                            message = (b'\n').join(messages)
-
-                            if isinstance(message, xmlrpclib.Binary):
-                                message = bytes(message.data)
-                            if isinstance(message, str):
-                                message = message.encode('utf-8')
-                            message = email.message_from_bytes(message, policy=email.policy.SMTP)
-
-                            msg = Parser().parsestr(message)
-                            subject = msg.get('Subject')
-                            # _logger.info('>> fae_incoming_doc.read_email/pop: procesando correo num: %s  - from : %s  subject: %s', str(num), msg.get('From'), subject )
-                            asunto, charset = decode_header(subject)[0]
-                            if charset:
-                                asunto = asunto.decode(charset)
-                            # _logger.info('>> fae_incoming_doc.read_email/pop: procesando correo num: %s  - from : %s  Asunto: %s', str(num), msg.get('From'), asunto )
-
-                            if (msg.is_multipart()):
-                                complete_vals = {}
-                                flag2save = True
-                                attach_pdf = None
-                                clave_hacienda = None
-                                parts = msg.get_payload()
-
-                                for n, part in enumerate(parts):
-                                    content_type = part.get_content_type()
-                                    file_name = part.get_filename()
-
-                                    if file_name:
-                                        file_name = file_name.lower()
-                                        attach_xml = None
-
-                                        if content_type == "application/xml" or content_type == "text/xml":
-                                            attach_xml = part.get_payload(decode=True)
-                                        elif content_type == 'application/octet-stream' and file_name.find('.xml') >= 0:
-                                            attach_xml = part.get_payload(decode=True)
-
-                                        # _logger.info('>> fae_incoming_doc.read_email/pop:    attach_xml: %s', str(attach_xml))
-                                        if attach_xml:
-                                            values = fae_utiles.parser_xml(identification_types, companies, currencies, 'email', attach_xml)
-                                            clave_xml = values.get('issuer_electronic_code50')
-                                            # _logger.info('>> fae_incoming_doc.read_email/pop:    despues parser xml declave_xml: %s', clave_xml)
-                                            if clave_hacienda and clave_xml:
-                                                if clave_hacienda != clave_xml:
-                                                    flag2save = False
-                                            elif clave_xml:
-                                                clave_hacienda = clave_xml
-
-                                            if complete_vals:
-                                                complete_vals.update(values)
-                                            else:
-                                                complete_vals = values
-
-                                        if content_type == "application/pdf" or (content_type == 'application/octet-stream' and file_name.find('.pdf') >= 0):
-                                            # _logger.info('>> fae_incoming_doc.read_email/pop:    antes de get_payload PDF')
-                                            attach_pdf = part.get_payload(decode=True)
-                                
-                                if clave_hacienda and flag2save:
-                                    complete_vals.update({'email_account_id': server.id })
-                                    # _logger.info('>> fae_incoming_doc.read_email/pop:    antes de save_incoming document')
-                                    res = self.save_incoming_document(clave_hacienda, complete_vals, attach_pdf)
-                        except Exception as e:
-                            _logger.error('>> fae_incoming_doc.read_email/pop: Exception al procesar correo num: %s   Err: %s', str(num), tools.ustr(e)[:320])
-                            _logger.error('>> -- messages: %s', str(messages[:320]))
-                except Exception:
-                    _logger.info('>> fae_incoming_doc.read_email: Fallo tratando de hacer un fetch: %s  server %s', server.server_type, server.name, exc_info=True)
-                finally:
-                    if connection:
-                        connection.quit()
-
-        
         # ---
         # revisa si hay documento que ya pueden contabilizarse porque están pasado
-        fref = datetime.datetime.today() - datetime.timedelta(days=28)  # devuelve al mes anterior 
-        fref = datetime.datetime(fref.year, fref.month, 11)     # aproximadamente 10 días habiles 
+        fref = datetime.datetime.today() - datetime.timedelta(days=28)  # devuelve al mes anterior
+        fref = datetime.datetime(fref.year, fref.month, 11)  # aproximadamente 10 días habiles
         date_str = fref.strftime('%Y-%m-%d')
         # _logger.info('>> fae_incoming_doc.read_email: date_str %s', date_str )
-        documents = self.env['xfae.incoming.documents'].search([('bill_date','<',date_str), ('ready2accounting','=',False), ('code_accept','=',False)])
+        documents = self.env['xfae.incoming.documents'].search([('bill_date', '<', date_str), ('ready2accounting', '=', False), ('code_accept', '=', False)])
         for rec in documents:
-            # company = companies.filtered(lambda c: c.vat == rec.identification_number)
-            # if company:
             if rec.company_id:
                 rec.code_accept = 'AA'
                 rec.ready2accounting = True
 
         return True
-
 
     def save_incoming_document(self, clave_hacienda, complete_vals, pdf_doc):
         if clave_hacienda and complete_vals:
@@ -408,7 +384,7 @@ class XFaeIncomingDoc(models.Model):
             flag2save = True
             if incoming_document:
                 # el documento existe, si ya fue enviado a hacienda entonces no guarda los datos
-                if incoming_document.state_response_dgt:
+                if incoming_document.code_accept or incoming_document.state_response_dgt:
                     flag2save = False
                 else:
                     if ind_xml_doc == 0 and incoming_document.issuer_xml_doc:
@@ -580,37 +556,38 @@ class XFaeIncomingDoc(models.Model):
                         _logger.error('>> consulta_status_mar_enviado: try exception to getElementTag, Doc %s, status: %s', doc.issuer_sequence, str(status) )
 
 
-    def read_email_desa_new(self):
+    #  read_email anterior al 26-oct-2021
+    def read_email_ant_oct2021(self):
+        self.read_email2v()
+        return
 
         _logger.info('>> fae_incoming_doc.read_email: Inicio ')
-        
         fae_email = self.env['xfae.mail'].search([('type', '=', 'in')])
         identification_types = self.env['xidentification.type'].search([])
         companies = self.env['res.company'].search([])
-        currencies = self.env['res.currency'].search([('name','in',['CRC','USD'])])
-        MailThread = self.env['mail.thread']
+        currencies = self.env['res.currency'].search([('name', 'in', ['CRC', 'USD'])])
 
         for server in fae_email:
-            _logger.info('>> fae_incoming_doc.read_email: Cuenta: %s   - Servidor: %s ', server.name, server.server )
-            connection = None
+            _logger.info('>> fae_incoming_doc.read_email: Cuenta: %s   - Servidor: %s ', server.name, server.server)
+            try:
+                connection = server.connect()
+                server.write({'state': 'done'})
 
-            if server.server_type == 'imap':
-                try:
-                    connection = server.connect()
+                if server.server_type == 'imap':
                     num_Messages = len(connection.list()[1])
                     status, messages = connection.select("INBOX")
-                    unseen_count = len(connection.search(None,'UnSeen')[1][0].split())      # search(None, '(UNSEEN)')
+                    unseen_count = len(connection.search(None, 'UnSeen')[1][0].split())  # search(None, '(UNSEEN)')
                     messages = int(messages[0])
 
-                    _logger.info('>> fae_incoming_doc.read_email/imap:  Cantidad de correos: %s', str(unseen_count) )
+                    _logger.info('>> fae_incoming_doc.read_email/imap:  Cantidad de correos: %s', str(unseen_count))
 
                     for num in range(messages, messages - unseen_count, -1):
-                        try:                        
+                        try:
                             res, msg = connection.fetch(str(num), "(RFC822)")
                             for response in msg:
                                 if not isinstance(response, tuple):
                                     continue
-                                
+
                                 msg = email.message_from_bytes(response[1])
                                 # _logger.info('>> fae_incoming_doc.read_email/imap: num: %s', str(num) )
                                 if msg.is_multipart():
@@ -623,7 +600,8 @@ class XFaeIncomingDoc(models.Model):
                                         content_type = part.get_content_type()
                                         content_disposition = str(part.get("Content-Disposition"))
 
-                                        _logger.info('>> fae_incoming_doc.read_email/imap: num: %s  From: %s  - Subject: ', num, part.get('From'), part.get('Subject') )
+                                        _logger.info('>> fae_incoming_doc.read_email/imap: num: %s  From: %s  - Subject: ', num, part.get('From'),
+                                                     part.get('Subject'))
 
                                         if content_type == "application/xml" or content_type == 'text/xml' or content_type == 'application/octet-stream':
                                             file_name = part.get_filename()
@@ -649,112 +627,92 @@ class XFaeIncomingDoc(models.Model):
                                                 attach_pdf = part.get_payload(decode=True)
 
                                     if clave_hacienda and flag2save:
-                                        complete_vals.update({'email_account_id': server.id })
+                                        complete_vals.update({'email_account_id': server.id})
                                         res = self.save_incoming_document(clave_hacienda, complete_vals, attach_pdf)
                         except Exception as e:
                             _logger.error('>> fae_incoming_doc.read_email/imap: Exception al procesar correo num: %s   Err: %s', str(num), tools.ustr(e))
-                except Exception:
-                    _logger.info('>> fae_incoming_doc.read_email: Fallo tratando de hacer un fetch: %s  server %s', server.server_type, server.name, exc_info=True)
-                finally:
-                    if connection:
-                        connection.close()
-                        connection.logout()
+                    connection.close()
 
-            elif server.server_type == 'pop':
-                try:
-                    connection = server.connect()                    
+
+                elif server.server_type == 'pop':
                     # stat() function return email count and occupied disk size
                     (messageCount, totalMessageSize) = connection.stat()
-                    connection.list()   # return all email list
+                    # list() function return all email list
+                    connection.list()
 
-                    _logger.info('>> fae_incoming_doc.read_email/pop:  Cantidad de correos: %s', str(messageCount) )
-                    for num in range(messageCount,0,-1):
-                        messages = ''
-                        header =''
+                    _logger.info('>> fae_incoming_doc.read_email/pop:  Cantidad de correos: %s', str(messageCount))
+                    for num in range(messageCount, 0, -1):
                         try:
                             (header, messages, octets) = connection.retr(num)
-                            # message = (b'\n').join(messages).decode('utf-8')
-                            message = (b'\n').join(messages)
+                            message = (b'\n').join(messages).decode('utf-8')
 
-                            if isinstance(message, xmlrpclib.Binary):
-                                message = bytes(message.data)
-                            if isinstance(message, str):
-                                message = message.encode('utf-8')
-                            message = email.message_from_bytes(message, policy=email.policy.SMTP)
-                            msg_parsed = MailThread.message_parse(message)
+                            msg = Parser().parsestr(message)
+                            subject = msg.get('Subject')
+                            # _logger.info('>> fae_incoming_doc.read_email/pop: procesando correo num: %s  - from : %s  subject: %s', str(num), msg.get('From'), subject )
+                            asunto, charset = decode_header(subject)[0]
+                            if charset:
+                                asunto = asunto.decode(charset)
+                            # _logger.info('>> fae_incoming_doc.read_email/pop: procesando correo num: %s  - from : %s  Asunto: %s', str(num), msg.get('From'), asunto )
 
+                            if (msg.is_multipart()):
+                                complete_vals = {}
+                                flag2save = True
+                                attach_pdf = None
+                                clave_hacienda = None
+                                parts = msg.get_payload()
 
-                            # msg = Parser().parsestr(message)
-                            # subject = msg.get('Subject')
-                            # # _logger.info('>> fae_incoming_doc.read_email/pop: procesando correo num: %s  - from : %s  subject: %s', str(num), msg.get('From'), subject )
-                            # asunto, charset = decode_header(subject)[0]
-                            # if charset:
-                            #     asunto = asunto.decode(charset)
-                            # # _logger.info('>> fae_incoming_doc.read_email/pop: procesando correo num: %s  - from : %s  Asunto: %s', str(num), msg.get('From'), asunto )
+                                for n, part in enumerate(parts):
+                                    content_type = part.get_content_type()
+                                    file_name = part.get_filename()
 
-                            # if (msg.is_multipart()):
-                            #     complete_vals = {}
-                            #     flag2save = True
-                            #     attach_pdf = None
-                            #     clave_hacienda = None
-                            #     parts = msg.get_payload()
+                                    if file_name:
+                                        file_name = file_name.lower()
+                                        attach_xml = None
 
-                            #     for n, part in enumerate(parts):
-                            #         content_type = part.get_content_type()
-                            #         file_name = part.get_filename()
+                                        if content_type == "application/xml" or content_type == "text/xml":
+                                            attach_xml = part.get_payload(decode=True)
+                                        elif content_type == 'application/octet-stream' and file_name.find('.xml') >= 0:
+                                            attach_xml = part.get_payload(decode=True)
 
-                            #         if file_name:
-                            #             file_name = file_name.lower()
-                            #             attach_xml = None
+                                        # _logger.info('>> fae_incoming_doc.read_email/pop:    attach_xml: %s', str(attach_xml))
+                                        if attach_xml:
+                                            values = fae_utiles.parser_xml(identification_types, companies, currencies, 'email', attach_xml)
+                                            clave_xml = values.get('issuer_electronic_code50')
+                                            # _logger.info('>> fae_incoming_doc.read_email/pop:    despues parser xml declave_xml: %s', clave_xml)
+                                            if clave_hacienda and clave_xml:
+                                                if clave_hacienda != clave_xml:
+                                                    flag2save = False
+                                            elif clave_xml:
+                                                clave_hacienda = clave_xml
 
-                            #             if content_type == "application/xml" or content_type == "text/xml":
-                            #                 attach_xml = part.get_payload(decode=True)
-                            #             elif content_type == 'application/octet-stream' and file_name.find('.xml') >= 0:
-                            #                 attach_xml = part.get_payload(decode=True)
+                                            if complete_vals:
+                                                complete_vals.update(values)
+                                            else:
+                                                complete_vals = values
 
-                            #             # _logger.info('>> fae_incoming_doc.read_email/pop:    attach_xml: %s', str(attach_xml))
-                            #             if attach_xml:
-                            #                 values = fae_utiles.parser_xml(identification_types, companies, currencies, 'email', attach_xml)
-                            #                 clave_xml = values.get('issuer_electronic_code50')
-                            #                 # _logger.info('>> fae_incoming_doc.read_email/pop:    despues parser xml declave_xml: %s', clave_xml)
-                            #                 if clave_hacienda and clave_xml:
-                            #                     if clave_hacienda != clave_xml:
-                            #                         flag2save = False
-                            #                 elif clave_xml:
-                            #                     clave_hacienda = clave_xml
+                                        if content_type == "application/pdf" or (content_type == 'application/octet-stream' and file_name.find('.pdf') >= 0):
+                                            # _logger.info('>> fae_incoming_doc.read_email/pop:    antes de get_payload PDF')
+                                            attach_pdf = part.get_payload(decode=True)
 
-                            #                 if complete_vals:
-                            #                     complete_vals.update(values)
-                            #                 else:
-                            #                     complete_vals = values
-
-                            #             if content_type == "application/pdf" or (content_type == 'application/octet-stream' and file_name.find('.pdf') >= 0):
-                            #                 # _logger.info('>> fae_incoming_doc.read_email/pop:    antes de get_payload PDF')
-                            #                 attach_pdf = part.get_payload(decode=True)
-                                
-                            #     if clave_hacienda and flag2save:
-                            #         complete_vals.update({'email_account_id': server.id })
-                            #         # _logger.info('>> fae_incoming_doc.read_email/pop:    antes de save_incoming document')
-                            #         res = self.save_incoming_document(clave_hacienda, complete_vals, attach_pdf)
-                        
+                                if clave_hacienda and flag2save:
+                                    complete_vals.update({'email_account_id': server.id})
+                                    # _logger.info('>> fae_incoming_doc.read_email/pop:    antes de save_incoming document')
+                                    res = self.save_incoming_document(clave_hacienda, complete_vals, attach_pdf)
                         except Exception as e:
-                            _logger.error('>> fae_incoming_doc.read_email/pop: Exception al procesar correo num: %s   Err: %s', str(num), tools.ustr(e)[:320])
-                            _logger.error('>> -- messages: %s', str(messages[:320]))
-                except Exception:
-                    _logger.info('>> fae_incoming_doc.read_email: Fallo tratando de hacer un fetch: %s  server %s', server.server_type, server.name, exc_info=True)
-                finally:
-                    if connection:
-                        connection.quit()
-            
-            server.write({'date': fields.Datetime.now()})
+                            _logger.error('>> fae_incoming_doc.read_email/pop: Exception al procesar correo num: %s   Err: %s', str(num), tools.ustr(e))
+                    connection.quit()
+
+
+            except Exception as err:
+                _logger.error('>> fae_incoming_doc.read_email: Exception al procesar las cuentas de correos. Err: %s', tools.ustr(err))
 
         # ---
         # revisa si hay documento que ya pueden contabilizarse porque están pasado
-        fref = datetime.datetime.today() - datetime.timedelta(days=28)  # devuelve al mes anterior 
-        fref = datetime.datetime(fref.year, fref.month, 11)     # aproximadamente 10 días habiles 
+        fref = datetime.datetime.today() - datetime.timedelta(days=28)  # devuelve al mes anterior
+        fref = datetime.datetime(fref.year, fref.month, 11)  # aproximadamente 10 días habiles
         date_str = fref.strftime('%Y-%m-%d')
         # _logger.info('>> fae_incoming_doc.read_email: date_str %s', date_str )
-        documents = self.env['xfae.incoming.documents'].search([('bill_date','<',date_str), ('ready2accounting','=',False), ('code_accept','=',False)])
+        documents = self.env['xfae.incoming.documents'].search([('bill_date', '<', date_str), ('ready2accounting', '=', False), ('code_accept', '=', False)])
         for rec in documents:
             # company = companies.filtered(lambda c: c.vat == rec.identification_number)
             # if company:
@@ -763,5 +721,3 @@ class XFaeIncomingDoc(models.Model):
                 rec.ready2accounting = True
 
         return True
-
-                

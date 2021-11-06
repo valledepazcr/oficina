@@ -101,7 +101,7 @@
                                 <span t-esc="o.company_id.street2[:60]"/><br/>
                             </t>
                             <span>Correo: </span>
-                            <t t-esc="o.company_id.email"/><br/>
+                            <t t-esc="o.company_id.x_email_fae or o.company_id.email"/><br/>
                         </td>  
                         <td>
                             <div style="color: #af5c14;">
@@ -115,6 +115,9 @@
                                         <span style="font-weight:bolder">FACTURA ELECTRONICA</span><br/>
                                         <span style="font-weight:bolder">DE EXPORTACION: </span>
                                     </t>
+                                </t>
+                                <t t-elif="'refund' in o.move_type">
+                                    <span style="font-weight:bolder">NOTA CREDITO: </span>                                    
                                 </t>
                                 <t t-else="">
                                     <span style="font-weight:bolder">FACTURA: </span>
@@ -244,7 +247,7 @@
                                 </td>
                                 <td id="h5_ref_data">
                                     <table id="h5_ref_data_tab">
-                                        <td id="h5_ref_data_tab_c1" width="55%">
+                                        <td id="h5_ref_data_tab_c1" width="50%">
                                             <span t-if="o.move_type == 'in_invoice' or o.move_type == 'in_refund'">
                                                 <span t-field="o.x_sequence"/>-<span t-field="o.invoice_origin"/><br/>
                                             </span>
@@ -254,7 +257,7 @@
                                         </td>
                                         <t t-if="o.move_type in ('out_invoice','out_refund') and o.invoice_origin">
                                             <td id="h5_ref_data_tab_c2" style="width:20%; text-align:right;"><span>Cotización:</span><br/> </td>
-                                            <td id="h5_ref_data_tab_c3" style="width:25%; padding-left:5px;"> <span t-field="o.invoice_origin"/><br/> </td>
+                                            <td id="h5_ref_data_tab_c3" style="width:30%; padding-left:5px;"> <span t-field="o.invoice_origin"/><br/> </td>
                                         </t>
                                     </table>
                                 </td>

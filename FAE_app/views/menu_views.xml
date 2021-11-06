@@ -7,6 +7,8 @@
         <menuitem id="menu_FAE_documentos_electronicos"  name="Documentos" parent="menu_FAE_electronic_invoice" sequence="2"/>
             <menuitem id="menu_xfae_recibidos"  name="Recibidos" parent="menu_FAE_documentos_electronicos" sequence="1"
                       action="action_xfae_incoming_doc"/>
+            <menuitem id="menu_xfae_correos_no_procesados"  name="Correos no procesados" parent="menu_FAE_documentos_electronicos" sequence="4"
+                      action="action_xfae_incoming_email"/>
 
         <menuitem id="menu_FAE_configuration"  name="Configuración" parent="menu_FAE_electronic_invoice" sequence="3"/>
             <menuitem id="menu_xidentificacion_type"  name="Tipo de Identificación" parent="menu_FAE_configuration" sequence="1"
