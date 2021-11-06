@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<odoo>
+    <data>
+        <record id="xfae_incoming_email_tree_view" model="ir.ui.view">
+            <field name="name">xfae.incoming.email.tree</field>
+            <field name="model">xfae.incoming.email</field>
+            <field name="arch" type="xml">
+                <tree string="Correos no procesados" duplicate="0" create="0" edit="0">
+                    <field name="create_date" string="Fecha Recibido" />
+                    <field name="email_account_id" />
+                    <field name="sender"/>
+                    <field name="subject"/>
+                    <field name="date" string="Fecha correo"/>
+                </tree>
+            </field>
+        </record>
+
+        <record id="action_xfae_incoming_email" model="ir.actions.act_window">
+            <field name="name">Correos no procesados</field>
+            <field name="res_model">xfae.incoming.email</field>
+            <field name="view_mode">tree</field>
+        </record>
+
+    </data>
+</odoo>
