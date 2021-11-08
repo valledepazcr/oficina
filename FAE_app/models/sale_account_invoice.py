@@ -379,7 +379,8 @@ class FaeAccountInvoice(models.Model):
 
     @api.model
     def compute_name_value(self):
-        if (not self.x_document_type or (self.is_purchase_document() and not self.x_fae_incoming_doc_id)) and self.name == '/':
+        if self.is_invoice(self, include_receipts=True) and self.name == '/' \
+            and (not self.x_document_type or (self.is_purchase_document() and not self.x_fae_incoming_doc_id)):
             seq_code = None
             values = {}
             if self.move_type == 'out_refund':
@@ -390,7 +391,7 @@ class FaeAccountInvoice(models.Model):
                 seq_code = 'xfae_number_internal_invoice'
                 values['name'] = 'xFAE - Number for Internal Invoice'
                 values['prefix'] = 'INV-'
-            elif self.move_tpe == 'in_refund':
+            elif self.move_type == 'in_refund':
                 seq_code = 'xfae_number_internal_bill_rev'
                 values['name'] = 'xFAE - Number for Internal Reversal Bill'
                 values['prefix'] = 'RBILL-'
@@ -409,7 +410,6 @@ class FaeAccountInvoice(models.Model):
                                     'number_increment': 1})
                     sequence = self.env['ir.sequence'].sudo().create(values)
                 self.name = sequence.next_by_id()
-                numero = self.name
 
 
     def action_post(self):
