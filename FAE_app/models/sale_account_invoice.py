@@ -379,8 +379,8 @@ class FaeAccountInvoice(models.Model):
 
     @api.model
     def compute_name_value(self):
-        if self.is_invoice(self, include_receipts=True) and self.name == '/' \
-            and (not self.x_document_type or (self.is_purchase_document() and not self.x_fae_incoming_doc_id)):
+        if self.is_invoice(include_receipts=True) and self.name == '/' \
+              and (not self.x_document_type or (self.is_purchase_document() and not self.x_fae_incoming_doc_id)):
             seq_code = None
             values = {}
             if self.move_type == 'out_refund':
