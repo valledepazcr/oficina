@@ -1,10 +1,11 @@
 # -*- coding: utf-8 -*-
 
 from odoo import models, fields, api, _
-from lxml import etree
-import logging
+# from lxml import etree
 
 from odoo.exceptions import Warning, UserError, ValidationError
+
+import logging
 
 _logger = logging.getLogger(__name__)
 

@@ -8,9 +8,11 @@ odoo.define('FAE_app.load_document', function (require) {
     var includeDict = {
         renderButtons: function () {
             this._super.apply(this, arguments);
-            if (this.modelName === "xfae.incoming.documents"){
-                var buttonLoad = this.$buttons.find('button.o_button_help')
-                buttonLoad.on('click', this.proxy('o_button_help'))
+            if (this.$buttons) {            
+                if (this.modelName === "xfae.incoming.documents"){
+                    var buttonLoad = this.$buttons.find('button.o_button_help')
+                    buttonLoad.on('click', this.proxy('o_button_help'))
+                }
             }
         },
 
@@ -34,34 +36,3 @@ odoo.define('FAE_app.load_document', function (require) {
 
 });
 
-
-odoo.define('FAE_app.read_emails', function (require) {
-    "use strict";
-
-    var core = require('web.core');
-    var ListView = require('web.ListView');
-    var ListController = require('web.ListController');
-    var rpc = require('web.rpc');
-
-    var includeDict = {
-        renderButtons: function () {
-            this._super.apply(this, arguments);
-            if (this.modelName === "xfae.incoming.documents"){
-                var buttonLoad = this.$buttons.find('button.o_read_email')
-                buttonLoad.on('click', this.proxy('o_read_email'))
-            }
-        },
-
-        o_read_email: function () {
-            rpc.query({
-                    model: 'xfae.incoming.documents',
-                    method: 'read_email',
-                    args: [[this.id]],
-                });
-            // window.location.reload(true);
-        }
-    };
-
-    ListController.include(includeDict);
-
-});

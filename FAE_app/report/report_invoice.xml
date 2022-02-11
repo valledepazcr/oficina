@@ -2,7 +2,7 @@
 <odoo>
 
 <template id="sale.report_invoice_document_inherit_sale" inherit_id="account.report_invoice_document"> </template>
- 
+
 <!-- <template id="account.report_invoice_document_with_payments"> -->
 <!-- <template id="account.report_invoice_with_payments">
     <t t-call="web.html_container">
@@ -18,7 +18,7 @@
 <template id="fae_report_invoice_document_inherited" inherit_id="account.report_invoice_document" priority="20">
     <xpath expr="//t[@t-call='web.external_layout']" position="replace">
         <div class="article" t-att-data-oe-model="o and o._name" t-att-data-oe-id="o and o.id" t-att-data-oe-lang="o and o.env.context.get('lang')">
-            <t t-set="o" t-value="o.with_context(lang=lang)" /> 
+            <t t-set="o" t-value="o.with_context(lang=lang)" />
             <style type="text/css">
                 .bdy {
                     font-size:14px;
@@ -38,7 +38,7 @@
                 .tble-header {
                     height: 30px;
                     font-size: 14px;
-                    color: #1762af; 
+                    color: #1762af;
                     text-align: center;
                     line-height: 30px;
                     text-decoration: none;
@@ -102,7 +102,7 @@
                             </t>
                             <span>Correo: </span>
                             <t t-esc="o.company_id.x_email_fae or o.company_id.email"/><br/>
-                        </td>  
+                        </td>
                         <td>
                             <div style="color: #af5c14;">
                                 <t t-if="o.x_electronic_code50 and o.x_document_type in ('FE','FEC','FEE','ND','NC')">
@@ -117,7 +117,7 @@
                                     </t>
                                 </t>
                                 <t t-elif="'refund' in o.move_type">
-                                    <span style="font-weight:bolder">NOTA CREDITO: </span>                                    
+                                    <span style="font-weight:bolder">NOTA CREDITO: </span>
                                 </t>
                                 <t t-else="">
                                     <span style="font-weight:bolder">FACTURA: </span>
@@ -171,7 +171,7 @@
                                     </t>
                                     <span style="font-size:18px; font-weight:bold" t-field="o.partner_id.name"/>
                                 </td>
-                                <td id="h1_issue_date_label"> 
+                                <td id="h1_issue_date_label">
                                     <t t-if="o.move_type == 'out_invoice' or o.move_type == 'out_refund' or o.x_document_type == 'FEC'">
                                         <span>Fecha emisión:</span>
                                     </t>
@@ -190,7 +190,7 @@
                                             <span t-esc="o.x_issue_date[14:16]"/>
                                         </t>
                                     </t>
-                                    <t t-else="">                                
+                                    <t t-else="">
                                         <span t-field="o.invoice_date" t-options='{"format": "dd-MM-yyyy"}'/>
                                     </t>
                                 </td>
@@ -215,13 +215,13 @@
                             </tr>
                             <tr id="t1_tr4">
                                 <td id="h4_address_label"> <span>Dirección:</span> </td>
-                                <td id="h4_address_data"> 
+                                <td id="h4_address_data">
                                     <span>
                                         <t t-if="o.partner_id.country_id and o.partner_id.country_id != o.company_id.country_id">
                                             <t t-esc="o.partner_id.country_id.name"/>,
                                         </t>
                                         <t t-if="o.partner_id.state_id">
-                                            <t t-esc="o.partner_id.state_id.name" />- 
+                                            <t t-esc="o.partner_id.state_id.name" />-
                                             <t t-if="o.partner_id.x_country_county_id and o.partner_id.x_country_county_id.name != o.partner_id.state_id.name">
                                                 <t t-esc="o.partner_id.x_country_county_id.name"/>,
                                             </t>
@@ -264,8 +264,8 @@
                                 <td id="h5_currency_label"> <span>Moneda:</span><br/> </td>
                                 <td id="h5_currency_data"> <span t-field="o.currency_id.name"/><br/> </td>
                             </tr>
-                        </tbody>                    
-                    </table>                  
+                        </tbody>
+                    </table>
                 </div>
                 <!-- Lineas de detalle -->
                 <t t-set="display_discount" t-value="any(l.discount for l in o.invoice_line_ids)"/>
@@ -299,7 +299,7 @@
                                         <span t-if="l.tax_ids" t-esc="', '.join(map(lambda x: (x.description or x.name), l.tax_ids))"/>
                                         <span t-if="not l.tax_ids">Ex</span>
                                     </td>
-                                    <td class="text-right"> <span t-field="l.price_subtotal"/> </td>                                
+                                    <td class="text-right"> <span t-field="l.price_subtotal"/> </td>
                                 </t>
                                 <t t-if="l.display_type == 'line_note'">
                                     <td colspan="99">
@@ -316,7 +316,12 @@
                     </table>
                 </div>
 
-                <!-- Totales  --> 
+                <!-- Establece un interlineado con margen 0 -->
+                <style>
+                    p {margin:0px}
+                </style>
+
+                <!-- Totales  -->
                 <table id="t3_totals" style="margin-top: 1px; width:100%">
                     <tr id="t3_tr1">
                         <th width="45%"/>
@@ -340,7 +345,7 @@
                                         </tr>
                                     </t>
                                 </table>
-                            </t> 
+                            </t>
                             <t t-if="o.narration">
                                 <span colspan="2" t-field="o.narration"/>
                             </t>
@@ -351,7 +356,7 @@
                                 <tr class="o_subtotal" style="">
                                     <td><strong>Subtotal</strong></td>
                                     <td class="text-right">
-                                        <span t-field="o.amount_untaxed" t-options='{"widget": "monetary", "display_currency": o.currency_id}'/> 
+                                        <span t-field="o.amount_untaxed" t-options='{"widget": "monetary", "display_currency": o.currency_id}'/>
                                     </td>
                                 </tr>
                                 <tr class="o_subtotal" style="">
@@ -363,7 +368,7 @@
                                 <tr class="o_subtotal" style="">
                                     <td><strong>Total</strong></td>
                                     <td class="text-right">
-                                        <span t-field="o.amount_total" t-options='{"widget": "monetary", "display_currency": o.currency_id}' /> 
+                                        <span t-field="o.amount_total" t-options='{"widget": "monetary", "display_currency": o.currency_id}' />
                                     </td>
                                 </tr>
                                 <t t-if="print_with_payments">
@@ -392,27 +397,21 @@
                     </tr>
                 </table>
 
-                <!--
-                Para los datos del usuario se establece un interlineado con margen 0 
-                -->
-                <style>
-                    p {margin:0px}
-                </style>
-                
                 <!-- Datos de cuentas bancarias si las ingresaron  -->
-                <t t-if="o.move_type == 'out_invoice' and o.company_id.x_info_bank_accounts">
-                    <div style="width:100%;margin-top:0;font-size:14px;padding:2px;text-align:justify">
+                <div id="n1_banking_info" style="width:100%;margin-top:0;font-size:14px;padding:2px;text-align:justify">
+                    <t t-if="o.move_type == 'out_invoice' and o.company_id.x_info_bank_accounts">
                         <t t-raw="o.company_id.x_info_bank_accounts" />
-                    </div>
-                </t>
+                    </t>
+                </div>
+
                 <!-- Información general de la factura -->
-                <t t-if="o.move_type == 'out_invoice' and o.company_id.x_line_info_invoice and (not o.x_document_type or o.x_document_type not in ('FEE','FEC'))">
-                    <div style="width:100%;margin-top:0;font-size:14px;padding:2px;text-align:justify">
+                <div io="n2_invoice_info" style="width:100%;margin-top:0;font-size:14px;padding:2px;text-align:justify">
+                    <t t-if="o.move_type == 'out_invoice' and o.company_id.x_line_info_invoice and (not o.x_document_type or o.x_document_type not in ('FEE','FEC'))">
                         <t t-raw="o.company_id.x_line_info_invoice" />
-                    </div>
-                </t>
+                    </t>
+                </div>
             </div>
-        
+
             <!-- footer -->
             <div class="footer" style="padding:2px 2px 2px 2px; border-top: 1px solid #dee2e6">
                 <t t-if="o.move_type in ('out_invoice','out_refund') or o.x_document_type == 'FEC'">

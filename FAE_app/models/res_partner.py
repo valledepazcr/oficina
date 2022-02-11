@@ -1,10 +1,12 @@
 # -*- coding: utf-8 -*-
 import re
 from odoo import models, fields, api, _
-from odoo.exceptions import UserError
+from odoo.exceptions import UserError, ValidationError
+from datetime import timedelta, datetime
 import phonenumbers
 import logging
 from . import fae_utiles
+
 
 _logger = logging.getLogger(__name__)
 

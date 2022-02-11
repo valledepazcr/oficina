@@ -28,9 +28,11 @@ class XFaeReadLocalDoc(models.TransientModel):
 
             clave_hacienda = doc_vals.get('issuer_electronic_code50') 
             if clave_hacienda == resp_vals.get('issuer_electronic_code50'):
+                resp_vals['company_id'] = doc_vals['company_id'] or resp_vals['company_id']
+                resp_vals['identification_number'] = doc_vals['identification_number'] or resp_vals['identification_number']
                 doc_vals.update(resp_vals)
                 self.env['xfae.incoming.documents'].save_incoming_document(clave_hacienda, doc_vals, self.pdf)
-                vals_ret = { 'type': 'ir.actions.client', 'tag': 'reload', }
+                vals_ret = {'type': 'ir.actions.client', 'tag': 'reload', }
             else:
                 raise ValidationError('La clave de hacienda del documento no coincide con el de respuesta.')
 

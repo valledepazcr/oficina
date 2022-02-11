@@ -165,7 +165,7 @@ class XFaeIncomingDoc(models.Model):
     purchase_registried = fields.Boolean(string='Bill Contabilizado', default=False,
                                 help='Indica si el documento ya fue ingresado en compras' )    
 
-    _sql_constraints = [('issuer_electronic_code50_uniq', 'unique (company_id, issuer_electronic_code50)',
+    _sql_constraints = [('issuer_electronic_code50_uniq', 'unique (issuer_electronic_code50, company_id)',
                         "La clave numérica deben ser única"),
                         ]
 
@@ -192,6 +192,16 @@ class XFaeIncomingDoc(models.Model):
             elif rec.invoice_id:
                 raise ValidationError('El documento: %s ya está asociado con documento ingresado en Proveedor' % (rec.issuer_sequence))
         return super(XFaeIncomingDoc, self).unlink()
+
+    @api.model
+    def search_read(self, domain=None, fields=None, offset=0, limit=None, order=None):
+        aux = ['|', ('company_id', 'in', self.env.companies.ids), ('company_id', '=', False)]
+
+        for a in aux:
+            domain.append(a)
+
+        res = super(XFaeIncomingDoc, self).search_read(domain, fields, offset, limit, order)
+        return res
 
     @api.onchange('code_accept')
     def _onchange_code_accept(self):

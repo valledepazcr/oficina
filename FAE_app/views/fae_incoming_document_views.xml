@@ -89,8 +89,9 @@
                                     <field name="issuer_xml_doc" class="oe_inline" readonly="1"/>
                                     <label for="issuer_xml_response" string="XML respuesta" style="font-weight:bold; margin-left:60px" />
                                     <field name="issuer_xml_response" style="margin-left:10px" readonly="1"/>
-                                </div>                                
+                                </div>
                                 <field name="response_state" readonly="1"/>
+                                <field name="email_account_id" string="Recibido en Correo" readonly="1"/>
                             </group>
                         </group>
                         <notebook>

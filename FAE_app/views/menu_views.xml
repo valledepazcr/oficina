@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <odoo>
     <data>
-        <menuitem id="menu_FAE_electronic_invoice"  name="Factura Electrónica"
+        <menuitem id="menu_FAE_electronic_invoice"  name="Factura Electrónica" groups="FAE_app.group_user"
                   web_icon="FAE_app,static/description/logoFAEweb.jpg"/>
 
         <menuitem id="menu_FAE_documentos_electronicos"  name="Documentos" parent="menu_FAE_electronic_invoice" sequence="2"/>

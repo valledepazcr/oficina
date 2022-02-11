@@ -13,7 +13,7 @@
     'depends': ['base', 'sale', 'product', 'contacts', 'account', ],
     'data': [
         'views/assets.xml',
-        'views/cabys_company_views.xml',        
+        'views/cabys_company_views.xml',
         'views/res_company_views.xml',
         'views/identification_type_views.xml',
         'views/division_geopolitic_views.xml',
@@ -49,6 +49,7 @@
         'data/xother_charge_type.xml',
         'data/xtax_use_code.xml',
         'data/mail_fae_invoice_template.xml',
+        'security/fae_rules.xml',
         'security/ir.model.access.csv',
         'cron_task/cron_read_email.xml',
         'cron_task/cron_fae_invoice.xml',
