@@ -30,6 +30,7 @@
             <field name="model">xfae.incoming.documents</field>
             <field name="arch" type="xml">
                 <tree string="Documento Recibido" duplicate="0" create="0" edit="0">
+                    <field name="company_id" optional="True" />
                     <field name="identification_type_id" />
                     <field name="identification_number"/>
                     <field name="document_type"/>
