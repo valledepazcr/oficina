@@ -12,6 +12,8 @@
     'version': '14e',
     'depends': ['base', 'sale', 'product', 'contacts', 'account', ],
     'data': [
+        'security/fae_rules.xml',
+        'security/ir.model.access.csv',        
         'views/assets.xml',
         'views/cabys_company_views.xml',
         'views/res_company_views.xml',
