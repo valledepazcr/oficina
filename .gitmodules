@@ -1,0 +1,4 @@
+[submodule "CybroOdoo/OpenHRMS"]
+	path = CybroOdoo/OpenHRMS
+	url = git@github.com:CybroOdoo/OpenHRMS.git
+	branch = 14.0
