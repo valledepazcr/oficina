@@ -13,6 +13,7 @@ class accountAsset(models.Model):
 
     def _set_data_asset(self):
         for asset in self:
+            asset.x_actual_value = 0.0
             data = asset.depreciation_move_ids.filtered(lambda c: c.state == 'posted')
             if data:
                 asset.x_life_of_asset = asset.method_number - len(data)
