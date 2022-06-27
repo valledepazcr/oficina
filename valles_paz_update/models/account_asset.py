@@ -27,6 +27,6 @@ class accountAsset(models.Model):
             else:
                 asset.x_life_of_asset = asset.method_number
                 asset.x_depreciation = 0.0
-                asset.x_actual_value = asset.original_value
+                asset.x_actual_value = asset.original_value or 0.0
                 asset.x_depreciation_month = asset.depreciation_move_ids[1].amount_total
 
