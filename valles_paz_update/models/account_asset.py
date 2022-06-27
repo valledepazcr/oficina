@@ -23,7 +23,7 @@ class accountAsset(models.Model):
                         asset.x_depreciation = lines.asset_depreciated_value
                     if asset.x_depreciation:
                         asset.x_actual_value = asset.original_value - asset.x_depreciation
-                    asset.x_depreciation_month = data.amount_total
+                    asset.x_depreciation_month = lines.amount_total
             else:
                 asset.x_life_of_asset = asset.method_number
                 asset.x_depreciation = 0.0
