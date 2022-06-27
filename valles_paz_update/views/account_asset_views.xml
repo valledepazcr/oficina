@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo>
+    <data>
+        <record id="account_tree_account_asset_inherit" model="ir.ui.view">
+            <field name="name">account.tree.account.asset.inherit</field>
+            <field name="model">account.asset</field>
+            <field name="priority">20</field>
+            <field name="inherit_id" ref="account_asset.view_account_asset_purchase_tree"/>
+            <field name="arch" type="xml">
+                <data>
+                    <xpath expr="//field[@name='name']" position="after">
+                        <field name="account_asset_id"/>
+                        <field name="account_analytic_id"/>
+                        <field name="acquisition_date"/>
+                        <field name="first_depreciation_date"/>
+                        <field name="x_life_of_asset"/>
+                    </xpath>
+                    <xpath expr="//field[@name='currency_id']" position="after">
+                        <field name="x_depreciation" widget="monetary"/>
+                        <field name="x_actual_value" widget="monetary"/>
+                        <field name="x_depreciation_month" widget="monetary"/>
+                        <field name="account_depreciation_id"/>
+                        <field name="account_depreciation_expense_id"/>
+                    </xpath>
+                    <field name="company_id" position="attributes">
+                        <attribute name="invisible">1</attribute>
+                    </field>
+                </data>
+            </field>
+        </record>
+    </data>
+</odoo>
