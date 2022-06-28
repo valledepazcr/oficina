@@ -8,26 +8,24 @@ class accountAsset(models.Model):
 
     x_life_of_asset = fields.Integer('Vida util(meses)', compute='_set_data_asset')
     x_depreciation = fields.Float('Depreciación acumulada', compute='_set_data_asset')
-    x_actual_value = fields.Float('Valor actual', compute='_set_data_asset')
     x_depreciation_month = fields.Float('Depreciación por mes', compute='_set_data_asset')
 
     def _set_data_asset(self):
         for asset in self:
-            asset.x_actual_value = 0.0
+            if asset.method_period == 12:
+                months = asset.method_number * 12
+            else:
+                months = asset.method_number
             data = asset.depreciation_move_ids.filtered(lambda c: c.state == 'posted')
             if data:
-                asset.x_life_of_asset = asset.method_number - len(data)
-                cont = 0
+                asset.x_life_of_asset = months - len(data)
+                cont = months
                 for lines in data:
-                    cont += 1
+                    cont -= 1
                     if cont == asset.x_life_of_asset:
                         asset.x_depreciation = lines.asset_depreciated_value
-                    if asset.x_depreciation:
-                        asset.x_actual_value = asset.original_value - asset.x_depreciation or 0.0
-                    asset.x_depreciation_month = lines.amount_total
+                    asset.x_depreciation_month = data.amount_total
             else:
-                asset.x_life_of_asset = asset.method_number
+                asset.x_life_of_asset = asset.months
                 asset.x_depreciation = 0.0
-                asset.x_actual_value = asset.original_value or 0.0
                 asset.x_depreciation_month = asset.depreciation_move_ids[1].amount_total
-
