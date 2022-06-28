@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+<odoo>
+
+        <report
+            auto="False"
+            id="payslip_report_cr"
+            model="hr.payslip"
+            name="payslip.cr"
+            rml="hr_payroll_load_inputs/report/report_payslip_cr.rml"
+            string="Employee PaySlip cr" />
+
+</odoo>
