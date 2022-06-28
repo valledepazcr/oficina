@@ -19,7 +19,7 @@ class accountAsset(models.Model):
             data = asset.depreciation_move_ids.filtered(lambda c: c.state == 'posted')
             if data:
                 asset.x_life_of_asset = months - len(data)
-                cont = asset.x_life_of_asset
+                cont = 0
                 for lines in data:
                     cont += 1
                     if cont == 1:
