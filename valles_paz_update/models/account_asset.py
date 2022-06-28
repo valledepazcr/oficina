@@ -26,6 +26,6 @@ class accountAsset(models.Model):
                         asset.x_depreciation = lines.asset_depreciated_value
                     asset.x_depreciation_month = data.amount_total
             else:
-                asset.x_life_of_asset = asset.months
+                asset.x_life_of_asset = months
                 asset.x_depreciation = 0.0
                 asset.x_depreciation_month = asset.depreciation_move_ids[1].amount_total
