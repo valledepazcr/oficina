@@ -19,10 +19,10 @@ class accountAsset(models.Model):
             data = asset.depreciation_move_ids.filtered(lambda c: c.state == 'posted')
             if data:
                 asset.x_life_of_asset = months - len(data)
-                cont = months
+                cont = asset.x_life_of_asset
                 for lines in data:
-                    cont -= 1
-                    if cont == asset.x_life_of_asset:
+                    cont += 1
+                    if cont == asset.months:
                         asset.x_depreciation = lines.asset_depreciated_value
                     asset.x_depreciation_month = lines.amount_total
             else:
