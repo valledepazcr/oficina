@@ -24,7 +24,7 @@ class accountAsset(models.Model):
                     cont -= 1
                     if cont == asset.x_life_of_asset:
                         asset.x_depreciation = lines.asset_depreciated_value
-                    asset.x_depreciation_month = data.amount_total
+                    asset.x_depreciation_month = lines.amount_total
             else:
                 asset.x_life_of_asset = months
                 asset.x_depreciation = 0.0
