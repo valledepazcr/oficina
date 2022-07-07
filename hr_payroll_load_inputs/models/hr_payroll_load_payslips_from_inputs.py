@@ -160,8 +160,8 @@ class hr_payslip_load_inputs(models.TransientModel):
 
             emp_inputs = [
                 {
-                    "name": "CREHB01",
-                    "code": "CREHB01",
+                    "name": "Horas Laboradas",
+                    "code": "CRHORASLAB",
                     "amount": base_hours,
                     "contract_id": contract_data.id,
                 }
