@@ -29,8 +29,8 @@ class FaeMail(models.Model):
         ('draft', 'No Confirmado'),
         ('done', 'Confirmado'),
     ], string='Status', index=True, readonly=True, copy=False, default='draft')
-    server = fields.Char(string='Nombre de Servidor', readonly=True, help="Hostname or IP of the mail server", states={'draft': [('readonly', False)]})
-    port = fields.Integer(string='Puerto', readonly=True, states={'draft': [('readonly', False)]})
+    server = fields.Char(string='Nombre de Servidor', help="Hostname or IP of the mail server" )
+    port = fields.Integer(string='Puerto', )
     server_type = fields.Selection([
         ('pop', 'Servidor POP'),
         ('imap', 'Servidor IMAP'),
@@ -46,9 +46,9 @@ class FaeMail(models.Model):
 
     is_ssl = fields.Boolean('SSL/TLS', help="Connections are encrypted with SSL/TLS through a dedicated port (default: IMAPS=993, POP3S=995)")
     date = fields.Datetime(string='Última fecha de conexión', readonly=True)
-    user = fields.Char(string='Usuario', readonly=True, states={'draft': [('readonly', False)]})
-    password = fields.Char(string='Contraseña', readonly=True, states={'draft': [('readonly', False)]})
-    priority = fields.Integer(string='Prioridad', readonly=True, states={'draft': [('readonly', False)]}, help="Defines the order of processing, lower values mean higher priority", default=5)
+    user = fields.Char(string='Usuario', )
+    password = fields.Char(string='Contraseña', )
+    priority = fields.Integer(string='Prioridad', states={'draft': [('readonly', False)]}, help="Defines the order of processing, lower values mean higher priority", default=5)
     type = fields.Selection([('in', 'Servidor de Correo Entrante'),('out', 'Servidor de Correo Saliente'),
                              ], string='Tipo', default='in')
     next_email = fields.Many2one('xfae.mail', string="Siguiente Correo")
